@@ -1,0 +1,37 @@
+pair,unknown,xhar_rank,xhar_nearest,conf_rank,conf_nearest,feat_rank,feat_nearest
+RealWorld -> Pamap2,Nordic Walking,7,walking,4,running,1,running
+RealWorld -> Pamap2,Ascending Stairs,1,walking,1,running,2,running
+RealWorld -> Pamap2,Rope Jumping,6,walking,3,running,3,running
+RealWorld -> Pamap2,Descending Stairs,3,walking,2,walking,4,running
+RealWorld -> Pamap2,Other/Transient,4,walking,8,sitting,5,running
+RealWorld -> Pamap2,Cycling,5,walking,5,sitting,6,sitting
+RealWorld -> Pamap2,Vacuum Cleaning,2,walking,7,lying,7,running
+RealWorld -> Pamap2,Ironing,8,lying,6,lying,8,running
+RealWorld -> MHEALTH,Climbing Stairs,5,lying,6,running,1,running
+RealWorld -> MHEALTH,Jogging,6,lying,1,running,2,running
+RealWorld -> MHEALTH,Jump F&B,7,lying,3,running,3,running
+RealWorld -> MHEALTH,Cycling,1,lying,2,sitting,4,sitting
+RealWorld -> MHEALTH,Waist Bends,3,lying,5,lying,5,running
+RealWorld -> MHEALTH,Arm Elevation,4,lying,4,lying,6,running
+RealWorld -> MHEALTH,Knees Bending,2,lying,7,walking,7,running
+Pamap2 -> RealWorld,Climbing Down,3,standing,1,walking,1,walking
+Pamap2 -> RealWorld,Climbing Up,1,walking,2,walking,2,walking
+Pamap2 -> RealWorld,Jumping,2,walking,3,walking,3,walking
+Pamap2 -> MHEALTH,Waist Bends,3,sitting,4,sitting,1,sitting
+Pamap2 -> MHEALTH,Jogging,6,sitting,1,walking,2,walking
+Pamap2 -> MHEALTH,Jump F&B,7,lying,5,walking,3,running
+Pamap2 -> MHEALTH,Knees Bending,2,sitting,3,walking,4,running
+Pamap2 -> MHEALTH,Climbing Stairs,5,sitting,7,walking,5,running
+Pamap2 -> MHEALTH,Cycling,1,sitting,2,lying,6,running
+Pamap2 -> MHEALTH,Arm Elevation,4,sitting,6,sitting,7,sitting
+MHEALTH -> RealWorld,Climbing Up,3,lying,1,sitting,1,sitting
+MHEALTH -> RealWorld,Climbing Down,2,running,3,lying,2,sitting
+MHEALTH -> RealWorld,Jumping,1,lying,2,running,3,running
+MHEALTH -> Pamap2,Rope Jumping,6,lying,1,running,1,running
+MHEALTH -> Pamap2,Nordic Walking,3,lying,3,running,2,walking
+MHEALTH -> Pamap2,Ironing,8,lying,2,sitting,3,sitting
+MHEALTH -> Pamap2,Other/Transient,2,lying,7,walking,4,walking
+MHEALTH -> Pamap2,Descending Stairs,5,lying,5,walking,5,walking
+MHEALTH -> Pamap2,Vacuum Cleaning,1,lying,4,sitting,6,sitting
+MHEALTH -> Pamap2,Ascending Stairs,4,lying,6,sitting,7,sitting
+MHEALTH -> Pamap2,Cycling,7,lying,8,sitting,8,sitting

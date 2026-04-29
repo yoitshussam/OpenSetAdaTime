@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/773515370876137118/4c3943e6d5524833b8791cf2c951ab60/artifacts
+end_time: 1777320180691
+entry_point_name: ''
+experiment_id: '773515370876137118'
+lifecycle_stage: active
+run_id: 4c3943e6d5524833b8791cf2c951ab60
+run_name: SWL_Adapt_run_1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777320111462
+status: 3
+tags: []
+user_id: tp2474

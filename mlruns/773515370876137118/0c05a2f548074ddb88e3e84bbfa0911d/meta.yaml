@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/773515370876137118/0c05a2f548074ddb88e3e84bbfa0911d/artifacts
+end_time: 1777319946407
+entry_point_name: ''
+experiment_id: '773515370876137118'
+lifecycle_stage: active
+run_id: 0c05a2f548074ddb88e3e84bbfa0911d
+run_name: SASA_run_3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777319925835
+status: 3
+tags: []
+user_id: tp2474

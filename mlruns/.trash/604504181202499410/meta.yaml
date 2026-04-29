@@ -1,0 +1,7 @@
+artifact_location: mlflow-artifacts:/604504181202499410
+creation_time: 1776542217136
+experiment_id: '604504181202499410'
+last_update_time: 1777304183480
+lifecycle_stage: deleted
+name: sweep_RealWorld_male_to_RealWorld_female_smoke_test
+tags: {}

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/365929343654686155/6f9deb994504471d9ab608acaf35f8d8/artifacts
+end_time: 1776608050656
+entry_point_name: ''
+experiment_id: '365929343654686155'
+lifecycle_stage: active
+run_id: 6f9deb994504471d9ab608acaf35f8d8
+run_name: ACON_run_2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1776608018681
+status: 3
+tags: []
+user_id: tp2474

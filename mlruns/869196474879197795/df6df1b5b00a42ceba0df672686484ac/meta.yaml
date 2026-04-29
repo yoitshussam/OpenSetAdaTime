@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/869196474879197795/df6df1b5b00a42ceba0df672686484ac/artifacts
+end_time: 1777324181978
+entry_point_name: ''
+experiment_id: '869196474879197795'
+lifecycle_stage: active
+run_id: df6df1b5b00a42ceba0df672686484ac
+run_name: AdvSKM_run_0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777324152461
+status: 3
+tags: []
+user_id: tp2474

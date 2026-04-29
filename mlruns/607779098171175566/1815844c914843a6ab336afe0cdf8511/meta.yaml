@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/607779098171175566/1815844c914843a6ab336afe0cdf8511/artifacts
+end_time: 1776164278225
+entry_point_name: ''
+experiment_id: '607779098171175566'
+lifecycle_stage: active
+run_id: 1815844c914843a6ab336afe0cdf8511
+run_name: CLUDA_run_0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1776164237810
+status: 3
+tags: []
+user_id: tp2474

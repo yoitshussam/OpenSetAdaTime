@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/297438354379357924/5a369aa7b7b34ae7ac772eedd156d12b/artifacts
+end_time: 1777338035917
+entry_point_name: ''
+experiment_id: '297438354379357924'
+lifecycle_stage: active
+run_id: 5a369aa7b7b34ae7ac772eedd156d12b
+run_name: CoTMix_run_0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777338026848
+status: 3
+tags: []
+user_id: tp2474

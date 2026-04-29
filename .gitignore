@@ -1,0 +1,4 @@
+-e mlruns/
+mlartifacts/
+experiments_logs/
+confusion_plots/

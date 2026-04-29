@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/588687679089973353/c3daeb71c1434e15b5d4748553e499ac/artifacts
+deleted_time: 1777304154817
+end_time: 1776303687161
+entry_point_name: ''
+experiment_id: '588687679089973353'
+lifecycle_stage: deleted
+run_id: c3daeb71c1434e15b5d4748553e499ac
+run_name: CoDATS_run_1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1776303659915
+status: 3
+tags: []
+user_id: tp2474

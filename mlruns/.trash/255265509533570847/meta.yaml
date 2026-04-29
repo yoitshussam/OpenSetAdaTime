@@ -1,0 +1,7 @@
+artifact_location: mlflow-artifacts:/255265509533570847
+creation_time: 1776550821932
+experiment_id: '255265509533570847'
+last_update_time: 1777304236560
+lifecycle_stage: deleted
+name: sweep_RealWorld_male_to_RealWorld_female_unidaV2_4known
+tags: {}

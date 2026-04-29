@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/773515370876137118/f618d9b1c9e2440388ea844ec0d9d0b4/artifacts
+end_time: 1777319179854
+entry_point_name: ''
+experiment_id: '773515370876137118'
+lifecycle_stage: active
+run_id: f618d9b1c9e2440388ea844ec0d9d0b4
+run_name: DANN_run_1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777319170604
+status: 3
+tags: []
+user_id: tp2474

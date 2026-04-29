@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/869196474879197795/2daae6446ad14318a524fb63afdbd010/artifacts
+end_time: 1777323978991
+entry_point_name: ''
+experiment_id: '869196474879197795'
+lifecycle_stage: active
+run_id: 2daae6446ad14318a524fb63afdbd010
+run_name: HoMM_run_3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777323926181
+status: 3
+tags: []
+user_id: tp2474

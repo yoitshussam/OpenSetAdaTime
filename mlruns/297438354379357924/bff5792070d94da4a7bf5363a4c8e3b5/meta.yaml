@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/297438354379357924/bff5792070d94da4a7bf5363a4c8e3b5/artifacts
+end_time: 1777340007076
+entry_point_name: ''
+experiment_id: '297438354379357924'
+lifecycle_stage: active
+run_id: bff5792070d94da4a7bf5363a4c8e3b5
+run_name: SSSS_TSA_run_2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777339858567
+status: 3
+tags: []
+user_id: tp2474

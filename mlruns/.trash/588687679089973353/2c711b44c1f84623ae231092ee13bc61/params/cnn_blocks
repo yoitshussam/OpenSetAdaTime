@@ -1,0 +1,1 @@
+[{'kernel_size': 5, 'maxpool': False, 'dropout': True}, {'kernel_size': 5, 'maxpool': False, 'dropout': True}, {'kernel_size': 5, 'maxpool': False, 'dropout': True}]

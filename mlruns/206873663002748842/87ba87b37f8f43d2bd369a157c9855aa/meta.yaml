@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/206873663002748842/87ba87b37f8f43d2bd369a157c9855aa/artifacts
+end_time: 1777342251520
+entry_point_name: ''
+experiment_id: '206873663002748842'
+lifecycle_stage: active
+run_id: 87ba87b37f8f43d2bd369a157c9855aa
+run_name: Deep_Coral_run_4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777342247445
+status: 3
+tags: []
+user_id: tp2474

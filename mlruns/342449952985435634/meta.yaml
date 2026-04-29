@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/342449952985435634
+creation_time: 1776696186730
+experiment_id: '342449952985435634'
+last_update_time: 1776696186730
+lifecycle_stage: active
+name: sweep_RealWorld_male_to_RealWorld_female_sweep_complete

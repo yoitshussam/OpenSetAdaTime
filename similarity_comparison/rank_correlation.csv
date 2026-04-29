@@ -1,0 +1,8 @@
+pair,xhar_vs_conf,xhar_vs_feat,conf_vs_feat,n_unknowns
+RealWorld -> Pamap2,0.238,0.119,0.667,8
+RealWorld -> MHEALTH,-0.286,-0.607,0.393,7
+Pamap2 -> RealWorld,-0.500,-0.500,1.000,3
+Pamap2 -> MHEALTH,0.286,-0.321,0.357,7
+MHEALTH -> RealWorld,-0.500,-1.000,0.500,3
+MHEALTH -> Pamap2,-0.190,-0.071,0.810,8
+MEAN,-0.159,-0.397,0.621,-

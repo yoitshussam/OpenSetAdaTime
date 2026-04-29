@@ -1,0 +1,7 @@
+artifact_location: file:///mnt/data/home/tp2474/OpenSet-AdaTime/mlruns/641520597295341917
+creation_time: 1777302835246
+experiment_id: '641520597295341917'
+last_update_time: 1777304144158
+lifecycle_stage: deleted
+name: sweep_RealWorld_male_to_RealWorld_female_debug_pda
+tags: {}

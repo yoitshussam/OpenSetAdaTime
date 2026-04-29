@@ -1,0 +1,482 @@
+{
+  "RealWorld -> Pamap2": {
+    "xhar": {
+      "Nordic Walking": {
+        "score": 32.99274388306398,
+        "nearest": "walking"
+      },
+      "Ascending Stairs": {
+        "score": 28.06305754119342,
+        "nearest": "walking"
+      },
+      "Cycling": {
+        "score": 31.862576099899393,
+        "nearest": "walking"
+      },
+      "Descending Stairs": {
+        "score": 30.183739214777876,
+        "nearest": "walking"
+      },
+      "Ironing": {
+        "score": 41.257408279959506,
+        "nearest": "lying"
+      },
+      "Other/Transient": {
+        "score": 31.403960207513713,
+        "nearest": "walking"
+      },
+      "Rope Jumping": {
+        "score": 32.78210520601927,
+        "nearest": "walking"
+      },
+      "Vacuum Cleaning": {
+        "score": 28.075600131528176,
+        "nearest": "walking"
+      }
+    },
+    "confusion": {
+      "Nordic Walking": {
+        "score": 0.535514771938324,
+        "nearest": "running"
+      },
+      "Ascending Stairs": {
+        "score": 0.5683269500732422,
+        "nearest": "running"
+      },
+      "Cycling": {
+        "score": 0.45844748616218567,
+        "nearest": "sitting"
+      },
+      "Descending Stairs": {
+        "score": 0.5638450384140015,
+        "nearest": "walking"
+      },
+      "Ironing": {
+        "score": 0.35655996203422546,
+        "nearest": "lying"
+      },
+      "Other/Transient": {
+        "score": 0.2778495252132416,
+        "nearest": "sitting"
+      },
+      "Rope Jumping": {
+        "score": 0.5565749406814575,
+        "nearest": "running"
+      },
+      "Vacuum Cleaning": {
+        "score": 0.31111112236976624,
+        "nearest": "lying"
+      }
+    },
+    "feat_cosine": {
+      "Nordic Walking": {
+        "score": 0.09267836809158325,
+        "nearest": "running"
+      },
+      "Ascending Stairs": {
+        "score": 0.1407541036605835,
+        "nearest": "running"
+      },
+      "Cycling": {
+        "score": 0.244806170463562,
+        "nearest": "sitting"
+      },
+      "Descending Stairs": {
+        "score": 0.15957117080688477,
+        "nearest": "running"
+      },
+      "Ironing": {
+        "score": 0.3353196382522583,
+        "nearest": "running"
+      },
+      "Other/Transient": {
+        "score": 0.17798233032226562,
+        "nearest": "running"
+      },
+      "Rope Jumping": {
+        "score": 0.15022915601730347,
+        "nearest": "running"
+      },
+      "Vacuum Cleaning": {
+        "score": 0.2718672752380371,
+        "nearest": "running"
+      }
+    }
+  },
+  "RealWorld -> MHEALTH": {
+    "xhar": {
+      "Climbing Stairs": {
+        "score": 24.19253996592931,
+        "nearest": "lying"
+      },
+      "Cycling": {
+        "score": 21.704868892879,
+        "nearest": "lying"
+      },
+      "Arm Elevation": {
+        "score": 22.5730696492753,
+        "nearest": "lying"
+      },
+      "Jogging": {
+        "score": 24.226942064928185,
+        "nearest": "lying"
+      },
+      "Jump F&B": {
+        "score": 25.896034471883517,
+        "nearest": "lying"
+      },
+      "Knees Bending": {
+        "score": 21.99143649864141,
+        "nearest": "lying"
+      },
+      "Waist Bends": {
+        "score": 22.40331906857972,
+        "nearest": "lying"
+      }
+    },
+    "confusion": {
+      "Climbing Stairs": {
+        "score": 0.47999998927116394,
+        "nearest": "running"
+      },
+      "Cycling": {
+        "score": 0.8288508653640747,
+        "nearest": "sitting"
+      },
+      "Arm Elevation": {
+        "score": 0.6342710852622986,
+        "nearest": "lying"
+      },
+      "Jogging": {
+        "score": 0.8780487775802612,
+        "nearest": "running"
+      },
+      "Jump F&B": {
+        "score": 0.7089552283287048,
+        "nearest": "running"
+      },
+      "Knees Bending": {
+        "score": 0.45408162474632263,
+        "nearest": "walking"
+      },
+      "Waist Bends": {
+        "score": 0.5144357085227966,
+        "nearest": "lying"
+      }
+    },
+    "feat_cosine": {
+      "Climbing Stairs": {
+        "score": 0.1109580397605896,
+        "nearest": "running"
+      },
+      "Cycling": {
+        "score": 0.16615897417068481,
+        "nearest": "sitting"
+      },
+      "Arm Elevation": {
+        "score": 0.2234519124031067,
+        "nearest": "running"
+      },
+      "Jogging": {
+        "score": 0.11215436458587646,
+        "nearest": "running"
+      },
+      "Jump F&B": {
+        "score": 0.1231304407119751,
+        "nearest": "running"
+      },
+      "Knees Bending": {
+        "score": 0.25119549036026,
+        "nearest": "running"
+      },
+      "Waist Bends": {
+        "score": 0.2102435827255249,
+        "nearest": "running"
+      }
+    }
+  },
+  "Pamap2 -> RealWorld": {
+    "xhar": {
+      "Climbing Down": {
+        "score": 29.47441515497408,
+        "nearest": "standing"
+      },
+      "Climbing Up": {
+        "score": 27.78446008827255,
+        "nearest": "walking"
+      },
+      "Jumping": {
+        "score": 28.7013786793604,
+        "nearest": "walking"
+      }
+    },
+    "confusion": {
+      "Climbing Down": {
+        "score": 0.8017879724502563,
+        "nearest": "walking"
+      },
+      "Climbing Up": {
+        "score": 0.5827272534370422,
+        "nearest": "walking"
+      },
+      "Jumping": {
+        "score": 0.5491803288459778,
+        "nearest": "walking"
+      }
+    },
+    "feat_cosine": {
+      "Climbing Down": {
+        "score": 0.0938674807548523,
+        "nearest": "walking"
+      },
+      "Climbing Up": {
+        "score": 0.20829957723617554,
+        "nearest": "walking"
+      },
+      "Jumping": {
+        "score": 0.2125469446182251,
+        "nearest": "walking"
+      }
+    }
+  },
+  "Pamap2 -> MHEALTH": {
+    "xhar": {
+      "Climbing Stairs": {
+        "score": 24.809828163549035,
+        "nearest": "sitting"
+      },
+      "Cycling": {
+        "score": 23.26392780275842,
+        "nearest": "sitting"
+      },
+      "Arm Elevation": {
+        "score": 24.10943893072989,
+        "nearest": "sitting"
+      },
+      "Jogging": {
+        "score": 25.856293538523563,
+        "nearest": "sitting"
+      },
+      "Jump F&B": {
+        "score": 28.293085030385434,
+        "nearest": "lying"
+      },
+      "Knees Bending": {
+        "score": 23.690917357851443,
+        "nearest": "sitting"
+      },
+      "Waist Bends": {
+        "score": 24.076591389783054,
+        "nearest": "sitting"
+      }
+    },
+    "confusion": {
+      "Climbing Stairs": {
+        "score": 0.36250001192092896,
+        "nearest": "walking"
+      },
+      "Cycling": {
+        "score": 0.694376528263092,
+        "nearest": "lying"
+      },
+      "Arm Elevation": {
+        "score": 0.4731457829475403,
+        "nearest": "sitting"
+      },
+      "Jogging": {
+        "score": 0.7390244007110596,
+        "nearest": "walking"
+      },
+      "Jump F&B": {
+        "score": 0.4776119291782379,
+        "nearest": "walking"
+      },
+      "Knees Bending": {
+        "score": 0.6045918464660645,
+        "nearest": "walking"
+      },
+      "Waist Bends": {
+        "score": 0.595800518989563,
+        "nearest": "sitting"
+      }
+    },
+    "feat_cosine": {
+      "Climbing Stairs": {
+        "score": 0.24399030208587646,
+        "nearest": "running"
+      },
+      "Cycling": {
+        "score": 0.28388720750808716,
+        "nearest": "running"
+      },
+      "Arm Elevation": {
+        "score": 0.3101459741592407,
+        "nearest": "sitting"
+      },
+      "Jogging": {
+        "score": 0.14932215213775635,
+        "nearest": "walking"
+      },
+      "Jump F&B": {
+        "score": 0.1802249550819397,
+        "nearest": "running"
+      },
+      "Knees Bending": {
+        "score": 0.1818561553955078,
+        "nearest": "running"
+      },
+      "Waist Bends": {
+        "score": 0.13417524099349976,
+        "nearest": "sitting"
+      }
+    }
+  },
+  "MHEALTH -> RealWorld": {
+    "xhar": {
+      "Climbing Down": {
+        "score": 27.923073628435965,
+        "nearest": "running"
+      },
+      "Climbing Up": {
+        "score": 28.015244164165434,
+        "nearest": "lying"
+      },
+      "Jumping": {
+        "score": 26.683532980164387,
+        "nearest": "lying"
+      }
+    },
+    "confusion": {
+      "Climbing Down": {
+        "score": 0.4411238729953766,
+        "nearest": "lying"
+      },
+      "Climbing Up": {
+        "score": 0.721818208694458,
+        "nearest": "sitting"
+      },
+      "Jumping": {
+        "score": 0.5471311211585999,
+        "nearest": "running"
+      }
+    },
+    "feat_cosine": {
+      "Climbing Down": {
+        "score": 0.2639075517654419,
+        "nearest": "sitting"
+      },
+      "Climbing Up": {
+        "score": 0.1337909698486328,
+        "nearest": "sitting"
+      },
+      "Jumping": {
+        "score": 0.349267840385437,
+        "nearest": "running"
+      }
+    }
+  },
+  "MHEALTH -> Pamap2": {
+    "xhar": {
+      "Nordic Walking": {
+        "score": 28.7401961241713,
+        "nearest": "lying"
+      },
+      "Ascending Stairs": {
+        "score": 31.108642777801226,
+        "nearest": "lying"
+      },
+      "Cycling": {
+        "score": 34.36255926252246,
+        "nearest": "lying"
+      },
+      "Descending Stairs": {
+        "score": 31.530339421838185,
+        "nearest": "lying"
+      },
+      "Ironing": {
+        "score": 36.24357404210818,
+        "nearest": "lying"
+      },
+      "Other/Transient": {
+        "score": 26.497119025012026,
+        "nearest": "lying"
+      },
+      "Rope Jumping": {
+        "score": 31.781179615627146,
+        "nearest": "lying"
+      },
+      "Vacuum Cleaning": {
+        "score": 24.736632408567992,
+        "nearest": "lying"
+      }
+    },
+    "confusion": {
+      "Nordic Walking": {
+        "score": 0.44054269790649414,
+        "nearest": "running"
+      },
+      "Ascending Stairs": {
+        "score": 0.40229883790016174,
+        "nearest": "sitting"
+      },
+      "Cycling": {
+        "score": 0.35981735587120056,
+        "nearest": "sitting"
+      },
+      "Descending Stairs": {
+        "score": 0.41032999753952026,
+        "nearest": "walking"
+      },
+      "Ironing": {
+        "score": 0.5367231369018555,
+        "nearest": "sitting"
+      },
+      "Other/Transient": {
+        "score": 0.3779464066028595,
+        "nearest": "walking"
+      },
+      "Rope Jumping": {
+        "score": 0.8929663896560669,
+        "nearest": "running"
+      },
+      "Vacuum Cleaning": {
+        "score": 0.42393162846565247,
+        "nearest": "sitting"
+      }
+    },
+    "feat_cosine": {
+      "Nordic Walking": {
+        "score": 0.2338395118713379,
+        "nearest": "walking"
+      },
+      "Ascending Stairs": {
+        "score": 0.28836601972579956,
+        "nearest": "sitting"
+      },
+      "Cycling": {
+        "score": 0.33241355419158936,
+        "nearest": "sitting"
+      },
+      "Descending Stairs": {
+        "score": 0.275709867477417,
+        "nearest": "walking"
+      },
+      "Ironing": {
+        "score": 0.23495930433273315,
+        "nearest": "sitting"
+      },
+      "Other/Transient": {
+        "score": 0.245411217212677,
+        "nearest": "walking"
+      },
+      "Rope Jumping": {
+        "score": 0.11950349807739258,
+        "nearest": "running"
+      },
+      "Vacuum Cleaning": {
+        "score": 0.2814673185348511,
+        "nearest": "sitting"
+      }
+    }
+  }
+}
