@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/444904973135290432/3bd3ecc81ddd47d3955740e306432286/artifacts
+end_time: 1778127420032
+entry_point_name: ''
+experiment_id: '444904973135290432'
+lifecycle_stage: active
+run_id: 3bd3ecc81ddd47d3955740e306432286
+run_name: OSBP_run_2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778127398652
+status: 3
+tags: []
+user_id: tp2474

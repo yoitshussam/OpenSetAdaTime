@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/604507857025383539/2535dd10e80c4e5aa83a777ab9b56904/artifacts
+end_time: 1778512116055
+entry_point_name: ''
+experiment_id: '604507857025383539'
+lifecycle_stage: active
+run_id: 2535dd10e80c4e5aa83a777ab9b56904
+run_name: UniOT_run_2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778512067309
+status: 3
+tags: []
+user_id: tp2474

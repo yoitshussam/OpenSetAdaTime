@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/259823949667944240/5888f2f0fa19467d8b3b8032be8aa90b/artifacts
+deleted_time: 1778244599263
 end_time: 1777341513231
 entry_point_name: ''
 experiment_id: '259823949667944240'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 5888f2f0fa19467d8b3b8032be8aa90b
 run_name: RAINCOAT_run_1
 source_name: ''

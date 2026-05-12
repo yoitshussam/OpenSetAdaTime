@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/494872419334001295/88cbb4458fb04136942f23cc7f98ea27/artifacts
+end_time: 1778318219919
+entry_point_name: ''
+experiment_id: '494872419334001295'
+lifecycle_stage: active
+run_id: 88cbb4458fb04136942f23cc7f98ea27
+run_name: PDAAN_run_1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778318127455
+status: 3
+tags: []
+user_id: tp2474

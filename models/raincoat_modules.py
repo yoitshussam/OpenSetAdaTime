@@ -89,7 +89,7 @@ class TFEncoder(nn.Module):
 
     def forward(self, x):
         ef, out_ft = self.freq_feature(x)
-        ef = F.relu(self.bn_freq(self.avg(ef).squeeze()))
+        ef = F.relu(self.bn_freq(self.avg(ef).squeeze(1)))
         et = self.cnn(x)
         f = torch.concat([ef, et], -1)
         return F.normalize(f), out_ft

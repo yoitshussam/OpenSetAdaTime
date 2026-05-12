@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/750376149685988744/386b3c0d77a9436f9c3a293b2e82cd22/artifacts
+end_time: 1778553723475
+entry_point_name: ''
+experiment_id: '750376149685988744'
+lifecycle_stage: active
+run_id: 386b3c0d77a9436f9c3a293b2e82cd22
+run_name: DANCE_run_2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778553709298
+status: 3
+tags: []
+user_id: tp2474

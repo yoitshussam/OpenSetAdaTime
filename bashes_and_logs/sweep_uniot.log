@@ -1,0 +1,5040 @@
+[I 2026-04-30 13:07:14,071] A new study created in memory with name: PPOT_CNN_RealWorld_male_to_RealWorld_female
+[scenario] PPOT -> UniDA (uniDA=True)
+Unlabeled data shape:  (17913, 150, 18)
+Unlabelled Combined shape: (29204, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   179
+Target Train batches:   279
+-------------------------------
+
+Private classes:  tensor([6., 7.])
+>>> [trial 0] PPOT starting
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2931
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2266
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1937
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1732
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1626
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1511
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1455
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1388
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1329
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1287
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 0.9447
+OT Loss	: 0.2748
+Entropic Loss	: 0.0115
+Src_cls_loss	: 0.5073
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 0.7472
+OT Loss	: 0.2559
+Entropic Loss	: -0.0021
+Src_cls_loss	: 0.3527
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 0.6710
+OT Loss	: 0.2393
+Entropic Loss	: -0.0068
+Src_cls_loss	: 0.3069
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 0.6143
+OT Loss	: 0.2308
+Entropic Loss	: -0.0069
+Src_cls_loss	: 0.2634
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 0.6218
+OT Loss	: 0.2249
+Entropic Loss	: -0.0046
+Src_cls_loss	: 0.2778
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 0.5906
+OT Loss	: 0.2180
+Entropic Loss	: -0.0079
+Src_cls_loss	: 0.2605
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 0.5864
+OT Loss	: 0.2181
+Entropic Loss	: -0.0180
+Src_cls_loss	: 0.2664
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 0.5657
+OT Loss	: 0.2127
+Entropic Loss	: -0.0153
+Src_cls_loss	: 0.2513
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 0.5666
+OT Loss	: 0.2182
+Entropic Loss	: -0.0133
+Src_cls_loss	: 0.2417
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 0.5486
+OT Loss	: 0.2129
+Entropic Loss	: -0.0119
+Src_cls_loss	: 0.2305
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:296: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.1157, OS* (acc_c): 0.5981, UNK (acc_p): 0.0641, acc_mix: 0.4218, F1: 0.4248
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2961
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2242
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1924
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1742
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1599
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1499
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1419
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1376
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1327
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1281
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.6313
+OT Loss	: 0.2623
+Entropic Loss	: -0.0062
+Src_cls_loss	: 0.2309
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.6039
+OT Loss	: 0.2435
+Entropic Loss	: 0.0100
+Src_cls_loss	: 0.2164
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.6235
+OT Loss	: 0.2421
+Entropic Loss	: 0.0056
+Src_cls_loss	: 0.2427
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.6044
+OT Loss	: 0.2538
+Entropic Loss	: 0.0057
+Src_cls_loss	: 0.2053
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.5601
+OT Loss	: 0.2426
+Entropic Loss	: -0.0107
+Src_cls_loss	: 0.1948
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.5638
+OT Loss	: 0.2408
+Entropic Loss	: -0.0118
+Src_cls_loss	: 0.2024
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.5732
+OT Loss	: 0.2508
+Entropic Loss	: -0.0096
+Src_cls_loss	: 0.1940
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.5623
+OT Loss	: 0.2416
+Entropic Loss	: -0.0094
+Src_cls_loss	: 0.1972
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.5976
+OT Loss	: 0.2513
+Entropic Loss	: -0.0069
+Src_cls_loss	: 0.2150
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.5747
+OT Loss	: 0.2427
+Entropic Loss	: -0.0090
+Src_cls_loss	: 0.2076
+-------------------------------------
+H_score: 0.4594, OS* (acc_c): 0.4477, UNK (acc_p): 0.4717, acc_mix: 0.4556, F1: 0.5049
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2721
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2132
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1824
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1644
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1518
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1431
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1353
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1317
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1269
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1236
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 0.6290
+OT Loss	: 0.2848
+Entropic Loss	: -0.0313
+Src_cls_loss	: 0.2189
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 0.5651
+OT Loss	: 0.2508
+Entropic Loss	: -0.0210
+Src_cls_loss	: 0.1973
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 0.5541
+OT Loss	: 0.2372
+Entropic Loss	: -0.0128
+Src_cls_loss	: 0.1993
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 0.5449
+OT Loss	: 0.2344
+Entropic Loss	: -0.0130
+Src_cls_loss	: 0.1947
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 0.5279
+OT Loss	: 0.2265
+Entropic Loss	: -0.0122
+Src_cls_loss	: 0.1891
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 0.5110
+OT Loss	: 0.2207
+Entropic Loss	: -0.0130
+Src_cls_loss	: 0.1819
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 0.5154
+OT Loss	: 0.2137
+Entropic Loss	: -0.0156
+Src_cls_loss	: 0.1997
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 0.5208
+OT Loss	: 0.2073
+Entropic Loss	: -0.0119
+Src_cls_loss	: 0.2114
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 0.5028
+OT Loss	: 0.2024
+Entropic Loss	: -0.0128
+Src_cls_loss	: 0.2018
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 0.5124
+OT Loss	: 0.1988
+Entropic Loss	: -0.0146
+Src_cls_loss	: 0.2189
+-------------------------------------
+H_score: 0.0185, OS* (acc_c): 0.4541, UNK (acc_p): 0.0095, acc_mix: 0.3073, F1: 0.2057
+🏃 View run PPOT_trial_0 at: http://127.0.0.1:5001/#/experiments/342449952985435634/runs/f12941bd12a04fdca801f8570602e615
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/342449952985435634
+>>> [trial 0] PPOT done in 175.2s
+[I 2026-04-30 13:10:09,321] Trial 0 finished with value: -0.1978989460815986 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.01, 'tau': 0.65, 'tau1': 0.7000000000000001, 'tau2': 0.8500000000000001, 'alpha': 0.001, 'beta': 0.01, 'reg': 0.1, 'ot': 1.55, 'p_entropy': 0.265, 'n_entropy': 1.3000000000000003, 'neg': 0.25, 'thresh': 0.55}. Best is trial 0 with value: -0.1978989460815986.
+>>> [trial 1] PPOT starting
+>>> [trial 1] reloading data (batch_size 64 -> 32)
+Unlabeled data shape:  (17913, 150, 18)
+Unlabelled Combined shape: (29204, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   359
+Target Train batches:   559
+-------------------------------
+
+Private classes:  tensor([6., 7.])
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2959
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2206
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1847
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1635
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1496
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1376
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1292
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1219
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1158
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1111
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1111
+Total_loss	: 0.1571
+OT Loss	: 0.1747
+Entropic Loss	: -0.6637
+Src_cls_loss	: 0.3840
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1111
+Total_loss	: 0.1094
+OT Loss	: 0.1539
+Entropic Loss	: -0.5468
+Src_cls_loss	: 0.2716
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1111
+Total_loss	: 0.0485
+OT Loss	: 0.1578
+Entropic Loss	: -0.6249
+Src_cls_loss	: 0.2788
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1111
+Total_loss	: 0.0590
+OT Loss	: 0.1538
+Entropic Loss	: -0.5876
+Src_cls_loss	: 0.2621
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1111
+Total_loss	: 0.0721
+OT Loss	: 0.1505
+Entropic Loss	: -0.5439
+Src_cls_loss	: 0.2396
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1111
+Total_loss	: 0.1271
+OT Loss	: 0.1494
+Entropic Loss	: -0.4738
+Src_cls_loss	: 0.2275
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1111
+Total_loss	: 0.1808
+OT Loss	: 0.1510
+Entropic Loss	: -0.4121
+Src_cls_loss	: 0.2154
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1111
+Total_loss	: 0.2170
+OT Loss	: 0.1505
+Entropic Loss	: -0.3618
+Src_cls_loss	: 0.2026
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1111
+Total_loss	: 0.2214
+OT Loss	: 0.1512
+Entropic Loss	: -0.3503
+Src_cls_loss	: 0.1937
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1111
+Total_loss	: 0.2504
+OT Loss	: 0.1518
+Entropic Loss	: -0.3366
+Src_cls_loss	: 0.2074
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:296: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.0749, OS* (acc_c): 0.2197, UNK (acc_p): 0.0451, acc_mix: 0.1621, F1: 0.1243
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2947
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2185
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1841
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1642
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1494
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1390
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1302
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1230
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1167
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1114
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1114
+Total_loss	: -0.1769
+OT Loss	: 0.1803
+Entropic Loss	: -0.9490
+Src_cls_loss	: 0.3214
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1114
+Total_loss	: -0.0545
+OT Loss	: 0.1738
+Entropic Loss	: -0.8752
+Src_cls_loss	: 0.3862
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1114
+Total_loss	: -0.1106
+OT Loss	: 0.1670
+Entropic Loss	: -0.8653
+Src_cls_loss	: 0.3371
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1114
+Total_loss	: -0.0295
+OT Loss	: 0.1650
+Entropic Loss	: -0.7724
+Src_cls_loss	: 0.3305
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1114
+Total_loss	: -0.0579
+OT Loss	: 0.1677
+Entropic Loss	: -0.7690
+Src_cls_loss	: 0.2920
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1114
+Total_loss	: 0.0786
+OT Loss	: 0.1729
+Entropic Loss	: -0.7213
+Src_cls_loss	: 0.3676
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1114
+Total_loss	: 0.1257
+OT Loss	: 0.1697
+Entropic Loss	: -0.6392
+Src_cls_loss	: 0.3405
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1114
+Total_loss	: 0.1457
+OT Loss	: 0.1666
+Entropic Loss	: -0.5783
+Src_cls_loss	: 0.3076
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1114
+Total_loss	: 0.1526
+OT Loss	: 0.1631
+Entropic Loss	: -0.5345
+Src_cls_loss	: 0.2795
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1114
+Total_loss	: 0.1206
+OT Loss	: 0.1574
+Entropic Loss	: -0.5279
+Src_cls_loss	: 0.2549
+-------------------------------------
+H_score: 0.1926, OS* (acc_c): 0.1504, UNK (acc_p): 0.2676, acc_mix: 0.1891, F1: 0.1912
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2912
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2194
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1832
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1614
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1467
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1361
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1280
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1207
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1145
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1096
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1096
+Total_loss	: 0.1589
+OT Loss	: 0.1860
+Entropic Loss	: -0.6965
+Src_cls_loss	: 0.3903
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1096
+Total_loss	: -0.1381
+OT Loss	: 0.1625
+Entropic Loss	: -0.8313
+Src_cls_loss	: 0.2870
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1096
+Total_loss	: -0.1074
+OT Loss	: 0.1583
+Entropic Loss	: -0.8439
+Src_cls_loss	: 0.3408
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1096
+Total_loss	: -0.0951
+OT Loss	: 0.1389
+Entropic Loss	: -0.7311
+Src_cls_loss	: 0.2889
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1096
+Total_loss	: -0.0425
+OT Loss	: 0.1273
+Entropic Loss	: -0.6122
+Src_cls_loss	: 0.2515
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1096
+Total_loss	: -0.0275
+OT Loss	: 0.1186
+Entropic Loss	: -0.5533
+Src_cls_loss	: 0.2295
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1096
+Total_loss	: -0.0330
+OT Loss	: 0.1135
+Entropic Loss	: -0.5278
+Src_cls_loss	: 0.2111
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1096
+Total_loss	: -0.0612
+OT Loss	: 0.1108
+Entropic Loss	: -0.5295
+Src_cls_loss	: 0.1912
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1096
+Total_loss	: -0.0723
+OT Loss	: 0.1060
+Entropic Loss	: -0.5118
+Src_cls_loss	: 0.1744
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1096
+Total_loss	: -0.0483
+OT Loss	: 0.1017
+Entropic Loss	: -0.4650
+Src_cls_loss	: 0.1624
+-------------------------------------
+H_score: 0.2315, OS* (acc_c): 0.3146, UNK (acc_p): 0.1831, acc_mix: 0.2711, F1: 0.3370
+🏃 View run PPOT_trial_1 at: http://127.0.0.1:5001/#/experiments/342449952985435634/runs/87b4ccd2f0034a5492fa99251fc407d8
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/342449952985435634
+>>> [trial 1] PPOT done in 237.6s
+[I 2026-04-30 13:14:06,938] Trial 1 finished with value: -0.16632070144017538 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 32, 'weight_decay': 0.0005, 'learning_rate': 0.001, 'tau': 0.3, 'tau1': 0.85, 'tau2': 1.0, 'alpha': 0.01, 'beta': 0.001, 'reg': 0.05, 'ot': 2.5, 'p_entropy': 0.02, 'n_entropy': 2.8000000000000003, 'neg': 0.25, 'thresh': 0.4}. Best is trial 0 with value: -0.1978989460815986.
+>>> [trial 2] PPOT starting
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2945
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2184
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1820
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1600
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1447
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1319
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1231
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1154
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1088
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1034
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1034
+Total_loss	: 0.5411
+OT Loss	: 0.4177
+Entropic Loss	: 0.0216
+Src_cls_loss	: 0.2063
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1034
+Total_loss	: 0.4528
+OT Loss	: 0.3893
+Entropic Loss	: 0.0180
+Src_cls_loss	: 0.1428
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1034
+Total_loss	: 0.4502
+OT Loss	: 0.4053
+Entropic Loss	: 0.0192
+Src_cls_loss	: 0.1270
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1034
+Total_loss	: 0.4555
+OT Loss	: 0.4227
+Entropic Loss	: 0.0220
+Src_cls_loss	: 0.1165
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1034
+Total_loss	: 0.4610
+OT Loss	: 0.4345
+Entropic Loss	: 0.0218
+Src_cls_loss	: 0.1133
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1034
+Total_loss	: 0.4533
+OT Loss	: 0.4400
+Entropic Loss	: 0.0183
+Src_cls_loss	: 0.1049
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1034
+Total_loss	: 0.4523
+OT Loss	: 0.4434
+Entropic Loss	: 0.0190
+Src_cls_loss	: 0.1007
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1034
+Total_loss	: 0.4450
+OT Loss	: 0.4440
+Entropic Loss	: 0.0191
+Src_cls_loss	: 0.0929
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1034
+Total_loss	: 0.4440
+OT Loss	: 0.4388
+Entropic Loss	: 0.0188
+Src_cls_loss	: 0.0961
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1034
+Total_loss	: 0.4387
+OT Loss	: 0.4378
+Entropic Loss	: 0.0177
+Src_cls_loss	: 0.0927
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:296: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.0408, OS* (acc_c): 0.7679, UNK (acc_p): 0.0210, acc_mix: 0.5212, F1: 0.5261
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2937
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2161
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1811
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1603
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1450
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1341
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1246
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1169
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1101
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1045
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1045
+Total_loss	: 0.5921
+OT Loss	: 0.4333
+Entropic Loss	: 0.0310
+Src_cls_loss	: 0.2361
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1045
+Total_loss	: 0.5686
+OT Loss	: 0.4134
+Entropic Loss	: 0.0155
+Src_cls_loss	: 0.2430
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1045
+Total_loss	: 0.5226
+OT Loss	: 0.4099
+Entropic Loss	: 0.0142
+Src_cls_loss	: 0.2010
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1045
+Total_loss	: 0.5005
+OT Loss	: 0.3958
+Entropic Loss	: 0.0133
+Src_cls_loss	: 0.1903
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1045
+Total_loss	: 0.4787
+OT Loss	: 0.4080
+Entropic Loss	: 0.0121
+Src_cls_loss	: 0.1606
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1045
+Total_loss	: 0.4865
+OT Loss	: 0.4174
+Entropic Loss	: 0.0142
+Src_cls_loss	: 0.1593
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1045
+Total_loss	: 0.4882
+OT Loss	: 0.4184
+Entropic Loss	: 0.0124
+Src_cls_loss	: 0.1620
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1045
+Total_loss	: 0.4777
+OT Loss	: 0.4225
+Entropic Loss	: 0.0141
+Src_cls_loss	: 0.1467
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1045
+Total_loss	: 0.4637
+OT Loss	: 0.4204
+Entropic Loss	: 0.0137
+Src_cls_loss	: 0.1347
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1045
+Total_loss	: 0.4659
+OT Loss	: 0.4200
+Entropic Loss	: 0.0155
+Src_cls_loss	: 0.1354
+-------------------------------------
+H_score: 0.0914, OS* (acc_c): 0.7925, UNK (acc_p): 0.0485, acc_mix: 0.5468, F1: 0.5591
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2898
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2172
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1801
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1572
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1421
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1308
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1222
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1143
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1079
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1027
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1027
+Total_loss	: 0.7238
+OT Loss	: 0.4940
+Entropic Loss	: 0.0417
+Src_cls_loss	: 0.3116
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1027
+Total_loss	: 0.6006
+OT Loss	: 0.4712
+Entropic Loss	: 0.0247
+Src_cls_loss	: 0.2224
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1027
+Total_loss	: 0.6121
+OT Loss	: 0.4562
+Entropic Loss	: 0.0243
+Src_cls_loss	: 0.2457
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1027
+Total_loss	: 0.5451
+OT Loss	: 0.4356
+Entropic Loss	: 0.0209
+Src_cls_loss	: 0.1975
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1027
+Total_loss	: 0.5471
+OT Loss	: 0.4369
+Entropic Loss	: 0.0192
+Src_cls_loss	: 0.2001
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1027
+Total_loss	: 0.5401
+OT Loss	: 0.4316
+Entropic Loss	: 0.0197
+Src_cls_loss	: 0.1966
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1027
+Total_loss	: 0.5326
+OT Loss	: 0.4321
+Entropic Loss	: 0.0181
+Src_cls_loss	: 0.1905
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1027
+Total_loss	: 0.5370
+OT Loss	: 0.4319
+Entropic Loss	: 0.0186
+Src_cls_loss	: 0.1945
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1027
+Total_loss	: 0.5150
+OT Loss	: 0.4282
+Entropic Loss	: 0.0185
+Src_cls_loss	: 0.1753
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1027
+Total_loss	: 0.5093
+OT Loss	: 0.4275
+Entropic Loss	: 0.0179
+Src_cls_loss	: 0.1707
+-------------------------------------
+H_score: 0.0523, OS* (acc_c): 0.7981, UNK (acc_p): 0.0270, acc_mix: 0.5435, F1: 0.5378
+🏃 View run PPOT_trial_2 at: http://127.0.0.1:5001/#/experiments/342449952985435634/runs/67da78d3a8e846baa283ec2df235d4e0
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/342449952985435634
+>>> [trial 2] PPOT done in 362.3s
+[I 2026-04-30 13:20:09,278] Trial 2 finished with value: -0.061527339120705925 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 32, 'weight_decay': 0.0001, 'learning_rate': 0.001, 'tau': 0.35, 'tau1': 0.4, 'tau2': 0.65, 'alpha': 0.01, 'beta': 0.01, 'reg': 0.1, 'ot': 0.7500000000000001, 'p_entropy': 0.405, 'n_entropy': 0.30000000000000004, 'neg': 0.2, 'thresh': 0.75}. Best is trial 0 with value: -0.1978989460815986.
+>>> [trial 3] PPOT starting
+>>> [trial 3] reloading data (batch_size 32 -> 64)
+Unlabeled data shape:  (17913, 150, 18)
+Unlabelled Combined shape: (29204, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   179
+Target Train batches:   279
+-------------------------------
+
+Private classes:  tensor([6., 7.])
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2931
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2266
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1937
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1732
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1626
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1511
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1455
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1388
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1329
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1287
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 1.9843
+OT Loss	: 0.0847
+Entropic Loss	: 0.0069
+Src_cls_loss	: 1.5538
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 1.7673
+OT Loss	: 0.0924
+Entropic Loss	: -0.0221
+Src_cls_loss	: 1.3274
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 1.5707
+OT Loss	: 0.1095
+Entropic Loss	: -0.0335
+Src_cls_loss	: 1.0570
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 1.4353
+OT Loss	: 0.1186
+Entropic Loss	: -0.0408
+Src_cls_loss	: 0.8832
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 1.3422
+OT Loss	: 0.1162
+Entropic Loss	: -0.0393
+Src_cls_loss	: 0.8003
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 1.2687
+OT Loss	: 0.1161
+Entropic Loss	: -0.0410
+Src_cls_loss	: 0.7295
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 1.2177
+OT Loss	: 0.1162
+Entropic Loss	: -0.0477
+Src_cls_loss	: 0.6846
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 1.1587
+OT Loss	: 0.1144
+Entropic Loss	: -0.0501
+Src_cls_loss	: 0.6366
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 1.1265
+OT Loss	: 0.1127
+Entropic Loss	: -0.0459
+Src_cls_loss	: 0.6088
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1287
+Total_loss	: 1.0922
+OT Loss	: 0.1128
+Entropic Loss	: -0.0461
+Src_cls_loss	: 0.5745
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:296: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.0094, OS* (acc_c): 0.4192, UNK (acc_p): 0.0047, acc_mix: 0.2823, F1: 0.1920
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2961
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2242
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1924
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1742
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1599
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1499
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1419
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1376
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1327
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1281
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 1.5753
+OT Loss	: 0.0371
+Entropic Loss	: 0.0020
+Src_cls_loss	: 1.3877
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 1.9618
+OT Loss	: 0.1649
+Entropic Loss	: 0.0088
+Src_cls_loss	: 1.1286
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 1.7322
+OT Loss	: 0.1457
+Entropic Loss	: 0.0081
+Src_cls_loss	: 0.9959
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 1.6567
+OT Loss	: 0.1568
+Entropic Loss	: 0.0073
+Src_cls_loss	: 0.8656
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 1.5509
+OT Loss	: 0.1482
+Entropic Loss	: 0.0059
+Src_cls_loss	: 0.8042
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 1.4463
+OT Loss	: 0.1406
+Entropic Loss	: 0.0051
+Src_cls_loss	: 0.7380
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 1.3558
+OT Loss	: 0.1350
+Entropic Loss	: 0.0045
+Src_cls_loss	: 0.6761
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 1.2974
+OT Loss	: 0.1313
+Entropic Loss	: 0.0043
+Src_cls_loss	: 0.6364
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 1.3056
+OT Loss	: 0.1328
+Entropic Loss	: 0.0027
+Src_cls_loss	: 0.6389
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 1.2608
+OT Loss	: 0.1315
+Entropic Loss	: -0.0007
+Src_cls_loss	: 0.6040
+-------------------------------------
+H_score: 0.0013, OS* (acc_c): 0.2692, UNK (acc_p): 0.0007, acc_mix: 0.1805, F1: 0.0856
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2721
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2132
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1824
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1644
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1518
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1431
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1353
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1317
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1269
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1236
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 1.7078
+OT Loss	: 0.0372
+Entropic Loss	: -0.0585
+Src_cls_loss	: 1.5805
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 1.6626
+OT Loss	: 0.0719
+Entropic Loss	: -0.0450
+Src_cls_loss	: 1.3483
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 1.5308
+OT Loss	: 0.0957
+Entropic Loss	: -0.0397
+Src_cls_loss	: 1.0918
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 1.4390
+OT Loss	: 0.1094
+Entropic Loss	: -0.0452
+Src_cls_loss	: 0.9371
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 1.3334
+OT Loss	: 0.1089
+Entropic Loss	: -0.0332
+Src_cls_loss	: 0.8221
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 1.2389
+OT Loss	: 0.1106
+Entropic Loss	: -0.0570
+Src_cls_loss	: 0.7426
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 1.2020
+OT Loss	: 0.1118
+Entropic Loss	: -0.0706
+Src_cls_loss	: 0.7137
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 1.1479
+OT Loss	: 0.1112
+Entropic Loss	: -0.0807
+Src_cls_loss	: 0.6725
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 1.0882
+OT Loss	: 0.1103
+Entropic Loss	: -0.0908
+Src_cls_loss	: 0.6273
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1236
+Total_loss	: 1.0593
+OT Loss	: 0.1093
+Entropic Loss	: -0.0916
+Src_cls_loss	: 0.6044
+-------------------------------------
+H_score: 0.0014, OS* (acc_c): 0.5088, UNK (acc_p): 0.0007, acc_mix: 0.3410, F1: 0.2695
+🏃 View run PPOT_trial_3 at: http://127.0.0.1:5001/#/experiments/342449952985435634/runs/18e53847ec2e4f1d8702cc174c965633
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/342449952985435634
+>>> [trial 3] PPOT done in 172.8s
+[I 2026-04-30 13:23:02,033] Trial 3 finished with value: -0.004020510435414811 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.01, 'tau': 0.7, 'tau1': 0.7000000000000001, 'tau2': 0.9, 'alpha': 0.001, 'beta': 0.01, 'reg': 0.1, 'ot': 5.0, 'p_entropy': 0.23, 'n_entropy': 1.3000000000000003, 'neg': 0.25, 'thresh': 0.5}. Best is trial 0 with value: -0.1978989460815986.
+>>> [trial 4] PPOT starting
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8278
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.6173
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.5032
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4292
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3774
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3388
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.3086
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2839
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2634
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2459
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 1.0050
+OT Loss	: 0.3243
+Entropic Loss	: -0.2186
+Src_cls_loss	: 1.0777
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.9236
+OT Loss	: 0.2734
+Entropic Loss	: -0.2176
+Src_cls_loss	: 1.0181
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.8978
+OT Loss	: 0.2645
+Entropic Loss	: -0.1975
+Src_cls_loss	: 0.9762
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.8914
+OT Loss	: 0.2572
+Entropic Loss	: -0.1645
+Src_cls_loss	: 0.9401
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.8852
+OT Loss	: 0.2412
+Entropic Loss	: -0.1371
+Src_cls_loss	: 0.9138
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.8871
+OT Loss	: 0.2445
+Entropic Loss	: -0.1179
+Src_cls_loss	: 0.8950
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.8671
+OT Loss	: 0.2447
+Entropic Loss	: -0.1117
+Src_cls_loss	: 0.8687
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.8540
+OT Loss	: 0.2486
+Entropic Loss	: -0.1024
+Src_cls_loss	: 0.8445
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.8403
+OT Loss	: 0.2457
+Entropic Loss	: -0.0936
+Src_cls_loss	: 0.8233
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.8272
+OT Loss	: 0.2482
+Entropic Loss	: -0.0853
+Src_cls_loss	: 0.8008
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:296: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.4316, OS* (acc_c): 0.7960, UNK (acc_p): 0.2960, acc_mix: 0.6309, F1: 0.6982
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7829
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5935
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4860
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4159
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3662
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3286
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2994
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2757
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2558
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2391
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.9262
+OT Loss	: 0.2439
+Entropic Loss	: -0.2402
+Src_cls_loss	: 1.0566
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.9173
+OT Loss	: 0.2625
+Entropic Loss	: -0.2036
+Src_cls_loss	: 1.0027
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.9463
+OT Loss	: 0.2537
+Entropic Loss	: -0.1696
+Src_cls_loss	: 1.0017
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.9125
+OT Loss	: 0.2544
+Entropic Loss	: -0.1552
+Src_cls_loss	: 0.9532
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.8999
+OT Loss	: 0.2525
+Entropic Loss	: -0.1407
+Src_cls_loss	: 0.9270
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.8960
+OT Loss	: 0.2535
+Entropic Loss	: -0.1131
+Src_cls_loss	: 0.8950
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.8753
+OT Loss	: 0.2600
+Entropic Loss	: -0.1035
+Src_cls_loss	: 0.8619
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.8520
+OT Loss	: 0.2539
+Entropic Loss	: -0.0980
+Src_cls_loss	: 0.8357
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.8287
+OT Loss	: 0.2507
+Entropic Loss	: -0.0962
+Src_cls_loss	: 0.8121
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.7965
+OT Loss	: 0.2443
+Entropic Loss	: -0.0957
+Src_cls_loss	: 0.7823
+-------------------------------------
+H_score: 0.4312, OS* (acc_c): 0.7658, UNK (acc_p): 0.3001, acc_mix: 0.6120, F1: 0.6998
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7789
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5829
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4753
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4064
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3582
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3217
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2931
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2704
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2513
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2356
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.9493
+OT Loss	: 0.2525
+Entropic Loss	: -0.2038
+Src_cls_loss	: 1.0394
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.8537
+OT Loss	: 0.2691
+Entropic Loss	: -0.2738
+Src_cls_loss	: 1.0064
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.8933
+OT Loss	: 0.2525
+Entropic Loss	: -0.2092
+Src_cls_loss	: 0.9889
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.8961
+OT Loss	: 0.2511
+Entropic Loss	: -0.1799
+Src_cls_loss	: 0.9630
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.8766
+OT Loss	: 0.2405
+Entropic Loss	: -0.1559
+Src_cls_loss	: 0.9243
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.8683
+OT Loss	: 0.2476
+Entropic Loss	: -0.1344
+Src_cls_loss	: 0.8912
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.8707
+OT Loss	: 0.2589
+Entropic Loss	: -0.1219
+Src_cls_loss	: 0.8761
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.8638
+OT Loss	: 0.2679
+Entropic Loss	: -0.1059
+Src_cls_loss	: 0.8491
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.8361
+OT Loss	: 0.2662
+Entropic Loss	: -0.1027
+Src_cls_loss	: 0.8190
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.8166
+OT Loss	: 0.2594
+Entropic Loss	: -0.0972
+Src_cls_loss	: 0.7971
+-------------------------------------
+H_score: 0.4185, OS* (acc_c): 0.7766, UNK (acc_p): 0.2864, acc_mix: 0.6147, F1: 0.6944
+🏃 View run PPOT_trial_4 at: http://127.0.0.1:5001/#/experiments/342449952985435634/runs/c0e09ffa99df4bafa6b084edc67bb81e
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/342449952985435634
+>>> [trial 4] PPOT done in 185.5s
+[I 2026-04-30 13:26:07,551] Trial 4 finished with value: -0.4270736277103424 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.0001, 'tau': 0.65, 'tau1': 0.6000000000000001, 'tau2': 0.5, 'alpha': 0.001, 'beta': 0.01, 'reg': 0.1, 'ot': 0.45, 'p_entropy': 0.27, 'n_entropy': 1.5000000000000002, 'neg': 0.4, 'thresh': 0.9}. Best is trial 4 with value: -0.4270736277103424.
+>>> [trial 5] PPOT starting
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8279
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.6174
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.5033
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4294
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3776
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3390
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.3088
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2842
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2636
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2462
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 0.7483
+OT Loss	: 0.3450
+Entropic Loss	: -0.3950
+Src_cls_loss	: 1.0915
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 0.4413
+OT Loss	: 0.3025
+Entropic Loss	: -0.6457
+Src_cls_loss	: 1.0416
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 0.3416
+OT Loss	: 0.2889
+Entropic Loss	: -0.7263
+Src_cls_loss	: 1.0245
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 0.2066
+OT Loss	: 0.2640
+Entropic Loss	: -0.8188
+Src_cls_loss	: 0.9858
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 0.1385
+OT Loss	: 0.2486
+Entropic Loss	: -0.8539
+Src_cls_loss	: 0.9551
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 0.0689
+OT Loss	: 0.2430
+Entropic Loss	: -0.9016
+Src_cls_loss	: 0.9341
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: -0.0154
+OT Loss	: 0.2421
+Entropic Loss	: -0.9544
+Src_cls_loss	: 0.9026
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: -0.0125
+OT Loss	: 0.2460
+Entropic Loss	: -0.9309
+Src_cls_loss	: 0.8815
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: -0.0750
+OT Loss	: 0.2411
+Entropic Loss	: -0.9667
+Src_cls_loss	: 0.8555
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: -0.0894
+OT Loss	: 0.2438
+Entropic Loss	: -0.9581
+Src_cls_loss	: 0.8321
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:296: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.4165, OS* (acc_c): 0.3460, UNK (acc_p): 0.5231, acc_mix: 0.4045, F1: 0.4271
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7830
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5936
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4861
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4160
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3664
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3288
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2996
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2759
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2560
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2394
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 0.6588
+OT Loss	: 0.2512
+Entropic Loss	: -0.4335
+Src_cls_loss	: 1.0547
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 0.3980
+OT Loss	: 0.2651
+Entropic Loss	: -0.6508
+Src_cls_loss	: 1.0090
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 0.3000
+OT Loss	: 0.2590
+Entropic Loss	: -0.7284
+Src_cls_loss	: 0.9895
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 0.1817
+OT Loss	: 0.2515
+Entropic Loss	: -0.7986
+Src_cls_loss	: 0.9427
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 0.0985
+OT Loss	: 0.2532
+Entropic Loss	: -0.8541
+Src_cls_loss	: 0.9146
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 0.0528
+OT Loss	: 0.2485
+Entropic Loss	: -0.8664
+Src_cls_loss	: 0.8819
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: -0.0352
+OT Loss	: 0.2514
+Entropic Loss	: -0.9265
+Src_cls_loss	: 0.8536
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: -0.0862
+OT Loss	: 0.2500
+Entropic Loss	: -0.9490
+Src_cls_loss	: 0.8253
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: -0.1138
+OT Loss	: 0.2426
+Entropic Loss	: -0.9526
+Src_cls_loss	: 0.8025
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: -0.1766
+OT Loss	: 0.2425
+Entropic Loss	: -0.9847
+Src_cls_loss	: 0.7717
+-------------------------------------
+H_score: 0.5407, OS* (acc_c): 0.4294, UNK (acc_p): 0.7298, acc_mix: 0.5286, F1: 0.5405
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7790
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5830
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4754
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4065
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3583
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3219
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2933
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2706
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2516
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2359
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 0.5440
+OT Loss	: 0.3029
+Entropic Loss	: -0.5427
+Src_cls_loss	: 1.0412
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 0.3274
+OT Loss	: 0.3322
+Entropic Loss	: -0.7473
+Src_cls_loss	: 1.0248
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 0.2386
+OT Loss	: 0.2897
+Entropic Loss	: -0.7994
+Src_cls_loss	: 0.9946
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 0.1687
+OT Loss	: 0.2768
+Entropic Loss	: -0.8348
+Src_cls_loss	: 0.9620
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 0.1311
+OT Loss	: 0.2764
+Entropic Loss	: -0.8371
+Src_cls_loss	: 0.9267
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 0.0824
+OT Loss	: 0.2798
+Entropic Loss	: -0.8577
+Src_cls_loss	: 0.8981
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 0.0598
+OT Loss	: 0.2774
+Entropic Loss	: -0.8667
+Src_cls_loss	: 0.8849
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 0.0028
+OT Loss	: 0.2733
+Entropic Loss	: -0.9178
+Src_cls_loss	: 0.8796
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: -0.0631
+OT Loss	: 0.2677
+Entropic Loss	: -0.9466
+Src_cls_loss	: 0.8434
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: -0.1114
+OT Loss	: 0.2616
+Entropic Loss	: -0.9682
+Src_cls_loss	: 0.8176
+-------------------------------------
+H_score: 0.4488, OS* (acc_c): 0.3189, UNK (acc_p): 0.7572, acc_mix: 0.4636, F1: 0.4616
+🏃 View run PPOT_trial_5 at: http://127.0.0.1:5001/#/experiments/342449952985435634/runs/dd735392cfa34fbd8d8e1d3b1c23da1f
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/342449952985435634
+>>> [trial 5] PPOT done in 176.2s
+[I 2026-04-30 13:29:03,758] Trial 5 finished with value: -0.46865062912305194 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0005, 'learning_rate': 0.0001, 'tau': 0.55, 'tau1': 0.5, 'tau2': 0.5, 'alpha': 0.001, 'beta': 0.001, 'reg': 0.05, 'ot': 0.15000000000000002, 'p_entropy': 0.23500000000000001, 'n_entropy': 2.4000000000000004, 'neg': 0.4, 'thresh': 0.9}. Best is trial 5 with value: -0.46865062912305194.
+>>> [trial 6] PPOT starting
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8279
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.6174
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.5033
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4294
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3776
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3390
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.3088
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2842
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2636
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2462
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.6654
+OT Loss	: 0.0874
+Entropic Loss	: -0.0926
+Src_cls_loss	: 1.3823
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.5128
+OT Loss	: 0.0780
+Entropic Loss	: -0.1740
+Src_cls_loss	: 1.3515
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.5052
+OT Loss	: 0.0687
+Entropic Loss	: -0.1007
+Src_cls_loss	: 1.3106
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.4741
+OT Loss	: 0.0635
+Entropic Loss	: -0.0691
+Src_cls_loss	: 1.2702
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.4442
+OT Loss	: 0.0599
+Entropic Loss	: -0.0645
+Src_cls_loss	: 1.2513
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.4336
+OT Loss	: 0.0572
+Entropic Loss	: -0.0565
+Src_cls_loss	: 1.2442
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.3912
+OT Loss	: 0.0597
+Entropic Loss	: -0.0843
+Src_cls_loss	: 1.2186
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.3736
+OT Loss	: 0.0602
+Entropic Loss	: -0.0867
+Src_cls_loss	: 1.2016
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.3709
+OT Loss	: 0.0596
+Entropic Loss	: -0.0800
+Src_cls_loss	: 1.1947
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.3629
+OT Loss	: 0.0593
+Entropic Loss	: -0.0770
+Src_cls_loss	: 1.1849
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:296: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.3640, OS* (acc_c): 0.2230, UNK (acc_p): 0.9905, acc_mix: 0.4764, F1: 0.3398
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7830
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5936
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4861
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4160
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3664
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3288
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2996
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2759
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2560
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2394
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.8304
+OT Loss	: 0.1764
+Entropic Loss	: -0.1832
+Src_cls_loss	: 1.2552
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.6278
+OT Loss	: 0.1315
+Entropic Loss	: -0.1657
+Src_cls_loss	: 1.2280
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.5605
+OT Loss	: 0.1089
+Entropic Loss	: -0.1285
+Src_cls_loss	: 1.2206
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.5444
+OT Loss	: 0.1029
+Entropic Loss	: -0.1028
+Src_cls_loss	: 1.2047
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.4896
+OT Loss	: 0.0940
+Entropic Loss	: -0.1171
+Src_cls_loss	: 1.2025
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.4603
+OT Loss	: 0.0965
+Entropic Loss	: -0.1481
+Src_cls_loss	: 1.1935
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.4328
+OT Loss	: 0.0905
+Entropic Loss	: -0.1420
+Src_cls_loss	: 1.1856
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.4257
+OT Loss	: 0.0855
+Entropic Loss	: -0.1179
+Src_cls_loss	: 1.1759
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.4306
+OT Loss	: 0.0871
+Entropic Loss	: -0.1176
+Src_cls_loss	: 1.1738
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.4044
+OT Loss	: 0.0826
+Entropic Loss	: -0.1056
+Src_cls_loss	: 1.1550
+-------------------------------------
+H_score: 0.3667, OS* (acc_c): 0.2245, UNK (acc_p): 0.9995, acc_mix: 0.4804, F1: 0.3445
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7790
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5830
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4754
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4065
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3583
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3219
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2933
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2706
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2516
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2359
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.4578
+OT Loss	: 0.1304
+Entropic Loss	: -0.4259
+Src_cls_loss	: 1.3228
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.6424
+OT Loss	: 0.0875
+Entropic Loss	: -0.2124
+Src_cls_loss	: 1.4784
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.6419
+OT Loss	: 0.0733
+Entropic Loss	: -0.1989
+Src_cls_loss	: 1.5257
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.7029
+OT Loss	: 0.0714
+Entropic Loss	: -0.1316
+Src_cls_loss	: 1.5274
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.6825
+OT Loss	: 0.0649
+Entropic Loss	: -0.0930
+Src_cls_loss	: 1.4964
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.6726
+OT Loss	: 0.0658
+Entropic Loss	: -0.0980
+Src_cls_loss	: 1.4879
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.6869
+OT Loss	: 0.0640
+Entropic Loss	: -0.0776
+Src_cls_loss	: 1.4892
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.8048
+OT Loss	: 0.0914
+Entropic Loss	: -0.0582
+Src_cls_loss	: 1.4701
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.7692
+OT Loss	: 0.0857
+Entropic Loss	: -0.0501
+Src_cls_loss	: 1.4506
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.7480
+OT Loss	: 0.0808
+Entropic Loss	: -0.0378
+Src_cls_loss	: 1.4385
+-------------------------------------
+H_score: 0.3638, OS* (acc_c): 0.2232, UNK (acc_p): 0.9828, acc_mix: 0.4740, F1: 0.3374
+🏃 View run PPOT_trial_6 at: http://127.0.0.1:5001/#/experiments/342449952985435634/runs/260c71233bbb485b8722edc1418de00c
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/342449952985435634
+>>> [trial 6] PPOT done in 184.1s
+[I 2026-04-30 13:32:07,844] Trial 6 finished with value: -0.36482064922650653 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0005, 'learning_rate': 0.0001, 'tau': 0.5, 'tau1': 0.4, 'tau2': 0.5, 'alpha': 0.001, 'beta': 0.001, 'reg': 0.05, 'ot': 4.3, 'p_entropy': 0.08, 'n_entropy': 2.9000000000000004, 'neg': 0.4, 'thresh': 0.9}. Best is trial 5 with value: -0.46865062912305194.
+>>> [trial 7] PPOT starting
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8279
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.6174
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.5033
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4294
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3776
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3390
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.3088
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2842
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2636
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2462
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.7220
+OT Loss	: 0.1741
+Entropic Loss	: -0.0247
+Src_cls_loss	: 1.1983
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.5230
+OT Loss	: 0.1286
+Entropic Loss	: -0.0686
+Src_cls_loss	: 1.1867
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.4493
+OT Loss	: 0.1198
+Entropic Loss	: -0.0746
+Src_cls_loss	: 1.1467
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.4300
+OT Loss	: 0.1232
+Entropic Loss	: -0.0479
+Src_cls_loss	: 1.0898
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.4266
+OT Loss	: 0.1292
+Entropic Loss	: -0.0365
+Src_cls_loss	: 1.0562
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.4160
+OT Loss	: 0.1269
+Entropic Loss	: -0.0247
+Src_cls_loss	: 1.0409
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.4006
+OT Loss	: 0.1316
+Entropic Loss	: -0.0233
+Src_cls_loss	: 1.0094
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.3750
+OT Loss	: 0.1334
+Entropic Loss	: -0.0297
+Src_cls_loss	: 0.9845
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.3916
+OT Loss	: 0.1400
+Entropic Loss	: -0.0256
+Src_cls_loss	: 0.9761
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.3556
+OT Loss	: 0.1373
+Entropic Loss	: -0.0295
+Src_cls_loss	: 0.9527
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:296: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.1753, OS* (acc_c): 0.8917, UNK (acc_p): 0.0972, acc_mix: 0.6294, F1: 0.5849
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7830
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5936
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4861
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4160
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3664
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3288
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2996
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2759
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2560
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2394
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.6973
+OT Loss	: 0.1511
+Entropic Loss	: 0.0101
+Src_cls_loss	: 1.2113
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.5315
+OT Loss	: 0.1281
+Entropic Loss	: 0.0121
+Src_cls_loss	: 1.1158
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.5018
+OT Loss	: 0.1303
+Entropic Loss	: -0.0189
+Src_cls_loss	: 1.1103
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.4596
+OT Loss	: 0.1302
+Entropic Loss	: -0.0230
+Src_cls_loss	: 1.0725
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.4454
+OT Loss	: 0.1356
+Entropic Loss	: -0.0336
+Src_cls_loss	: 1.0518
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.4470
+OT Loss	: 0.1417
+Entropic Loss	: -0.0200
+Src_cls_loss	: 1.0205
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.4634
+OT Loss	: 0.1515
+Entropic Loss	: -0.0125
+Src_cls_loss	: 0.9985
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.4318
+OT Loss	: 0.1450
+Entropic Loss	: -0.0045
+Src_cls_loss	: 0.9795
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.4054
+OT Loss	: 0.1430
+Entropic Loss	: -0.0070
+Src_cls_loss	: 0.9619
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.3595
+OT Loss	: 0.1372
+Entropic Loss	: -0.0087
+Src_cls_loss	: 0.9359
+-------------------------------------
+H_score: 0.1801, OS* (acc_c): 0.8610, UNK (acc_p): 0.1006, acc_mix: 0.6099, F1: 0.5735
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7790
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5830
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4754
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4065
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3583
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3219
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2933
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2706
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2516
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2359
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.1327
+OT Loss	: 0.1286
+Entropic Loss	: -0.3979
+Src_cls_loss	: 1.1256
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.3144
+OT Loss	: 0.1437
+Entropic Loss	: -0.2339
+Src_cls_loss	: 1.0957
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.3586
+OT Loss	: 0.1421
+Entropic Loss	: -0.1708
+Src_cls_loss	: 1.0816
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.4738
+OT Loss	: 0.1740
+Entropic Loss	: -0.1313
+Src_cls_loss	: 1.0571
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.5352
+OT Loss	: 0.1924
+Entropic Loss	: -0.0915
+Src_cls_loss	: 1.0207
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.5056
+OT Loss	: 0.1916
+Entropic Loss	: -0.0837
+Src_cls_loss	: 0.9856
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.5117
+OT Loss	: 0.1906
+Entropic Loss	: -0.0675
+Src_cls_loss	: 0.9788
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.5006
+OT Loss	: 0.1951
+Entropic Loss	: -0.0632
+Src_cls_loss	: 0.9491
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.4600
+OT Loss	: 0.1918
+Entropic Loss	: -0.0711
+Src_cls_loss	: 0.9268
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.4339
+OT Loss	: 0.1872
+Entropic Loss	: -0.0631
+Src_cls_loss	: 0.9072
+-------------------------------------
+H_score: 0.2252, OS* (acc_c): 0.8618, UNK (acc_p): 0.1295, acc_mix: 0.6200, F1: 0.5626
+🏃 View run PPOT_trial_7 at: http://127.0.0.1:5001/#/experiments/342449952985435634/runs/7bb0c762a77b4bc18c22bc5094c9650e
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/342449952985435634
+>>> [trial 7] PPOT done in 244.8s
+[I 2026-04-30 13:36:12,629] Trial 7 finished with value: -0.19353816409905752 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0005, 'learning_rate': 0.0001, 'tau': 0.5, 'tau1': 0.55, 'tau2': 0.65, 'alpha': 0.001, 'beta': 0.001, 'reg': 0.05, 'ot': 3.15, 'p_entropy': 0.47500000000000003, 'n_entropy': 2.3000000000000003, 'neg': 0.5, 'thresh': 0.7}. Best is trial 5 with value: -0.46865062912305194.
+>>> [trial 8] PPOT starting
+>>> [trial 8] reloading data (batch_size 64 -> 32)
+Unlabeled data shape:  (17913, 150, 18)
+Unlabelled Combined shape: (29204, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   359
+Target Train batches:   559
+-------------------------------
+
+Private classes:  tensor([6., 7.])
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.6850
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4951
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4008
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.3415
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3006
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2701
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2465
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2274
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2114
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1979
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1979
+Total_loss	: 1.2262
+OT Loss	: 0.2581
+Entropic Loss	: -0.1654
+Src_cls_loss	: 0.9270
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1979
+Total_loss	: 1.1769
+OT Loss	: 0.2661
+Entropic Loss	: -0.1323
+Src_cls_loss	: 0.8304
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1979
+Total_loss	: 1.2135
+OT Loss	: 0.3010
+Entropic Loss	: -0.1161
+Src_cls_loss	: 0.7879
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1979
+Total_loss	: 1.1720
+OT Loss	: 0.3002
+Entropic Loss	: -0.1289
+Src_cls_loss	: 0.7606
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1979
+Total_loss	: 1.1825
+OT Loss	: 0.3065
+Entropic Loss	: -0.0992
+Src_cls_loss	: 0.7300
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1979
+Total_loss	: 1.1528
+OT Loss	: 0.3073
+Entropic Loss	: -0.0883
+Src_cls_loss	: 0.6880
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1979
+Total_loss	: 1.1529
+OT Loss	: 0.3115
+Entropic Loss	: -0.0724
+Src_cls_loss	: 0.6646
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1979
+Total_loss	: 1.1203
+OT Loss	: 0.3066
+Entropic Loss	: -0.0613
+Src_cls_loss	: 0.6296
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1979
+Total_loss	: 1.1206
+OT Loss	: 0.3094
+Entropic Loss	: -0.0549
+Src_cls_loss	: 0.6186
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1979
+Total_loss	: 1.1033
+OT Loss	: 0.3136
+Entropic Loss	: -0.0512
+Src_cls_loss	: 0.5901
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:296: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.0054, OS* (acc_c): 0.7335, UNK (acc_p): 0.0027, acc_mix: 0.4922, F1: 0.4871
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.6644
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4854
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3932
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.3358
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2964
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2672
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2440
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2257
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2101
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1971
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1971
+Total_loss	: 1.0653
+OT Loss	: 0.2192
+Entropic Loss	: -0.2325
+Src_cls_loss	: 0.9032
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1971
+Total_loss	: 1.0944
+OT Loss	: 0.2221
+Entropic Loss	: -0.1708
+Src_cls_loss	: 0.8653
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1971
+Total_loss	: 1.1500
+OT Loss	: 0.2554
+Entropic Loss	: -0.1637
+Src_cls_loss	: 0.8539
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1971
+Total_loss	: 1.1062
+OT Loss	: 0.2513
+Entropic Loss	: -0.1492
+Src_cls_loss	: 0.8030
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1971
+Total_loss	: 1.1039
+OT Loss	: 0.2640
+Entropic Loss	: -0.1265
+Src_cls_loss	: 0.7552
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1971
+Total_loss	: 1.0819
+OT Loss	: 0.2740
+Entropic Loss	: -0.1226
+Src_cls_loss	: 0.7113
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1971
+Total_loss	: 1.0675
+OT Loss	: 0.2808
+Entropic Loss	: -0.1167
+Src_cls_loss	: 0.6787
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1971
+Total_loss	: 1.0503
+OT Loss	: 0.2864
+Entropic Loss	: -0.1097
+Src_cls_loss	: 0.6446
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1971
+Total_loss	: 1.0151
+OT Loss	: 0.2793
+Entropic Loss	: -0.0997
+Src_cls_loss	: 0.6121
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1971
+Total_loss	: 0.9974
+OT Loss	: 0.2846
+Entropic Loss	: -0.1035
+Src_cls_loss	: 0.5886
+-------------------------------------
+H_score: 0.0171, OS* (acc_c): 0.7730, UNK (acc_p): 0.0086, acc_mix: 0.5206, F1: 0.5281
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.6490
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4750
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3854
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.3289
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2906
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2619
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2397
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2210
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2059
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1934
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1934
+Total_loss	: 1.3777
+OT Loss	: 0.2968
+Entropic Loss	: -0.0669
+Src_cls_loss	: 0.9103
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1934
+Total_loss	: 1.1814
+OT Loss	: 0.2238
+Entropic Loss	: -0.0734
+Src_cls_loss	: 0.8519
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1934
+Total_loss	: 1.0064
+OT Loss	: 0.1995
+Entropic Loss	: -0.2032
+Src_cls_loss	: 0.8505
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1934
+Total_loss	: 0.9199
+OT Loss	: 0.1853
+Entropic Loss	: -0.2172
+Src_cls_loss	: 0.8036
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1934
+Total_loss	: 0.8911
+OT Loss	: 0.1779
+Entropic Loss	: -0.2004
+Src_cls_loss	: 0.7713
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1934
+Total_loss	: 0.8807
+OT Loss	: 0.1854
+Entropic Loss	: -0.1936
+Src_cls_loss	: 0.7407
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1934
+Total_loss	: 0.8348
+OT Loss	: 0.1880
+Entropic Loss	: -0.2051
+Src_cls_loss	: 0.7015
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1934
+Total_loss	: 0.8111
+OT Loss	: 0.1874
+Entropic Loss	: -0.2156
+Src_cls_loss	: 0.6894
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1934
+Total_loss	: 0.7702
+OT Loss	: 0.1841
+Entropic Loss	: -0.2150
+Src_cls_loss	: 0.6539
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1934
+Total_loss	: 0.7641
+OT Loss	: 0.1876
+Entropic Loss	: -0.2058
+Src_cls_loss	: 0.6322
+-------------------------------------
+H_score: 0.2131, OS* (acc_c): 0.8454, UNK (acc_p): 0.1219, acc_mix: 0.6065, F1: 0.6106
+🏃 View run PPOT_trial_8 at: http://127.0.0.1:5001/#/experiments/342449952985435634/runs/cd6817a5f2e4498390083e3d0371140c
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/342449952985435634
+>>> [trial 8] PPOT done in 381.1s
+[I 2026-04-30 13:42:33,734] Trial 8 finished with value: -0.07850334467366338 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 32, 'weight_decay': 0.0005, 'learning_rate': 0.0001, 'tau': 0.4, 'tau1': 0.5, 'tau2': 0.65, 'alpha': 0.01, 'beta': 0.001, 'reg': 0.05, 'ot': 1.8, 'p_entropy': 0.14, 'n_entropy': 2.1, 'neg': 0.3, 'thresh': 0.3}. Best is trial 5 with value: -0.46865062912305194.
+>>> [trial 9] PPOT starting
+>>> [trial 9] reloading data (batch_size 32 -> 64)
+Unlabeled data shape:  (17913, 150, 18)
+Unlabelled Combined shape: (29204, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   179
+Target Train batches:   279
+-------------------------------
+
+Private classes:  tensor([6., 7.])
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8279
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.6174
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.5033
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4294
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3776
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3390
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.3088
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2842
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2636
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2462
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.1043
+OT Loss	: 0.3104
+Entropic Loss	: 0.0057
+Src_cls_loss	: 1.0831
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.0608
+OT Loss	: 0.3574
+Entropic Loss	: 0.0239
+Src_cls_loss	: 1.0190
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 1.0219
+OT Loss	: 0.3940
+Entropic Loss	: 0.0272
+Src_cls_loss	: 0.9751
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 0.9782
+OT Loss	: 0.4248
+Entropic Loss	: 0.0276
+Src_cls_loss	: 0.9294
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 0.9466
+OT Loss	: 0.4425
+Entropic Loss	: 0.0235
+Src_cls_loss	: 0.9010
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 0.9265
+OT Loss	: 0.4438
+Entropic Loss	: 0.0235
+Src_cls_loss	: 0.8808
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 0.8954
+OT Loss	: 0.4489
+Entropic Loss	: 0.0239
+Src_cls_loss	: 0.8491
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 0.8646
+OT Loss	: 0.4517
+Entropic Loss	: 0.0204
+Src_cls_loss	: 0.8216
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 0.8382
+OT Loss	: 0.4627
+Entropic Loss	: 0.0190
+Src_cls_loss	: 0.7961
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2462
+Total_loss	: 0.8102
+OT Loss	: 0.4670
+Entropic Loss	: 0.0181
+Src_cls_loss	: 0.7687
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:296: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.1213, OS* (acc_c): 0.8927, UNK (acc_p): 0.0651, acc_mix: 0.6194, F1: 0.5789
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7830
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5936
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4861
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4160
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3664
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3288
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2996
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2759
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2560
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2394
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.0445
+OT Loss	: 0.2768
+Entropic Loss	: -0.0093
+Src_cls_loss	: 1.0400
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 1.0193
+OT Loss	: 0.3500
+Entropic Loss	: 0.0175
+Src_cls_loss	: 0.9844
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 0.9909
+OT Loss	: 0.3654
+Entropic Loss	: 0.0194
+Src_cls_loss	: 0.9532
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 0.9560
+OT Loss	: 0.3884
+Entropic Loss	: 0.0232
+Src_cls_loss	: 0.9134
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 0.9258
+OT Loss	: 0.3947
+Entropic Loss	: 0.0210
+Src_cls_loss	: 0.8851
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 0.8943
+OT Loss	: 0.4041
+Entropic Loss	: 0.0217
+Src_cls_loss	: 0.8524
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 0.8585
+OT Loss	: 0.4090
+Entropic Loss	: 0.0197
+Src_cls_loss	: 0.8183
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 0.8337
+OT Loss	: 0.4197
+Entropic Loss	: 0.0205
+Src_cls_loss	: 0.7923
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 0.8139
+OT Loss	: 0.4361
+Entropic Loss	: 0.0203
+Src_cls_loss	: 0.7718
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2394
+Total_loss	: 0.7867
+OT Loss	: 0.4405
+Entropic Loss	: 0.0202
+Src_cls_loss	: 0.7445
+-------------------------------------
+H_score: 0.1195, OS* (acc_c): 0.8223, UNK (acc_p): 0.0644, acc_mix: 0.5720, F1: 0.5724
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7790
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5830
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4754
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4065
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3583
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3219
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2933
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2706
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2516
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2359
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.0551
+OT Loss	: 0.3017
+Entropic Loss	: 0.0085
+Src_cls_loss	: 1.0315
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 1.0161
+OT Loss	: 0.3600
+Entropic Loss	: 0.0123
+Src_cls_loss	: 0.9858
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 0.9891
+OT Loss	: 0.3787
+Entropic Loss	: 0.0126
+Src_cls_loss	: 0.9576
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 0.9647
+OT Loss	: 0.4056
+Entropic Loss	: 0.0202
+Src_cls_loss	: 0.9242
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 0.9300
+OT Loss	: 0.4108
+Entropic Loss	: 0.0215
+Src_cls_loss	: 0.8880
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 0.8951
+OT Loss	: 0.4214
+Entropic Loss	: 0.0203
+Src_cls_loss	: 0.8538
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 0.8800
+OT Loss	: 0.4290
+Entropic Loss	: 0.0212
+Src_cls_loss	: 0.8373
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 0.8540
+OT Loss	: 0.4333
+Entropic Loss	: 0.0202
+Src_cls_loss	: 0.8121
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 0.8234
+OT Loss	: 0.4388
+Entropic Loss	: 0.0189
+Src_cls_loss	: 0.7825
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2359
+Total_loss	: 0.8034
+OT Loss	: 0.4427
+Entropic Loss	: 0.0187
+Src_cls_loss	: 0.7625
+-------------------------------------
+H_score: 0.1413, OS* (acc_c): 0.8276, UNK (acc_p): 0.0773, acc_mix: 0.5798, F1: 0.5829
+🏃 View run PPOT_trial_9 at: http://127.0.0.1:5001/#/experiments/342449952985435634/runs/af3e78e18774457d9279a3c8957e033f
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/342449952985435634
+>>> [trial 9] PPOT done in 260.0s
+[I 2026-04-30 13:46:53,741] Trial 9 finished with value: -0.1273753916223844 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0005, 'learning_rate': 0.0001, 'tau': 0.55, 'tau1': 0.5, 'tau2': 0.75, 'alpha': 0.001, 'beta': 0.001, 'reg': 0.05, 'ot': 0.05, 'p_entropy': 0.36, 'n_entropy': 0.6, 'neg': 0.4, 'thresh': 0.75}. Best is trial 5 with value: -0.46865062912305194.
+>>> [trial 10] PPOT starting
+>>> [trial 10] reloading data (batch_size 64 -> 32)
+Unlabeled data shape:  (17913, 150, 18)
+Unlabelled Combined shape: (29204, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   359
+Target Train batches:   559
+-------------------------------
+
+Private classes:  tensor([6., 7.])
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.3126
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2720
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2497
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2318
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2196
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2093
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2027
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1958
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1895
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1857
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1857
+Total_loss	: 0.8531
+OT Loss	: 0.1917
+Entropic Loss	: -0.2004
+Src_cls_loss	: 0.4591
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1857
+Total_loss	: 0.7956
+OT Loss	: 0.1979
+Entropic Loss	: -0.1365
+Src_cls_loss	: 0.3186
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1857
+Total_loss	: 0.8415
+OT Loss	: 0.2052
+Entropic Loss	: -0.0976
+Src_cls_loss	: 0.3030
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1857
+Total_loss	: 0.8189
+OT Loss	: 0.1924
+Entropic Loss	: -0.1093
+Src_cls_loss	: 0.3316
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1857
+Total_loss	: 0.7817
+OT Loss	: 0.1818
+Entropic Loss	: -0.1024
+Src_cls_loss	: 0.3205
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1857
+Total_loss	: 0.8009
+OT Loss	: 0.1788
+Entropic Loss	: -0.0837
+Src_cls_loss	: 0.3303
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1857
+Total_loss	: 0.8124
+OT Loss	: 0.1788
+Entropic Loss	: -0.0763
+Src_cls_loss	: 0.3344
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1857
+Total_loss	: 0.7808
+OT Loss	: 0.1787
+Entropic Loss	: -0.0839
+Src_cls_loss	: 0.3106
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1857
+Total_loss	: 0.7939
+OT Loss	: 0.1782
+Entropic Loss	: -0.0733
+Src_cls_loss	: 0.3147
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1857
+Total_loss	: 0.7771
+OT Loss	: 0.1785
+Entropic Loss	: -0.0798
+Src_cls_loss	: 0.3034
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:296: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.4149, OS* (acc_c): 0.5796, UNK (acc_p): 0.3231, acc_mix: 0.4949, F1: 0.4370
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.3050
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2591
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2364
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2224
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2111
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2029
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1954
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1913
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1865
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1825
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1825
+Total_loss	: 1.0651
+OT Loss	: 0.1709
+Entropic Loss	: -0.0975
+Src_cls_loss	: 0.6328
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1825
+Total_loss	: 0.9021
+OT Loss	: 0.1883
+Entropic Loss	: -0.2386
+Src_cls_loss	: 0.5568
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1825
+Total_loss	: 1.0159
+OT Loss	: 0.1892
+Entropic Loss	: -0.1507
+Src_cls_loss	: 0.5802
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1825
+Total_loss	: 0.9912
+OT Loss	: 0.1837
+Entropic Loss	: -0.1633
+Src_cls_loss	: 0.5849
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1825
+Total_loss	: 0.9531
+OT Loss	: 0.1890
+Entropic Loss	: -0.1693
+Src_cls_loss	: 0.5366
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1825
+Total_loss	: 0.8939
+OT Loss	: 0.1829
+Entropic Loss	: -0.1605
+Src_cls_loss	: 0.4875
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1825
+Total_loss	: 0.8791
+OT Loss	: 0.1783
+Entropic Loss	: -0.1417
+Src_cls_loss	: 0.4681
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1825
+Total_loss	: 0.8603
+OT Loss	: 0.1795
+Entropic Loss	: -0.1279
+Src_cls_loss	: 0.4318
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1825
+Total_loss	: 0.8520
+OT Loss	: 0.1790
+Entropic Loss	: -0.1208
+Src_cls_loss	: 0.4179
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1825
+Total_loss	: 0.8348
+OT Loss	: 0.1743
+Entropic Loss	: -0.1109
+Src_cls_loss	: 0.4053
+-------------------------------------
+H_score: 0.1990, OS* (acc_c): 0.4224, UNK (acc_p): 0.1302, acc_mix: 0.3259, F1: 0.3332
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.3092
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2696
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2428
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2251
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2133
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2047
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1978
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1904
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1870
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1833
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1833
+Total_loss	: 0.4407
+OT Loss	: 0.1698
+Entropic Loss	: -0.4074
+Src_cls_loss	: 0.3217
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1833
+Total_loss	: 0.6919
+OT Loss	: 0.1884
+Entropic Loss	: -0.2581
+Src_cls_loss	: 0.3660
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1833
+Total_loss	: 0.7641
+OT Loss	: 0.2028
+Entropic Loss	: -0.2776
+Src_cls_loss	: 0.4131
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1833
+Total_loss	: 0.7448
+OT Loss	: 0.1932
+Entropic Loss	: -0.2673
+Src_cls_loss	: 0.4133
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1833
+Total_loss	: 0.7212
+OT Loss	: 0.1888
+Entropic Loss	: -0.2752
+Src_cls_loss	: 0.4112
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1833
+Total_loss	: 0.7358
+OT Loss	: 0.1838
+Entropic Loss	: -0.2510
+Src_cls_loss	: 0.4172
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1833
+Total_loss	: 0.7240
+OT Loss	: 0.1743
+Entropic Loss	: -0.2286
+Src_cls_loss	: 0.4121
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1833
+Total_loss	: 0.7534
+OT Loss	: 0.1773
+Entropic Loss	: -0.2106
+Src_cls_loss	: 0.4143
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1833
+Total_loss	: 0.7276
+OT Loss	: 0.1733
+Entropic Loss	: -0.1996
+Src_cls_loss	: 0.3899
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1833
+Total_loss	: 0.7379
+OT Loss	: 0.1726
+Entropic Loss	: -0.1832
+Src_cls_loss	: 0.3862
+-------------------------------------
+H_score: 0.1213, OS* (acc_c): 0.4685, UNK (acc_p): 0.0697, acc_mix: 0.3368, F1: 0.3031
+🏃 View run PPOT_trial_10 at: http://127.0.0.1:5001/#/experiments/342449952985435634/runs/6c10b48f75de4a3e817a4d3842b50b18
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/342449952985435634
+>>> [trial 10] PPOT done in 236.5s
+[I 2026-04-30 13:50:50,276] Trial 10 finished with value: -0.24506156146526337 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 32, 'weight_decay': 0.0005, 'learning_rate': 0.01, 'tau': 0.55, 'tau1': 0.85, 'tau2': 0.55, 'alpha': 0.01, 'beta': 0.001, 'reg': 0.05, 'ot': 3.1, 'p_entropy': 0.17, 'n_entropy': 2.1, 'neg': 0.2, 'thresh': 0.65}. Best is trial 5 with value: -0.46865062912305194.
+>>> [trial 11] PPOT starting
+>>> [trial 11] reloading data (batch_size 32 -> 64)
+Unlabeled data shape:  (17913, 150, 18)
+Unlabelled Combined shape: (29204, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   179
+Target Train batches:   279
+-------------------------------
+
+Private classes:  tensor([6., 7.])
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8278
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.6173
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.5032
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4292
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3774
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3388
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.3086
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2839
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2634
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2459
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.7532
+OT Loss	: 0.3546
+Entropic Loss	: -0.3382
+Src_cls_loss	: 1.0736
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.5531
+OT Loss	: 0.3237
+Entropic Loss	: -0.4825
+Src_cls_loss	: 1.0194
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.5288
+OT Loss	: 0.3223
+Entropic Loss	: -0.4788
+Src_cls_loss	: 0.9915
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.4625
+OT Loss	: 0.3180
+Entropic Loss	: -0.4995
+Src_cls_loss	: 0.9460
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.4273
+OT Loss	: 0.3193
+Entropic Loss	: -0.5034
+Src_cls_loss	: 0.9148
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.3761
+OT Loss	: 0.3157
+Entropic Loss	: -0.5326
+Src_cls_loss	: 0.8929
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.3456
+OT Loss	: 0.3114
+Entropic Loss	: -0.5344
+Src_cls_loss	: 0.8644
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.3019
+OT Loss	: 0.3103
+Entropic Loss	: -0.5523
+Src_cls_loss	: 0.8387
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.2764
+OT Loss	: 0.3124
+Entropic Loss	: -0.5538
+Src_cls_loss	: 0.8146
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.2655
+OT Loss	: 0.3130
+Entropic Loss	: -0.5473
+Src_cls_loss	: 0.7972
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:296: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.4330, OS* (acc_c): 0.3599, UNK (acc_p): 0.5435, acc_mix: 0.4205, F1: 0.4269
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7829
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5935
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4860
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4159
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3662
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3286
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2994
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2757
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2558
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2391
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.6194
+OT Loss	: 0.2592
+Entropic Loss	: -0.4396
+Src_cls_loss	: 1.0460
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.4864
+OT Loss	: 0.2727
+Entropic Loss	: -0.5207
+Src_cls_loss	: 0.9935
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.4255
+OT Loss	: 0.2669
+Entropic Loss	: -0.5424
+Src_cls_loss	: 0.9546
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.3627
+OT Loss	: 0.2647
+Entropic Loss	: -0.5648
+Src_cls_loss	: 0.9143
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.3304
+OT Loss	: 0.2732
+Entropic Loss	: -0.5690
+Src_cls_loss	: 0.8857
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.2976
+OT Loss	: 0.2698
+Entropic Loss	: -0.5700
+Src_cls_loss	: 0.8541
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.2523
+OT Loss	: 0.2803
+Entropic Loss	: -0.5852
+Src_cls_loss	: 0.8235
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.2125
+OT Loss	: 0.2833
+Entropic Loss	: -0.5983
+Src_cls_loss	: 0.7966
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.1863
+OT Loss	: 0.2821
+Entropic Loss	: -0.6013
+Src_cls_loss	: 0.7735
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.1532
+OT Loss	: 0.2803
+Entropic Loss	: -0.6068
+Src_cls_loss	: 0.7460
+-------------------------------------
+H_score: 0.6394, OS* (acc_c): 0.6094, UNK (acc_p): 0.6725, acc_mix: 0.6302, F1: 0.6993
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7789
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5829
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4753
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4064
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3582
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3217
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2931
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2704
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2513
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2356
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.5183
+OT Loss	: 0.3045
+Entropic Loss	: -0.5332
+Src_cls_loss	: 1.0363
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.4167
+OT Loss	: 0.3450
+Entropic Loss	: -0.6021
+Src_cls_loss	: 1.0016
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.3116
+OT Loss	: 0.3183
+Entropic Loss	: -0.6668
+Src_cls_loss	: 0.9625
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.3109
+OT Loss	: 0.3040
+Entropic Loss	: -0.6302
+Src_cls_loss	: 0.9259
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.2608
+OT Loss	: 0.2883
+Entropic Loss	: -0.6436
+Src_cls_loss	: 0.8900
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.1988
+OT Loss	: 0.2852
+Entropic Loss	: -0.6764
+Src_cls_loss	: 0.8609
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.1635
+OT Loss	: 0.2822
+Entropic Loss	: -0.6968
+Src_cls_loss	: 0.8462
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.1431
+OT Loss	: 0.2864
+Entropic Loss	: -0.7038
+Src_cls_loss	: 0.8326
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.1037
+OT Loss	: 0.2864
+Entropic Loss	: -0.7138
+Src_cls_loss	: 0.8032
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.0882
+OT Loss	: 0.2885
+Entropic Loss	: -0.7118
+Src_cls_loss	: 0.7855
+-------------------------------------
+H_score: 0.6091, OS* (acc_c): 0.5763, UNK (acc_p): 0.6460, acc_mix: 0.5993, F1: 0.6535
+🏃 View run PPOT_trial_11 at: http://127.0.0.1:5001/#/experiments/342449952985435634/runs/80901d62d05540b2adb999601850e8a7
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/342449952985435634
+>>> [trial 11] PPOT done in 150.0s
+[I 2026-04-30 13:53:20,322] Trial 11 finished with value: -0.56052232782046 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.0001, 'tau': 0.65, 'tau1': 0.6000000000000001, 'tau2': 0.5, 'alpha': 0.001, 'beta': 0.01, 'reg': 0.1, 'ot': 0.05, 'p_entropy': 0.295, 'n_entropy': 1.7000000000000002, 'neg': 0.4, 'thresh': 0.9}. Best is trial 11 with value: -0.56052232782046.
+>>> [trial 12] PPOT starting
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8278
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.6173
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.5032
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4292
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3774
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3388
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.3086
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2839
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2634
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2459
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.9229
+OT Loss	: 0.2624
+Entropic Loss	: -0.4198
+Src_cls_loss	: 1.0803
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.9531
+OT Loss	: 0.2331
+Entropic Loss	: -0.3559
+Src_cls_loss	: 1.0759
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.9609
+OT Loss	: 0.2276
+Entropic Loss	: -0.3069
+Src_cls_loss	: 1.0402
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.9532
+OT Loss	: 0.2114
+Entropic Loss	: -0.2575
+Src_cls_loss	: 0.9993
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.9578
+OT Loss	: 0.2027
+Entropic Loss	: -0.2136
+Src_cls_loss	: 0.9687
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.9616
+OT Loss	: 0.1954
+Entropic Loss	: -0.1893
+Src_cls_loss	: 0.9555
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.9336
+OT Loss	: 0.1910
+Entropic Loss	: -0.1822
+Src_cls_loss	: 0.9249
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.9317
+OT Loss	: 0.1934
+Entropic Loss	: -0.1679
+Src_cls_loss	: 0.9062
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.9402
+OT Loss	: 0.1992
+Entropic Loss	: -0.1489
+Src_cls_loss	: 0.8898
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.9183
+OT Loss	: 0.1921
+Entropic Loss	: -0.1405
+Src_cls_loss	: 0.8666
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:296: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.2975, OS* (acc_c): 0.8591, UNK (acc_p): 0.1799, acc_mix: 0.6348, F1: 0.5948
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7829
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5935
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4860
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4159
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3662
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3286
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2994
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2757
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2558
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2391
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.0320
+OT Loss	: 0.2437
+Entropic Loss	: -0.3177
+Src_cls_loss	: 1.1060
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.0050
+OT Loss	: 0.2304
+Entropic Loss	: -0.2986
+Src_cls_loss	: 1.0732
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.0444
+OT Loss	: 0.2099
+Entropic Loss	: -0.2288
+Src_cls_loss	: 1.0633
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.0599
+OT Loss	: 0.2113
+Entropic Loss	: -0.1741
+Src_cls_loss	: 1.0227
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.0395
+OT Loss	: 0.1999
+Entropic Loss	: -0.1643
+Src_cls_loss	: 1.0039
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.0460
+OT Loss	: 0.2099
+Entropic Loss	: -0.1360
+Src_cls_loss	: 0.9721
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.0479
+OT Loss	: 0.2215
+Entropic Loss	: -0.1160
+Src_cls_loss	: 0.9423
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.0287
+OT Loss	: 0.2127
+Entropic Loss	: -0.1043
+Src_cls_loss	: 0.9203
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.0050
+OT Loss	: 0.2066
+Entropic Loss	: -0.1045
+Src_cls_loss	: 0.9029
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.9767
+OT Loss	: 0.1991
+Entropic Loss	: -0.1001
+Src_cls_loss	: 0.8778
+-------------------------------------
+H_score: 0.3115, OS* (acc_c): 0.8275, UNK (acc_p): 0.1919, acc_mix: 0.6176, F1: 0.6094
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7789
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5829
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4753
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4064
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3582
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3217
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2931
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2704
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2513
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2356
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.9347
+OT Loss	: 0.2262
+Entropic Loss	: -0.3732
+Src_cls_loss	: 1.0817
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.9481
+OT Loss	: 0.2259
+Entropic Loss	: -0.3714
+Src_cls_loss	: 1.0935
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 1.0126
+OT Loss	: 0.2004
+Entropic Loss	: -0.2675
+Src_cls_loss	: 1.0797
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 1.0188
+OT Loss	: 0.1860
+Entropic Loss	: -0.2204
+Src_cls_loss	: 1.0532
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.9961
+OT Loss	: 0.1813
+Entropic Loss	: -0.2001
+Src_cls_loss	: 1.0149
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 1.0009
+OT Loss	: 0.1892
+Entropic Loss	: -0.1719
+Src_cls_loss	: 0.9835
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 1.0073
+OT Loss	: 0.1943
+Entropic Loss	: -0.1598
+Src_cls_loss	: 0.9729
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 1.0041
+OT Loss	: 0.2015
+Entropic Loss	: -0.1416
+Src_cls_loss	: 0.9442
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.9859
+OT Loss	: 0.1989
+Entropic Loss	: -0.1298
+Src_cls_loss	: 0.9168
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.9709
+OT Loss	: 0.1924
+Entropic Loss	: -0.1192
+Src_cls_loss	: 0.8977
+-------------------------------------
+H_score: 0.3370, OS* (acc_c): 0.8372, UNK (acc_p): 0.2110, acc_mix: 0.6304, F1: 0.6237
+🏃 View run PPOT_trial_12 at: http://127.0.0.1:5001/#/experiments/342449952985435634/runs/4f100f7be6bf40a6ae18aaa1266bd87b
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/342449952985435634
+>>> [trial 12] PPOT done in 191.0s
+[I 2026-04-30 13:56:31,312] Trial 12 finished with value: -0.31534771124521893 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.0001, 'tau': 0.6000000000000001, 'tau1': 0.65, 'tau2': 0.6, 'alpha': 0.001, 'beta': 0.01, 'reg': 0.1, 'ot': 1.0, 'p_entropy': 0.35000000000000003, 'n_entropy': 2.4000000000000004, 'neg': 0.4, 'thresh': 0.8500000000000001}. Best is trial 11 with value: -0.56052232782046.
+>>> [trial 13] PPOT starting
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8278
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.6173
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.5032
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4292
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3774
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3388
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.3086
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2839
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2634
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2459
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 1.3359
+OT Loss	: 0.2681
+Entropic Loss	: -0.0827
+Src_cls_loss	: 1.0969
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 1.3016
+OT Loss	: 0.2422
+Entropic Loss	: -0.0498
+Src_cls_loss	: 1.0607
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 1.2716
+OT Loss	: 0.2352
+Entropic Loss	: -0.0381
+Src_cls_loss	: 1.0274
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 1.2496
+OT Loss	: 0.2400
+Entropic Loss	: -0.0229
+Src_cls_loss	: 0.9845
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 1.2039
+OT Loss	: 0.2253
+Entropic Loss	: -0.0250
+Src_cls_loss	: 0.9585
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 1.1873
+OT Loss	: 0.2198
+Entropic Loss	: -0.0210
+Src_cls_loss	: 0.9445
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 1.1451
+OT Loss	: 0.2167
+Entropic Loss	: -0.0325
+Src_cls_loss	: 0.9175
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 1.1152
+OT Loss	: 0.2099
+Entropic Loss	: -0.0330
+Src_cls_loss	: 0.8964
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 1.1007
+OT Loss	: 0.2075
+Entropic Loss	: -0.0281
+Src_cls_loss	: 0.8798
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 1.0730
+OT Loss	: 0.2019
+Entropic Loss	: -0.0281
+Src_cls_loss	: 0.8588
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:296: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.4011, OS* (acc_c): 0.8792, UNK (acc_p): 0.2598, acc_mix: 0.6747, F1: 0.6664
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7829
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5935
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4860
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4159
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3662
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3286
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2994
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2757
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2558
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2391
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.3573
+OT Loss	: 0.2502
+Entropic Loss	: -0.0424
+Src_cls_loss	: 1.0995
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.3409
+OT Loss	: 0.2743
+Entropic Loss	: -0.0215
+Src_cls_loss	: 1.0333
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.2911
+OT Loss	: 0.2535
+Entropic Loss	: -0.0248
+Src_cls_loss	: 1.0117
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.2626
+OT Loss	: 0.2631
+Entropic Loss	: -0.0201
+Src_cls_loss	: 0.9670
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.2181
+OT Loss	: 0.2581
+Entropic Loss	: -0.0337
+Src_cls_loss	: 0.9421
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.1976
+OT Loss	: 0.2581
+Entropic Loss	: -0.0232
+Src_cls_loss	: 0.9111
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.1786
+OT Loss	: 0.2638
+Entropic Loss	: -0.0171
+Src_cls_loss	: 0.8790
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.1485
+OT Loss	: 0.2601
+Entropic Loss	: -0.0190
+Src_cls_loss	: 0.8554
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.1375
+OT Loss	: 0.2655
+Entropic Loss	: -0.0159
+Src_cls_loss	: 0.8348
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 1.0960
+OT Loss	: 0.2598
+Entropic Loss	: -0.0218
+Src_cls_loss	: 0.8059
+-------------------------------------
+H_score: 0.3136, OS* (acc_c): 0.7798, UNK (acc_p): 0.1963, acc_mix: 0.5871, F1: 0.6552
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7789
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5829
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4753
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4064
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3582
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3217
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2931
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2704
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2513
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2356
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 1.2585
+OT Loss	: 0.2528
+Entropic Loss	: -0.1108
+Src_cls_loss	: 1.0659
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 1.2572
+OT Loss	: 0.2634
+Entropic Loss	: -0.0993
+Src_cls_loss	: 1.0404
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 1.2096
+OT Loss	: 0.2340
+Entropic Loss	: -0.0853
+Src_cls_loss	: 1.0142
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 1.1998
+OT Loss	: 0.2239
+Entropic Loss	: -0.0624
+Src_cls_loss	: 0.9936
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 1.1790
+OT Loss	: 0.2220
+Entropic Loss	: -0.0470
+Src_cls_loss	: 0.9596
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 1.1520
+OT Loss	: 0.2288
+Entropic Loss	: -0.0498
+Src_cls_loss	: 0.9273
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 1.1592
+OT Loss	: 0.2339
+Entropic Loss	: -0.0410
+Src_cls_loss	: 0.9195
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 1.1295
+OT Loss	: 0.2338
+Entropic Loss	: -0.0453
+Src_cls_loss	: 0.8942
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 1.1091
+OT Loss	: 0.2368
+Entropic Loss	: -0.0434
+Src_cls_loss	: 0.8683
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 1.0865
+OT Loss	: 0.2329
+Entropic Loss	: -0.0403
+Src_cls_loss	: 0.8473
+-------------------------------------
+H_score: 0.3422, OS* (acc_c): 0.8693, UNK (acc_p): 0.2130, acc_mix: 0.6526, F1: 0.6172
+🏃 View run PPOT_trial_13 at: http://127.0.0.1:5001/#/experiments/342449952985435634/runs/43e0f17150b4447ea2315584f076ed6d
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/342449952985435634
+>>> [trial 13] PPOT done in 200.8s
+[I 2026-04-30 13:59:52,145] Trial 13 finished with value: -0.35231613119443256 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.0001, 'tau': 0.45, 'tau1': 0.5, 'tau2': 0.75, 'alpha': 0.001, 'beta': 0.01, 'reg': 0.1, 'ot': 1.2000000000000002, 'p_entropy': 0.215, 'n_entropy': 1.8000000000000003, 'neg': 0.4, 'thresh': 0.8}. Best is trial 11 with value: -0.56052232782046.
+>>> [trial 14] PPOT starting
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8278
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.6173
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.5032
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4292
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3774
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3388
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.3086
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2839
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2634
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2459
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 1.0036
+OT Loss	: 0.2859
+Entropic Loss	: -0.0935
+Src_cls_loss	: 1.0828
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.8883
+OT Loss	: 0.2565
+Entropic Loss	: -0.1474
+Src_cls_loss	: 1.0229
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.8544
+OT Loss	: 0.2618
+Entropic Loss	: -0.1446
+Src_cls_loss	: 0.9859
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.7828
+OT Loss	: 0.2498
+Entropic Loss	: -0.1677
+Src_cls_loss	: 0.9379
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.7546
+OT Loss	: 0.2514
+Entropic Loss	: -0.1642
+Src_cls_loss	: 0.9062
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.7292
+OT Loss	: 0.2525
+Entropic Loss	: -0.1646
+Src_cls_loss	: 0.8811
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.7118
+OT Loss	: 0.2508
+Entropic Loss	: -0.1535
+Src_cls_loss	: 0.8528
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.6829
+OT Loss	: 0.2580
+Entropic Loss	: -0.1566
+Src_cls_loss	: 0.8266
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.6637
+OT Loss	: 0.2584
+Entropic Loss	: -0.1526
+Src_cls_loss	: 0.8033
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2459
+Total_loss	: 0.6403
+OT Loss	: 0.2609
+Entropic Loss	: -0.1503
+Src_cls_loss	: 0.7775
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:296: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.4428, OS* (acc_c): 0.6274, UNK (acc_p): 0.3422, acc_mix: 0.5332, F1: 0.5927
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7829
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5935
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4860
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4159
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3662
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3286
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2994
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2757
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2558
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2391
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.8377
+OT Loss	: 0.2164
+Entropic Loss	: -0.2146
+Src_cls_loss	: 1.0415
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.7947
+OT Loss	: 0.2640
+Entropic Loss	: -0.2100
+Src_cls_loss	: 0.9914
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.7396
+OT Loss	: 0.2461
+Entropic Loss	: -0.2299
+Src_cls_loss	: 0.9572
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.6830
+OT Loss	: 0.2472
+Entropic Loss	: -0.2491
+Src_cls_loss	: 0.9197
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.6653
+OT Loss	: 0.2516
+Entropic Loss	: -0.2425
+Src_cls_loss	: 0.8952
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.6393
+OT Loss	: 0.2501
+Entropic Loss	: -0.2359
+Src_cls_loss	: 0.8627
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.6148
+OT Loss	: 0.2514
+Entropic Loss	: -0.2285
+Src_cls_loss	: 0.8308
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.5911
+OT Loss	: 0.2555
+Entropic Loss	: -0.2269
+Src_cls_loss	: 0.8053
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.5738
+OT Loss	: 0.2495
+Entropic Loss	: -0.2210
+Src_cls_loss	: 0.7823
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2391
+Total_loss	: 0.5444
+OT Loss	: 0.2500
+Entropic Loss	: -0.2213
+Src_cls_loss	: 0.7531
+-------------------------------------
+H_score: 0.6051, OS* (acc_c): 0.5923, UNK (acc_p): 0.6186, acc_mix: 0.6010, F1: 0.6718
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_complete
+Method:  PPOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7789
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.5829
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.4753
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.4064
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.3582
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.3217
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2931
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2704
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2513
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2356
+-------------------------------------
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.8537
+OT Loss	: 0.2471
+Entropic Loss	: -0.1855
+Src_cls_loss	: 1.0268
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.8192
+OT Loss	: 0.3113
+Entropic Loss	: -0.1891
+Src_cls_loss	: 0.9927
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.7519
+OT Loss	: 0.2814
+Entropic Loss	: -0.2123
+Src_cls_loss	: 0.9501
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.7245
+OT Loss	: 0.2717
+Entropic Loss	: -0.2051
+Src_cls_loss	: 0.9161
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.6759
+OT Loss	: 0.2522
+Entropic Loss	: -0.2175
+Src_cls_loss	: 0.8807
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.6344
+OT Loss	: 0.2527
+Entropic Loss	: -0.2292
+Src_cls_loss	: 0.8510
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.6144
+OT Loss	: 0.2525
+Entropic Loss	: -0.2348
+Src_cls_loss	: 0.8365
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.5923
+OT Loss	: 0.2534
+Entropic Loss	: -0.2384
+Src_cls_loss	: 0.8181
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.5624
+OT Loss	: 0.2578
+Entropic Loss	: -0.2393
+Src_cls_loss	: 0.7888
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.2356
+Total_loss	: 0.5449
+OT Loss	: 0.2603
+Entropic Loss	: -0.2371
+Src_cls_loss	: 0.7690
+-------------------------------------
+H_score: 0.5867, OS* (acc_c): 0.6822, UNK (acc_p): 0.5146, acc_mix: 0.6269, F1: 0.6985
+🏃 View run PPOT_trial_14 at: http://127.0.0.1:5001/#/experiments/342449952985435634/runs/24f260055fe74582bd18e17a7541f40c
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/342449952985435634
+>>> [trial 14] PPOT done in 176.2s
+[I 2026-04-30 14:02:48,393] Trial 14 finished with value: -0.5448908706506094 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.0001, 'tau': 0.7, 'tau1': 0.6000000000000001, 'tau2': 0.5, 'alpha': 0.001, 'beta': 0.01, 'reg': 0.05, 'ot': 0.05, 'p_entropy': 0.31, 'n_entropy': 0.9, 'neg': 0.3, 'thresh': 0.9}. Best is trial 11 with value: -0.56052232782046.
+
+===== Best Trial =====
+  Value (H_score): -0.5605
+  Params: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.0001, 'tau': 0.65, 'tau1': 0.6000000000000001, 'tau2': 0.5, 'alpha': 0.001, 'beta': 0.01, 'reg': 0.1, 'ot': 0.05, 'p_entropy': 0.295, 'n_entropy': 1.7000000000000002, 'neg': 0.4, 'thresh': 0.9}

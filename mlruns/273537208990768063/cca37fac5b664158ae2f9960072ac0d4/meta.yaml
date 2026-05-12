@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/273537208990768063/cca37fac5b664158ae2f9960072ac0d4/artifacts
+end_time: 1778496191897
+entry_point_name: ''
+experiment_id: '273537208990768063'
+lifecycle_stage: active
+run_id: cca37fac5b664158ae2f9960072ac0d4
+run_name: OVANet_run_3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778496161948
+status: 3
+tags: []
+user_id: bigdipper

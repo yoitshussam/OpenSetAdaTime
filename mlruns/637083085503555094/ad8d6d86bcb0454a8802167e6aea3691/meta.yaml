@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/637083085503555094/ad8d6d86bcb0454a8802167e6aea3691/artifacts
+end_time: 1778485396282
+entry_point_name: ''
+experiment_id: '637083085503555094'
+lifecycle_stage: active
+run_id: ad8d6d86bcb0454a8802167e6aea3691
+run_name: RAINCOAT_run_1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778485342127
+status: 3
+tags: []
+user_id: bigdipper

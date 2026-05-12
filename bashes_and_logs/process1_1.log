@@ -1,0 +1,1108 @@
+==================== [n1] UniJDOT ====================
+[curriculum] scenario=OSDA  strategy=hard  n_unknown=1
+[curriculum] source mapping (4 classes): {'lying': 'lying', 'sitting': 'sitting', 'walking': 'walking', 'running': 'running'}
+[curriculum] target mapping (5 classes): {'lying': 'lying', 'sitting': 'sitting', 'walking': 'walking', 'running': 'running', 'rope jumping': 'rope jumping'}
+[curriculum] unknowns added (in hard order): ['rope jumping']
+[scenario] UniJDOT -> UniDA (uniDA=True)
+Unlabeled data shape:  (5081, 150, 18)
+Unlabelled Combined shape: (8599, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   592
+Target Train batches:   158
+-------------------------------
+
+Private classes:  tensor([4.])
+=============================================
+Dataset: RealWorld to Pamap2_OSDA_hard_n1
+Method:  UniJDOT
+=============================================
+Source: RealWorld ---> Target: Pamap2
+Run ID: 0
+=============================================
+[Pr Epoch : 1/20]
+Pr_Src_cls_loss	: 0.1471
+-------------------------------------
+[Pr Epoch : 2/20]
+Pr_Src_cls_loss	: 0.1152
+-------------------------------------
+[Pr Epoch : 3/20]
+Pr_Src_cls_loss	: 0.1001
+-------------------------------------
+[Pr Epoch : 4/20]
+Pr_Src_cls_loss	: 0.0901
+-------------------------------------
+[Pr Epoch : 5/20]
+Pr_Src_cls_loss	: 0.0827
+-------------------------------------
+[Pr Epoch : 6/20]
+Pr_Src_cls_loss	: 0.0779
+-------------------------------------
+[Pr Epoch : 7/20]
+Pr_Src_cls_loss	: 0.0739
+-------------------------------------
+[Pr Epoch : 8/20]
+Pr_Src_cls_loss	: 0.0700
+-------------------------------------
+[Pr Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0669
+-------------------------------------
+[Pr Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0637
+-------------------------------------
+[Pr Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0614
+-------------------------------------
+[Pr Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0591
+-------------------------------------
+[Pr Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0568
+-------------------------------------
+[Pr Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0552
+-------------------------------------
+[Pr Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0538
+-------------------------------------
+[Pr Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0520
+-------------------------------------
+[Pr Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0507
+-------------------------------------
+[Pr Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0494
+-------------------------------------
+[Pr Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0483
+-------------------------------------
+[Pr Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0471
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0366
+loss_cls	: 0.0142
+loss_align	: 0.0224
+-------------------------------------
+[Epoch : 2/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0314
+loss_cls	: 0.0132
+loss_align	: 0.0182
+-------------------------------------
+[Epoch : 3/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0317
+loss_cls	: 0.0137
+loss_align	: 0.0180
+-------------------------------------
+[Epoch : 4/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0304
+loss_cls	: 0.0130
+loss_align	: 0.0174
+-------------------------------------
+[Epoch : 5/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0296
+loss_cls	: 0.0127
+loss_align	: 0.0169
+-------------------------------------
+[Epoch : 6/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0289
+loss_cls	: 0.0123
+loss_align	: 0.0166
+-------------------------------------
+[Epoch : 7/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0283
+loss_cls	: 0.0120
+loss_align	: 0.0163
+-------------------------------------
+[Epoch : 8/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0283
+loss_cls	: 0.0120
+loss_align	: 0.0164
+-------------------------------------
+[Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0279
+loss_cls	: 0.0117
+loss_align	: 0.0162
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0275
+loss_cls	: 0.0115
+loss_align	: 0.0160
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0272
+loss_cls	: 0.0113
+loss_align	: 0.0159
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0270
+loss_cls	: 0.0112
+loss_align	: 0.0158
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0268
+loss_cls	: 0.0111
+loss_align	: 0.0158
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0267
+loss_cls	: 0.0110
+loss_align	: 0.0157
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0265
+loss_cls	: 0.0109
+loss_align	: 0.0156
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0264
+loss_cls	: 0.0108
+loss_align	: 0.0156
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0263
+loss_cls	: 0.0107
+loss_align	: 0.0156
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0262
+loss_cls	: 0.0106
+loss_align	: 0.0156
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0260
+loss_cls	: 0.0105
+loss_align	: 0.0155
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0471
+Total_loss	: 0.0259
+loss_cls	: 0.0104
+loss_align	: 0.0155
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.0505 min-dist mean=0.0379 std=0.0487 reject=35.48%
+
+[UniJDOT Debug] final_threshold = 0.8436 conf mean=0.6452 std=0.2777 reject=49.33%
+[UniJDOT Eval ALL] n=5081 threshold=0.8436
+[UniJDOT Eval ALL] conf: min=0.2530 max=0.8765 mean=0.6451 std=0.2777
+[UniJDOT Eval ALL] rejected: 49.36%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1038, 1727, 707, 1609]
+[UniJDOT Eval ALL] true label dist: [1280, 652, 1234, 1591, 324] (last bin = unknown)
+H_score: 0.6373, OS* (acc_c): 0.5272, UNK (acc_p): 0.8056, acc_mix: 0.5450, F1: 0.5309
+[UniJDOT Eval ALL] n=5081 threshold=0.8436
+[UniJDOT Eval ALL] conf: min=0.2530 max=0.8765 mean=0.6451 std=0.2777
+[UniJDOT Eval ALL] rejected: 49.36%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1038, 1727, 707, 1609]
+[UniJDOT Eval ALL] true label dist: [1280, 652, 1234, 1591, 324] (last bin = unknown)
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to Pamap2_OSDA_hard_n1/UniJDOT_OSDA_hard_n1/RealWorld_to_Pamap2_run_0
+🏃 View run UniJDOT_run_0 at: http://127.0.0.1:5001/#/experiments/163832168484724146/runs/c8bfe61175c444eba472e2a7de778dd1
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/163832168484724146
+=============================================
+Dataset: RealWorld to Pamap2_OSDA_hard_n1
+Method:  UniJDOT
+=============================================
+Source: RealWorld ---> Target: Pamap2
+Run ID: 1
+=============================================
+[Pr Epoch : 1/20]
+Pr_Src_cls_loss	: 0.1334
+-------------------------------------
+[Pr Epoch : 2/20]
+Pr_Src_cls_loss	: 0.1038
+-------------------------------------
+[Pr Epoch : 3/20]
+Pr_Src_cls_loss	: 0.0919
+-------------------------------------
+[Pr Epoch : 4/20]
+Pr_Src_cls_loss	: 0.0831
+-------------------------------------
+[Pr Epoch : 5/20]
+Pr_Src_cls_loss	: 0.0770
+-------------------------------------
+[Pr Epoch : 6/20]
+Pr_Src_cls_loss	: 0.0723
+-------------------------------------
+[Pr Epoch : 7/20]
+Pr_Src_cls_loss	: 0.0695
+-------------------------------------
+[Pr Epoch : 8/20]
+Pr_Src_cls_loss	: 0.0660
+-------------------------------------
+[Pr Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0634
+-------------------------------------
+[Pr Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0609
+-------------------------------------
+[Pr Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0585
+-------------------------------------
+[Pr Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0569
+-------------------------------------
+[Pr Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0549
+-------------------------------------
+[Pr Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0537
+-------------------------------------
+[Pr Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0521
+-------------------------------------
+[Pr Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0507
+-------------------------------------
+[Pr Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0491
+-------------------------------------
+[Pr Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0483
+-------------------------------------
+[Pr Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0471
+-------------------------------------
+[Pr Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0459
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0355
+loss_cls	: 0.0134
+loss_align	: 0.0222
+-------------------------------------
+[Epoch : 2/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0299
+loss_cls	: 0.0135
+loss_align	: 0.0164
+-------------------------------------
+[Epoch : 3/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0275
+loss_cls	: 0.0134
+loss_align	: 0.0141
+-------------------------------------
+[Epoch : 4/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0263
+loss_cls	: 0.0134
+loss_align	: 0.0129
+-------------------------------------
+[Epoch : 5/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0254
+loss_cls	: 0.0133
+loss_align	: 0.0122
+-------------------------------------
+[Epoch : 6/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0248
+loss_cls	: 0.0132
+loss_align	: 0.0116
+-------------------------------------
+[Epoch : 7/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0242
+loss_cls	: 0.0130
+loss_align	: 0.0112
+-------------------------------------
+[Epoch : 8/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0239
+loss_cls	: 0.0129
+loss_align	: 0.0110
+-------------------------------------
+[Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0233
+loss_cls	: 0.0126
+loss_align	: 0.0107
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0234
+loss_cls	: 0.0125
+loss_align	: 0.0109
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0232
+loss_cls	: 0.0123
+loss_align	: 0.0110
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0233
+loss_cls	: 0.0123
+loss_align	: 0.0110
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0232
+loss_cls	: 0.0121
+loss_align	: 0.0111
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0232
+loss_cls	: 0.0120
+loss_align	: 0.0112
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0232
+loss_cls	: 0.0120
+loss_align	: 0.0113
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0231
+loss_cls	: 0.0118
+loss_align	: 0.0113
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0231
+loss_cls	: 0.0117
+loss_align	: 0.0114
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0231
+loss_cls	: 0.0117
+loss_align	: 0.0114
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0231
+loss_cls	: 0.0116
+loss_align	: 0.0115
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0459
+Total_loss	: 0.0232
+loss_cls	: 0.0115
+loss_align	: 0.0116
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.1157 min-dist mean=0.0193 std=0.0582 reject=6.72%
+
+[UniJDOT Debug] final_threshold = 0.8181 conf mean=0.8219 std=0.1461 reject=17.33%
+[UniJDOT Eval ALL] n=5081 threshold=0.8181
+[UniJDOT Eval ALL] conf: min=0.2590 max=0.9052 mean=0.8220 std=0.1460
+[UniJDOT Eval ALL] rejected: 17.30%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1090, 876, 1260, 1855]
+[UniJDOT Eval ALL] true label dist: [1280, 652, 1234, 1591, 324] (last bin = unknown)
+H_score: 0.2403, OS* (acc_c): 0.7814, UNK (acc_p): 0.1420, acc_mix: 0.7406, F1: 0.7703
+[UniJDOT Eval ALL] n=5081 threshold=0.8181
+[UniJDOT Eval ALL] conf: min=0.2590 max=0.9052 mean=0.8220 std=0.1460
+[UniJDOT Eval ALL] rejected: 17.30%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1090, 876, 1260, 1855]
+[UniJDOT Eval ALL] true label dist: [1280, 652, 1234, 1591, 324] (last bin = unknown)
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to Pamap2_OSDA_hard_n1/UniJDOT_OSDA_hard_n1/RealWorld_to_Pamap2_run_1
+🏃 View run UniJDOT_run_1 at: http://127.0.0.1:5001/#/experiments/163832168484724146/runs/5482c0a72cee45d3848cb28d3a2e45a6
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/163832168484724146
+=============================================
+Dataset: RealWorld to Pamap2_OSDA_hard_n1
+Method:  UniJDOT
+=============================================
+Source: RealWorld ---> Target: Pamap2
+Run ID: 2
+=============================================
+[Pr Epoch : 1/20]
+Pr_Src_cls_loss	: 0.1501
+-------------------------------------
+[Pr Epoch : 2/20]
+Pr_Src_cls_loss	: 0.1119
+-------------------------------------
+[Pr Epoch : 3/20]
+Pr_Src_cls_loss	: 0.0955
+-------------------------------------
+[Pr Epoch : 4/20]
+Pr_Src_cls_loss	: 0.0874
+-------------------------------------
+[Pr Epoch : 5/20]
+Pr_Src_cls_loss	: 0.0807
+-------------------------------------
+[Pr Epoch : 6/20]
+Pr_Src_cls_loss	: 0.0746
+-------------------------------------
+[Pr Epoch : 7/20]
+Pr_Src_cls_loss	: 0.0703
+-------------------------------------
+[Pr Epoch : 8/20]
+Pr_Src_cls_loss	: 0.0667
+-------------------------------------
+[Pr Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0640
+-------------------------------------
+[Pr Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0615
+-------------------------------------
+[Pr Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0592
+-------------------------------------
+[Pr Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0576
+-------------------------------------
+[Pr Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0558
+-------------------------------------
+[Pr Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0543
+-------------------------------------
+[Pr Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0527
+-------------------------------------
+[Pr Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0513
+-------------------------------------
+[Pr Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0500
+-------------------------------------
+[Pr Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0488
+-------------------------------------
+[Pr Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0479
+-------------------------------------
+[Pr Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0467
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0376
+loss_cls	: 0.0133
+loss_align	: 0.0243
+-------------------------------------
+[Epoch : 2/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0332
+loss_cls	: 0.0137
+loss_align	: 0.0194
+-------------------------------------
+[Epoch : 3/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0319
+loss_cls	: 0.0131
+loss_align	: 0.0188
+-------------------------------------
+[Epoch : 4/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0312
+loss_cls	: 0.0133
+loss_align	: 0.0180
+-------------------------------------
+[Epoch : 5/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0300
+loss_cls	: 0.0130
+loss_align	: 0.0171
+-------------------------------------
+[Epoch : 6/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0296
+loss_cls	: 0.0127
+loss_align	: 0.0168
+-------------------------------------
+[Epoch : 7/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0302
+loss_cls	: 0.0131
+loss_align	: 0.0171
+-------------------------------------
+[Epoch : 8/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0296
+loss_cls	: 0.0127
+loss_align	: 0.0170
+-------------------------------------
+[Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0292
+loss_cls	: 0.0124
+loss_align	: 0.0168
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0288
+loss_cls	: 0.0122
+loss_align	: 0.0166
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0285
+loss_cls	: 0.0120
+loss_align	: 0.0165
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0281
+loss_cls	: 0.0117
+loss_align	: 0.0164
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0279
+loss_cls	: 0.0116
+loss_align	: 0.0163
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0277
+loss_cls	: 0.0114
+loss_align	: 0.0163
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0275
+loss_cls	: 0.0113
+loss_align	: 0.0162
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0273
+loss_cls	: 0.0112
+loss_align	: 0.0161
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0271
+loss_cls	: 0.0111
+loss_align	: 0.0161
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0269
+loss_cls	: 0.0109
+loss_align	: 0.0160
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0267
+loss_cls	: 0.0108
+loss_align	: 0.0159
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0467
+Total_loss	: 0.0266
+loss_cls	: 0.0107
+loss_align	: 0.0159
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.1453 min-dist mean=0.0995 std=0.1366 reject=33.80%
+
+[UniJDOT Debug] final_threshold = 0.8638 conf mean=0.6857 std=0.2862 reject=46.93%
+[UniJDOT Eval ALL] n=5081 threshold=0.8638
+[UniJDOT Eval ALL] conf: min=0.2546 max=0.9057 mean=0.6858 std=0.2861
+[UniJDOT Eval ALL] rejected: 46.94%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1027, 1942, 539, 1573]
+[UniJDOT Eval ALL] true label dist: [1280, 652, 1234, 1591, 324] (last bin = unknown)
+H_score: 0.6937, OS* (acc_c): 0.5337, UNK (acc_p): 0.9907, acc_mix: 0.5629, F1: 0.5437
+[UniJDOT Eval ALL] n=5081 threshold=0.8638
+[UniJDOT Eval ALL] conf: min=0.2546 max=0.9057 mean=0.6858 std=0.2861
+[UniJDOT Eval ALL] rejected: 46.94%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1027, 1942, 539, 1573]
+[UniJDOT Eval ALL] true label dist: [1280, 652, 1234, 1591, 324] (last bin = unknown)
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to Pamap2_OSDA_hard_n1/UniJDOT_OSDA_hard_n1/RealWorld_to_Pamap2_run_2
+🏃 View run UniJDOT_run_2 at: http://127.0.0.1:5001/#/experiments/163832168484724146/runs/fa3bd2acb72c4dbf9573a47c2e94ac5b
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/163832168484724146
+=============================================
+Dataset: RealWorld to Pamap2_OSDA_hard_n1
+Method:  UniJDOT
+=============================================
+Source: RealWorld ---> Target: Pamap2
+Run ID: 3
+=============================================
+[Pr Epoch : 1/20]
+Pr_Src_cls_loss	: 0.1349
+-------------------------------------
+[Pr Epoch : 2/20]
+Pr_Src_cls_loss	: 0.1081
+-------------------------------------
+[Pr Epoch : 3/20]
+Pr_Src_cls_loss	: 0.0944
+-------------------------------------
+[Pr Epoch : 4/20]
+Pr_Src_cls_loss	: 0.0865
+-------------------------------------
+[Pr Epoch : 5/20]
+Pr_Src_cls_loss	: 0.0794
+-------------------------------------
+[Pr Epoch : 6/20]
+Pr_Src_cls_loss	: 0.0750
+-------------------------------------
+[Pr Epoch : 7/20]
+Pr_Src_cls_loss	: 0.0708
+-------------------------------------
+[Pr Epoch : 8/20]
+Pr_Src_cls_loss	: 0.0677
+-------------------------------------
+[Pr Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0643
+-------------------------------------
+[Pr Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0617
+-------------------------------------
+[Pr Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0598
+-------------------------------------
+[Pr Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0581
+-------------------------------------
+[Pr Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0561
+-------------------------------------
+[Pr Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0545
+-------------------------------------
+[Pr Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0530
+-------------------------------------
+[Pr Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0517
+-------------------------------------
+[Pr Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0506
+-------------------------------------
+[Pr Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0493
+-------------------------------------
+[Pr Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0482
+-------------------------------------
+[Pr Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0473
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0366
+loss_cls	: 0.0142
+loss_align	: 0.0224
+-------------------------------------
+[Epoch : 2/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0310
+loss_cls	: 0.0141
+loss_align	: 0.0169
+-------------------------------------
+[Epoch : 3/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0288
+loss_cls	: 0.0142
+loss_align	: 0.0146
+-------------------------------------
+[Epoch : 4/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0272
+loss_cls	: 0.0140
+loss_align	: 0.0132
+-------------------------------------
+[Epoch : 5/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0262
+loss_cls	: 0.0139
+loss_align	: 0.0123
+-------------------------------------
+[Epoch : 6/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0255
+loss_cls	: 0.0137
+loss_align	: 0.0117
+-------------------------------------
+[Epoch : 7/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0248
+loss_cls	: 0.0135
+loss_align	: 0.0112
+-------------------------------------
+[Epoch : 8/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0243
+loss_cls	: 0.0134
+loss_align	: 0.0108
+-------------------------------------
+[Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0241
+loss_cls	: 0.0135
+loss_align	: 0.0106
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0238
+loss_cls	: 0.0135
+loss_align	: 0.0103
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0235
+loss_cls	: 0.0134
+loss_align	: 0.0101
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0231
+loss_cls	: 0.0132
+loss_align	: 0.0099
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0230
+loss_cls	: 0.0132
+loss_align	: 0.0098
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0228
+loss_cls	: 0.0132
+loss_align	: 0.0096
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0226
+loss_cls	: 0.0131
+loss_align	: 0.0095
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0222
+loss_cls	: 0.0129
+loss_align	: 0.0093
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0221
+loss_cls	: 0.0129
+loss_align	: 0.0092
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0219
+loss_cls	: 0.0128
+loss_align	: 0.0091
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0217
+loss_cls	: 0.0127
+loss_align	: 0.0090
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0473
+Total_loss	: 0.0214
+loss_cls	: 0.0126
+loss_align	: 0.0088
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.0803 min-dist mean=0.0114 std=0.0353 reject=4.69%
+
+[UniJDOT Debug] final_threshold = 0.7894 conf mean=0.8495 std=0.0939 reject=7.52%
+[UniJDOT Eval ALL] n=5081 threshold=0.7894
+[UniJDOT Eval ALL] conf: min=0.2885 max=0.8948 mean=0.8496 std=0.0937
+[UniJDOT Eval ALL] rejected: 7.50%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1916, 792, 657, 1716]
+[UniJDOT Eval ALL] true label dist: [1280, 652, 1234, 1591, 324] (last bin = unknown)
+H_score: 0.4894, OS* (acc_c): 0.7099, UNK (acc_p): 0.3735, acc_mix: 0.6884, F1: 0.6600
+[UniJDOT Eval ALL] n=5081 threshold=0.7894
+[UniJDOT Eval ALL] conf: min=0.2885 max=0.8948 mean=0.8496 std=0.0937
+[UniJDOT Eval ALL] rejected: 7.50%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1916, 792, 657, 1716]
+[UniJDOT Eval ALL] true label dist: [1280, 652, 1234, 1591, 324] (last bin = unknown)
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to Pamap2_OSDA_hard_n1/UniJDOT_OSDA_hard_n1/RealWorld_to_Pamap2_run_3
+🏃 View run UniJDOT_run_3 at: http://127.0.0.1:5001/#/experiments/163832168484724146/runs/e7a38f5197a24e46b0e58a0282ceb374
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/163832168484724146
+=============================================
+Dataset: RealWorld to Pamap2_OSDA_hard_n1
+Method:  UniJDOT
+=============================================
+Source: RealWorld ---> Target: Pamap2
+Run ID: 4
+=============================================
+[Pr Epoch : 1/20]
+Pr_Src_cls_loss	: 0.1395
+-------------------------------------
+[Pr Epoch : 2/20]
+Pr_Src_cls_loss	: 0.1108
+-------------------------------------
+[Pr Epoch : 3/20]
+Pr_Src_cls_loss	: 0.0952
+-------------------------------------
+[Pr Epoch : 4/20]
+Pr_Src_cls_loss	: 0.0874
+-------------------------------------
+[Pr Epoch : 5/20]
+Pr_Src_cls_loss	: 0.0809
+-------------------------------------
+[Pr Epoch : 6/20]
+Pr_Src_cls_loss	: 0.0761
+-------------------------------------
+[Pr Epoch : 7/20]
+Pr_Src_cls_loss	: 0.0725
+-------------------------------------
+[Pr Epoch : 8/20]
+Pr_Src_cls_loss	: 0.0690
+-------------------------------------
+[Pr Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0661
+-------------------------------------
+[Pr Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0642
+-------------------------------------
+[Pr Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0615
+-------------------------------------
+[Pr Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0596
+-------------------------------------
+[Pr Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0578
+-------------------------------------
+[Pr Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0563
+-------------------------------------
+[Pr Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0545
+-------------------------------------
+[Pr Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0529
+-------------------------------------
+[Pr Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0514
+-------------------------------------
+[Pr Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0502
+-------------------------------------
+[Pr Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0489
+-------------------------------------
+[Pr Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0478
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0366
+loss_cls	: 0.0143
+loss_align	: 0.0223
+-------------------------------------
+[Epoch : 2/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0303
+loss_cls	: 0.0132
+loss_align	: 0.0170
+-------------------------------------
+[Epoch : 3/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0284
+loss_cls	: 0.0136
+loss_align	: 0.0148
+-------------------------------------
+[Epoch : 4/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0271
+loss_cls	: 0.0137
+loss_align	: 0.0134
+-------------------------------------
+[Epoch : 5/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0263
+loss_cls	: 0.0139
+loss_align	: 0.0125
+-------------------------------------
+[Epoch : 6/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0256
+loss_cls	: 0.0138
+loss_align	: 0.0118
+-------------------------------------
+[Epoch : 7/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0250
+loss_cls	: 0.0137
+loss_align	: 0.0113
+-------------------------------------
+[Epoch : 8/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0244
+loss_cls	: 0.0136
+loss_align	: 0.0109
+-------------------------------------
+[Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0237
+loss_cls	: 0.0133
+loss_align	: 0.0104
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0233
+loss_cls	: 0.0132
+loss_align	: 0.0101
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0230
+loss_cls	: 0.0131
+loss_align	: 0.0099
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0228
+loss_cls	: 0.0131
+loss_align	: 0.0097
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0226
+loss_cls	: 0.0131
+loss_align	: 0.0096
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0222
+loss_cls	: 0.0128
+loss_align	: 0.0094
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0219
+loss_cls	: 0.0126
+loss_align	: 0.0092
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0218
+loss_cls	: 0.0127
+loss_align	: 0.0091
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0216
+loss_cls	: 0.0126
+loss_align	: 0.0090
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0214
+loss_cls	: 0.0125
+loss_align	: 0.0089
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0212
+loss_cls	: 0.0124
+loss_align	: 0.0088
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0478
+Total_loss	: 0.0210
+loss_cls	: 0.0124
+loss_align	: 0.0087
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.1040 min-dist mean=0.0173 std=0.0493 reject=5.78%
+
+[UniJDOT Debug] final_threshold = 0.7246 conf mean=0.8249 std=0.1110 reject=9.04%
+[UniJDOT Eval ALL] n=5081 threshold=0.7246
+[UniJDOT Eval ALL] conf: min=0.2725 max=0.8998 mean=0.8249 std=0.1110
+[UniJDOT Eval ALL] rejected: 9.19%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1943, 975, 593, 1570]
+[UniJDOT Eval ALL] true label dist: [1280, 652, 1234, 1591, 324] (last bin = unknown)
+H_score: 0.5428, OS* (acc_c): 0.7126, UNK (acc_p): 0.4383, acc_mix: 0.6951, F1: 0.6746
+[UniJDOT Eval ALL] n=5081 threshold=0.7246
+[UniJDOT Eval ALL] conf: min=0.2725 max=0.8998 mean=0.8249 std=0.1110
+[UniJDOT Eval ALL] rejected: 9.19%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1943, 975, 593, 1570]
+[UniJDOT Eval ALL] true label dist: [1280, 652, 1234, 1591, 324] (last bin = unknown)
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to Pamap2_OSDA_hard_n1/UniJDOT_OSDA_hard_n1/RealWorld_to_Pamap2_run_4
+🏃 View run UniJDOT_run_4 at: http://127.0.0.1:5001/#/experiments/163832168484724146/runs/8fc85470f0ca4c98a3b4fe5e30a50cfa
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/163832168484724146
+==================== [n1] done ====================

@@ -1,0 +1,146 @@
+/home/tp2474/miniconda3/envs/myenv/lib/python3.9/site-packages/seaborn/matrix.py:202: RuntimeWarning: All-NaN slice encountered
+  vmin = np.nanmin(calc_data)
+/home/tp2474/miniconda3/envs/myenv/lib/python3.9/site-packages/seaborn/matrix.py:207: RuntimeWarning: All-NaN slice encountered
+  vmax = np.nanmax(calc_data)
+posx and posy should be finite values
+posx and posy should be finite values
+posx and posy should be finite values
+posx and posy should be finite values
+posx and posy should be finite values
+posx and posy should be finite values
+posx and posy should be finite values
+posx and posy should be finite values
+posx and posy should be finite values
+posx and posy should be finite values
+posx and posy should be finite values
+posx and posy should be finite values
+Device: cuda  ·  seeds: [42, 43, 44, 45, 46]
+
+======================================================================
+  PDA: RealWorld  (FNO, 5-seed avg)
+======================================================================
+  -- seed 42 --
+      Epoch 1/30 — loss: 0.4269
+      Epoch 10/30 — loss: 0.0386
+      Epoch 20/30 — loss: 0.0272
+      Epoch 30/30 — loss: 0.0247
+  -- seed 43 --
+      Epoch 1/30 — loss: 0.4186
+      Epoch 10/30 — loss: 0.0385
+      Epoch 20/30 — loss: 0.0302
+      Epoch 30/30 — loss: 0.0240
+  -- seed 44 --
+      Epoch 1/30 — loss: 0.4161
+      Epoch 10/30 — loss: 0.0389
+      Epoch 20/30 — loss: 0.0266
+      Epoch 30/30 — loss: 0.0199
+  -- seed 45 --
+      Epoch 1/30 — loss: 0.4187
+      Epoch 10/30 — loss: 0.0428
+      Epoch 20/30 — loss: 0.0266
+      Epoch 30/30 — loss: 0.0236
+  -- seed 46 --
+      Epoch 1/30 — loss: 0.4135
+      Epoch 10/30 — loss: 0.0436
+      Epoch 20/30 — loss: 0.0269
+      Epoch 30/30 — loss: nan
+
+  ── COSINE distances (FNO PDA, 5-seed avg) ──
+  Source-private                    lying   running   sitting   walking      Mean         Nearest
+  ----------------------------------------------------------------------------------------------
+  Climbing Down                       nan       nan       nan       nan       nan           lying
+  Climbing Up                         nan       nan       nan       nan       nan           lying
+  Jumping                             nan       nan       nan       nan       nan           lying
+  Standing                            nan       nan       nan       nan       nan           lying
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean_pda/feat4_cosine_RealWorld_pda.png
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean_pda/feat4_ranking_RealWorld_pda.png
+
+======================================================================
+  PDA: Pamap2  (FNO, 5-seed avg)
+======================================================================
+  -- seed 42 --
+      Epoch 1/30 — loss: 0.9515
+      Epoch 10/30 — loss: 0.0439
+      Epoch 20/30 — loss: 0.0208
+      Epoch 30/30 — loss: 0.0117
+  -- seed 43 --
+      Epoch 1/30 — loss: 0.9377
+      Epoch 10/30 — loss: 0.0442
+      Epoch 20/30 — loss: 0.0267
+      Epoch 30/30 — loss: 0.0086
+  -- seed 44 --
+      Epoch 1/30 — loss: 0.9324
+      Epoch 10/30 — loss: 0.0458
+      Epoch 20/30 — loss: 0.0176
+      Epoch 30/30 — loss: 0.0139
+  -- seed 45 --
+      Epoch 1/30 — loss: 0.9392
+      Epoch 10/30 — loss: 0.0463
+      Epoch 20/30 — loss: 0.0157
+      Epoch 30/30 — loss: 0.0099
+  -- seed 46 --
+      Epoch 1/30 — loss: 0.9254
+      Epoch 10/30 — loss: 0.0450
+      Epoch 20/30 — loss: 0.0208
+      Epoch 30/30 — loss: 0.0126
+
+  ── COSINE distances (FNO PDA, 5-seed avg) ──
+  Source-private                    lying   running   sitting   walking      Mean         Nearest
+  ----------------------------------------------------------------------------------------------
+  Other/Transient                   0.638     0.599     0.362     0.348     0.487         walking
+  Descending Stairs                 0.620     0.420     0.726     0.227     0.498         walking
+  Ascending Stairs                  0.625     0.522     0.699     0.174     0.505         walking
+  Vacuum Cleaning                   0.621     0.564     0.306     0.598     0.522         sitting
+  Rope Jumping                      0.643     0.251     0.818     0.476     0.547         running
+  Cycling                           0.593     0.407     0.629     0.601     0.557         running
+  Nordic Walking                    0.895     0.469     0.833     0.166     0.591         walking
+  Standing                          0.706     0.785     0.065     0.817     0.593         sitting
+  Ironing                           0.821     0.728     0.073     0.763     0.596         sitting
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean_pda/feat4_cosine_Pamap2_pda.png
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean_pda/feat4_ranking_Pamap2_pda.png
+
+======================================================================
+  PDA: MHEALTH  (FNO, 5-seed avg)
+======================================================================
+  -- seed 42 --
+      Epoch 1/30 — loss: 1.1573
+      Epoch 10/30 — loss: 0.1591
+      Epoch 20/30 — loss: 0.0516
+      Epoch 30/30 — loss: 0.0311
+  -- seed 43 --
+      Epoch 1/30 — loss: 1.1401
+      Epoch 10/30 — loss: 0.1582
+      Epoch 20/30 — loss: 0.0511
+      Epoch 30/30 — loss: 0.0260
+  -- seed 44 --
+      Epoch 1/30 — loss: 1.1375
+      Epoch 10/30 — loss: 0.1486
+      Epoch 20/30 — loss: 0.0472
+      Epoch 30/30 — loss: 0.0252
+  -- seed 45 --
+      Epoch 1/30 — loss: 1.1454
+      Epoch 10/30 — loss: 0.1477
+      Epoch 20/30 — loss: 0.0491
+      Epoch 30/30 — loss: 0.0256
+  -- seed 46 --
+      Epoch 1/30 — loss: 1.1304
+      Epoch 10/30 — loss: 0.1457
+      Epoch 20/30 — loss: 0.0473
+      Epoch 30/30 — loss: 0.0231
+
+  ── COSINE distances (FNO PDA, 5-seed avg) ──
+  Source-private                    lying   running   sitting   walking      Mean         Nearest
+  ----------------------------------------------------------------------------------------------
+  Climbing Stairs                   0.835     0.786     0.518     0.158     0.574         walking
+  Arm Elevation                     0.544     0.739     0.309     0.722     0.578         sitting
+  Jump F&B                          0.852     0.153     0.896     0.545     0.612         running
+  Jogging                           0.935     0.057     0.909     0.676     0.644         running
+  Cycling                           0.797     0.692     0.197     0.902     0.647         sitting
+  Knees Bending                     0.833     0.900     0.285     0.597     0.653         sitting
+  Waist Bends                       0.841     0.916     0.460     0.539     0.689         sitting
+  Standing                          0.813     0.953     0.380     0.612     0.689         sitting
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean_pda/feat4_cosine_MHEALTH_pda.png
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean_pda/feat4_ranking_MHEALTH_pda.png
+
+Saved rankings JSON: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean_pda/rankings_4known_fno_mean_pda.json
+All plots saved in: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean_pda

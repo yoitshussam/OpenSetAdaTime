@@ -1,0 +1,818 @@
+{
+  "RealWorld -> Pamap2": {
+    "knowns": [
+      "lying",
+      "running",
+      "sitting",
+      "walking"
+    ],
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "rankings": [
+      {
+        "unknown": "Climbing Up",
+        "mean_cosine_dist": 0.5552235366776586,
+        "nearest_known": "walking",
+        "per_class_mean": {
+          "lying": 0.8027378655970097,
+          "running": 0.5947406142950058,
+          "sitting": 0.6794627755880356,
+          "walking": 0.1439528912305832
+        },
+        "per_class_std": {
+          "lying": 0.029193704766162336,
+          "running": 0.051207688516018174,
+          "sitting": 0.031108907937885857,
+          "walking": 0.005741415819312017
+        }
+      },
+      {
+        "unknown": "Jumping",
+        "mean_cosine_dist": 0.5724905896931887,
+        "nearest_known": "running",
+        "per_class_mean": {
+          "lying": 0.6853943541646004,
+          "running": 0.24275031685829163,
+          "sitting": 0.7703329175710678,
+          "walking": 0.5914847701787949
+        },
+        "per_class_std": {
+          "lying": 0.03134796719450136,
+          "running": 0.024860497866358962,
+          "sitting": 0.06017019680019751,
+          "walking": 0.0747961205498019
+        }
+      },
+      {
+        "unknown": "Climbing Down",
+        "mean_cosine_dist": 0.6181718003936112,
+        "nearest_known": "walking",
+        "per_class_mean": {
+          "lying": 0.840855710208416,
+          "running": 0.6555166468024254,
+          "sitting": 0.9096739459782839,
+          "walking": 0.06664089858531952
+        },
+        "per_class_std": {
+          "lying": 0.02705747054263907,
+          "running": 0.006422841186175465,
+          "sitting": 0.011247475580515757,
+          "walking": 0.006563016669138646
+        }
+      },
+      {
+        "unknown": "Standing",
+        "mean_cosine_dist": 0.6959429960697889,
+        "nearest_known": "running",
+        "per_class_mean": {
+          "lying": 0.8313852362334728,
+          "running": 0.4219732731580734,
+          "sitting": 0.6525357142090797,
+          "walking": 0.8778777606785297
+        },
+        "per_class_std": {
+          "lying": 0.03488063508727343,
+          "running": 0.10247876147683126,
+          "sitting": 0.06044687028437377,
+          "walking": 0.01715724061244123
+        }
+      }
+    ]
+  },
+  "RealWorld -> MHEALTH": {
+    "knowns": [
+      "lying",
+      "running",
+      "sitting",
+      "walking"
+    ],
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "rankings": [
+      {
+        "unknown": "Climbing Up",
+        "mean_cosine_dist": 0.5552235366776586,
+        "nearest_known": "walking",
+        "per_class_mean": {
+          "lying": 0.8027378655970097,
+          "running": 0.5947406142950058,
+          "sitting": 0.6794627755880356,
+          "walking": 0.1439528912305832
+        },
+        "per_class_std": {
+          "lying": 0.029193704766162336,
+          "running": 0.051207688516018174,
+          "sitting": 0.031108907937885857,
+          "walking": 0.005741415819312017
+        }
+      },
+      {
+        "unknown": "Jumping",
+        "mean_cosine_dist": 0.5724905896931887,
+        "nearest_known": "running",
+        "per_class_mean": {
+          "lying": 0.6853943541646004,
+          "running": 0.24275031685829163,
+          "sitting": 0.7703329175710678,
+          "walking": 0.5914847701787949
+        },
+        "per_class_std": {
+          "lying": 0.03134796719450136,
+          "running": 0.024860497866358962,
+          "sitting": 0.06017019680019751,
+          "walking": 0.0747961205498019
+        }
+      },
+      {
+        "unknown": "Climbing Down",
+        "mean_cosine_dist": 0.6181718003936112,
+        "nearest_known": "walking",
+        "per_class_mean": {
+          "lying": 0.840855710208416,
+          "running": 0.6555166468024254,
+          "sitting": 0.9096739459782839,
+          "walking": 0.06664089858531952
+        },
+        "per_class_std": {
+          "lying": 0.02705747054263907,
+          "running": 0.006422841186175465,
+          "sitting": 0.011247475580515757,
+          "walking": 0.006563016669138646
+        }
+      },
+      {
+        "unknown": "Standing",
+        "mean_cosine_dist": 0.6959429960697889,
+        "nearest_known": "running",
+        "per_class_mean": {
+          "lying": 0.8313852362334728,
+          "running": 0.4219732731580734,
+          "sitting": 0.6525357142090797,
+          "walking": 0.8778777606785297
+        },
+        "per_class_std": {
+          "lying": 0.03488063508727343,
+          "running": 0.10247876147683126,
+          "sitting": 0.06044687028437377,
+          "walking": 0.01715724061244123
+        }
+      }
+    ]
+  },
+  "Pamap2 -> RealWorld": {
+    "knowns": [
+      "lying",
+      "running",
+      "sitting",
+      "walking"
+    ],
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "rankings": [
+      {
+        "unknown": "Other/Transient",
+        "mean_cosine_dist": 0.486777076125145,
+        "nearest_known": "walking",
+        "per_class_mean": {
+          "lying": 0.638056218624115,
+          "running": 0.5988509774208068,
+          "sitting": 0.36199246644973754,
+          "walking": 0.3482086420059204
+        },
+        "per_class_std": {
+          "lying": 0.05998066314731619,
+          "running": 0.07180231891911351,
+          "sitting": 0.0344932332604943,
+          "walking": 0.04154025689441243
+        }
+      },
+      {
+        "unknown": "Descending Stairs",
+        "mean_cosine_dist": 0.4983023934066296,
+        "nearest_known": "walking",
+        "per_class_mean": {
+          "lying": 0.6198075234889984,
+          "running": 0.42039785981178285,
+          "sitting": 0.7259142607450485,
+          "walking": 0.22708992958068847
+        },
+        "per_class_std": {
+          "lying": 0.028857347354454794,
+          "running": 0.05943289145258757,
+          "sitting": 0.06071529437612319,
+          "walking": 0.03430794043252458
+        }
+      },
+      {
+        "unknown": "Ascending Stairs",
+        "mean_cosine_dist": 0.5049997694790364,
+        "nearest_known": "walking",
+        "per_class_mean": {
+          "lying": 0.6254505902528763,
+          "running": 0.5216786623001098,
+          "sitting": 0.6992869019508362,
+          "walking": 0.173582923412323
+        },
+        "per_class_std": {
+          "lying": 0.0836377638522413,
+          "running": 0.06104383424175181,
+          "sitting": 0.06696760348309234,
+          "walking": 0.032729210396909965
+        }
+      },
+      {
+        "unknown": "Vacuum Cleaning",
+        "mean_cosine_dist": 0.522443564236164,
+        "nearest_known": "sitting",
+        "per_class_mean": {
+          "lying": 0.6212638676166534,
+          "running": 0.5644989788532258,
+          "sitting": 0.30583728551864625,
+          "walking": 0.598174124956131
+        },
+        "per_class_std": {
+          "lying": 0.08431131159676446,
+          "running": 0.05974109730492378,
+          "sitting": 0.07766778288328784,
+          "walking": 0.048739904583699936
+        }
+      },
+      {
+        "unknown": "Rope Jumping",
+        "mean_cosine_dist": 0.5468772344291211,
+        "nearest_known": "running",
+        "per_class_mean": {
+          "lying": 0.6427273035049439,
+          "running": 0.2507962942123413,
+          "sitting": 0.8182477444410324,
+          "walking": 0.4757375955581665
+        },
+        "per_class_std": {
+          "lying": 0.09181266036695698,
+          "running": 0.06212710627714661,
+          "sitting": 0.03466366034248934,
+          "walking": 0.07529945500660948
+        }
+      },
+      {
+        "unknown": "Cycling",
+        "mean_cosine_dist": 0.5574066773056985,
+        "nearest_known": "running",
+        "per_class_mean": {
+          "lying": 0.5928786039352417,
+          "running": 0.40659935474395753,
+          "sitting": 0.629088181257248,
+          "walking": 0.6010605692863464
+        },
+        "per_class_std": {
+          "lying": 0.10601290657473558,
+          "running": 0.07553754852370702,
+          "sitting": 0.10803495138836235,
+          "walking": 0.12407929720841962
+        }
+      },
+      {
+        "unknown": "Nordic Walking",
+        "mean_cosine_dist": 0.5908665042370558,
+        "nearest_known": "walking",
+        "per_class_mean": {
+          "lying": 0.8948564782738686,
+          "running": 0.4694880545139313,
+          "sitting": 0.83336441218853,
+          "walking": 0.16575707197189332
+        },
+        "per_class_std": {
+          "lying": 0.029339002964791944,
+          "running": 0.07304918665062744,
+          "sitting": 0.05648732223176271,
+          "walking": 0.044253379206628626
+        }
+      },
+      {
+        "unknown": "Standing",
+        "mean_cosine_dist": 0.5931624986231328,
+        "nearest_known": "sitting",
+        "per_class_mean": {
+          "lying": 0.7059127360582351,
+          "running": 0.7847260266542435,
+          "sitting": 0.06475876569747925,
+          "walking": 0.817252466082573
+        },
+        "per_class_std": {
+          "lying": 0.04493063707913167,
+          "running": 0.04193628070822936,
+          "sitting": 0.013593803185876167,
+          "walking": 0.01721474690407661
+        }
+      },
+      {
+        "unknown": "Ironing",
+        "mean_cosine_dist": 0.5964605309069156,
+        "nearest_known": "sitting",
+        "per_class_mean": {
+          "lying": 0.8213849663734436,
+          "running": 0.7282611310482026,
+          "sitting": 0.07289470434188842,
+          "walking": 0.7633013218641281
+        },
+        "per_class_std": {
+          "lying": 0.04490693826536846,
+          "running": 0.07032189634633297,
+          "sitting": 0.020713147917817677,
+          "walking": 0.035521821262735925
+        }
+      }
+    ]
+  },
+  "Pamap2 -> MHEALTH": {
+    "knowns": [
+      "lying",
+      "running",
+      "sitting",
+      "walking"
+    ],
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "rankings": [
+      {
+        "unknown": "Other/Transient",
+        "mean_cosine_dist": 0.486777076125145,
+        "nearest_known": "walking",
+        "per_class_mean": {
+          "lying": 0.638056218624115,
+          "running": 0.5988509774208068,
+          "sitting": 0.36199246644973754,
+          "walking": 0.3482086420059204
+        },
+        "per_class_std": {
+          "lying": 0.05998066314731619,
+          "running": 0.07180231891911351,
+          "sitting": 0.0344932332604943,
+          "walking": 0.04154025689441243
+        }
+      },
+      {
+        "unknown": "Descending Stairs",
+        "mean_cosine_dist": 0.4983023934066296,
+        "nearest_known": "walking",
+        "per_class_mean": {
+          "lying": 0.6198075234889984,
+          "running": 0.42039785981178285,
+          "sitting": 0.7259142607450485,
+          "walking": 0.22708992958068847
+        },
+        "per_class_std": {
+          "lying": 0.028857347354454794,
+          "running": 0.05943289145258757,
+          "sitting": 0.06071529437612319,
+          "walking": 0.03430794043252458
+        }
+      },
+      {
+        "unknown": "Ascending Stairs",
+        "mean_cosine_dist": 0.5049997694790364,
+        "nearest_known": "walking",
+        "per_class_mean": {
+          "lying": 0.6254505902528763,
+          "running": 0.5216786623001098,
+          "sitting": 0.6992869019508362,
+          "walking": 0.173582923412323
+        },
+        "per_class_std": {
+          "lying": 0.0836377638522413,
+          "running": 0.06104383424175181,
+          "sitting": 0.06696760348309234,
+          "walking": 0.032729210396909965
+        }
+      },
+      {
+        "unknown": "Vacuum Cleaning",
+        "mean_cosine_dist": 0.522443564236164,
+        "nearest_known": "sitting",
+        "per_class_mean": {
+          "lying": 0.6212638676166534,
+          "running": 0.5644989788532258,
+          "sitting": 0.30583728551864625,
+          "walking": 0.598174124956131
+        },
+        "per_class_std": {
+          "lying": 0.08431131159676446,
+          "running": 0.05974109730492378,
+          "sitting": 0.07766778288328784,
+          "walking": 0.048739904583699936
+        }
+      },
+      {
+        "unknown": "Rope Jumping",
+        "mean_cosine_dist": 0.5468772344291211,
+        "nearest_known": "running",
+        "per_class_mean": {
+          "lying": 0.6427273035049439,
+          "running": 0.2507962942123413,
+          "sitting": 0.8182477444410324,
+          "walking": 0.4757375955581665
+        },
+        "per_class_std": {
+          "lying": 0.09181266036695698,
+          "running": 0.06212710627714661,
+          "sitting": 0.03466366034248934,
+          "walking": 0.07529945500660948
+        }
+      },
+      {
+        "unknown": "Cycling",
+        "mean_cosine_dist": 0.5574066773056985,
+        "nearest_known": "running",
+        "per_class_mean": {
+          "lying": 0.5928786039352417,
+          "running": 0.40659935474395753,
+          "sitting": 0.629088181257248,
+          "walking": 0.6010605692863464
+        },
+        "per_class_std": {
+          "lying": 0.10601290657473558,
+          "running": 0.07553754852370702,
+          "sitting": 0.10803495138836235,
+          "walking": 0.12407929720841962
+        }
+      },
+      {
+        "unknown": "Nordic Walking",
+        "mean_cosine_dist": 0.5908665042370558,
+        "nearest_known": "walking",
+        "per_class_mean": {
+          "lying": 0.8948564782738686,
+          "running": 0.4694880545139313,
+          "sitting": 0.83336441218853,
+          "walking": 0.16575707197189332
+        },
+        "per_class_std": {
+          "lying": 0.029339002964791944,
+          "running": 0.07304918665062744,
+          "sitting": 0.05648732223176271,
+          "walking": 0.044253379206628626
+        }
+      },
+      {
+        "unknown": "Standing",
+        "mean_cosine_dist": 0.5931624986231328,
+        "nearest_known": "sitting",
+        "per_class_mean": {
+          "lying": 0.7059127360582351,
+          "running": 0.7847260266542435,
+          "sitting": 0.06475876569747925,
+          "walking": 0.817252466082573
+        },
+        "per_class_std": {
+          "lying": 0.04493063707913167,
+          "running": 0.04193628070822936,
+          "sitting": 0.013593803185876167,
+          "walking": 0.01721474690407661
+        }
+      },
+      {
+        "unknown": "Ironing",
+        "mean_cosine_dist": 0.5964605309069156,
+        "nearest_known": "sitting",
+        "per_class_mean": {
+          "lying": 0.8213849663734436,
+          "running": 0.7282611310482026,
+          "sitting": 0.07289470434188842,
+          "walking": 0.7633013218641281
+        },
+        "per_class_std": {
+          "lying": 0.04490693826536846,
+          "running": 0.07032189634633297,
+          "sitting": 0.020713147917817677,
+          "walking": 0.035521821262735925
+        }
+      }
+    ]
+  },
+  "MHEALTH -> RealWorld": {
+    "knowns": [
+      "lying",
+      "running",
+      "sitting",
+      "walking"
+    ],
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "rankings": [
+      {
+        "unknown": "Climbing Stairs",
+        "mean_cosine_dist": 0.5743090715259314,
+        "nearest_known": "walking",
+        "per_class_mean": {
+          "lying": 0.835051779448986,
+          "running": 0.7863192021846771,
+          "sitting": 0.5179086685180664,
+          "walking": 0.15795663595199586
+        },
+        "per_class_std": {
+          "lying": 0.0637144605497465,
+          "running": 0.028428380003812925,
+          "sitting": 0.041950738503107876,
+          "walking": 0.01966778029728833
+        }
+      },
+      {
+        "unknown": "Arm Elevation",
+        "mean_cosine_dist": 0.5784976467490196,
+        "nearest_known": "sitting",
+        "per_class_mean": {
+          "lying": 0.5435538947582245,
+          "running": 0.7387432396411896,
+          "sitting": 0.30925008058547976,
+          "walking": 0.7224433720111847
+        },
+        "per_class_std": {
+          "lying": 0.12875190469994072,
+          "running": 0.07222686139291488,
+          "sitting": 0.08173030826635315,
+          "walking": 0.061064192153947955
+        }
+      },
+      {
+        "unknown": "Jump F&B",
+        "mean_cosine_dist": 0.6116486152634025,
+        "nearest_known": "running",
+        "per_class_mean": {
+          "lying": 0.8524304956197739,
+          "running": 0.15346533060073853,
+          "sitting": 0.8957735352218151,
+          "walking": 0.5449250996112823
+        },
+        "per_class_std": {
+          "lying": 0.047677829648638766,
+          "running": 0.017343126714536784,
+          "sitting": 0.0230598347949803,
+          "walking": 0.024852948906536425
+        }
+      },
+      {
+        "unknown": "Jogging",
+        "mean_cosine_dist": 0.6442655265331269,
+        "nearest_known": "running",
+        "per_class_mean": {
+          "lying": 0.9348949626088142,
+          "running": 0.056811177730560304,
+          "sitting": 0.9090169057250023,
+          "walking": 0.6763390600681305
+        },
+        "per_class_std": {
+          "lying": 0.030911419256006687,
+          "running": 0.012721272561845442,
+          "sitting": 0.03088271696660399,
+          "walking": 0.021052011562831676
+        }
+      },
+      {
+        "unknown": "Cycling",
+        "mean_cosine_dist": 0.6472431432455779,
+        "nearest_known": "sitting",
+        "per_class_mean": {
+          "lying": 0.7969051912426949,
+          "running": 0.6921734303236008,
+          "sitting": 0.19747003316879272,
+          "walking": 0.9024239182472229
+        },
+        "per_class_std": {
+          "lying": 0.10616658268223718,
+          "running": 0.07480699392832403,
+          "sitting": 0.06234910929675701,
+          "walking": 0.032351170890422214
+        }
+      },
+      {
+        "unknown": "Knees Bending",
+        "mean_cosine_dist": 0.653487615659833,
+        "nearest_known": "sitting",
+        "per_class_mean": {
+          "lying": 0.8328629285097122,
+          "running": 0.8997473046183586,
+          "sitting": 0.28463364839553834,
+          "walking": 0.5967065811157226
+        },
+        "per_class_std": {
+          "lying": 0.04221018452786513,
+          "running": 0.01074448525367634,
+          "sitting": 0.07603482755534995,
+          "walking": 0.05941209952864303
+        }
+      },
+      {
+        "unknown": "Waist Bends",
+        "mean_cosine_dist": 0.6889631738886237,
+        "nearest_known": "sitting",
+        "per_class_mean": {
+          "lying": 0.8409883290529251,
+          "running": 0.9159643821418285,
+          "sitting": 0.4603424847126007,
+          "walking": 0.5385574996471405
+        },
+        "per_class_std": {
+          "lying": 0.022795895003710855,
+          "running": 0.01782929610397477,
+          "sitting": 0.07350817360156289,
+          "walking": 0.05160902304630282
+        }
+      },
+      {
+        "unknown": "Standing",
+        "mean_cosine_dist": 0.6891784691251814,
+        "nearest_known": "sitting",
+        "per_class_mean": {
+          "lying": 0.8127108514308929,
+          "running": 0.9526835057884455,
+          "sitting": 0.37971073389053345,
+          "walking": 0.6116087853908538
+        },
+        "per_class_std": {
+          "lying": 0.04405917765649333,
+          "running": 0.01543885031495041,
+          "sitting": 0.07835046200121776,
+          "walking": 0.05065134340705903
+        }
+      }
+    ]
+  },
+  "MHEALTH -> Pamap2": {
+    "knowns": [
+      "lying",
+      "running",
+      "sitting",
+      "walking"
+    ],
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "rankings": [
+      {
+        "unknown": "Climbing Stairs",
+        "mean_cosine_dist": 0.5743090715259314,
+        "nearest_known": "walking",
+        "per_class_mean": {
+          "lying": 0.835051779448986,
+          "running": 0.7863192021846771,
+          "sitting": 0.5179086685180664,
+          "walking": 0.15795663595199586
+        },
+        "per_class_std": {
+          "lying": 0.0637144605497465,
+          "running": 0.028428380003812925,
+          "sitting": 0.041950738503107876,
+          "walking": 0.01966778029728833
+        }
+      },
+      {
+        "unknown": "Arm Elevation",
+        "mean_cosine_dist": 0.5784976467490196,
+        "nearest_known": "sitting",
+        "per_class_mean": {
+          "lying": 0.5435538947582245,
+          "running": 0.7387432396411896,
+          "sitting": 0.30925008058547976,
+          "walking": 0.7224433720111847
+        },
+        "per_class_std": {
+          "lying": 0.12875190469994072,
+          "running": 0.07222686139291488,
+          "sitting": 0.08173030826635315,
+          "walking": 0.061064192153947955
+        }
+      },
+      {
+        "unknown": "Jump F&B",
+        "mean_cosine_dist": 0.6116486152634025,
+        "nearest_known": "running",
+        "per_class_mean": {
+          "lying": 0.8524304956197739,
+          "running": 0.15346533060073853,
+          "sitting": 0.8957735352218151,
+          "walking": 0.5449250996112823
+        },
+        "per_class_std": {
+          "lying": 0.047677829648638766,
+          "running": 0.017343126714536784,
+          "sitting": 0.0230598347949803,
+          "walking": 0.024852948906536425
+        }
+      },
+      {
+        "unknown": "Jogging",
+        "mean_cosine_dist": 0.6442655265331269,
+        "nearest_known": "running",
+        "per_class_mean": {
+          "lying": 0.9348949626088142,
+          "running": 0.056811177730560304,
+          "sitting": 0.9090169057250023,
+          "walking": 0.6763390600681305
+        },
+        "per_class_std": {
+          "lying": 0.030911419256006687,
+          "running": 0.012721272561845442,
+          "sitting": 0.03088271696660399,
+          "walking": 0.021052011562831676
+        }
+      },
+      {
+        "unknown": "Cycling",
+        "mean_cosine_dist": 0.6472431432455779,
+        "nearest_known": "sitting",
+        "per_class_mean": {
+          "lying": 0.7969051912426949,
+          "running": 0.6921734303236008,
+          "sitting": 0.19747003316879272,
+          "walking": 0.9024239182472229
+        },
+        "per_class_std": {
+          "lying": 0.10616658268223718,
+          "running": 0.07480699392832403,
+          "sitting": 0.06234910929675701,
+          "walking": 0.032351170890422214
+        }
+      },
+      {
+        "unknown": "Knees Bending",
+        "mean_cosine_dist": 0.653487615659833,
+        "nearest_known": "sitting",
+        "per_class_mean": {
+          "lying": 0.8328629285097122,
+          "running": 0.8997473046183586,
+          "sitting": 0.28463364839553834,
+          "walking": 0.5967065811157226
+        },
+        "per_class_std": {
+          "lying": 0.04221018452786513,
+          "running": 0.01074448525367634,
+          "sitting": 0.07603482755534995,
+          "walking": 0.05941209952864303
+        }
+      },
+      {
+        "unknown": "Waist Bends",
+        "mean_cosine_dist": 0.6889631738886237,
+        "nearest_known": "sitting",
+        "per_class_mean": {
+          "lying": 0.8409883290529251,
+          "running": 0.9159643821418285,
+          "sitting": 0.4603424847126007,
+          "walking": 0.5385574996471405
+        },
+        "per_class_std": {
+          "lying": 0.022795895003710855,
+          "running": 0.01782929610397477,
+          "sitting": 0.07350817360156289,
+          "walking": 0.05160902304630282
+        }
+      },
+      {
+        "unknown": "Standing",
+        "mean_cosine_dist": 0.6891784691251814,
+        "nearest_known": "sitting",
+        "per_class_mean": {
+          "lying": 0.8127108514308929,
+          "running": 0.9526835057884455,
+          "sitting": 0.37971073389053345,
+          "walking": 0.6116087853908538
+        },
+        "per_class_std": {
+          "lying": 0.04405917765649333,
+          "running": 0.01543885031495041,
+          "sitting": 0.07835046200121776,
+          "walking": 0.05065134340705903
+        }
+      }
+    ]
+  }
+}

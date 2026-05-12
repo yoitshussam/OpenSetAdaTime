@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/773515370876137118/c25d5606e79b4dc8a92bce4c370556e3/artifacts
+deleted_time: 1777726290264
 end_time: 1777448145218
 entry_point_name: ''
 experiment_id: '773515370876137118'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: c25d5606e79b4dc8a92bce4c370556e3
 run_name: OVANet_run_0
 source_name: ''

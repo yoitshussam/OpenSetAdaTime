@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/773515370876137118/040e6450dd214393ad22933e990bd8c8/artifacts
+deleted_time: 1777537135305
 end_time: 1777453208938
 entry_point_name: ''
 experiment_id: '773515370876137118'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 040e6450dd214393ad22933e990bd8c8
 run_name: UniOT_run_0
 source_name: ''

@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/773515370876137118/302a0fea71ea4936a2afabd718b019bd/artifacts
+deleted_time: 1777726290254
 end_time: 1777448812956
 entry_point_name: ''
 experiment_id: '773515370876137118'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 302a0fea71ea4936a2afabd718b019bd
 run_name: DANCE_run_0
 source_name: ''

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/974422661018038835/4a53114e54004284aecd5ece217999c0/artifacts
+end_time: 1778334471327
+entry_point_name: ''
+experiment_id: '974422661018038835'
+lifecycle_stage: active
+run_id: 4a53114e54004284aecd5ece217999c0
+run_name: SPADA_run_3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778334353232
+status: 3
+tags: []
+user_id: tp2474

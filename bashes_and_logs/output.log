@@ -1,0 +1,174 @@
+[scenario] OSBP -> OSDA (uniDA=True)
+Unlabeled data shape:  (1620, 150, 18)
+Unlabelled Combined shape: (2786, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   592
+Target Train batches:   50
+-------------------------------
+
+Private classes:  tensor([])
+=============================================
+Dataset: RealWorld to mhealth_closed_set
+Method:  OSBP
+=============================================
+Source: RealWorld ---> Target: mhealth
+Run ID: 0
+=============================================
+🏃 View run OSBP_run_0 at: http://127.0.0.1:5001/#/experiments/773515370876137118/runs/04d02672dffa4a45927c9e26fb7b822a
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/773515370876137118
+Traceback (most recent call last):
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/main.py", line 98, in <module>
+    trainer.fit()
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/train.py", line 57, in fit
+    self.initialize_algorithm()
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py", line 103, in initialize_algorithm
+    self.algorithm = algorithm_class(backbone_fe, self.dataset_configs, self.hparams, self.device)
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py", line 2377, in __init__
+    lr=hparams["learning_rate"],
+KeyError: 'learning_rate'
+[scenario] OSBP -> OSDA (uniDA=True)
+Unlabeled data shape:  (4752, 150, 18)
+Unlabelled Combined shape: (8054, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   592
+Target Train batches:   148
+-------------------------------
+
+Private classes:  tensor([])
+=============================================
+Dataset: RealWorld to Pamap2_closed_set
+Method:  OSBP
+=============================================
+Source: RealWorld ---> Target: Pamap2
+Run ID: 0
+=============================================
+🏃 View run OSBP_run_0 at: http://127.0.0.1:5001/#/experiments/869196474879197795/runs/e61e768e5fa24c7087a3dd33017a5d80
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/869196474879197795
+Traceback (most recent call last):
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/main.py", line 98, in <module>
+    trainer.fit()
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/train.py", line 57, in fit
+    self.initialize_algorithm()
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py", line 103, in initialize_algorithm
+    self.algorithm = algorithm_class(backbone_fe, self.dataset_configs, self.hparams, self.device)
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py", line 2377, in __init__
+    lr=hparams["learning_rate"],
+KeyError: 'learning_rate'
+[scenario] OSBP -> OSDA (uniDA=True)
+Unlabeled data shape:  (26209, 150, 18)
+Unlabelled Combined shape: (45172, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   103
+Target Train batches:   819
+-------------------------------
+
+Private classes:  tensor([])
+=============================================
+Dataset: Pamap2 to RealWorld_closed_set
+Method:  OSBP
+=============================================
+Source: Pamap2 ---> Target: RealWorld
+Run ID: 0
+=============================================
+🏃 View run OSBP_run_0 at: http://127.0.0.1:5001/#/experiments/235622674570859121/runs/9c2b312c96e94334b50a805ae7415d3e
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/235622674570859121
+Traceback (most recent call last):
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/main.py", line 98, in <module>
+    trainer.fit()
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/train.py", line 57, in fit
+    self.initialize_algorithm()
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py", line 103, in initialize_algorithm
+    self.algorithm = algorithm_class(backbone_fe, self.dataset_configs, self.hparams, self.device)
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py", line 2377, in __init__
+    lr=hparams["learning_rate"],
+KeyError: 'learning_rate'
+[scenario] OSBP -> OSDA (uniDA=True)
+Unlabeled data shape:  (1620, 150, 18)
+Unlabelled Combined shape: (2786, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   103
+Target Train batches:   50
+-------------------------------
+
+Private classes:  tensor([])
+=============================================
+Dataset: Pamap2 to mhealth_closed_set
+Method:  OSBP
+=============================================
+Source: Pamap2 ---> Target: mhealth
+Run ID: 0
+=============================================
+🏃 View run OSBP_run_0 at: http://127.0.0.1:5001/#/experiments/297438354379357924/runs/10ad0a66221f45a1b5e1f93993b525b5
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/297438354379357924
+Traceback (most recent call last):
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/main.py", line 98, in <module>
+    trainer.fit()
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/train.py", line 57, in fit
+    self.initialize_algorithm()
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py", line 103, in initialize_algorithm
+    self.algorithm = algorithm_class(backbone_fe, self.dataset_configs, self.hparams, self.device)
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py", line 2377, in __init__
+    lr=hparams["learning_rate"],
+KeyError: 'learning_rate'
+[scenario] OSBP -> OSDA (uniDA=True)
+Unlabeled data shape:  (26209, 150, 18)
+Unlabelled Combined shape: (45172, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   36
+Target Train batches:   819
+-------------------------------
+
+Private classes:  tensor([])
+=============================================
+Dataset: mhealth to RealWorld_closed_set
+Method:  OSBP
+=============================================
+Source: mhealth ---> Target: RealWorld
+Run ID: 0
+=============================================
+🏃 View run OSBP_run_0 at: http://127.0.0.1:5001/#/experiments/259823949667944240/runs/a0b9ca6abf574d8c8804d692a7078dcb
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/259823949667944240
+Traceback (most recent call last):
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/main.py", line 98, in <module>
+    trainer.fit()
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/train.py", line 57, in fit
+    self.initialize_algorithm()
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py", line 103, in initialize_algorithm
+    self.algorithm = algorithm_class(backbone_fe, self.dataset_configs, self.hparams, self.device)
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py", line 2377, in __init__
+    lr=hparams["learning_rate"],
+KeyError: 'learning_rate'
+[scenario] OSBP -> OSDA (uniDA=True)
+Unlabeled data shape:  (4752, 150, 18)
+Unlabelled Combined shape: (8054, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   36
+Target Train batches:   148
+-------------------------------
+
+Private classes:  tensor([])
+=============================================
+Dataset: mhealth to Pamap2_closed_set
+Method:  OSBP
+=============================================
+Source: mhealth ---> Target: Pamap2
+Run ID: 0
+=============================================
+🏃 View run OSBP_run_0 at: http://127.0.0.1:5001/#/experiments/206873663002748842/runs/1615de719ca04a888f4d17678c34baec
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/206873663002748842
+Traceback (most recent call last):
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/main.py", line 98, in <module>
+    trainer.fit()
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/train.py", line 57, in fit
+    self.initialize_algorithm()
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py", line 103, in initialize_algorithm
+    self.algorithm = algorithm_class(backbone_fe, self.dataset_configs, self.hparams, self.device)
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py", line 2377, in __init__
+    lr=hparams["learning_rate"],
+KeyError: 'learning_rate'

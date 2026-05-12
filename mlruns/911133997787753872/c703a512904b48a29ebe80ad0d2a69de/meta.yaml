@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/911133997787753872/c703a512904b48a29ebe80ad0d2a69de/artifacts
+end_time: 1778107766939
+entry_point_name: ''
+experiment_id: '911133997787753872'
+lifecycle_stage: active
+run_id: c703a512904b48a29ebe80ad0d2a69de
+run_name: RAINCOAT_run_4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778107749950
+status: 3
+tags: []
+user_id: tp2474

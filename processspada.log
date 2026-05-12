@@ -1,0 +1,1338 @@
+==================== [n1 fno_mean] PDAAN ====================
+[curriculum] scenario=PDA  strategy=hard  n_unknown=1  rank_variant=fno_mean
+[curriculum] source mapping (5 classes): {'lying': 'lying', 'sitting': 'sitting', 'walking': 'walking', 'running': 'running', 'climbingup': 'climbingup'}
+[curriculum] target mapping (4 classes): {'Lying down': 'lying', 'Sitting and relaxing': 'sitting', 'Walking': 'walking', 'Running': 'running'}
+[curriculum] unknowns added (in hard order): ['climbingup']
+[scenario] PDAAN -> PDA (uniDA=False)
+Unlabeled data shape:  (1620, 150, 18)
+Unlabelled Combined shape: (2786, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   344
+Target Train batches:   25
+-------------------------------
+
+=============================================
+Dataset: RealWorld to MHEALTH_PDA_hard_n1_fno_mean
+Method:  PDAAN
+=============================================
+Source: RealWorld ---> Target: MHEALTH
+Run ID: 0
+=============================================
+[Epoch : 1/20]
+Total_loss	: 6.1564
+Src_cls_loss	: 1.3374
+WCE_loss	: -0.4041
+Adv_loss	: 3.6167
+-------------------------------------
+[Epoch : 2/20]
+Total_loss	: 5.9829
+Src_cls_loss	: 1.2368
+WCE_loss	: -0.3616
+Adv_loss	: 3.5257
+-------------------------------------
+[Epoch : 3/20]
+Total_loss	: 5.8411
+Src_cls_loss	: 1.1354
+WCE_loss	: -0.3207
+Adv_loss	: 3.4579
+-------------------------------------
+[Epoch : 4/20]
+Total_loss	: 5.7135
+Src_cls_loss	: 1.0377
+WCE_loss	: -0.2824
+Adv_loss	: 3.3996
+-------------------------------------
+[Epoch : 5/20]
+Total_loss	: 5.5994
+Src_cls_loss	: 0.9480
+WCE_loss	: -0.2484
+Adv_loss	: 3.3494
+-------------------------------------
+[Epoch : 6/20]
+Total_loss	: 5.4990
+Src_cls_loss	: 0.8688
+WCE_loss	: -0.2198
+Adv_loss	: 3.3066
+-------------------------------------
+[Epoch : 7/20]
+Total_loss	: 5.4108
+Src_cls_loss	: 0.7998
+WCE_loss	: -0.1960
+Adv_loss	: 3.2700
+-------------------------------------
+[Epoch : 8/20]
+Total_loss	: 5.3272
+Src_cls_loss	: 0.7393
+WCE_loss	: -0.1764
+Adv_loss	: 3.2350
+-------------------------------------
+[Epoch : 9/20]
+Total_loss	: 5.2446
+Src_cls_loss	: 0.6858
+WCE_loss	: -0.1602
+Adv_loss	: 3.1994
+-------------------------------------
+[Epoch : 10/20]
+Total_loss	: 5.1642
+Src_cls_loss	: 0.6388
+WCE_loss	: -0.1466
+Adv_loss	: 3.1635
+-------------------------------------
+[Epoch : 11/20]
+Total_loss	: 5.0895
+Src_cls_loss	: 0.5984
+WCE_loss	: -0.1352
+Adv_loss	: 3.1293
+-------------------------------------
+[Epoch : 12/20]
+Total_loss	: 5.0167
+Src_cls_loss	: 0.5624
+WCE_loss	: -0.1254
+Adv_loss	: 3.0949
+-------------------------------------
+[Epoch : 13/20]
+Total_loss	: 4.9445
+Src_cls_loss	: 0.5303
+WCE_loss	: -0.1168
+Adv_loss	: 3.0596
+-------------------------------------
+[Epoch : 14/20]
+Total_loss	: 4.8751
+Src_cls_loss	: 0.5018
+WCE_loss	: -0.1094
+Adv_loss	: 3.0249
+-------------------------------------
+[Epoch : 15/20]
+Total_loss	: 4.8072
+Src_cls_loss	: 0.4763
+WCE_loss	: -0.1028
+Adv_loss	: 2.9901
+-------------------------------------
+[Epoch : 16/20]
+Total_loss	: 4.7399
+Src_cls_loss	: 0.4532
+WCE_loss	: -0.0969
+Adv_loss	: 2.9548
+-------------------------------------
+[Epoch : 17/20]
+Total_loss	: 4.6722
+Src_cls_loss	: 0.4321
+WCE_loss	: -0.0917
+Adv_loss	: 2.9185
+-------------------------------------
+[Epoch : 18/20]
+Total_loss	: 4.6046
+Src_cls_loss	: 0.4128
+WCE_loss	: -0.0870
+Adv_loss	: 2.8815
+-------------------------------------
+[Epoch : 19/20]
+Total_loss	: 4.5368
+Src_cls_loss	: 0.3950
+WCE_loss	: -0.0828
+Adv_loss	: 2.8440
+-------------------------------------
+[Epoch : 20/20]
+Total_loss	: 4.4690
+Src_cls_loss	: 0.3786
+WCE_loss	: -0.0789
+Adv_loss	: 2.8058
+-------------------------------------
+/home/tp2474/miniconda3/envs/myenv/lib/python3.9/site-packages/torchmetrics/utilities/prints.py:43: UserWarning: No positive samples in targets, true positive value should be meaningless. Returning zero tensor in true positive score
+  warnings.warn(*args, **kwargs)
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to MHEALTH_PDA_hard_n1_fno_mean/PDAAN_PDA_hard_n1_fno_mean/RealWorld_to_MHEALTH_run_0
+🏃 View run PDAAN_run_0 at: http://127.0.0.1:5001/#/experiments/841287542604591211/runs/e22e9ce9766e4b14b17dd245f9bc418c
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/841287542604591211
+=============================================
+Dataset: RealWorld to MHEALTH_PDA_hard_n1_fno_mean
+Method:  PDAAN
+=============================================
+Source: RealWorld ---> Target: MHEALTH
+Run ID: 1
+=============================================
+[Epoch : 1/20]
+Total_loss	: 6.1357
+Src_cls_loss	: 1.3262
+WCE_loss	: -0.4016
+Adv_loss	: 3.6079
+-------------------------------------
+[Epoch : 2/20]
+Total_loss	: 5.9939
+Src_cls_loss	: 1.2417
+WCE_loss	: -0.3642
+Adv_loss	: 3.5324
+-------------------------------------
+[Epoch : 3/20]
+Total_loss	: 5.8640
+Src_cls_loss	: 1.1453
+WCE_loss	: -0.3235
+Adv_loss	: 3.4692
+-------------------------------------
+[Epoch : 4/20]
+Total_loss	: 5.7537
+Src_cls_loss	: 1.0516
+WCE_loss	: -0.2848
+Adv_loss	: 3.4195
+-------------------------------------
+[Epoch : 5/20]
+Total_loss	: 5.6368
+Src_cls_loss	: 0.9604
+WCE_loss	: -0.2501
+Adv_loss	: 3.3677
+-------------------------------------
+[Epoch : 6/20]
+Total_loss	: 5.5411
+Src_cls_loss	: 0.8831
+WCE_loss	: -0.2218
+Adv_loss	: 3.3271
+-------------------------------------
+[Epoch : 7/20]
+Total_loss	: 5.4346
+Src_cls_loss	: 0.8100
+WCE_loss	: -0.1974
+Adv_loss	: 3.2805
+-------------------------------------
+[Epoch : 8/20]
+Total_loss	: 5.3390
+Src_cls_loss	: 0.7482
+WCE_loss	: -0.1779
+Adv_loss	: 3.2384
+-------------------------------------
+[Epoch : 9/20]
+Total_loss	: 5.2480
+Src_cls_loss	: 0.6939
+WCE_loss	: -0.1615
+Adv_loss	: 3.1976
+-------------------------------------
+[Epoch : 10/20]
+Total_loss	: 5.1682
+Src_cls_loss	: 0.6477
+WCE_loss	: -0.1480
+Adv_loss	: 3.1617
+-------------------------------------
+[Epoch : 11/20]
+Total_loss	: 5.0915
+Src_cls_loss	: 0.6071
+WCE_loss	: -0.1365
+Adv_loss	: 3.1261
+-------------------------------------
+[Epoch : 12/20]
+Total_loss	: 5.0181
+Src_cls_loss	: 0.5710
+WCE_loss	: -0.1266
+Adv_loss	: 3.0913
+-------------------------------------
+[Epoch : 13/20]
+Total_loss	: 4.9458
+Src_cls_loss	: 0.5389
+WCE_loss	: -0.1180
+Adv_loss	: 3.0559
+-------------------------------------
+[Epoch : 14/20]
+Total_loss	: 4.8770
+Src_cls_loss	: 0.5106
+WCE_loss	: -0.1105
+Adv_loss	: 3.0214
+-------------------------------------
+[Epoch : 15/20]
+Total_loss	: 4.8081
+Src_cls_loss	: 0.4847
+WCE_loss	: -0.1038
+Adv_loss	: 2.9860
+-------------------------------------
+[Epoch : 16/20]
+Total_loss	: 4.7406
+Src_cls_loss	: 0.4614
+WCE_loss	: -0.0979
+Adv_loss	: 2.9507
+-------------------------------------
+[Epoch : 17/20]
+Total_loss	: 4.6733
+Src_cls_loss	: 0.4402
+WCE_loss	: -0.0926
+Adv_loss	: 2.9147
+-------------------------------------
+[Epoch : 18/20]
+Total_loss	: 4.6059
+Src_cls_loss	: 0.4207
+WCE_loss	: -0.0878
+Adv_loss	: 2.8779
+-------------------------------------
+[Epoch : 19/20]
+Total_loss	: 4.5387
+Src_cls_loss	: 0.4029
+WCE_loss	: -0.0835
+Adv_loss	: 2.8407
+-------------------------------------
+[Epoch : 20/20]
+Total_loss	: 4.4711
+Src_cls_loss	: 0.3865
+WCE_loss	: -0.0796
+Adv_loss	: 2.8027
+-------------------------------------
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to MHEALTH_PDA_hard_n1_fno_mean/PDAAN_PDA_hard_n1_fno_mean/RealWorld_to_MHEALTH_run_1
+🏃 View run PDAAN_run_1 at: http://127.0.0.1:5001/#/experiments/841287542604591211/runs/b52d6d18658746009319237c259f35bd
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/841287542604591211
+=============================================
+Dataset: RealWorld to MHEALTH_PDA_hard_n1_fno_mean
+Method:  PDAAN
+=============================================
+Source: RealWorld ---> Target: MHEALTH
+Run ID: 2
+=============================================
+[Epoch : 1/20]
+Total_loss	: 6.2319
+Src_cls_loss	: 1.3135
+WCE_loss	: -0.3967
+Adv_loss	: 3.6756
+-------------------------------------
+[Epoch : 2/20]
+Total_loss	: 6.0175
+Src_cls_loss	: 1.2192
+WCE_loss	: -0.3561
+Adv_loss	: 3.5550
+-------------------------------------
+[Epoch : 3/20]
+Total_loss	: 5.8756
+Src_cls_loss	: 1.1216
+WCE_loss	: -0.3151
+Adv_loss	: 3.4845
+-------------------------------------
+[Epoch : 4/20]
+Total_loss	: 5.7332
+Src_cls_loss	: 1.0154
+WCE_loss	: -0.2735
+Adv_loss	: 3.4188
+-------------------------------------
+[Epoch : 5/20]
+Total_loss	: 5.6130
+Src_cls_loss	: 0.9223
+WCE_loss	: -0.2386
+Adv_loss	: 3.3658
+-------------------------------------
+[Epoch : 6/20]
+Total_loss	: 5.5142
+Src_cls_loss	: 0.8429
+WCE_loss	: -0.2101
+Adv_loss	: 3.3243
+-------------------------------------
+[Epoch : 7/20]
+Total_loss	: 5.4216
+Src_cls_loss	: 0.7729
+WCE_loss	: -0.1868
+Adv_loss	: 3.2859
+-------------------------------------
+[Epoch : 8/20]
+Total_loss	: 5.3302
+Src_cls_loss	: 0.7112
+WCE_loss	: -0.1677
+Adv_loss	: 3.2470
+-------------------------------------
+[Epoch : 9/20]
+Total_loss	: 5.2457
+Src_cls_loss	: 0.6585
+WCE_loss	: -0.1521
+Adv_loss	: 3.2103
+-------------------------------------
+[Epoch : 10/20]
+Total_loss	: 5.1659
+Src_cls_loss	: 0.6129
+WCE_loss	: -0.1393
+Adv_loss	: 3.1746
+-------------------------------------
+[Epoch : 11/20]
+Total_loss	: 5.0895
+Src_cls_loss	: 0.5732
+WCE_loss	: -0.1283
+Adv_loss	: 3.1392
+-------------------------------------
+[Epoch : 12/20]
+Total_loss	: 5.0155
+Src_cls_loss	: 0.5383
+WCE_loss	: -0.1190
+Adv_loss	: 3.1038
+-------------------------------------
+[Epoch : 13/20]
+Total_loss	: 4.9446
+Src_cls_loss	: 0.5075
+WCE_loss	: -0.1109
+Adv_loss	: 3.0689
+-------------------------------------
+[Epoch : 14/20]
+Total_loss	: 4.8753
+Src_cls_loss	: 0.4801
+WCE_loss	: -0.1038
+Adv_loss	: 3.0340
+-------------------------------------
+[Epoch : 15/20]
+Total_loss	: 4.8071
+Src_cls_loss	: 0.4554
+WCE_loss	: -0.0975
+Adv_loss	: 2.9986
+-------------------------------------
+[Epoch : 16/20]
+Total_loss	: 4.7393
+Src_cls_loss	: 0.4330
+WCE_loss	: -0.0919
+Adv_loss	: 2.9628
+-------------------------------------
+[Epoch : 17/20]
+Total_loss	: 4.6715
+Src_cls_loss	: 0.4126
+WCE_loss	: -0.0869
+Adv_loss	: 2.9262
+-------------------------------------
+[Epoch : 18/20]
+Total_loss	: 4.6045
+Src_cls_loss	: 0.3941
+WCE_loss	: -0.0824
+Adv_loss	: 2.8893
+-------------------------------------
+[Epoch : 19/20]
+Total_loss	: 4.5364
+Src_cls_loss	: 0.3769
+WCE_loss	: -0.0783
+Adv_loss	: 2.8513
+-------------------------------------
+[Epoch : 20/20]
+Total_loss	: 4.4684
+Src_cls_loss	: 0.3613
+WCE_loss	: -0.0747
+Adv_loss	: 2.8128
+-------------------------------------
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to MHEALTH_PDA_hard_n1_fno_mean/PDAAN_PDA_hard_n1_fno_mean/RealWorld_to_MHEALTH_run_2
+🏃 View run PDAAN_run_2 at: http://127.0.0.1:5001/#/experiments/841287542604591211/runs/22c5b1d985744db2b1811b111c29bc75
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/841287542604591211
+=============================================
+Dataset: RealWorld to MHEALTH_PDA_hard_n1_fno_mean
+Method:  PDAAN
+=============================================
+Source: RealWorld ---> Target: MHEALTH
+Run ID: 3
+=============================================
+[Epoch : 1/20]
+Total_loss	: 6.0706
+Src_cls_loss	: 1.2787
+WCE_loss	: -0.3849
+Adv_loss	: 3.5795
+-------------------------------------
+[Epoch : 2/20]
+Total_loss	: 5.9403
+Src_cls_loss	: 1.2001
+WCE_loss	: -0.3487
+Adv_loss	: 3.5089
+-------------------------------------
+[Epoch : 3/20]
+Total_loss	: 5.8278
+Src_cls_loss	: 1.1071
+WCE_loss	: -0.3088
+Adv_loss	: 3.4559
+-------------------------------------
+[Epoch : 4/20]
+Total_loss	: 5.7191
+Src_cls_loss	: 1.0099
+WCE_loss	: -0.2690
+Adv_loss	: 3.4085
+-------------------------------------
+[Epoch : 5/20]
+Total_loss	: 5.6134
+Src_cls_loss	: 0.9192
+WCE_loss	: -0.2345
+Adv_loss	: 3.3640
+-------------------------------------
+[Epoch : 6/20]
+Total_loss	: 5.5134
+Src_cls_loss	: 0.8380
+WCE_loss	: -0.2060
+Adv_loss	: 3.3230
+-------------------------------------
+[Epoch : 7/20]
+Total_loss	: 5.4174
+Src_cls_loss	: 0.7670
+WCE_loss	: -0.1830
+Adv_loss	: 3.2833
+-------------------------------------
+[Epoch : 8/20]
+Total_loss	: 5.3280
+Src_cls_loss	: 0.7060
+WCE_loss	: -0.1644
+Adv_loss	: 3.2458
+-------------------------------------
+[Epoch : 9/20]
+Total_loss	: 5.2417
+Src_cls_loss	: 0.6531
+WCE_loss	: -0.1492
+Adv_loss	: 3.2083
+-------------------------------------
+[Epoch : 10/20]
+Total_loss	: 5.1608
+Src_cls_loss	: 0.6077
+WCE_loss	: -0.1366
+Adv_loss	: 3.1720
+-------------------------------------
+[Epoch : 11/20]
+Total_loss	: 5.0861
+Src_cls_loss	: 0.5689
+WCE_loss	: -0.1260
+Adv_loss	: 3.1375
+-------------------------------------
+[Epoch : 12/20]
+Total_loss	: 5.0125
+Src_cls_loss	: 0.5343
+WCE_loss	: -0.1169
+Adv_loss	: 3.1024
+-------------------------------------
+[Epoch : 13/20]
+Total_loss	: 4.9413
+Src_cls_loss	: 0.5038
+WCE_loss	: -0.1090
+Adv_loss	: 3.0673
+-------------------------------------
+[Epoch : 14/20]
+Total_loss	: 4.8719
+Src_cls_loss	: 0.4767
+WCE_loss	: -0.1021
+Adv_loss	: 3.0322
+-------------------------------------
+[Epoch : 15/20]
+Total_loss	: 4.8038
+Src_cls_loss	: 0.4524
+WCE_loss	: -0.0959
+Adv_loss	: 2.9968
+-------------------------------------
+[Epoch : 16/20]
+Total_loss	: 4.7366
+Src_cls_loss	: 0.4305
+WCE_loss	: -0.0905
+Adv_loss	: 2.9612
+-------------------------------------
+[Epoch : 17/20]
+Total_loss	: 4.6694
+Src_cls_loss	: 0.4104
+WCE_loss	: -0.0856
+Adv_loss	: 2.9249
+-------------------------------------
+[Epoch : 18/20]
+Total_loss	: 4.6023
+Src_cls_loss	: 0.3921
+WCE_loss	: -0.0812
+Adv_loss	: 2.8880
+-------------------------------------
+[Epoch : 19/20]
+Total_loss	: 4.5347
+Src_cls_loss	: 0.3751
+WCE_loss	: -0.0772
+Adv_loss	: 2.8503
+-------------------------------------
+[Epoch : 20/20]
+Total_loss	: 4.4669
+Src_cls_loss	: 0.3597
+WCE_loss	: -0.0736
+Adv_loss	: 2.8118
+-------------------------------------
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to MHEALTH_PDA_hard_n1_fno_mean/PDAAN_PDA_hard_n1_fno_mean/RealWorld_to_MHEALTH_run_3
+🏃 View run PDAAN_run_3 at: http://127.0.0.1:5001/#/experiments/841287542604591211/runs/f00c220763264a738f9acd418a58a39c
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/841287542604591211
+=============================================
+Dataset: RealWorld to MHEALTH_PDA_hard_n1_fno_mean
+Method:  PDAAN
+=============================================
+Source: RealWorld ---> Target: MHEALTH
+Run ID: 4
+=============================================
+[Epoch : 1/20]
+Total_loss	: 6.1053
+Src_cls_loss	: 1.2888
+WCE_loss	: -0.3888
+Adv_loss	: 3.5997
+-------------------------------------
+[Epoch : 2/20]
+Total_loss	: 5.9451
+Src_cls_loss	: 1.1995
+WCE_loss	: -0.3488
+Adv_loss	: 3.5124
+-------------------------------------
+[Epoch : 3/20]
+Total_loss	: 5.8259
+Src_cls_loss	: 1.1020
+WCE_loss	: -0.3071
+Adv_loss	: 3.4563
+-------------------------------------
+[Epoch : 4/20]
+Total_loss	: 5.7176
+Src_cls_loss	: 1.0051
+WCE_loss	: -0.2675
+Adv_loss	: 3.4092
+-------------------------------------
+[Epoch : 5/20]
+Total_loss	: 5.6089
+Src_cls_loss	: 0.9135
+WCE_loss	: -0.2331
+Adv_loss	: 3.3634
+-------------------------------------
+[Epoch : 6/20]
+Total_loss	: 5.5020
+Src_cls_loss	: 0.8307
+WCE_loss	: -0.2045
+Adv_loss	: 3.3187
+-------------------------------------
+[Epoch : 7/20]
+Total_loss	: 5.4065
+Src_cls_loss	: 0.7600
+WCE_loss	: -0.1815
+Adv_loss	: 3.2792
+-------------------------------------
+[Epoch : 8/20]
+Total_loss	: 5.3162
+Src_cls_loss	: 0.6991
+WCE_loss	: -0.1630
+Adv_loss	: 3.2411
+-------------------------------------
+[Epoch : 9/20]
+Total_loss	: 5.2308
+Src_cls_loss	: 0.6469
+WCE_loss	: -0.1480
+Adv_loss	: 3.2039
+-------------------------------------
+[Epoch : 10/20]
+Total_loss	: 5.1497
+Src_cls_loss	: 0.6019
+WCE_loss	: -0.1355
+Adv_loss	: 3.1673
+-------------------------------------
+[Epoch : 11/20]
+Total_loss	: 5.0742
+Src_cls_loss	: 0.5632
+WCE_loss	: -0.1250
+Adv_loss	: 3.1323
+-------------------------------------
+[Epoch : 12/20]
+Total_loss	: 5.0005
+Src_cls_loss	: 0.5290
+WCE_loss	: -0.1160
+Adv_loss	: 3.0969
+-------------------------------------
+[Epoch : 13/20]
+Total_loss	: 4.9289
+Src_cls_loss	: 0.4988
+WCE_loss	: -0.1081
+Adv_loss	: 3.0615
+-------------------------------------
+[Epoch : 14/20]
+Total_loss	: 4.8601
+Src_cls_loss	: 0.4720
+WCE_loss	: -0.1013
+Adv_loss	: 3.0267
+-------------------------------------
+[Epoch : 15/20]
+Total_loss	: 4.7928
+Src_cls_loss	: 0.4479
+WCE_loss	: -0.0952
+Adv_loss	: 2.9918
+-------------------------------------
+[Epoch : 16/20]
+Total_loss	: 4.7254
+Src_cls_loss	: 0.4260
+WCE_loss	: -0.0898
+Adv_loss	: 2.9560
+-------------------------------------
+[Epoch : 17/20]
+Total_loss	: 4.6585
+Src_cls_loss	: 0.4062
+WCE_loss	: -0.0849
+Adv_loss	: 2.9198
+-------------------------------------
+[Epoch : 18/20]
+Total_loss	: 4.5921
+Src_cls_loss	: 0.3881
+WCE_loss	: -0.0806
+Adv_loss	: 2.8832
+-------------------------------------
+[Epoch : 19/20]
+Total_loss	: 4.5248
+Src_cls_loss	: 0.3713
+WCE_loss	: -0.0766
+Adv_loss	: 2.8456
+-------------------------------------
+[Epoch : 20/20]
+Total_loss	: 4.4576
+Src_cls_loss	: 0.3561
+WCE_loss	: -0.0730
+Adv_loss	: 2.8073
+-------------------------------------
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to MHEALTH_PDA_hard_n1_fno_mean/PDAAN_PDA_hard_n1_fno_mean/RealWorld_to_MHEALTH_run_4
+🏃 View run PDAAN_run_4 at: http://127.0.0.1:5001/#/experiments/841287542604591211/runs/c10a2eb1cb2d4aaca68166d01d54c541
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/841287542604591211
+==================== [n1 fno_mean] SPADA ====================
+[curriculum] scenario=PDA  strategy=hard  n_unknown=1  rank_variant=fno_mean
+[curriculum] source mapping (5 classes): {'lying': 'lying', 'sitting': 'sitting', 'walking': 'walking', 'running': 'running', 'climbingup': 'climbingup'}
+[curriculum] target mapping (4 classes): {'Lying down': 'lying', 'Sitting and relaxing': 'sitting', 'Walking': 'walking', 'Running': 'running'}
+[curriculum] unknowns added (in hard order): ['climbingup']
+[scenario] SPADA -> PDA (uniDA=False)
+Unlabeled data shape:  (1620, 150, 18)
+Unlabelled Combined shape: (2786, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   344
+Target Train batches:   25
+-------------------------------
+
+=============================================
+Dataset: RealWorld to MHEALTH_PDA_hard_n1_fno_mean
+Method:  SPADA
+=============================================
+Source: RealWorld ---> Target: MHEALTH
+Run ID: 0
+=============================================
+[Epoch : 1/20]
+Total_loss	: 4.4450
+Src_cls_loss	: 1.3749
+Adv_loss	: 1.3415
+Dw_loss	: 0.6636
+-------------------------------------
+[Epoch : 2/20]
+Total_loss	: 4.1648
+Src_cls_loss	: 1.2674
+Adv_loss	: 1.3328
+Dw_loss	: 0.6495
+-------------------------------------
+[Epoch : 3/20]
+Total_loss	: 3.9167
+Src_cls_loss	: 1.1679
+Adv_loss	: 1.3408
+Dw_loss	: 0.6531
+-------------------------------------
+[Epoch : 4/20]
+Total_loss	: 3.6895
+Src_cls_loss	: 1.0770
+Adv_loss	: 1.3473
+Dw_loss	: 0.6571
+-------------------------------------
+[Epoch : 5/20]
+Total_loss	: 3.4881
+Src_cls_loss	: 0.9962
+Adv_loss	: 1.3539
+Dw_loss	: 0.6617
+-------------------------------------
+[Epoch : 6/20]
+Total_loss	: 3.3075
+Src_cls_loss	: 0.9242
+Adv_loss	: 1.3584
+Dw_loss	: 0.6647
+-------------------------------------
+[Epoch : 7/20]
+Total_loss	: 3.1475
+Src_cls_loss	: 0.8605
+Adv_loss	: 1.3617
+Dw_loss	: 0.6670
+-------------------------------------
+[Epoch : 8/20]
+Total_loss	: 3.0050
+Src_cls_loss	: 0.8038
+Adv_loss	: 1.3646
+Dw_loss	: 0.6692
+-------------------------------------
+[Epoch : 9/20]
+Total_loss	: 2.8784
+Src_cls_loss	: 0.7536
+Adv_loss	: 1.3668
+Dw_loss	: 0.6707
+-------------------------------------
+[Epoch : 10/20]
+Total_loss	: 2.7648
+Src_cls_loss	: 0.7085
+Adv_loss	: 1.3687
+Dw_loss	: 0.6723
+-------------------------------------
+[Epoch : 11/20]
+Total_loss	: 2.6624
+Src_cls_loss	: 0.6679
+Adv_loss	: 1.3703
+Dw_loss	: 0.6735
+-------------------------------------
+[Epoch : 12/20]
+Total_loss	: 2.5693
+Src_cls_loss	: 0.6311
+Adv_loss	: 1.3715
+Dw_loss	: 0.6744
+-------------------------------------
+[Epoch : 13/20]
+Total_loss	: 2.4855
+Src_cls_loss	: 0.5979
+Adv_loss	: 1.3725
+Dw_loss	: 0.6753
+-------------------------------------
+[Epoch : 14/20]
+Total_loss	: 2.4099
+Src_cls_loss	: 0.5680
+Adv_loss	: 1.3735
+Dw_loss	: 0.6759
+-------------------------------------
+[Epoch : 15/20]
+Total_loss	: 2.3403
+Src_cls_loss	: 0.5405
+Adv_loss	: 1.3743
+Dw_loss	: 0.6766
+-------------------------------------
+[Epoch : 16/20]
+Total_loss	: 2.2771
+Src_cls_loss	: 0.5155
+Adv_loss	: 1.3751
+Dw_loss	: 0.6772
+-------------------------------------
+[Epoch : 17/20]
+Total_loss	: 2.2192
+Src_cls_loss	: 0.4926
+Adv_loss	: 1.3757
+Dw_loss	: 0.6777
+-------------------------------------
+[Epoch : 18/20]
+Total_loss	: 2.1657
+Src_cls_loss	: 0.4715
+Adv_loss	: 1.3763
+Dw_loss	: 0.6780
+-------------------------------------
+[Epoch : 19/20]
+Total_loss	: 2.1163
+Src_cls_loss	: 0.4520
+Adv_loss	: 1.3767
+Dw_loss	: 0.6782
+-------------------------------------
+[Epoch : 20/20]
+Total_loss	: 2.0709
+Src_cls_loss	: 0.4341
+Adv_loss	: 1.3772
+Dw_loss	: 0.6784
+-------------------------------------
+/home/tp2474/miniconda3/envs/myenv/lib/python3.9/site-packages/torchmetrics/utilities/prints.py:43: UserWarning: No positive samples in targets, true positive value should be meaningless. Returning zero tensor in true positive score
+  warnings.warn(*args, **kwargs)
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to MHEALTH_PDA_hard_n1_fno_mean/SPADA_PDA_hard_n1_fno_mean/RealWorld_to_MHEALTH_run_0
+🏃 View run SPADA_run_0 at: http://127.0.0.1:5001/#/experiments/841287542604591211/runs/244f181d5fa4446faf91fa36c5e2b789
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/841287542604591211
+=============================================
+Dataset: RealWorld to MHEALTH_PDA_hard_n1_fno_mean
+Method:  SPADA
+=============================================
+Source: RealWorld ---> Target: MHEALTH
+Run ID: 1
+=============================================
+[Epoch : 1/20]
+Total_loss	: 4.4699
+Src_cls_loss	: 1.3828
+Adv_loss	: 1.3483
+Dw_loss	: 0.6664
+-------------------------------------
+[Epoch : 2/20]
+Total_loss	: 4.2055
+Src_cls_loss	: 1.2753
+Adv_loss	: 1.3622
+Dw_loss	: 0.6731
+-------------------------------------
+[Epoch : 3/20]
+Total_loss	: 3.9500
+Src_cls_loss	: 1.1735
+Adv_loss	: 1.3678
+Dw_loss	: 0.6755
+-------------------------------------
+[Epoch : 4/20]
+Total_loss	: 3.7168
+Src_cls_loss	: 1.0813
+Adv_loss	: 1.3708
+Dw_loss	: 0.6773
+-------------------------------------
+[Epoch : 5/20]
+Total_loss	: 3.5106
+Src_cls_loss	: 0.9996
+Adv_loss	: 1.3738
+Dw_loss	: 0.6789
+-------------------------------------
+[Epoch : 6/20]
+Total_loss	: 3.3253
+Src_cls_loss	: 0.9265
+Adv_loss	: 1.3754
+Dw_loss	: 0.6793
+-------------------------------------
+[Epoch : 7/20]
+Total_loss	: 3.1611
+Src_cls_loss	: 0.8618
+Adv_loss	: 1.3765
+Dw_loss	: 0.6789
+-------------------------------------
+[Epoch : 8/20]
+Total_loss	: 3.0144
+Src_cls_loss	: 0.8040
+Adv_loss	: 1.3774
+Dw_loss	: 0.6785
+-------------------------------------
+[Epoch : 9/20]
+Total_loss	: 2.8830
+Src_cls_loss	: 0.7523
+Adv_loss	: 1.3782
+Dw_loss	: 0.6774
+-------------------------------------
+[Epoch : 10/20]
+Total_loss	: 2.7655
+Src_cls_loss	: 0.7060
+Adv_loss	: 1.3789
+Dw_loss	: 0.6764
+-------------------------------------
+[Epoch : 11/20]
+Total_loss	: 2.6596
+Src_cls_loss	: 0.6642
+Adv_loss	: 1.3796
+Dw_loss	: 0.6752
+-------------------------------------
+[Epoch : 12/20]
+Total_loss	: 2.5635
+Src_cls_loss	: 0.6264
+Adv_loss	: 1.3801
+Dw_loss	: 0.6736
+-------------------------------------
+[Epoch : 13/20]
+Total_loss	: 2.4767
+Src_cls_loss	: 0.5923
+Adv_loss	: 1.3806
+Dw_loss	: 0.6721
+-------------------------------------
+[Epoch : 14/20]
+Total_loss	: 2.3979
+Src_cls_loss	: 0.5613
+Adv_loss	: 1.3810
+Dw_loss	: 0.6703
+-------------------------------------
+[Epoch : 15/20]
+Total_loss	: 2.3261
+Src_cls_loss	: 0.5330
+Adv_loss	: 1.3813
+Dw_loss	: 0.6689
+-------------------------------------
+[Epoch : 16/20]
+Total_loss	: 2.2603
+Src_cls_loss	: 0.5071
+Adv_loss	: 1.3816
+Dw_loss	: 0.6676
+-------------------------------------
+[Epoch : 17/20]
+Total_loss	: 2.2004
+Src_cls_loss	: 0.4835
+Adv_loss	: 1.3819
+Dw_loss	: 0.6662
+-------------------------------------
+[Epoch : 18/20]
+Total_loss	: 2.1456
+Src_cls_loss	: 0.4620
+Adv_loss	: 1.3822
+Dw_loss	: 0.6651
+-------------------------------------
+[Epoch : 19/20]
+Total_loss	: 2.0950
+Src_cls_loss	: 0.4421
+Adv_loss	: 1.3824
+Dw_loss	: 0.6639
+-------------------------------------
+[Epoch : 20/20]
+Total_loss	: 2.0488
+Src_cls_loss	: 0.4239
+Adv_loss	: 1.3826
+Dw_loss	: 0.6633
+-------------------------------------
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to MHEALTH_PDA_hard_n1_fno_mean/SPADA_PDA_hard_n1_fno_mean/RealWorld_to_MHEALTH_run_1
+🏃 View run SPADA_run_1 at: http://127.0.0.1:5001/#/experiments/841287542604591211/runs/04d114bf009341eabe4db6ea1f07f2f2
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/841287542604591211
+=============================================
+Dataset: RealWorld to MHEALTH_PDA_hard_n1_fno_mean
+Method:  SPADA
+=============================================
+Source: RealWorld ---> Target: MHEALTH
+Run ID: 2
+=============================================
+[Epoch : 1/20]
+Total_loss	: 4.4483
+Src_cls_loss	: 1.3756
+Adv_loss	: 1.3436
+Dw_loss	: 0.6698
+-------------------------------------
+[Epoch : 2/20]
+Total_loss	: 4.1586
+Src_cls_loss	: 1.2679
+Adv_loss	: 1.3221
+Dw_loss	: 0.6458
+-------------------------------------
+[Epoch : 3/20]
+Total_loss	: 3.9305
+Src_cls_loss	: 1.1741
+Adv_loss	: 1.3380
+Dw_loss	: 0.6485
+-------------------------------------
+[Epoch : 4/20]
+Total_loss	: 3.7104
+Src_cls_loss	: 1.0863
+Adv_loss	: 1.3435
+Dw_loss	: 0.6500
+-------------------------------------
+[Epoch : 5/20]
+Total_loss	: 3.5101
+Src_cls_loss	: 1.0069
+Adv_loss	: 1.3466
+Dw_loss	: 0.6520
+-------------------------------------
+[Epoch : 6/20]
+Total_loss	: 3.3318
+Src_cls_loss	: 0.9355
+Adv_loss	: 1.3518
+Dw_loss	: 0.6560
+-------------------------------------
+[Epoch : 7/20]
+Total_loss	: 3.1704
+Src_cls_loss	: 0.8712
+Adv_loss	: 1.3556
+Dw_loss	: 0.6586
+-------------------------------------
+[Epoch : 8/20]
+Total_loss	: 3.0263
+Src_cls_loss	: 0.8139
+Adv_loss	: 1.3582
+Dw_loss	: 0.6606
+-------------------------------------
+[Epoch : 9/20]
+Total_loss	: 2.8977
+Src_cls_loss	: 0.7628
+Adv_loss	: 1.3607
+Dw_loss	: 0.6623
+-------------------------------------
+[Epoch : 10/20]
+Total_loss	: 2.7827
+Src_cls_loss	: 0.7172
+Adv_loss	: 1.3625
+Dw_loss	: 0.6638
+-------------------------------------
+[Epoch : 11/20]
+Total_loss	: 2.6793
+Src_cls_loss	: 0.6763
+Adv_loss	: 1.3640
+Dw_loss	: 0.6649
+-------------------------------------
+[Epoch : 12/20]
+Total_loss	: 2.5864
+Src_cls_loss	: 0.6395
+Adv_loss	: 1.3653
+Dw_loss	: 0.6656
+-------------------------------------
+[Epoch : 13/20]
+Total_loss	: 2.5025
+Src_cls_loss	: 0.6063
+Adv_loss	: 1.3665
+Dw_loss	: 0.6664
+-------------------------------------
+[Epoch : 14/20]
+Total_loss	: 2.4261
+Src_cls_loss	: 0.5760
+Adv_loss	: 1.3677
+Dw_loss	: 0.6672
+-------------------------------------
+[Epoch : 15/20]
+Total_loss	: 2.3566
+Src_cls_loss	: 0.5484
+Adv_loss	: 1.3688
+Dw_loss	: 0.6681
+-------------------------------------
+[Epoch : 16/20]
+Total_loss	: 2.2928
+Src_cls_loss	: 0.5231
+Adv_loss	: 1.3698
+Dw_loss	: 0.6689
+-------------------------------------
+[Epoch : 17/20]
+Total_loss	: 2.2341
+Src_cls_loss	: 0.4999
+Adv_loss	: 1.3706
+Dw_loss	: 0.6696
+-------------------------------------
+[Epoch : 18/20]
+Total_loss	: 2.1801
+Src_cls_loss	: 0.4785
+Adv_loss	: 1.3714
+Dw_loss	: 0.6703
+-------------------------------------
+[Epoch : 19/20]
+Total_loss	: 2.1300
+Src_cls_loss	: 0.4586
+Adv_loss	: 1.3721
+Dw_loss	: 0.6710
+-------------------------------------
+[Epoch : 20/20]
+Total_loss	: 2.0838
+Src_cls_loss	: 0.4403
+Adv_loss	: 1.3727
+Dw_loss	: 0.6717
+-------------------------------------
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to MHEALTH_PDA_hard_n1_fno_mean/SPADA_PDA_hard_n1_fno_mean/RealWorld_to_MHEALTH_run_2
+🏃 View run SPADA_run_2 at: http://127.0.0.1:5001/#/experiments/841287542604591211/runs/a4337b4e02934c7d8f43a4ef57a189ea
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/841287542604591211
+=============================================
+Dataset: RealWorld to MHEALTH_PDA_hard_n1_fno_mean
+Method:  SPADA
+=============================================
+Source: RealWorld ---> Target: MHEALTH
+Run ID: 3
+=============================================
+[Epoch : 1/20]
+Total_loss	: 4.4245
+Src_cls_loss	: 1.3649
+Adv_loss	: 1.3487
+Dw_loss	: 0.6665
+-------------------------------------
+[Epoch : 2/20]
+Total_loss	: 4.1364
+Src_cls_loss	: 1.2506
+Adv_loss	: 1.3535
+Dw_loss	: 0.6594
+-------------------------------------
+[Epoch : 3/20]
+Total_loss	: 3.8866
+Src_cls_loss	: 1.1505
+Adv_loss	: 1.3614
+Dw_loss	: 0.6659
+-------------------------------------
+[Epoch : 4/20]
+Total_loss	: 3.6588
+Src_cls_loss	: 1.0597
+Adv_loss	: 1.3663
+Dw_loss	: 0.6703
+-------------------------------------
+[Epoch : 5/20]
+Total_loss	: 3.4552
+Src_cls_loss	: 0.9791
+Adv_loss	: 1.3692
+Dw_loss	: 0.6723
+-------------------------------------
+[Epoch : 6/20]
+Total_loss	: 3.2744
+Src_cls_loss	: 0.9076
+Adv_loss	: 1.3714
+Dw_loss	: 0.6736
+-------------------------------------
+[Epoch : 7/20]
+Total_loss	: 3.1141
+Src_cls_loss	: 0.8443
+Adv_loss	: 1.3731
+Dw_loss	: 0.6745
+-------------------------------------
+[Epoch : 8/20]
+Total_loss	: 2.9714
+Src_cls_loss	: 0.7880
+Adv_loss	: 1.3744
+Dw_loss	: 0.6751
+-------------------------------------
+[Epoch : 9/20]
+Total_loss	: 2.8444
+Src_cls_loss	: 0.7379
+Adv_loss	: 1.3753
+Dw_loss	: 0.6754
+-------------------------------------
+[Epoch : 10/20]
+Total_loss	: 2.7314
+Src_cls_loss	: 0.6934
+Adv_loss	: 1.3762
+Dw_loss	: 0.6758
+-------------------------------------
+[Epoch : 11/20]
+Total_loss	: 2.6296
+Src_cls_loss	: 0.6532
+Adv_loss	: 1.3770
+Dw_loss	: 0.6758
+-------------------------------------
+[Epoch : 12/20]
+Total_loss	: 2.5377
+Src_cls_loss	: 0.6170
+Adv_loss	: 1.3777
+Dw_loss	: 0.6759
+-------------------------------------
+[Epoch : 13/20]
+Total_loss	: 2.4545
+Src_cls_loss	: 0.5842
+Adv_loss	: 1.3784
+Dw_loss	: 0.6760
+-------------------------------------
+[Epoch : 14/20]
+Total_loss	: 2.3794
+Src_cls_loss	: 0.5546
+Adv_loss	: 1.3790
+Dw_loss	: 0.6764
+-------------------------------------
+[Epoch : 15/20]
+Total_loss	: 2.3106
+Src_cls_loss	: 0.5274
+Adv_loss	: 1.3795
+Dw_loss	: 0.6764
+-------------------------------------
+[Epoch : 16/20]
+Total_loss	: 2.2472
+Src_cls_loss	: 0.5024
+Adv_loss	: 1.3799
+Dw_loss	: 0.6763
+-------------------------------------
+[Epoch : 17/20]
+Total_loss	: 2.1894
+Src_cls_loss	: 0.4797
+Adv_loss	: 1.3803
+Dw_loss	: 0.6762
+-------------------------------------
+[Epoch : 18/20]
+Total_loss	: 2.1358
+Src_cls_loss	: 0.4586
+Adv_loss	: 1.3807
+Dw_loss	: 0.6760
+-------------------------------------
+[Epoch : 19/20]
+Total_loss	: 2.0866
+Src_cls_loss	: 0.4392
+Adv_loss	: 1.3810
+Dw_loss	: 0.6759
+-------------------------------------
+[Epoch : 20/20]
+Total_loss	: 2.0413
+Src_cls_loss	: 0.4213
+Adv_loss	: 1.3813
+Dw_loss	: 0.6758
+-------------------------------------
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to MHEALTH_PDA_hard_n1_fno_mean/SPADA_PDA_hard_n1_fno_mean/RealWorld_to_MHEALTH_run_3
+🏃 View run SPADA_run_3 at: http://127.0.0.1:5001/#/experiments/841287542604591211/runs/1a81854502ed41e39b06846e308a9c20
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/841287542604591211
+=============================================
+Dataset: RealWorld to MHEALTH_PDA_hard_n1_fno_mean
+Method:  SPADA
+=============================================
+Source: RealWorld ---> Target: MHEALTH
+Run ID: 4
+=============================================
+[Epoch : 1/20]
+Total_loss	: 4.4342
+Src_cls_loss	: 1.3708
+Adv_loss	: 1.3409
+Dw_loss	: 0.6624
+-------------------------------------
+[Epoch : 2/20]
+Total_loss	: 4.1425
+Src_cls_loss	: 1.2596
+Adv_loss	: 1.3292
+Dw_loss	: 0.6441
+-------------------------------------
+[Epoch : 3/20]
+Total_loss	: 3.9012
+Src_cls_loss	: 1.1630
+Adv_loss	: 1.3365
+Dw_loss	: 0.6432
+-------------------------------------
+[Epoch : 4/20]
+Total_loss	: 3.6835
+Src_cls_loss	: 1.0759
+Adv_loss	: 1.3427
+Dw_loss	: 0.6424
+-------------------------------------
+[Epoch : 5/20]
+Total_loss	: 3.4879
+Src_cls_loss	: 0.9984
+Adv_loss	: 1.3456
+Dw_loss	: 0.6407
+-------------------------------------
+[Epoch : 6/20]
+Total_loss	: 3.3136
+Src_cls_loss	: 0.9293
+Adv_loss	: 1.3486
+Dw_loss	: 0.6394
+-------------------------------------
+[Epoch : 7/20]
+Total_loss	: 3.1582
+Src_cls_loss	: 0.8676
+Adv_loss	: 1.3510
+Dw_loss	: 0.6393
+-------------------------------------
+[Epoch : 8/20]
+Total_loss	: 3.0200
+Src_cls_loss	: 0.8129
+Adv_loss	: 1.3530
+Dw_loss	: 0.6388
+-------------------------------------
+[Epoch : 9/20]
+Total_loss	: 2.8965
+Src_cls_loss	: 0.7640
+Adv_loss	: 1.3550
+Dw_loss	: 0.6391
+-------------------------------------
+[Epoch : 10/20]
+Total_loss	: 2.7844
+Src_cls_loss	: 0.7196
+Adv_loss	: 1.3564
+Dw_loss	: 0.6396
+-------------------------------------
+[Epoch : 11/20]
+Total_loss	: 2.6842
+Src_cls_loss	: 0.6798
+Adv_loss	: 1.3583
+Dw_loss	: 0.6402
+-------------------------------------
+[Epoch : 12/20]
+Total_loss	: 2.5927
+Src_cls_loss	: 0.6436
+Adv_loss	: 1.3595
+Dw_loss	: 0.6402
+-------------------------------------
+[Epoch : 13/20]
+Total_loss	: 2.5101
+Src_cls_loss	: 0.6109
+Adv_loss	: 1.3606
+Dw_loss	: 0.6400
+-------------------------------------
+[Epoch : 14/20]
+Total_loss	: 2.4358
+Src_cls_loss	: 0.5814
+Adv_loss	: 1.3618
+Dw_loss	: 0.6399
+-------------------------------------
+[Epoch : 15/20]
+Total_loss	: 2.3676
+Src_cls_loss	: 0.5543
+Adv_loss	: 1.3630
+Dw_loss	: 0.6399
+-------------------------------------
+[Epoch : 16/20]
+Total_loss	: 2.3048
+Src_cls_loss	: 0.5294
+Adv_loss	: 1.3639
+Dw_loss	: 0.6400
+-------------------------------------
+[Epoch : 17/20]
+Total_loss	: 2.2473
+Src_cls_loss	: 0.5066
+Adv_loss	: 1.3649
+Dw_loss	: 0.6404
+-------------------------------------
+[Epoch : 18/20]
+Total_loss	: 2.1940
+Src_cls_loss	: 0.4855
+Adv_loss	: 1.3657
+Dw_loss	: 0.6404
+-------------------------------------
+[Epoch : 19/20]
+Total_loss	: 2.1449
+Src_cls_loss	: 0.4661
+Adv_loss	: 1.3664
+Dw_loss	: 0.6402
+-------------------------------------
+[Epoch : 20/20]
+Total_loss	: 2.0994
+Src_cls_loss	: 0.4480
+Adv_loss	: 1.3670
+Dw_loss	: 0.6396
+-------------------------------------
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to MHEALTH_PDA_hard_n1_fno_mean/SPADA_PDA_hard_n1_fno_mean/RealWorld_to_MHEALTH_run_4
+🏃 View run SPADA_run_4 at: http://127.0.0.1:5001/#/experiments/841287542604591211/runs/98f795cf123c4f60840c647adb759c7e
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/841287542604591211
+==================== [n1 fno_mean] done ====================
+==================== ALL n done ====================

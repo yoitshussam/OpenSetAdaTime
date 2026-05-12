@@ -1,0 +1,4 @@
+==================== [n1] UniJDOT ====================
+run_curriculum_realworld_pamap2_n1.sh: line 16: python: command not found
+[n1] UniJDOT FAILED — continuing
+==================== [n1] done ====================

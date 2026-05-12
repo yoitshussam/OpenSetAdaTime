@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/869196474879197795/db5d407c5bba4b51bf6bd9d15209ff1f/artifacts
+deleted_time: 1777726330705
+end_time: null
+entry_point_name: ''
+experiment_id: '869196474879197795'
+lifecycle_stage: deleted
+run_id: db5d407c5bba4b51bf6bd9d15209ff1f
+run_name: TSFA_run_0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777726166416
+status: 1
+tags: []
+user_id: tp2474

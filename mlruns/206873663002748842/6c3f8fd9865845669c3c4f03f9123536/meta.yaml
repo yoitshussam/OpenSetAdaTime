@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/206873663002748842/6c3f8fd9865845669c3c4f03f9123536/artifacts
+deleted_time: 1778244543844
+end_time: 1777737172701
+entry_point_name: ''
+experiment_id: '206873663002748842'
+lifecycle_stage: deleted
+run_id: 6c3f8fd9865845669c3c4f03f9123536
+run_name: PPOT_run_1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777737154275
+status: 3
+tags: []
+user_id: tp2474

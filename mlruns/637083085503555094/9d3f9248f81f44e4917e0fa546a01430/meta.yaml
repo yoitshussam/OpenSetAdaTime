@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/637083085503555094/9d3f9248f81f44e4917e0fa546a01430/artifacts
+end_time: 1778486044550
+entry_point_name: ''
+experiment_id: '637083085503555094'
+lifecycle_stage: active
+run_id: 9d3f9248f81f44e4917e0fa546a01430
+run_name: DANCE_run_4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778486018578
+status: 3
+tags: []
+user_id: bigdipper

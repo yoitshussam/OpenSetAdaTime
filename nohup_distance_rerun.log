@@ -1,0 +1,474 @@
+=== OSDA rerun start Thu May  7 08:36:30 PM CEST 2026 ===
+Device: cuda  ·  seeds: [42, 43, 44, 45, 46]
+
+======================================================================
+  RealWorld → Pamap2  (FNO, MEAN, multi-seed)
+======================================================================
+  -- seed 42 --
+Traceback (most recent call last):
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/similarity_comparison/compute_feature_distance_4known_fno_mean.py", line 313, in <module>
+    main()
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/similarity_comparison/compute_feature_distance_4known_fno_mean.py", line 303, in main
+    all_results[f"{src} -> {trg}"] = run_pair(src, trg, data_path, device, save_dir)
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/similarity_comparison/compute_feature_distance_4known_fno_mean.py", line 231, in run_pair
+    src_known, trg_private, pair_dists = run_seed(
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/similarity_comparison/compute_feature_distance_4known_fno_mean.py", line 118, in run_seed
+    src_loaders = data_generator(src_dp, dataset_configs, hparams, 'source',
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/dataloader/dataloader.py", line 98, in data_generator
+    prepared_datasets, _, _ = load_labelled_and_unlabelled(
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/load_data.py", line 55, in load_labelled_and_unlabelled
+    prepared_datasets['labelled'] = prepare_dataset(
+  File "/mnt/data/home/tp2474/OpenSet-AdaTime/self_har_utilities.py", line 325, in prepare_dataset
+    with open(dataset_path, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/home/tp2474/OpenSet-AdaTime/similarity_comparison/../dataset/RealWorld_processed.pkl'
+=== OSDA rerun done Thu May  7 08:36:34 PM CEST 2026 ===
+=== PDA rerun start Thu May  7 08:36:34 PM CEST 2026 ===
+Device: cuda  ·  seeds: [42, 43, 44, 45, 46]
+
+======================================================================
+  PDA: RealWorld  (FNO, 5-seed avg)
+======================================================================
+  -- seed 42 --
+      Epoch 1/30 — loss: 0.4269
+      Epoch 10/30 — loss: 0.0386
+      Epoch 20/30 — loss: 0.0272
+      Epoch 30/30 — loss: 0.0247
+  -- seed 43 --
+      Epoch 1/30 — loss: 0.4186
+      Epoch 10/30 — loss: 0.0385
+      Epoch 20/30 — loss: 0.0302
+      Epoch 30/30 — loss: 0.0240
+  -- seed 44 --
+      Epoch 1/30 — loss: 0.4161
+      Epoch 10/30 — loss: 0.0389
+      Epoch 20/30 — loss: 0.0266
+      Epoch 30/30 — loss: 0.0199
+  -- seed 45 --
+      Epoch 1/30 — loss: 0.4187
+      Epoch 10/30 — loss: 0.0428
+      Epoch 20/30 — loss: 0.0266
+      Epoch 30/30 — loss: 0.0236
+  -- seed 46 --
+      Epoch 1/30 — loss: 0.4135
+      Epoch 10/30 — loss: 0.0436
+      Epoch 20/30 — loss: 0.0269
+      Epoch 30/30 — loss: nan
+
+  ── COSINE distances (FNO PDA, 5-seed avg) ──
+  Source-private                    lying   running   sitting   walking      Mean         Nearest
+  ----------------------------------------------------------------------------------------------
+  Climbing Up                       0.803     0.595     0.679     0.144     0.555         walking
+  Jumping                           0.685     0.243     0.770     0.591     0.572         running
+  Climbing Down                     0.841     0.656     0.910     0.067     0.618         walking
+  Standing                          0.831     0.422     0.653     0.878     0.696         running
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean_pda/feat4_cosine_RealWorld_pda.png
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean_pda/feat4_ranking_RealWorld_pda.png
+
+======================================================================
+  PDA: Pamap2  (FNO, 5-seed avg)
+======================================================================
+  -- seed 42 --
+      Epoch 1/30 — loss: 0.9515
+      Epoch 10/30 — loss: 0.0439
+      Epoch 20/30 — loss: 0.0208
+      Epoch 30/30 — loss: 0.0117
+  -- seed 43 --
+      Epoch 1/30 — loss: 0.9377
+      Epoch 10/30 — loss: 0.0442
+      Epoch 20/30 — loss: 0.0267
+      Epoch 30/30 — loss: 0.0086
+  -- seed 44 --
+      Epoch 1/30 — loss: 0.9324
+      Epoch 10/30 — loss: 0.0458
+      Epoch 20/30 — loss: 0.0176
+      Epoch 30/30 — loss: 0.0139
+  -- seed 45 --
+      Epoch 1/30 — loss: 0.9392
+      Epoch 10/30 — loss: 0.0463
+      Epoch 20/30 — loss: 0.0157
+      Epoch 30/30 — loss: 0.0099
+  -- seed 46 --
+      Epoch 1/30 — loss: 0.9254
+      Epoch 10/30 — loss: 0.0450
+      Epoch 20/30 — loss: 0.0208
+      Epoch 30/30 — loss: 0.0126
+
+  ── COSINE distances (FNO PDA, 5-seed avg) ──
+  Source-private                    lying   running   sitting   walking      Mean         Nearest
+  ----------------------------------------------------------------------------------------------
+  Other/Transient                   0.638     0.599     0.362     0.348     0.487         walking
+  Descending Stairs                 0.620     0.420     0.726     0.227     0.498         walking
+  Ascending Stairs                  0.625     0.522     0.699     0.174     0.505         walking
+  Vacuum Cleaning                   0.621     0.564     0.306     0.598     0.522         sitting
+  Rope Jumping                      0.643     0.251     0.818     0.476     0.547         running
+  Cycling                           0.593     0.407     0.629     0.601     0.557         running
+  Nordic Walking                    0.895     0.469     0.833     0.166     0.591         walking
+  Standing                          0.706     0.785     0.065     0.817     0.593         sitting
+  Ironing                           0.821     0.728     0.073     0.763     0.596         sitting
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean_pda/feat4_cosine_Pamap2_pda.png
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean_pda/feat4_ranking_Pamap2_pda.png
+
+======================================================================
+  PDA: MHEALTH  (FNO, 5-seed avg)
+======================================================================
+  -- seed 42 --
+      Epoch 1/30 — loss: 1.1573
+      Epoch 10/30 — loss: 0.1591
+      Epoch 20/30 — loss: 0.0516
+      Epoch 30/30 — loss: 0.0311
+  -- seed 43 --
+      Epoch 1/30 — loss: 1.1401
+      Epoch 10/30 — loss: 0.1582
+      Epoch 20/30 — loss: 0.0511
+      Epoch 30/30 — loss: 0.0260
+  -- seed 44 --
+      Epoch 1/30 — loss: 1.1375
+      Epoch 10/30 — loss: 0.1486
+      Epoch 20/30 — loss: 0.0472
+      Epoch 30/30 — loss: 0.0252
+  -- seed 45 --
+      Epoch 1/30 — loss: 1.1454
+      Epoch 10/30 — loss: 0.1477
+      Epoch 20/30 — loss: 0.0491
+      Epoch 30/30 — loss: 0.0256
+  -- seed 46 --
+      Epoch 1/30 — loss: 1.1304
+      Epoch 10/30 — loss: 0.1457
+      Epoch 20/30 — loss: 0.0473
+      Epoch 30/30 — loss: 0.0231
+
+  ── COSINE distances (FNO PDA, 5-seed avg) ──
+  Source-private                    lying   running   sitting   walking      Mean         Nearest
+  ----------------------------------------------------------------------------------------------
+  Climbing Stairs                   0.835     0.786     0.518     0.158     0.574         walking
+  Arm Elevation                     0.544     0.739     0.309     0.722     0.578         sitting
+  Jump F&B                          0.852     0.153     0.896     0.545     0.612         running
+  Jogging                           0.935     0.057     0.909     0.676     0.644         running
+  Cycling                           0.797     0.692     0.197     0.902     0.647         sitting
+  Knees Bending                     0.833     0.900     0.285     0.597     0.653         sitting
+  Waist Bends                       0.841     0.916     0.460     0.539     0.689         sitting
+  Standing                          0.813     0.953     0.380     0.612     0.689         sitting
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean_pda/feat4_cosine_MHEALTH_pda.png
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean_pda/feat4_ranking_MHEALTH_pda.png
+
+Saved rankings JSON: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean_pda/rankings_4known_fno_mean_pda.json
+All plots saved in: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean_pda
+=== PDA rerun done Thu May  7 08:58:45 PM CEST 2026 ===
+=== PDA finished, OSDA starting (patched data_path) Thu May  7 08:38:04 PM CEST 2026 ===
+Device: cuda  ·  seeds: [42, 43, 44, 45, 46]
+
+======================================================================
+  RealWorld → Pamap2  (FNO, MEAN, multi-seed)
+======================================================================
+  -- seed 42 --
+Unlabeled data shape:  (19138, 150, 18)
+Unlabelled Combined shape: (31801, 150, 18)
+      Epoch 1/30 — loss: 0.4269
+      Epoch 10/30 — loss: 0.0386
+      Epoch 20/30 — loss: 0.0272
+      Epoch 30/30 — loss: 0.0247
+  -- seed 43 --
+Unlabeled data shape:  (19138, 150, 18)
+Unlabelled Combined shape: (31801, 150, 18)
+      Epoch 1/30 — loss: 0.4186
+      Epoch 10/30 — loss: 0.0385
+      Epoch 20/30 — loss: 0.0302
+      Epoch 30/30 — loss: 0.0240
+  -- seed 44 --
+Unlabeled data shape:  (19138, 150, 18)
+Unlabelled Combined shape: (31801, 150, 18)
+      Epoch 1/30 — loss: 0.4161
+      Epoch 10/30 — loss: 0.0389
+      Epoch 20/30 — loss: 0.0266
+      Epoch 30/30 — loss: 0.0199
+  -- seed 45 --
+Unlabeled data shape:  (19138, 150, 18)
+Unlabelled Combined shape: (31801, 150, 18)
+      Epoch 1/30 — loss: 0.4187
+      Epoch 10/30 — loss: 0.0428
+      Epoch 20/30 — loss: 0.0266
+      Epoch 30/30 — loss: 0.0236
+  -- seed 46 --
+Unlabeled data shape:  (19138, 150, 18)
+Unlabelled Combined shape: (31801, 150, 18)
+      Epoch 1/30 — loss: 0.4135
+      Epoch 10/30 — loss: 0.0436
+      Epoch 20/30 — loss: 0.0269
+      Epoch 30/30 — loss: nan
+
+  ── COSINE distances (FNO, 5-seed avg, mean-ranked) ──
+  Unknown class                     lying   running   sitting   walking      Mean         Nearest
+  ----------------------------------------------------------------------------------------------
+  Other/Transient                   0.592     0.419     0.329     0.678     0.505         sitting
+  Ascending Stairs                  0.708     0.323     0.593     0.433     0.514         running
+  Descending Stairs                 0.716     0.258     0.597     0.505     0.519         running
+  Vacuum Cleaning                   0.519     0.463     0.369     0.805     0.539         sitting
+  Nordic Walking                    0.755     0.298     0.730     0.417     0.550         running
+  Rope Jumping                      0.716     0.147     0.724     0.751     0.584         running
+  Ironing                           0.595     0.566     0.318     0.868     0.587         sitting
+  Cycling                           0.781     0.681     0.137     0.855     0.614         sitting
+  Standing                          0.714     0.262     0.637     0.877     0.622         running
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean/feat4_cosine_RealWorld_to_Pamap2.png
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean/feat4_ranking_RealWorld_to_Pamap2.png
+
+======================================================================
+  RealWorld → MHEALTH  (FNO, MEAN, multi-seed)
+======================================================================
+  -- seed 42 --
+Unlabeled data shape:  (4561, 150, 18)
+Unlabelled Combined shape: (7877, 150, 18)
+      Epoch 1/30 — loss: 0.4269
+      Epoch 10/30 — loss: 0.0386
+      Epoch 20/30 — loss: 0.0272
+      Epoch 30/30 — loss: 0.0247
+  -- seed 43 --
+Unlabeled data shape:  (4561, 150, 18)
+Unlabelled Combined shape: (7877, 150, 18)
+      Epoch 1/30 — loss: 0.4186
+      Epoch 10/30 — loss: 0.0385
+      Epoch 20/30 — loss: 0.0302
+      Epoch 30/30 — loss: 0.0240
+  -- seed 44 --
+Unlabeled data shape:  (4561, 150, 18)
+Unlabelled Combined shape: (7877, 150, 18)
+      Epoch 1/30 — loss: 0.4161
+      Epoch 10/30 — loss: 0.0389
+      Epoch 20/30 — loss: 0.0266
+      Epoch 30/30 — loss: 0.0199
+  -- seed 45 --
+Unlabeled data shape:  (4561, 150, 18)
+Unlabelled Combined shape: (7877, 150, 18)
+      Epoch 1/30 — loss: 0.4187
+      Epoch 10/30 — loss: 0.0428
+      Epoch 20/30 — loss: 0.0266
+      Epoch 30/30 — loss: 0.0236
+  -- seed 46 --
+Unlabeled data shape:  (4561, 150, 18)
+Unlabelled Combined shape: (7877, 150, 18)
+      Epoch 1/30 — loss: 0.4135
+      Epoch 10/30 — loss: 0.0436
+      Epoch 20/30 — loss: 0.0269
+      Epoch 30/30 — loss: nan
+
+  ── COSINE distances (FNO, 5-seed avg, mean-ranked) ──
+  Unknown class                     lying   running   sitting   walking      Mean         Nearest
+  ----------------------------------------------------------------------------------------------
+  Climbing Stairs                   0.726     0.472     0.399     0.596     0.548         sitting
+  Jogging                           0.541     0.304     0.777     0.726     0.587         running
+  Jump F&B                          0.738     0.414     0.719     0.537     0.602         running
+  Arm Elevation                     0.529     0.584     0.523     0.874     0.627         sitting
+  Knees Bending                     0.791     0.779     0.107     0.921     0.650         sitting
+  Waist Bends                       0.758     0.464     0.640     0.874     0.684         running
+  Cycling                           0.856     0.861     0.129     0.892     0.685         sitting
+  Standing                          0.800     0.543     0.596     0.901     0.710         running
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean/feat4_cosine_RealWorld_to_MHEALTH.png
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean/feat4_ranking_RealWorld_to_MHEALTH.png
+
+======================================================================
+  Pamap2 → RealWorld  (FNO, MEAN, multi-seed)
+======================================================================
+  -- seed 42 --
+Unlabeled data shape:  (41859, 150, 18)
+Unlabelled Combined shape: (71801, 150, 18)
+      Epoch 1/30 — loss: 0.9515
+      Epoch 10/30 — loss: 0.0439
+      Epoch 20/30 — loss: 0.0208
+      Epoch 30/30 — loss: 0.0117
+  -- seed 43 --
+Unlabeled data shape:  (41859, 150, 18)
+Unlabelled Combined shape: (71801, 150, 18)
+      Epoch 1/30 — loss: 0.9377
+      Epoch 10/30 — loss: 0.0442
+      Epoch 20/30 — loss: 0.0267
+      Epoch 30/30 — loss: 0.0086
+  -- seed 44 --
+Unlabeled data shape:  (41859, 150, 18)
+Unlabelled Combined shape: (71801, 150, 18)
+      Epoch 1/30 — loss: 0.9324
+      Epoch 10/30 — loss: 0.0458
+      Epoch 20/30 — loss: 0.0176
+      Epoch 30/30 — loss: 0.0139
+  -- seed 45 --
+Unlabeled data shape:  (41859, 150, 18)
+Unlabelled Combined shape: (71801, 150, 18)
+      Epoch 1/30 — loss: 0.9392
+      Epoch 10/30 — loss: 0.0463
+      Epoch 20/30 — loss: 0.0157
+      Epoch 30/30 — loss: 0.0099
+  -- seed 46 --
+Unlabeled data shape:  (41859, 150, 18)
+Unlabelled Combined shape: (71801, 150, 18)
+      Epoch 1/30 — loss: 0.9254
+      Epoch 10/30 — loss: 0.0450
+      Epoch 20/30 — loss: 0.0208
+      Epoch 30/30 — loss: 0.0126
+
+  ── COSINE distances (FNO, 5-seed avg, mean-ranked) ──
+  Unknown class                     lying   running   sitting   walking      Mean         Nearest
+  ----------------------------------------------------------------------------------------------
+  Climbing Up                       0.733     0.457     0.615     0.259     0.516         walking
+  Climbing Down                     0.772     0.538     0.660     0.169     0.535         walking
+  Jumping                           0.831     0.364     0.687     0.382     0.566         running
+  Standing                          0.714     0.672     0.493     0.463     0.585         walking
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean/feat4_cosine_Pamap2_to_RealWorld.png
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean/feat4_ranking_Pamap2_to_RealWorld.png
+
+======================================================================
+  Pamap2 → MHEALTH  (FNO, MEAN, multi-seed)
+======================================================================
+  -- seed 42 --
+Unlabeled data shape:  (4561, 150, 18)
+Unlabelled Combined shape: (7877, 150, 18)
+      Epoch 1/30 — loss: 0.9515
+      Epoch 10/30 — loss: 0.0439
+      Epoch 20/30 — loss: 0.0208
+      Epoch 30/30 — loss: 0.0117
+  -- seed 43 --
+Unlabeled data shape:  (4561, 150, 18)
+Unlabelled Combined shape: (7877, 150, 18)
+      Epoch 1/30 — loss: 0.9377
+      Epoch 10/30 — loss: 0.0442
+      Epoch 20/30 — loss: 0.0267
+      Epoch 30/30 — loss: 0.0086
+  -- seed 44 --
+Unlabeled data shape:  (4561, 150, 18)
+Unlabelled Combined shape: (7877, 150, 18)
+      Epoch 1/30 — loss: 0.9324
+      Epoch 10/30 — loss: 0.0458
+      Epoch 20/30 — loss: 0.0176
+      Epoch 30/30 — loss: 0.0139
+  -- seed 45 --
+Unlabeled data shape:  (4561, 150, 18)
+Unlabelled Combined shape: (7877, 150, 18)
+      Epoch 1/30 — loss: 0.9392
+      Epoch 10/30 — loss: 0.0463
+      Epoch 20/30 — loss: 0.0157
+      Epoch 30/30 — loss: 0.0099
+  -- seed 46 --
+Unlabeled data shape:  (4561, 150, 18)
+Unlabelled Combined shape: (7877, 150, 18)
+      Epoch 1/30 — loss: 0.9254
+      Epoch 10/30 — loss: 0.0450
+      Epoch 20/30 — loss: 0.0208
+      Epoch 30/30 — loss: 0.0126
+
+  ── COSINE distances (FNO, 5-seed avg, mean-ranked) ──
+  Unknown class                     lying   running   sitting   walking      Mean         Nearest
+  ----------------------------------------------------------------------------------------------
+  Climbing Stairs                   0.638     0.548     0.322     0.567     0.519         sitting
+  Arm Elevation                     0.514     0.530     0.413     0.667     0.531         sitting
+  Jogging                           0.611     0.293     0.672     0.607     0.546         running
+  Waist Bends                       0.485     0.696     0.532     0.607     0.580           lying
+  Jump F&B                          0.614     0.302     0.766     0.654     0.584         running
+  Knees Bending                     0.728     0.386     0.672     0.604     0.598         running
+  Cycling                           0.620     0.310     0.755     0.794     0.620         running
+  Standing                          0.709     0.851     0.348     0.636     0.636         sitting
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean/feat4_cosine_Pamap2_to_MHEALTH.png
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean/feat4_ranking_Pamap2_to_MHEALTH.png
+
+======================================================================
+  MHEALTH → RealWorld  (FNO, MEAN, multi-seed)
+======================================================================
+  -- seed 42 --
+Unlabeled data shape:  (41859, 150, 18)
+Unlabelled Combined shape: (71801, 150, 18)
+      Epoch 1/30 — loss: 1.1573
+      Epoch 10/30 — loss: 0.1591
+      Epoch 20/30 — loss: 0.0516
+      Epoch 30/30 — loss: 0.0311
+  -- seed 43 --
+Unlabeled data shape:  (41859, 150, 18)
+Unlabelled Combined shape: (71801, 150, 18)
+      Epoch 1/30 — loss: 1.1401
+      Epoch 10/30 — loss: 0.1582
+      Epoch 20/30 — loss: 0.0511
+      Epoch 30/30 — loss: 0.0260
+  -- seed 44 --
+Unlabeled data shape:  (41859, 150, 18)
+Unlabelled Combined shape: (71801, 150, 18)
+      Epoch 1/30 — loss: 1.1375
+      Epoch 10/30 — loss: 0.1486
+      Epoch 20/30 — loss: 0.0472
+      Epoch 30/30 — loss: 0.0252
+  -- seed 45 --
+Unlabeled data shape:  (41859, 150, 18)
+Unlabelled Combined shape: (71801, 150, 18)
+      Epoch 1/30 — loss: 1.1454
+      Epoch 10/30 — loss: 0.1477
+      Epoch 20/30 — loss: 0.0491
+      Epoch 30/30 — loss: 0.0256
+  -- seed 46 --
+Unlabeled data shape:  (41859, 150, 18)
+Unlabelled Combined shape: (71801, 150, 18)
+      Epoch 1/30 — loss: 1.1304
+      Epoch 10/30 — loss: 0.1457
+      Epoch 20/30 — loss: 0.0473
+      Epoch 30/30 — loss: 0.0231
+
+  ── COSINE distances (FNO, 5-seed avg, mean-ranked) ──
+  Unknown class                     lying   running   sitting   walking      Mean         Nearest
+  ----------------------------------------------------------------------------------------------
+  Climbing Up                       0.745     0.661     0.473     0.331     0.553         walking
+  Jumping                           0.709     0.535     0.814     0.347     0.601         walking
+  Climbing Down                     0.776     0.661     0.685     0.312     0.609         walking
+  Standing                          0.686     0.907     0.155     0.786     0.634         sitting
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean/feat4_cosine_MHEALTH_to_RealWorld.png
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean/feat4_ranking_MHEALTH_to_RealWorld.png
+
+======================================================================
+  MHEALTH → Pamap2  (FNO, MEAN, multi-seed)
+======================================================================
+  -- seed 42 --
+Unlabeled data shape:  (19138, 150, 18)
+Unlabelled Combined shape: (31801, 150, 18)
+      Epoch 1/30 — loss: 1.1573
+      Epoch 10/30 — loss: 0.1591
+      Epoch 20/30 — loss: 0.0516
+      Epoch 30/30 — loss: 0.0311
+  -- seed 43 --
+Unlabeled data shape:  (19138, 150, 18)
+Unlabelled Combined shape: (31801, 150, 18)
+      Epoch 1/30 — loss: 1.1401
+      Epoch 10/30 — loss: 0.1582
+      Epoch 20/30 — loss: 0.0511
+      Epoch 30/30 — loss: 0.0260
+  -- seed 44 --
+Unlabeled data shape:  (19138, 150, 18)
+Unlabelled Combined shape: (31801, 150, 18)
+      Epoch 1/30 — loss: 1.1375
+      Epoch 10/30 — loss: 0.1486
+      Epoch 20/30 — loss: 0.0472
+      Epoch 30/30 — loss: 0.0252
+  -- seed 45 --
+Unlabeled data shape:  (19138, 150, 18)
+Unlabelled Combined shape: (31801, 150, 18)
+      Epoch 1/30 — loss: 1.1454
+      Epoch 10/30 — loss: 0.1477
+      Epoch 20/30 — loss: 0.0491
+      Epoch 30/30 — loss: 0.0256
+  -- seed 46 --
+Unlabeled data shape:  (19138, 150, 18)
+Unlabelled Combined shape: (31801, 150, 18)
+      Epoch 1/30 — loss: 1.1304
+      Epoch 10/30 — loss: 0.1457
+      Epoch 20/30 — loss: 0.0473
+      Epoch 30/30 — loss: 0.0231
+
+  ── COSINE distances (FNO, 5-seed avg, mean-ranked) ──
+  Unknown class                     lying   running   sitting   walking      Mean         Nearest
+  ----------------------------------------------------------------------------------------------
+  Other/Transient                   0.577     0.683     0.326     0.461     0.512         sitting
+  Vacuum Cleaning                   0.541     0.631     0.335     0.544     0.513         sitting
+  Nordic Walking                    0.643     0.539     0.787     0.257     0.557         walking
+  Ascending Stairs                  0.711     0.615     0.632     0.306     0.566         walking
+  Descending Stairs                 0.723     0.616     0.728     0.254     0.580         walking
+  Ironing                           0.663     0.802     0.289     0.577     0.583         sitting
+  Cycling                           0.590     0.582     0.502     0.661     0.584         sitting
+  Rope Jumping                      0.704     0.362     0.866     0.419     0.588         running
+  Standing                          0.652     0.854     0.151     0.780     0.609         sitting
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean/feat4_cosine_MHEALTH_to_Pamap2.png
+  Saved: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean/feat4_ranking_MHEALTH_to_Pamap2.png
+
+Saved rankings JSON: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean/rankings_4known_fno_mean.json
+All plots saved in: /mnt/data/home/tp2474/OpenSet-AdaTime/feature_distance_4known_fno_mean
+=== OSDA rerun done Thu May  7 08:38:04 PM CEST 2026 ===

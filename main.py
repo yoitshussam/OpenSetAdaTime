@@ -79,6 +79,7 @@ if __name__ == "__main__":
         "PDA":    ["SPADA", "PDAAN"],
     }
     ALL_METHODS = [m for ms in SCENARIO_METHODS.values() for m in ms]
+#   "UniDA":  ["UDA", "OVANet", "DANCE", "PPOT", "UniOT", "UniJDOT", "RAINCOAT"],
 
     args = parser.parse_args()
 

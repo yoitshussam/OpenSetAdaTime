@@ -56,6 +56,7 @@ class Trainer(AbstractTrainer):
                 # Initiate the domain adaptation algorithm
                 self.initialize_algorithm()
                 mlflow.log_params(self.hparams)
+                mlflow.log_params(self._mlflow_context_params())
 
                 # Train the domain adaptation algorithm
                 self.last_model, self.best_model = self.algorithm.update(

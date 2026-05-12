@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/773515370876137118/0fe0d8a7d6b243108262eb81c23d9ed7/artifacts
+deleted_time: 1777476237015
 end_time: 1777452374003
 entry_point_name: ''
 experiment_id: '773515370876137118'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 0fe0d8a7d6b243108262eb81c23d9ed7
 run_name: PPOT_run_1
 source_name: ''

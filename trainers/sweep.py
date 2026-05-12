@@ -85,13 +85,20 @@ class Trainer(AbstractTrainer):
             direction='minimize',
             sampler=sampler,
         )
-        study.optimize(self._objective, n_trials=self.num_sweeps)
+        # catch=(Exception,) so a NaN/assertion in one trial doesn't sink the
+        # rest of the sweep — Optuna marks the trial FAILED and moves on.
+        study.optimize(self._objective, n_trials=self.num_sweeps,
+                       catch=(Exception,))
 
-        # Log best trial
-        best = study.best_trial
-        print(f"\n===== Best Trial =====")
-        print(f"  Value ({self.metric_to_minimize}): {best.value:.4f}")
-        print(f"  Params: {best.params}")
+        # Log best trial — but tolerate the "all trials failed" case so the
+        # outer loop can move on to the next method instead of aborting.
+        try:
+            best = study.best_trial
+            print(f"\n===== Best Trial =====")
+            print(f"  Value ({self.metric_to_minimize}): {best.value:.4f}")
+            print(f"  Params: {best.params}")
+        except ValueError as e:
+            print(f"\n===== No successful trials for {self.da_method}: {e} =====")
 
         return study
 
@@ -137,7 +144,19 @@ class Trainer(AbstractTrainer):
             del self.algorithm
         gc.collect()
         if torch.cuda.is_available():
-            torch.cuda.empty_cache()
+            try:
+                torch.cuda.empty_cache()
+            except RuntimeError as e:
+                # If a previous trial blew up with a device-side assert (e.g.
+                # adversarial BCE seeing a NaN sigmoid output), the CUDA context
+                # is permanently corrupted — every subsequent call raises here
+                # before any real work happens. Stop the study so the parent
+                # bash loop can move on to the next method in a fresh process.
+                if "CUDA" in str(e) or "device-side assert" in str(e):
+                    print(f"⚠ CUDA context dead ({e!s}). Stopping study so the "
+                          f"next method starts in a fresh process.", flush=True)
+                    trial.study.stop()
+                raise
 
         # Fix global RNGs per trial so hparam sampling and any pre-training
         # randomness are reproducible at the trial level. The inner per-run
@@ -164,6 +183,7 @@ class Trainer(AbstractTrainer):
 
         with mlflow.start_run(run_name=f"{self.da_method}_trial_{trial.number}"):
             mlflow.log_params(sampled)
+            mlflow.log_params(self._mlflow_context_params())
 
             table_results = pd.DataFrame(columns=self.results_columns)
             table_risks = pd.DataFrame(columns=self.risks_columns)
@@ -179,9 +199,18 @@ class Trainer(AbstractTrainer):
 
                 self.initialize_algorithm()
 
-                self.last_model, self.best_model = self.algorithm.update(
-                    self.src_train_dl, self.trg_train_dl, self.loss_avg_meters,
-                    self.src_val_dl, self.logger)
+                try:
+                    self.last_model, self.best_model = self.algorithm.update(
+                        self.src_train_dl, self.trg_train_dl, self.loss_avg_meters,
+                        self.src_val_dl, self.logger)
+                except RuntimeError as e:
+                    # First sign of a CUDA device-side assert: stop the study
+                    # so we don't waste the remaining trials on a dead context.
+                    if "CUDA" in str(e) or "device-side assert" in str(e):
+                        print(f"⚠ CUDA error during training: {e!s}. Stopping "
+                              f"study so the next method starts fresh.", flush=True)
+                        trial.study.stop()
+                    raise
 
                 self.save_checkpoint(self.home_path, self.scenario_log_dir,
                                      self.last_model, self.best_model)

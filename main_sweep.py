@@ -17,7 +17,7 @@ if __name__ == "__main__":
     parser.add_argument('--target_dataset', default='RealWorld_female', type=str, help='Dataset of choice: (WISDM - EEG - HAR - HHAR_SA)')
 
     # ========= Select the BACKBONE ==============
-    parser.add_argument('--backbone', default='CNN', type=str, help='Backbone: CNN, TCN, RESNET18')
+    parser.add_argument('--backbone', default='FNO', type=str, help='Backbone: CNN, TCN, RESNET18')
 
     # ========= Experiment settings ===============
     parser.add_argument('--num_runs', default=3, type=int, help='Number of consecutive runs with different seeds')

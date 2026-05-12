@@ -77,8 +77,17 @@ class AbstractTrainer(object):
         # Specify number of hparams
         self.hparams = {**self.hparams_class.alg_hparams[self.da_method], **self.hparams_class.train_params}
 
-        # Load data (with open-set label encoding)
-        self.load_data()
+        # Load data (with open-set label encoding). Skip when batch_size isn't
+        # populated yet — this happens in sweep mode with an empty hparams class
+        # (e.g. ALL_FNO before any sweep results are filled in). The sweep loop
+        # samples batch_size from sweep_params and triggers load_data() itself
+        # on the first trial (see trainers/sweep.py).
+        if "batch_size" in self.hparams:
+            self.load_data()
+        else:
+            print(f"[init] deferring load_data: no batch_size in hparams "
+                  f"({self.da_method}, backbone={self.backbone}). "
+                  f"Sweep will populate it on first trial.")
 
         # Initialize metrics
         self.init_metrics()
@@ -287,8 +296,34 @@ class AbstractTrainer(object):
         # Pass scenario so the same source_dataset name (e.g. RealWorld_male)
         # can resolve to either the UniDA or PDA class split.
         dataset_class = get_dataset_class(self.source_dataset, scenario=self.scenario)
-        hparams_class = get_hparams_class(self.source_dataset)
+        hparams_class = get_hparams_class(self.source_dataset, backbone=self.backbone)
         return dataset_class(), hparams_class()
+
+    def _mlflow_context_params(self):
+        """Static experiment context (datasets, backbone, class membership)
+        for MLflow run tagging. Independent of hparams sampling, so it can
+        be logged once per run alongside the hparams."""
+        src_classes = sorted(set(self.dataset_configs.source_activity_mapping.values()))
+        trg_classes = sorted(set(self.dataset_configs.target_activity_mapping.values()))
+        shared = sorted(set(src_classes) & set(trg_classes))
+        src_private = sorted(set(src_classes) - set(trg_classes))
+        trg_private = sorted(set(trg_classes) - set(src_classes))
+        return {
+            "source_dataset": self.source_dataset,
+            "target_dataset": self.target_dataset,
+            "backbone": self.backbone,
+            "scenario": self.scenario,
+            "source_classes": ",".join(src_classes),
+            "target_classes": ",".join(trg_classes),
+            "shared_classes": ",".join(shared),
+            "source_private_classes": ",".join(src_private),
+            "target_private_classes": ",".join(trg_private),
+            "num_source_classes": len(src_classes),
+            "num_target_classes": len(trg_classes),
+            "num_shared_classes": len(shared),
+            "num_source_private_classes": len(src_private),
+            "num_target_private_classes": len(trg_private),
+        }
 
     def append_results_to_tables(self, table, scenario, run_id, metrics):
         results_row = [scenario, run_id, *metrics]

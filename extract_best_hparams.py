@@ -47,6 +47,16 @@ SCENARIO_METRIC = {
 INT_KEYS = {"batch_size", "K", "MQ_size", "n_batch", "trg_mem_size",
             "num_epochs", "num_epochs_pr", "num_epochs_correct"}
 
+# Keys logged by AbstractTrainer._mlflow_context_params() — descriptive
+# experiment context, NOT hyperparameters. Filtered out of best_hparams.json.
+CONTEXT_KEYS = {
+    "source_dataset", "target_dataset", "backbone", "scenario",
+    "source_classes", "target_classes", "shared_classes",
+    "source_private_classes", "target_private_classes",
+    "num_source_classes", "num_target_classes", "num_shared_classes",
+    "num_source_private_classes", "num_target_private_classes",
+}
+
 OUT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                         "best_hparams.json")
 
@@ -120,9 +130,13 @@ def main():
     if not best:
         sys.exit(f"No completed runs found in {experiment_name!r}")
 
-    # alg_hparams-shaped dict, ordered to match METHODS.
+    # alg_hparams-shaped dict, ordered to match METHODS. Strip context tags
+    # (source_dataset, *_classes, backbone, scenario, ...) — those are run
+    # metadata, not hyperparameters.
     payload = {
-        method: {k: coerce(k, v) for k, v in best[method][2].data.params.items()}
+        method: {k: coerce(k, v)
+                 for k, v in best[method][2].data.params.items()
+                 if k not in CONTEXT_KEYS}
         for method in METHODS if method in best
     }
 

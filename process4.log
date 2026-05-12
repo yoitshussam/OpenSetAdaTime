@@ -1,0 +1,2214 @@
+==================== [n2 fno_mean] UniOT ====================
+[curriculum] scenario=PDA  strategy=hard  n_unknown=2  rank_variant=fno_mean
+[curriculum] source mapping (6 classes): {'lying': 'lying', 'sitting': 'sitting', 'walking': 'walking', 'running': 'running', 'climbingup': 'climbingup', 'jumping': 'jumping'}
+[curriculum] target mapping (4 classes): {'lying': 'lying', 'sitting': 'sitting', 'walking': 'walking', 'running': 'running'}
+[curriculum] unknowns added (in hard order): ['climbingup', 'jumping']
+[scenario] UniOT -> UniDA (uniDA=True)
+Unlabeled data shape:  (4752, 150, 18)
+Unlabelled Combined shape: (8054, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   710
+Target Train batches:   148
+-------------------------------
+
+Private classes:  tensor([])
+=============================================
+Dataset: RealWorld to Pamap2_PDA_hard_n2_fno_mean
+Method:  UniOT
+=============================================
+Source: RealWorld ---> Target: Pamap2
+Run ID: 0
+=============================================
+[Pr Epoch : 1/20]
+Pr_Src_cls_loss	: 0.2343
+-------------------------------------
+[Pr Epoch : 2/20]
+Pr_Src_cls_loss	: 0.1834
+-------------------------------------
+[Pr Epoch : 3/20]
+Pr_Src_cls_loss	: 0.1542
+-------------------------------------
+[Pr Epoch : 4/20]
+Pr_Src_cls_loss	: 0.1388
+-------------------------------------
+[Pr Epoch : 5/20]
+Pr_Src_cls_loss	: 0.1271
+-------------------------------------
+[Pr Epoch : 6/20]
+Pr_Src_cls_loss	: 0.1190
+-------------------------------------
+[Pr Epoch : 7/20]
+Pr_Src_cls_loss	: 0.1124
+-------------------------------------
+[Pr Epoch : 8/20]
+Pr_Src_cls_loss	: 0.1066
+-------------------------------------
+[Pr Epoch : 9/20]
+Pr_Src_cls_loss	: 0.1017
+-------------------------------------
+[Pr Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0973
+-------------------------------------
+[Pr Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0942
+-------------------------------------
+[Pr Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0909
+-------------------------------------
+[Pr Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0882
+-------------------------------------
+[Pr Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0856
+-------------------------------------
+[Pr Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0834
+-------------------------------------
+[Pr Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0811
+-------------------------------------
+[Pr Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0792
+-------------------------------------
+[Pr Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0774
+-------------------------------------
+[Pr Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0758
+-------------------------------------
+[Pr Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0742
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1401: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  sub_loss_local += -torch.sum(neighbor_Q[i, :] * F.log_softmax(after_cluhead_t[i, :]))
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1402: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  sub_loss_local += -torch.sum(anchor_Q[i, :] * F.log_softmax(neighbor_output[i, :]))
+[Epoch : 1/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0477
+loss_cls	: 0.0474
+loss_PCD	: 4.0183
+loss_CCD	: 0.0010
+-------------------------------------
+[Epoch : 2/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0438
+loss_cls	: 0.0436
+loss_PCD	: 4.0088
+loss_CCD	: 0.0008
+-------------------------------------
+[Epoch : 3/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0429
+loss_cls	: 0.0427
+loss_PCD	: 4.0247
+loss_CCD	: 0.0007
+-------------------------------------
+[Epoch : 4/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0436
+loss_cls	: 0.0434
+loss_PCD	: 4.0418
+loss_CCD	: 0.0007
+-------------------------------------
+[Epoch : 5/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0428
+loss_cls	: 0.0425
+loss_PCD	: 4.0582
+loss_CCD	: 0.0006
+-------------------------------------
+[Epoch : 6/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0425
+loss_cls	: 0.0423
+loss_PCD	: 4.0703
+loss_CCD	: 0.0006
+-------------------------------------
+[Epoch : 7/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0421
+loss_cls	: 0.0419
+loss_PCD	: 4.0829
+loss_CCD	: 0.0006
+-------------------------------------
+[Epoch : 8/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0418
+loss_cls	: 0.0416
+loss_PCD	: 4.1008
+loss_CCD	: 0.0006
+-------------------------------------
+[Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0416
+loss_cls	: 0.0414
+loss_PCD	: 4.1224
+loss_CCD	: 0.0005
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0417
+loss_cls	: 0.0415
+loss_PCD	: 4.1399
+loss_CCD	: 0.0005
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0415
+loss_cls	: 0.0413
+loss_PCD	: 4.1590
+loss_CCD	: 0.0005
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0410
+loss_cls	: 0.0409
+loss_PCD	: 4.1746
+loss_CCD	: 0.0005
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0407
+loss_cls	: 0.0405
+loss_PCD	: 4.1876
+loss_CCD	: 0.0005
+Src_cls_loss	: 0.0000
+-------------------------------------
+/home/tp2474/miniconda3/envs/myenv/lib/python3.9/site-packages/ot/backend.py:1203: RuntimeWarning: overflow encountered in exp
+  return np.exp(a)
+/home/tp2474/miniconda3/envs/myenv/lib/python3.9/site-packages/ot/unbalanced/_sinkhorn.py:770: UserWarning: Numerical errors at iteration 0
+  warnings.warn("Numerical errors at iteration %s" % i)
+[Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0404
+loss_cls	: 0.0402
+loss_PCD	: 4.2022
+loss_CCD	: 0.0005
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0400
+loss_cls	: 0.0399
+loss_PCD	: 4.2200
+loss_CCD	: 0.0004
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0398
+loss_cls	: 0.0396
+loss_PCD	: 4.2369
+loss_CCD	: 0.0004
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0396
+loss_cls	: 0.0394
+loss_PCD	: 4.2425
+loss_CCD	: 0.0004
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0395
+loss_cls	: 0.0393
+loss_PCD	: 4.2516
+loss_CCD	: 0.0004
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0392
+loss_cls	: 0.0391
+loss_PCD	: 4.2579
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0742
+Total_loss	: 0.0390
+loss_cls	: 0.0388
+loss_PCD	: 4.2656
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.0000, OS* (acc_c): 0.0000, UNK (acc_p): 0.0000, acc_mix: 0.0000, F1: 0.0000
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to Pamap2_PDA_hard_n2_fno_mean/UniOT_PDA_hard_n2_fno_mean/RealWorld_to_Pamap2_run_0
+🏃 View run UniOT_run_0 at: http://127.0.0.1:5001/#/experiments/974422661018038835/runs/682353fab4544fc0b1423218f3633c52
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/974422661018038835
+=============================================
+Dataset: RealWorld to Pamap2_PDA_hard_n2_fno_mean
+Method:  UniOT
+=============================================
+Source: RealWorld ---> Target: Pamap2
+Run ID: 1
+=============================================
+[Pr Epoch : 1/20]
+Pr_Src_cls_loss	: 0.2244
+-------------------------------------
+[Pr Epoch : 2/20]
+Pr_Src_cls_loss	: 0.1712
+-------------------------------------
+[Pr Epoch : 3/20]
+Pr_Src_cls_loss	: 0.1478
+-------------------------------------
+[Pr Epoch : 4/20]
+Pr_Src_cls_loss	: 0.1342
+-------------------------------------
+[Pr Epoch : 5/20]
+Pr_Src_cls_loss	: 0.1235
+-------------------------------------
+[Pr Epoch : 6/20]
+Pr_Src_cls_loss	: 0.1161
+-------------------------------------
+[Pr Epoch : 7/20]
+Pr_Src_cls_loss	: 0.1101
+-------------------------------------
+[Pr Epoch : 8/20]
+Pr_Src_cls_loss	: 0.1048
+-------------------------------------
+[Pr Epoch : 9/20]
+Pr_Src_cls_loss	: 0.1011
+-------------------------------------
+[Pr Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0972
+-------------------------------------
+[Pr Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0937
+-------------------------------------
+[Pr Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0909
+-------------------------------------
+[Pr Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0884
+-------------------------------------
+[Pr Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0860
+-------------------------------------
+[Pr Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0840
+-------------------------------------
+[Pr Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0818
+-------------------------------------
+[Pr Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0798
+-------------------------------------
+[Pr Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0783
+-------------------------------------
+[Pr Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0766
+-------------------------------------
+[Pr Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0751
+-------------------------------------
+[Epoch : 1/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0456
+loss_cls	: 0.0454
+loss_PCD	: 3.4685
+loss_CCD	: 0.0006
+-------------------------------------
+[Epoch : 2/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0481
+loss_cls	: 0.0479
+loss_PCD	: 3.5450
+loss_CCD	: 0.0006
+-------------------------------------
+[Epoch : 3/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0459
+loss_cls	: 0.0457
+loss_PCD	: 3.5746
+loss_CCD	: 0.0005
+-------------------------------------
+[Epoch : 4/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0449
+loss_cls	: 0.0448
+loss_PCD	: 3.5934
+loss_CCD	: 0.0004
+-------------------------------------
+[Epoch : 5/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0452
+loss_cls	: 0.0451
+loss_PCD	: 3.6185
+loss_CCD	: 0.0004
+-------------------------------------
+[Epoch : 6/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0444
+loss_cls	: 0.0442
+loss_PCD	: 3.6264
+loss_CCD	: 0.0004
+-------------------------------------
+[Epoch : 7/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0439
+loss_cls	: 0.0438
+loss_PCD	: 3.6446
+loss_CCD	: 0.0004
+-------------------------------------
+[Epoch : 8/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0441
+loss_cls	: 0.0439
+loss_PCD	: 3.6688
+loss_CCD	: 0.0004
+-------------------------------------
+[Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0434
+loss_cls	: 0.0433
+loss_PCD	: 3.6859
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0432
+loss_cls	: 0.0431
+loss_PCD	: 3.7036
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0430
+loss_cls	: 0.0429
+loss_PCD	: 3.7247
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0428
+loss_cls	: 0.0427
+loss_PCD	: 3.7430
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0422
+loss_cls	: 0.0421
+loss_PCD	: 3.7548
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0421
+loss_cls	: 0.0419
+loss_PCD	: 3.7721
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0419
+loss_cls	: 0.0418
+loss_PCD	: 3.7892
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0415
+loss_cls	: 0.0414
+loss_PCD	: 3.8018
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0412
+loss_cls	: 0.0411
+loss_PCD	: 3.8176
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0409
+loss_cls	: 0.0408
+loss_PCD	: 3.8298
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0409
+loss_cls	: 0.0408
+loss_PCD	: 3.8456
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0751
+Total_loss	: 0.0406
+loss_cls	: 0.0405
+loss_PCD	: 3.8609
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+H_score: 0.0000, OS* (acc_c): 0.5124, UNK (acc_p): 0.0000, acc_mix: 0.5124, F1: 0.6049
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to Pamap2_PDA_hard_n2_fno_mean/UniOT_PDA_hard_n2_fno_mean/RealWorld_to_Pamap2_run_1
+🏃 View run UniOT_run_1 at: http://127.0.0.1:5001/#/experiments/974422661018038835/runs/663b59d69dc644a4a13b5c80ca3b185c
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/974422661018038835
+=============================================
+Dataset: RealWorld to Pamap2_PDA_hard_n2_fno_mean
+Method:  UniOT
+=============================================
+Source: RealWorld ---> Target: Pamap2
+Run ID: 2
+=============================================
+[Pr Epoch : 1/20]
+Pr_Src_cls_loss	: 0.2359
+-------------------------------------
+[Pr Epoch : 2/20]
+Pr_Src_cls_loss	: 0.1789
+-------------------------------------
+[Pr Epoch : 3/20]
+Pr_Src_cls_loss	: 0.1532
+-------------------------------------
+[Pr Epoch : 4/20]
+Pr_Src_cls_loss	: 0.1374
+-------------------------------------
+[Pr Epoch : 5/20]
+Pr_Src_cls_loss	: 0.1252
+-------------------------------------
+[Pr Epoch : 6/20]
+Pr_Src_cls_loss	: 0.1168
+-------------------------------------
+[Pr Epoch : 7/20]
+Pr_Src_cls_loss	: 0.1100
+-------------------------------------
+[Pr Epoch : 8/20]
+Pr_Src_cls_loss	: 0.1047
+-------------------------------------
+[Pr Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0998
+-------------------------------------
+[Pr Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0965
+-------------------------------------
+[Pr Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0932
+-------------------------------------
+[Pr Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0899
+-------------------------------------
+[Pr Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0874
+-------------------------------------
+[Pr Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0850
+-------------------------------------
+[Pr Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0828
+-------------------------------------
+[Pr Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0808
+-------------------------------------
+[Pr Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0791
+-------------------------------------
+[Pr Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0774
+-------------------------------------
+[Pr Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0760
+-------------------------------------
+[Pr Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0745
+-------------------------------------
+[Epoch : 1/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0458
+loss_cls	: 0.0456
+loss_PCD	: 4.0425
+loss_CCD	: 0.0006
+-------------------------------------
+[Epoch : 2/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0443
+loss_cls	: 0.0442
+loss_PCD	: 4.1069
+loss_CCD	: 0.0005
+-------------------------------------
+[Epoch : 3/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0447
+loss_cls	: 0.0446
+loss_PCD	: 4.1361
+loss_CCD	: 0.0004
+-------------------------------------
+[Epoch : 4/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0446
+loss_cls	: 0.0445
+loss_PCD	: 4.1470
+loss_CCD	: 0.0004
+-------------------------------------
+[Epoch : 5/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0436
+loss_cls	: 0.0435
+loss_PCD	: 4.1746
+loss_CCD	: 0.0004
+-------------------------------------
+[Epoch : 6/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0439
+loss_cls	: 0.0438
+loss_PCD	: 4.1814
+loss_CCD	: 0.0004
+-------------------------------------
+[Epoch : 7/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0431
+loss_cls	: 0.0430
+loss_PCD	: 4.1778
+loss_CCD	: 0.0003
+-------------------------------------
+[Epoch : 8/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0428
+loss_cls	: 0.0427
+loss_PCD	: 4.1835
+loss_CCD	: 0.0003
+-------------------------------------
+[Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0426
+loss_cls	: 0.0425
+loss_PCD	: 4.1927
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0424
+loss_cls	: 0.0423
+loss_PCD	: 4.1957
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0419
+loss_cls	: 0.0418
+loss_PCD	: 4.1945
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0418
+loss_cls	: 0.0417
+loss_PCD	: 4.1930
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0419
+loss_cls	: 0.0418
+loss_PCD	: 4.1924
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0416
+loss_cls	: 0.0415
+loss_PCD	: 4.1909
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0414
+loss_cls	: 0.0413
+loss_PCD	: 4.1912
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0413
+loss_cls	: 0.0412
+loss_PCD	: 4.1882
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0411
+loss_cls	: 0.0410
+loss_PCD	: 4.1895
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0410
+loss_cls	: 0.0409
+loss_PCD	: 4.1880
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0408
+loss_cls	: 0.0407
+loss_PCD	: 4.1843
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0745
+Total_loss	: 0.0406
+loss_cls	: 0.0405
+loss_PCD	: 4.1787
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+H_score: 0.0000, OS* (acc_c): 0.3626, UNK (acc_p): 0.0000, acc_mix: 0.3626, F1: 0.4705
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to Pamap2_PDA_hard_n2_fno_mean/UniOT_PDA_hard_n2_fno_mean/RealWorld_to_Pamap2_run_2
+🏃 View run UniOT_run_2 at: http://127.0.0.1:5001/#/experiments/974422661018038835/runs/84bf1061f6344d0aa2d6de8393bc15eb
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/974422661018038835
+=============================================
+Dataset: RealWorld to Pamap2_PDA_hard_n2_fno_mean
+Method:  UniOT
+=============================================
+Source: RealWorld ---> Target: Pamap2
+Run ID: 3
+=============================================
+[Pr Epoch : 1/20]
+Pr_Src_cls_loss	: 0.2228
+-------------------------------------
+[Pr Epoch : 2/20]
+Pr_Src_cls_loss	: 0.1699
+-------------------------------------
+[Pr Epoch : 3/20]
+Pr_Src_cls_loss	: 0.1466
+-------------------------------------
+[Pr Epoch : 4/20]
+Pr_Src_cls_loss	: 0.1316
+-------------------------------------
+[Pr Epoch : 5/20]
+Pr_Src_cls_loss	: 0.1212
+-------------------------------------
+[Pr Epoch : 6/20]
+Pr_Src_cls_loss	: 0.1126
+-------------------------------------
+[Pr Epoch : 7/20]
+Pr_Src_cls_loss	: 0.1068
+-------------------------------------
+[Pr Epoch : 8/20]
+Pr_Src_cls_loss	: 0.1020
+-------------------------------------
+[Pr Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0975
+-------------------------------------
+[Pr Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0936
+-------------------------------------
+[Pr Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0903
+-------------------------------------
+[Pr Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0877
+-------------------------------------
+[Pr Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0854
+-------------------------------------
+[Pr Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0829
+-------------------------------------
+[Pr Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0805
+-------------------------------------
+[Pr Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0788
+-------------------------------------
+[Pr Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0769
+-------------------------------------
+[Pr Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0753
+-------------------------------------
+[Pr Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0739
+-------------------------------------
+[Pr Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0723
+-------------------------------------
+[Epoch : 1/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0464
+loss_cls	: 0.0464
+loss_PCD	: 4.1624
+loss_CCD	: 0.0000
+-------------------------------------
+[Epoch : 2/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0461
+loss_cls	: 0.0461
+loss_PCD	: 4.1849
+loss_CCD	: 0.0000
+-------------------------------------
+[Epoch : 3/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0454
+loss_cls	: 0.0454
+loss_PCD	: 4.1801
+loss_CCD	: 0.0000
+-------------------------------------
+[Epoch : 4/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0457
+loss_cls	: 0.0457
+loss_PCD	: 4.1870
+loss_CCD	: 0.0000
+-------------------------------------
+[Epoch : 5/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0440
+loss_cls	: 0.0440
+loss_PCD	: 4.1810
+loss_CCD	: 0.0000
+-------------------------------------
+[Epoch : 6/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0437
+loss_cls	: 0.0437
+loss_PCD	: 4.1613
+loss_CCD	: 0.0000
+-------------------------------------
+[Epoch : 7/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0433
+loss_cls	: 0.0433
+loss_PCD	: 4.1556
+loss_CCD	: 0.0000
+-------------------------------------
+[Epoch : 8/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0430
+loss_cls	: 0.0430
+loss_PCD	: 4.1447
+loss_CCD	: 0.0000
+-------------------------------------
+[Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0426
+loss_cls	: 0.0426
+loss_PCD	: 4.1399
+loss_CCD	: 0.0000
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0420
+loss_cls	: 0.0420
+loss_PCD	: 4.1283
+loss_CCD	: 0.0000
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0418
+loss_cls	: 0.0418
+loss_PCD	: 4.1230
+loss_CCD	: 0.0000
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0415
+loss_cls	: 0.0415
+loss_PCD	: 4.1183
+loss_CCD	: 0.0000
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0411
+loss_cls	: 0.0411
+loss_PCD	: 4.1148
+loss_CCD	: 0.0000
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0408
+loss_cls	: 0.0408
+loss_PCD	: 4.1091
+loss_CCD	: 0.0000
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0406
+loss_cls	: 0.0406
+loss_PCD	: 4.0999
+loss_CCD	: 0.0000
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0403
+loss_cls	: 0.0403
+loss_PCD	: 4.0947
+loss_CCD	: 0.0000
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0402
+loss_cls	: 0.0402
+loss_PCD	: 4.0880
+loss_CCD	: 0.0000
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0401
+loss_cls	: 0.0401
+loss_PCD	: 4.0829
+loss_CCD	: 0.0000
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0399
+loss_cls	: 0.0399
+loss_PCD	: 4.0759
+loss_CCD	: 0.0000
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0723
+Total_loss	: 0.0395
+loss_cls	: 0.0395
+loss_PCD	: 4.0713
+loss_CCD	: 0.0000
+Src_cls_loss	: 0.0000
+-------------------------------------
+H_score: 0.0000, OS* (acc_c): 0.0000, UNK (acc_p): 0.0000, acc_mix: 0.0000, F1: 0.0000
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to Pamap2_PDA_hard_n2_fno_mean/UniOT_PDA_hard_n2_fno_mean/RealWorld_to_Pamap2_run_3
+🏃 View run UniOT_run_3 at: http://127.0.0.1:5001/#/experiments/974422661018038835/runs/b95676edc09a4ac0bac97aa81c243907
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/974422661018038835
+=============================================
+Dataset: RealWorld to Pamap2_PDA_hard_n2_fno_mean
+Method:  UniOT
+=============================================
+Source: RealWorld ---> Target: Pamap2
+Run ID: 4
+=============================================
+[Pr Epoch : 1/20]
+Pr_Src_cls_loss	: 0.2175
+-------------------------------------
+[Pr Epoch : 2/20]
+Pr_Src_cls_loss	: 0.1688
+-------------------------------------
+[Pr Epoch : 3/20]
+Pr_Src_cls_loss	: 0.1480
+-------------------------------------
+[Pr Epoch : 4/20]
+Pr_Src_cls_loss	: 0.1332
+-------------------------------------
+[Pr Epoch : 5/20]
+Pr_Src_cls_loss	: 0.1246
+-------------------------------------
+[Pr Epoch : 6/20]
+Pr_Src_cls_loss	: 0.1169
+-------------------------------------
+[Pr Epoch : 7/20]
+Pr_Src_cls_loss	: 0.1104
+-------------------------------------
+[Pr Epoch : 8/20]
+Pr_Src_cls_loss	: 0.1050
+-------------------------------------
+[Pr Epoch : 9/20]
+Pr_Src_cls_loss	: 0.1010
+-------------------------------------
+[Pr Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0969
+-------------------------------------
+[Pr Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0935
+-------------------------------------
+[Pr Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0903
+-------------------------------------
+[Pr Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0876
+-------------------------------------
+[Pr Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0849
+-------------------------------------
+[Pr Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0826
+-------------------------------------
+[Pr Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0805
+-------------------------------------
+[Pr Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0788
+-------------------------------------
+[Pr Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0771
+-------------------------------------
+[Pr Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0755
+-------------------------------------
+[Pr Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0739
+-------------------------------------
+[Epoch : 1/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0477
+loss_cls	: 0.0474
+loss_PCD	: 3.8691
+loss_CCD	: 0.0007
+-------------------------------------
+[Epoch : 2/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0478
+loss_cls	: 0.0476
+loss_PCD	: 3.9253
+loss_CCD	: 0.0006
+-------------------------------------
+[Epoch : 3/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0438
+loss_cls	: 0.0436
+loss_PCD	: 3.9140
+loss_CCD	: 0.0005
+-------------------------------------
+[Epoch : 4/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0436
+loss_cls	: 0.0434
+loss_PCD	: 3.9175
+loss_CCD	: 0.0005
+-------------------------------------
+[Epoch : 5/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0434
+loss_cls	: 0.0433
+loss_PCD	: 3.9329
+loss_CCD	: 0.0004
+-------------------------------------
+[Epoch : 6/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0433
+loss_cls	: 0.0432
+loss_PCD	: 3.9420
+loss_CCD	: 0.0004
+-------------------------------------
+[Epoch : 7/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0428
+loss_cls	: 0.0426
+loss_PCD	: 3.9374
+loss_CCD	: 0.0004
+-------------------------------------
+[Epoch : 8/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0426
+loss_cls	: 0.0425
+loss_PCD	: 3.9371
+loss_CCD	: 0.0004
+-------------------------------------
+[Epoch : 9/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0424
+loss_cls	: 0.0423
+loss_PCD	: 3.9485
+loss_CCD	: 0.0004
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0422
+loss_cls	: 0.0421
+loss_PCD	: 3.9471
+loss_CCD	: 0.0004
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 11/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0417
+loss_cls	: 0.0416
+loss_PCD	: 3.9425
+loss_CCD	: 0.0004
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 12/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0415
+loss_cls	: 0.0414
+loss_PCD	: 3.9432
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 13/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0411
+loss_cls	: 0.0410
+loss_PCD	: 3.9454
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 14/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0411
+loss_cls	: 0.0410
+loss_PCD	: 3.9463
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 15/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0408
+loss_cls	: 0.0407
+loss_PCD	: 3.9473
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 16/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0405
+loss_cls	: 0.0404
+loss_PCD	: 3.9467
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 17/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0406
+loss_cls	: 0.0405
+loss_PCD	: 3.9492
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 18/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0406
+loss_cls	: 0.0404
+loss_PCD	: 3.9558
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 19/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0402
+loss_cls	: 0.0401
+loss_PCD	: 3.9596
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 20/20]
+Pr_Src_cls_loss	: 0.0739
+Total_loss	: 0.0400
+loss_cls	: 0.0399
+loss_PCD	: 3.9591
+loss_CCD	: 0.0003
+Src_cls_loss	: 0.0000
+-------------------------------------
+H_score: 0.0000, OS* (acc_c): 0.4451, UNK (acc_p): 0.0000, acc_mix: 0.4451, F1: 0.5409
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to Pamap2_PDA_hard_n2_fno_mean/UniOT_PDA_hard_n2_fno_mean/RealWorld_to_Pamap2_run_4
+🏃 View run UniOT_run_4 at: http://127.0.0.1:5001/#/experiments/974422661018038835/runs/5f758478cf2449088afcf052fa56ce57
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/974422661018038835
+==================== [n2 fno_mean] PPOT ====================
+[curriculum] scenario=PDA  strategy=hard  n_unknown=2  rank_variant=fno_mean
+[curriculum] source mapping (6 classes): {'lying': 'lying', 'sitting': 'sitting', 'walking': 'walking', 'running': 'running', 'climbingup': 'climbingup', 'jumping': 'jumping'}
+[curriculum] target mapping (4 classes): {'lying': 'lying', 'sitting': 'sitting', 'walking': 'walking', 'running': 'running'}
+[curriculum] unknowns added (in hard order): ['climbingup', 'jumping']
+[scenario] PPOT -> UniDA (uniDA=True)
+Unlabeled data shape:  (4752, 150, 18)
+Unlabelled Combined shape: (8054, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   355
+Target Train batches:   74
+-------------------------------
+
+Private classes:  tensor([])
+=============================================
+Dataset: RealWorld to Pamap2_PDA_hard_n2_fno_mean
+Method:  PPOT
+=============================================
+Source: RealWorld ---> Target: Pamap2
+Run ID: 0
+=============================================
+[Pr Epoch : 1/20]
+Pr_Src_cls_loss	: 1.6123
+-------------------------------------
+[Pr Epoch : 2/20]
+Pr_Src_cls_loss	: 1.5326
+-------------------------------------
+[Pr Epoch : 3/20]
+Pr_Src_cls_loss	: 1.4627
+-------------------------------------
+[Pr Epoch : 4/20]
+Pr_Src_cls_loss	: 1.3974
+-------------------------------------
+[Pr Epoch : 5/20]
+Pr_Src_cls_loss	: 1.3366
+-------------------------------------
+[Pr Epoch : 6/20]
+Pr_Src_cls_loss	: 1.2794
+-------------------------------------
+[Pr Epoch : 7/20]
+Pr_Src_cls_loss	: 1.2256
+-------------------------------------
+[Pr Epoch : 8/20]
+Pr_Src_cls_loss	: 1.1752
+-------------------------------------
+[Pr Epoch : 9/20]
+Pr_Src_cls_loss	: 1.1278
+-------------------------------------
+[Pr Epoch : 10/20]
+Pr_Src_cls_loss	: 1.0832
+-------------------------------------
+[Pr Epoch : 11/20]
+Pr_Src_cls_loss	: 1.0413
+-------------------------------------
+[Pr Epoch : 12/20]
+Pr_Src_cls_loss	: 1.0019
+-------------------------------------
+[Pr Epoch : 13/20]
+Pr_Src_cls_loss	: 0.9648
+-------------------------------------
+[Pr Epoch : 14/20]
+Pr_Src_cls_loss	: 0.9298
+-------------------------------------
+[Pr Epoch : 15/20]
+Pr_Src_cls_loss	: 0.8967
+-------------------------------------
+[Pr Epoch : 16/20]
+Pr_Src_cls_loss	: 0.8656
+-------------------------------------
+[Pr Epoch : 17/20]
+Pr_Src_cls_loss	: 0.8362
+-------------------------------------
+[Pr Epoch : 18/20]
+Pr_Src_cls_loss	: 0.8084
+-------------------------------------
+[Pr Epoch : 19/20]
+Pr_Src_cls_loss	: 0.7822
+-------------------------------------
+[Pr Epoch : 20/20]
+Pr_Src_cls_loss	: 0.7573
+-------------------------------------
+[Epoch : 1/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.2262
+OT Loss	: 0.2698
+Entropic Loss	: -0.8768
+Src_cls_loss	: 0.2459
+-------------------------------------
+[Epoch : 2/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.2511
+OT Loss	: 0.2409
+Entropic Loss	: -0.8166
+Src_cls_loss	: 0.2042
+-------------------------------------
+[Epoch : 3/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.3577
+OT Loss	: 0.2333
+Entropic Loss	: -0.8998
+Src_cls_loss	: 0.1921
+-------------------------------------
+[Epoch : 4/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.3342
+OT Loss	: 0.2222
+Entropic Loss	: -0.8569
+Src_cls_loss	: 0.1895
+-------------------------------------
+[Epoch : 5/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.3441
+OT Loss	: 0.2135
+Entropic Loss	: -0.8516
+Src_cls_loss	: 0.1872
+-------------------------------------
+[Epoch : 6/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.3997
+OT Loss	: 0.2082
+Entropic Loss	: -0.8890
+Src_cls_loss	: 0.1770
+-------------------------------------
+[Epoch : 7/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.4104
+OT Loss	: 0.2017
+Entropic Loss	: -0.8866
+Src_cls_loss	: 0.1737
+-------------------------------------
+[Epoch : 8/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.4006
+OT Loss	: 0.1989
+Entropic Loss	: -0.8712
+Src_cls_loss	: 0.1723
+-------------------------------------
+[Epoch : 9/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.3306
+OT Loss	: 0.2003
+Entropic Loss	: -0.8074
+Src_cls_loss	: 0.1764
+-------------------------------------
+[Epoch : 10/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.2733
+OT Loss	: 0.2037
+Entropic Loss	: -0.7593
+Src_cls_loss	: 0.1804
+-------------------------------------
+[Epoch : 11/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.2271
+OT Loss	: 0.2035
+Entropic Loss	: -0.7141
+Src_cls_loss	: 0.1818
+-------------------------------------
+[Epoch : 12/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.1846
+OT Loss	: 0.2086
+Entropic Loss	: -0.6737
+Src_cls_loss	: 0.1762
+-------------------------------------
+[Epoch : 13/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.1503
+OT Loss	: 0.2067
+Entropic Loss	: -0.6353
+Src_cls_loss	: 0.1749
+-------------------------------------
+[Epoch : 14/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.1121
+OT Loss	: 0.2061
+Entropic Loss	: -0.5987
+Src_cls_loss	: 0.1774
+-------------------------------------
+[Epoch : 15/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.0861
+OT Loss	: 0.2095
+Entropic Loss	: -0.5764
+Src_cls_loss	: 0.1760
+-------------------------------------
+[Epoch : 16/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.0708
+OT Loss	: 0.2082
+Entropic Loss	: -0.5534
+Src_cls_loss	: 0.1702
+-------------------------------------
+[Epoch : 17/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.0330
+OT Loss	: 0.2160
+Entropic Loss	: -0.5264
+Src_cls_loss	: 0.1694
+-------------------------------------
+[Epoch : 18/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.0205
+OT Loss	: 0.2167
+Entropic Loss	: -0.5114
+Src_cls_loss	: 0.1659
+-------------------------------------
+[Epoch : 19/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: -0.0032
+OT Loss	: 0.2176
+Entropic Loss	: -0.4913
+Src_cls_loss	: 0.1618
+-------------------------------------
+[Epoch : 20/20]
+Pr_Src_cls_loss	: 0.7573
+Total_loss	: 0.0133
+OT Loss	: 0.2185
+Entropic Loss	: -0.4720
+Src_cls_loss	: 0.1576
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+H_score: 0.0000, OS* (acc_c): 0.5128, UNK (acc_p): 0.0000, acc_mix: 0.5128, F1: 0.6382
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to Pamap2_PDA_hard_n2_fno_mean/PPOT_PDA_hard_n2_fno_mean/RealWorld_to_Pamap2_run_0
+🏃 View run PPOT_run_0 at: http://127.0.0.1:5001/#/experiments/974422661018038835/runs/833027dd4fd4499890d3fb8884f29be0
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/974422661018038835
+=============================================
+Dataset: RealWorld to Pamap2_PDA_hard_n2_fno_mean
+Method:  PPOT
+=============================================
+Source: RealWorld ---> Target: Pamap2
+Run ID: 1
+=============================================
+[Pr Epoch : 1/20]
+Pr_Src_cls_loss	: 1.6197
+-------------------------------------
+[Pr Epoch : 2/20]
+Pr_Src_cls_loss	: 1.5412
+-------------------------------------
+[Pr Epoch : 3/20]
+Pr_Src_cls_loss	: 1.4713
+-------------------------------------
+[Pr Epoch : 4/20]
+Pr_Src_cls_loss	: 1.4055
+-------------------------------------
+[Pr Epoch : 5/20]
+Pr_Src_cls_loss	: 1.3439
+-------------------------------------
+[Pr Epoch : 6/20]
+Pr_Src_cls_loss	: 1.2861
+-------------------------------------
+[Pr Epoch : 7/20]
+Pr_Src_cls_loss	: 1.2318
+-------------------------------------
+[Pr Epoch : 8/20]
+Pr_Src_cls_loss	: 1.1809
+-------------------------------------
+[Pr Epoch : 9/20]
+Pr_Src_cls_loss	: 1.1329
+-------------------------------------
+[Pr Epoch : 10/20]
+Pr_Src_cls_loss	: 1.0879
+-------------------------------------
+[Pr Epoch : 11/20]
+Pr_Src_cls_loss	: 1.0456
+-------------------------------------
+[Pr Epoch : 12/20]
+Pr_Src_cls_loss	: 1.0058
+-------------------------------------
+[Pr Epoch : 13/20]
+Pr_Src_cls_loss	: 0.9683
+-------------------------------------
+[Pr Epoch : 14/20]
+Pr_Src_cls_loss	: 0.9331
+-------------------------------------
+[Pr Epoch : 15/20]
+Pr_Src_cls_loss	: 0.8999
+-------------------------------------
+[Pr Epoch : 16/20]
+Pr_Src_cls_loss	: 0.8686
+-------------------------------------
+[Pr Epoch : 17/20]
+Pr_Src_cls_loss	: 0.8391
+-------------------------------------
+[Pr Epoch : 18/20]
+Pr_Src_cls_loss	: 0.8113
+-------------------------------------
+[Pr Epoch : 19/20]
+Pr_Src_cls_loss	: 0.7849
+-------------------------------------
+[Pr Epoch : 20/20]
+Pr_Src_cls_loss	: 0.7599
+-------------------------------------
+[Epoch : 1/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.8847
+OT Loss	: 0.2129
+Entropic Loss	: -1.3964
+Src_cls_loss	: 0.1923
+-------------------------------------
+[Epoch : 2/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.6106
+OT Loss	: 0.2011
+Entropic Loss	: -1.1184
+Src_cls_loss	: 0.2062
+-------------------------------------
+[Epoch : 3/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.5535
+OT Loss	: 0.1934
+Entropic Loss	: -1.0444
+Src_cls_loss	: 0.2009
+-------------------------------------
+[Epoch : 4/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.5055
+OT Loss	: 0.1864
+Entropic Loss	: -0.9814
+Src_cls_loss	: 0.1963
+-------------------------------------
+[Epoch : 5/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.4839
+OT Loss	: 0.1842
+Entropic Loss	: -0.9428
+Src_cls_loss	: 0.1826
+-------------------------------------
+[Epoch : 6/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.4380
+OT Loss	: 0.1809
+Entropic Loss	: -0.8839
+Src_cls_loss	: 0.1745
+-------------------------------------
+[Epoch : 7/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.4420
+OT Loss	: 0.1797
+Entropic Loss	: -0.8854
+Src_cls_loss	: 0.1738
+-------------------------------------
+[Epoch : 8/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.4680
+OT Loss	: 0.1808
+Entropic Loss	: -0.9103
+Src_cls_loss	: 0.1711
+-------------------------------------
+[Epoch : 9/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.4469
+OT Loss	: 0.1809
+Entropic Loss	: -0.8926
+Src_cls_loss	: 0.1745
+-------------------------------------
+[Epoch : 10/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.3936
+OT Loss	: 0.1833
+Entropic Loss	: -0.8404
+Src_cls_loss	: 0.1718
+-------------------------------------
+[Epoch : 11/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.3749
+OT Loss	: 0.1860
+Entropic Loss	: -0.8228
+Src_cls_loss	: 0.1689
+-------------------------------------
+[Epoch : 12/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.3227
+OT Loss	: 0.1958
+Entropic Loss	: -0.7876
+Src_cls_loss	: 0.1712
+-------------------------------------
+[Epoch : 13/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.2873
+OT Loss	: 0.1949
+Entropic Loss	: -0.7529
+Src_cls_loss	: 0.1732
+-------------------------------------
+[Epoch : 14/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.2236
+OT Loss	: 0.2093
+Entropic Loss	: -0.7109
+Src_cls_loss	: 0.1734
+-------------------------------------
+[Epoch : 15/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.1862
+OT Loss	: 0.2071
+Entropic Loss	: -0.6729
+Src_cls_loss	: 0.1760
+-------------------------------------
+[Epoch : 16/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.1658
+OT Loss	: 0.2091
+Entropic Loss	: -0.6551
+Src_cls_loss	: 0.1758
+-------------------------------------
+[Epoch : 17/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.1489
+OT Loss	: 0.2095
+Entropic Loss	: -0.6360
+Src_cls_loss	: 0.1728
+-------------------------------------
+[Epoch : 18/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.1309
+OT Loss	: 0.2081
+Entropic Loss	: -0.6130
+Src_cls_loss	: 0.1699
+-------------------------------------
+[Epoch : 19/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.1253
+OT Loss	: 0.2073
+Entropic Loss	: -0.6016
+Src_cls_loss	: 0.1653
+-------------------------------------
+[Epoch : 20/20]
+Pr_Src_cls_loss	: 0.7599
+Total_loss	: -0.1166
+OT Loss	: 0.2076
+Entropic Loss	: -0.5894
+Src_cls_loss	: 0.1613
+-------------------------------------
+H_score: 0.0000, OS* (acc_c): 0.3188, UNK (acc_p): 0.0000, acc_mix: 0.3188, F1: 0.4095
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to Pamap2_PDA_hard_n2_fno_mean/PPOT_PDA_hard_n2_fno_mean/RealWorld_to_Pamap2_run_1
+🏃 View run PPOT_run_1 at: http://127.0.0.1:5001/#/experiments/974422661018038835/runs/9e23c6ccc6cd48bfba731b5ea33b840d
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/974422661018038835
+=============================================
+Dataset: RealWorld to Pamap2_PDA_hard_n2_fno_mean
+Method:  PPOT
+=============================================
+Source: RealWorld ---> Target: Pamap2
+Run ID: 2
+=============================================
+[Pr Epoch : 1/20]
+Pr_Src_cls_loss	: 1.6220
+-------------------------------------
+[Pr Epoch : 2/20]
+Pr_Src_cls_loss	: 1.5417
+-------------------------------------
+[Pr Epoch : 3/20]
+Pr_Src_cls_loss	: 1.4703
+-------------------------------------
+[Pr Epoch : 4/20]
+Pr_Src_cls_loss	: 1.4039
+-------------------------------------
+[Pr Epoch : 5/20]
+Pr_Src_cls_loss	: 1.3419
+-------------------------------------
+[Pr Epoch : 6/20]
+Pr_Src_cls_loss	: 1.2837
+-------------------------------------
+[Pr Epoch : 7/20]
+Pr_Src_cls_loss	: 1.2290
+-------------------------------------
+[Pr Epoch : 8/20]
+Pr_Src_cls_loss	: 1.1778
+-------------------------------------
+[Pr Epoch : 9/20]
+Pr_Src_cls_loss	: 1.1298
+-------------------------------------
+[Pr Epoch : 10/20]
+Pr_Src_cls_loss	: 1.0847
+-------------------------------------
+[Pr Epoch : 11/20]
+Pr_Src_cls_loss	: 1.0424
+-------------------------------------
+[Pr Epoch : 12/20]
+Pr_Src_cls_loss	: 1.0026
+-------------------------------------
+[Pr Epoch : 13/20]
+Pr_Src_cls_loss	: 0.9651
+-------------------------------------
+[Pr Epoch : 14/20]
+Pr_Src_cls_loss	: 0.9298
+-------------------------------------
+[Pr Epoch : 15/20]
+Pr_Src_cls_loss	: 0.8966
+-------------------------------------
+[Pr Epoch : 16/20]
+Pr_Src_cls_loss	: 0.8651
+-------------------------------------
+[Pr Epoch : 17/20]
+Pr_Src_cls_loss	: 0.8355
+-------------------------------------
+[Pr Epoch : 18/20]
+Pr_Src_cls_loss	: 0.8076
+-------------------------------------
+[Pr Epoch : 19/20]
+Pr_Src_cls_loss	: 0.7812
+-------------------------------------
+[Pr Epoch : 20/20]
+Pr_Src_cls_loss	: 0.7562
+-------------------------------------
+[Epoch : 1/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.6616
+OT Loss	: 0.2500
+Entropic Loss	: -1.2380
+Src_cls_loss	: 0.2013
+-------------------------------------
+[Epoch : 2/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.6313
+OT Loss	: 0.2207
+Entropic Loss	: -1.1773
+Src_cls_loss	: 0.2149
+-------------------------------------
+[Epoch : 3/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.5217
+OT Loss	: 0.2074
+Entropic Loss	: -1.0565
+Src_cls_loss	: 0.2236
+-------------------------------------
+[Epoch : 4/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.4540
+OT Loss	: 0.2040
+Entropic Loss	: -0.9953
+Src_cls_loss	: 0.2353
+-------------------------------------
+[Epoch : 5/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.4415
+OT Loss	: 0.1985
+Entropic Loss	: -0.9667
+Src_cls_loss	: 0.2275
+-------------------------------------
+[Epoch : 6/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.4606
+OT Loss	: 0.1946
+Entropic Loss	: -0.9657
+Src_cls_loss	: 0.2132
+-------------------------------------
+[Epoch : 7/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.4074
+OT Loss	: 0.2082
+Entropic Loss	: -0.9299
+Src_cls_loss	: 0.2101
+-------------------------------------
+[Epoch : 8/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.3581
+OT Loss	: 0.2078
+Entropic Loss	: -0.8740
+Src_cls_loss	: 0.2041
+-------------------------------------
+[Epoch : 9/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.3397
+OT Loss	: 0.2080
+Entropic Loss	: -0.8553
+Src_cls_loss	: 0.2036
+-------------------------------------
+[Epoch : 10/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.2846
+OT Loss	: 0.2191
+Entropic Loss	: -0.8088
+Src_cls_loss	: 0.1955
+-------------------------------------
+[Epoch : 11/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.2354
+OT Loss	: 0.2304
+Entropic Loss	: -0.7721
+Src_cls_loss	: 0.1912
+-------------------------------------
+[Epoch : 12/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.2182
+OT Loss	: 0.2303
+Entropic Loss	: -0.7509
+Src_cls_loss	: 0.1871
+-------------------------------------
+[Epoch : 13/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.1755
+OT Loss	: 0.2293
+Entropic Loss	: -0.7115
+Src_cls_loss	: 0.1920
+-------------------------------------
+[Epoch : 14/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.1612
+OT Loss	: 0.2287
+Entropic Loss	: -0.6895
+Src_cls_loss	: 0.1853
+-------------------------------------
+[Epoch : 15/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.1398
+OT Loss	: 0.2339
+Entropic Loss	: -0.6692
+Src_cls_loss	: 0.1786
+-------------------------------------
+[Epoch : 16/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.1092
+OT Loss	: 0.2373
+Entropic Loss	: -0.6412
+Src_cls_loss	: 0.1760
+-------------------------------------
+[Epoch : 17/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.0770
+OT Loss	: 0.2455
+Entropic Loss	: -0.6180
+Src_cls_loss	: 0.1728
+-------------------------------------
+[Epoch : 18/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.0355
+OT Loss	: 0.2590
+Entropic Loss	: -0.5943
+Src_cls_loss	: 0.1702
+-------------------------------------
+[Epoch : 19/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.0250
+OT Loss	: 0.2563
+Entropic Loss	: -0.5768
+Src_cls_loss	: 0.1673
+-------------------------------------
+[Epoch : 20/20]
+Pr_Src_cls_loss	: 0.7562
+Total_loss	: -0.0142
+OT Loss	: 0.2567
+Entropic Loss	: -0.5618
+Src_cls_loss	: 0.1625
+-------------------------------------
+H_score: 0.0000, OS* (acc_c): 0.3508, UNK (acc_p): 0.0000, acc_mix: 0.3508, F1: 0.4451
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to Pamap2_PDA_hard_n2_fno_mean/PPOT_PDA_hard_n2_fno_mean/RealWorld_to_Pamap2_run_2
+🏃 View run PPOT_run_2 at: http://127.0.0.1:5001/#/experiments/974422661018038835/runs/8a21f3dd330441f5aa80aca9e4516095
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/974422661018038835
+=============================================
+Dataset: RealWorld to Pamap2_PDA_hard_n2_fno_mean
+Method:  PPOT
+=============================================
+Source: RealWorld ---> Target: Pamap2
+Run ID: 3
+=============================================
+[Pr Epoch : 1/20]
+Pr_Src_cls_loss	: 1.5976
+-------------------------------------
+[Pr Epoch : 2/20]
+Pr_Src_cls_loss	: 1.5195
+-------------------------------------
+[Pr Epoch : 3/20]
+Pr_Src_cls_loss	: 1.4500
+-------------------------------------
+[Pr Epoch : 4/20]
+Pr_Src_cls_loss	: 1.3859
+-------------------------------------
+[Pr Epoch : 5/20]
+Pr_Src_cls_loss	: 1.3257
+-------------------------------------
+[Pr Epoch : 6/20]
+Pr_Src_cls_loss	: 1.2693
+-------------------------------------
+[Pr Epoch : 7/20]
+Pr_Src_cls_loss	: 1.2163
+-------------------------------------
+[Pr Epoch : 8/20]
+Pr_Src_cls_loss	: 1.1667
+-------------------------------------
+[Pr Epoch : 9/20]
+Pr_Src_cls_loss	: 1.1200
+-------------------------------------
+[Pr Epoch : 10/20]
+Pr_Src_cls_loss	: 1.0762
+-------------------------------------
+[Pr Epoch : 11/20]
+Pr_Src_cls_loss	: 1.0348
+-------------------------------------
+[Pr Epoch : 12/20]
+Pr_Src_cls_loss	: 0.9962
+-------------------------------------
+[Pr Epoch : 13/20]
+Pr_Src_cls_loss	: 0.9595
+-------------------------------------
+[Pr Epoch : 14/20]
+Pr_Src_cls_loss	: 0.9249
+-------------------------------------
+[Pr Epoch : 15/20]
+Pr_Src_cls_loss	: 0.8924
+-------------------------------------
+[Pr Epoch : 16/20]
+Pr_Src_cls_loss	: 0.8617
+-------------------------------------
+[Pr Epoch : 17/20]
+Pr_Src_cls_loss	: 0.8326
+-------------------------------------
+[Pr Epoch : 18/20]
+Pr_Src_cls_loss	: 0.8052
+-------------------------------------
+[Pr Epoch : 19/20]
+Pr_Src_cls_loss	: 0.7792
+-------------------------------------
+[Pr Epoch : 20/20]
+Pr_Src_cls_loss	: 0.7546
+-------------------------------------
+[Epoch : 1/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.4709
+OT Loss	: 0.2773
+Entropic Loss	: -1.1025
+Src_cls_loss	: 0.2156
+-------------------------------------
+[Epoch : 2/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.3249
+OT Loss	: 0.2416
+Entropic Loss	: -0.9031
+Src_cls_loss	: 0.2158
+-------------------------------------
+[Epoch : 3/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.3590
+OT Loss	: 0.2276
+Entropic Loss	: -0.9036
+Src_cls_loss	: 0.2032
+-------------------------------------
+[Epoch : 4/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.3361
+OT Loss	: 0.2169
+Entropic Loss	: -0.8999
+Src_cls_loss	: 0.2385
+-------------------------------------
+[Epoch : 5/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.2647
+OT Loss	: 0.2095
+Entropic Loss	: -0.8238
+Src_cls_loss	: 0.2448
+-------------------------------------
+[Epoch : 6/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.2916
+OT Loss	: 0.2054
+Entropic Loss	: -0.8434
+Src_cls_loss	: 0.2436
+-------------------------------------
+[Epoch : 7/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.3171
+OT Loss	: 0.2036
+Entropic Loss	: -0.8580
+Src_cls_loss	: 0.2355
+-------------------------------------
+[Epoch : 8/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.2896
+OT Loss	: 0.2012
+Entropic Loss	: -0.8260
+Src_cls_loss	: 0.2347
+-------------------------------------
+[Epoch : 9/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.2065
+OT Loss	: 0.2090
+Entropic Loss	: -0.7532
+Src_cls_loss	: 0.2332
+-------------------------------------
+[Epoch : 10/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.1452
+OT Loss	: 0.2095
+Entropic Loss	: -0.6863
+Src_cls_loss	: 0.2268
+-------------------------------------
+[Epoch : 11/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.0915
+OT Loss	: 0.2228
+Entropic Loss	: -0.6529
+Src_cls_loss	: 0.2272
+-------------------------------------
+[Epoch : 12/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.0731
+OT Loss	: 0.2205
+Entropic Loss	: -0.6257
+Src_cls_loss	: 0.2219
+-------------------------------------
+[Epoch : 13/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.0523
+OT Loss	: 0.2246
+Entropic Loss	: -0.6051
+Src_cls_loss	: 0.2158
+-------------------------------------
+[Epoch : 14/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.0295
+OT Loss	: 0.2288
+Entropic Loss	: -0.5868
+Src_cls_loss	: 0.2140
+-------------------------------------
+[Epoch : 15/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.0301
+OT Loss	: 0.2285
+Entropic Loss	: -0.5812
+Src_cls_loss	: 0.2083
+-------------------------------------
+[Epoch : 16/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.0228
+OT Loss	: 0.2260
+Entropic Loss	: -0.5642
+Src_cls_loss	: 0.2025
+-------------------------------------
+[Epoch : 17/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: -0.0025
+OT Loss	: 0.2313
+Entropic Loss	: -0.5496
+Src_cls_loss	: 0.2002
+-------------------------------------
+[Epoch : 18/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: 0.0010
+OT Loss	: 0.2283
+Entropic Loss	: -0.5373
+Src_cls_loss	: 0.1958
+-------------------------------------
+[Epoch : 19/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: 0.0122
+OT Loss	: 0.2291
+Entropic Loss	: -0.5219
+Src_cls_loss	: 0.1905
+-------------------------------------
+[Epoch : 20/20]
+Pr_Src_cls_loss	: 0.7546
+Total_loss	: 0.0279
+OT Loss	: 0.2285
+Entropic Loss	: -0.5031
+Src_cls_loss	: 0.1882
+-------------------------------------
+H_score: 0.0000, OS* (acc_c): 0.3832, UNK (acc_p): 0.0000, acc_mix: 0.3832, F1: 0.4765
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to Pamap2_PDA_hard_n2_fno_mean/PPOT_PDA_hard_n2_fno_mean/RealWorld_to_Pamap2_run_3
+🏃 View run PPOT_run_3 at: http://127.0.0.1:5001/#/experiments/974422661018038835/runs/884d1db9cd4b4164895436fb98c8ced6
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/974422661018038835
+=============================================
+Dataset: RealWorld to Pamap2_PDA_hard_n2_fno_mean
+Method:  PPOT
+=============================================
+Source: RealWorld ---> Target: Pamap2
+Run ID: 4
+=============================================
+[Pr Epoch : 1/20]
+Pr_Src_cls_loss	: 1.6057
+-------------------------------------
+[Pr Epoch : 2/20]
+Pr_Src_cls_loss	: 1.5261
+-------------------------------------
+[Pr Epoch : 3/20]
+Pr_Src_cls_loss	: 1.4559
+-------------------------------------
+[Pr Epoch : 4/20]
+Pr_Src_cls_loss	: 1.3911
+-------------------------------------
+[Pr Epoch : 5/20]
+Pr_Src_cls_loss	: 1.3304
+-------------------------------------
+[Pr Epoch : 6/20]
+Pr_Src_cls_loss	: 1.2734
+-------------------------------------
+[Pr Epoch : 7/20]
+Pr_Src_cls_loss	: 1.2198
+-------------------------------------
+[Pr Epoch : 8/20]
+Pr_Src_cls_loss	: 1.1696
+-------------------------------------
+[Pr Epoch : 9/20]
+Pr_Src_cls_loss	: 1.1225
+-------------------------------------
+[Pr Epoch : 10/20]
+Pr_Src_cls_loss	: 1.0782
+-------------------------------------
+[Pr Epoch : 11/20]
+Pr_Src_cls_loss	: 1.0364
+-------------------------------------
+[Pr Epoch : 12/20]
+Pr_Src_cls_loss	: 0.9972
+-------------------------------------
+[Pr Epoch : 13/20]
+Pr_Src_cls_loss	: 0.9603
+-------------------------------------
+[Pr Epoch : 14/20]
+Pr_Src_cls_loss	: 0.9255
+-------------------------------------
+[Pr Epoch : 15/20]
+Pr_Src_cls_loss	: 0.8927
+-------------------------------------
+[Pr Epoch : 16/20]
+Pr_Src_cls_loss	: 0.8619
+-------------------------------------
+[Pr Epoch : 17/20]
+Pr_Src_cls_loss	: 0.8327
+-------------------------------------
+[Pr Epoch : 18/20]
+Pr_Src_cls_loss	: 0.8052
+-------------------------------------
+[Pr Epoch : 19/20]
+Pr_Src_cls_loss	: 0.7791
+-------------------------------------
+[Pr Epoch : 20/20]
+Pr_Src_cls_loss	: 0.7544
+-------------------------------------
+[Epoch : 1/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: -0.2102
+OT Loss	: 0.2348
+Entropic Loss	: -0.7980
+Src_cls_loss	: 0.2355
+-------------------------------------
+[Epoch : 2/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: -0.3798
+OT Loss	: 0.2295
+Entropic Loss	: -0.9575
+Src_cls_loss	: 0.2335
+-------------------------------------
+[Epoch : 3/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: -0.3566
+OT Loss	: 0.2168
+Entropic Loss	: -0.9183
+Src_cls_loss	: 0.2365
+-------------------------------------
+[Epoch : 4/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: -0.3636
+OT Loss	: 0.2054
+Entropic Loss	: -0.8943
+Src_cls_loss	: 0.2226
+-------------------------------------
+[Epoch : 5/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: -0.3958
+OT Loss	: 0.1963
+Entropic Loss	: -0.8967
+Src_cls_loss	: 0.2064
+-------------------------------------
+[Epoch : 6/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: -0.3975
+OT Loss	: 0.1918
+Entropic Loss	: -0.8901
+Src_cls_loss	: 0.2050
+-------------------------------------
+[Epoch : 7/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: -0.3342
+OT Loss	: 0.1993
+Entropic Loss	: -0.8317
+Src_cls_loss	: 0.1986
+-------------------------------------
+[Epoch : 8/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: -0.2713
+OT Loss	: 0.1976
+Entropic Loss	: -0.7592
+Src_cls_loss	: 0.1915
+-------------------------------------
+[Epoch : 9/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: -0.2025
+OT Loss	: 0.2120
+Entropic Loss	: -0.7099
+Src_cls_loss	: 0.1894
+-------------------------------------
+[Epoch : 10/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: -0.1321
+OT Loss	: 0.2233
+Entropic Loss	: -0.6548
+Src_cls_loss	: 0.1878
+-------------------------------------
+[Epoch : 11/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: -0.1071
+OT Loss	: 0.2270
+Entropic Loss	: -0.6303
+Src_cls_loss	: 0.1826
+-------------------------------------
+[Epoch : 12/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: -0.0615
+OT Loss	: 0.2287
+Entropic Loss	: -0.5895
+Src_cls_loss	: 0.1850
+-------------------------------------
+[Epoch : 13/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: -0.0450
+OT Loss	: 0.2260
+Entropic Loss	: -0.5639
+Src_cls_loss	: 0.1799
+-------------------------------------
+[Epoch : 14/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: -0.0086
+OT Loss	: 0.2290
+Entropic Loss	: -0.5364
+Src_cls_loss	: 0.1843
+-------------------------------------
+[Epoch : 15/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: 0.0211
+OT Loss	: 0.2339
+Entropic Loss	: -0.5114
+Src_cls_loss	: 0.1816
+-------------------------------------
+[Epoch : 16/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: 0.0388
+OT Loss	: 0.2320
+Entropic Loss	: -0.4864
+Src_cls_loss	: 0.1772
+-------------------------------------
+[Epoch : 17/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: 0.0509
+OT Loss	: 0.2307
+Entropic Loss	: -0.4675
+Src_cls_loss	: 0.1723
+-------------------------------------
+[Epoch : 18/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: 0.0666
+OT Loss	: 0.2300
+Entropic Loss	: -0.4487
+Src_cls_loss	: 0.1702
+-------------------------------------
+[Epoch : 19/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: 0.0773
+OT Loss	: 0.2271
+Entropic Loss	: -0.4320
+Src_cls_loss	: 0.1686
+-------------------------------------
+[Epoch : 20/20]
+Pr_Src_cls_loss	: 0.7544
+Total_loss	: 0.0941
+OT Loss	: 0.2279
+Entropic Loss	: -0.4129
+Src_cls_loss	: 0.1652
+-------------------------------------
+H_score: 0.0000, OS* (acc_c): 0.3763, UNK (acc_p): 0.0000, acc_mix: 0.3763, F1: 0.4651
+Uploading logs from: /mnt/data/home/tp2474/OpenSet-AdaTime/experiments_logs/curriculum/RealWorld to Pamap2_PDA_hard_n2_fno_mean/PPOT_PDA_hard_n2_fno_mean/RealWorld_to_Pamap2_run_4
+🏃 View run PPOT_run_4 at: http://127.0.0.1:5001/#/experiments/974422661018038835/runs/9917917dff364680b88ac0fb5030ffab
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/974422661018038835
+==================== [n2 fno_mean] done ====================
+==================== ALL n done ====================

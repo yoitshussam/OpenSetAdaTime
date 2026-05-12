@@ -75,7 +75,6 @@ class Algorithm(torch.nn.Module):
 
         self.optimizer = torch.optim.Adam(
             list(self.network.parameters()),
-            lr=0.005,
         )
 
     # update function is common to all algorithms
@@ -930,6 +929,11 @@ class PPOT(Algorithm):
     def __init__(self, backbone, configs, hparams, device):
         super().__init__(configs, backbone)
 
+        self.optimizer = torch.optim.Adam(                                          
+        self.network.parameters(),                                              
+        lr=hparams["learning_rate"],
+        weight_decay=hparams["weight_decay"],                                   
+  )
         self.hparams = hparams
         self.configs = configs
         self.device = device
@@ -1015,8 +1019,11 @@ class PPOT(Algorithm):
             preds = logits.detach().cpu().argmax(axis=1).numpy()
         self.network.train()
 
-        self.alpha = max(self.update_alpha(trg_loader), 1e-3)
-        self.beta = max(self.alpha, 1e-3)
+        # Floor alpha at 0.05: partial OT with m < 0.05 + small reg is
+        # numerically unstable (Sinkhorn kernel underflows -> NaN). Picking
+        # a high tau1 used to drop alpha to 1e-3 and crash the solver.
+        self.alpha = max(self.update_alpha(trg_loader), 0.05)
+        self.beta = max(self.alpha, 0.05)
         self.class_weight = torch.ones(self.num_classes).to(self.device)
         self.src_prototype = self.get_prototypes(src_loader)
 
@@ -1064,7 +1071,7 @@ class PPOT(Algorithm):
 
             # update alpha by moving average
             self.alpha = (1 - self.hparams['alpha']) * self.alpha + self.hparams['alpha'] * (conf >= self.hparams['tau1']).sum().item() / conf.size(0)
-            self.alpha = max(self.alpha, 1e-3)
+            self.alpha = max(self.alpha, 0.05)
             # get alpha / beta
             match = self.alpha / self.beta
             assert not np.isnan(match)
@@ -1130,7 +1137,7 @@ class PPOT(Algorithm):
 
         # Update Prototypes and Alpha
         self.src_prototype = self.get_prototypes(src_loader)
-        self.alpha = max(self.update_alpha(trg_loader), 1e-3)
+        self.alpha = max(self.update_alpha(trg_loader), 0.05)
 
         losses = {'Total_loss': loss.item(), 'OT Loss': ot_loss.item(),
                   'Entropic Loss': ent_loss.item(),
@@ -1379,6 +1386,9 @@ class UniOT(Algorithm):
             # mini-batch feat (anchor) | neighbor feat | filled feat (sampled from memory queue)
             S_tt = torch.cat([after_cluhead_t, neighbor_output, mqfill_output_t], 0)
             S_tt *= temp
+            # Paper Sec. 3.2 / Algo. 1: Sinkhorn ε for the SwAV-style PCD
+            # assignment is 0.05 in their public code (changwxx/UniOT-for-UniDA);
+            # keep that value here. Larger ε washes out the cluster contrast.
             Q_tt = sinkhorn(S_tt.detach(), epsilon=0.05, sinkhorn_iterations=3)
             Q_tt_tilde = Q_tt * Q_tt.size(0)
             anchor_Q = Q_tt_tilde[:minibatch_size, :]
@@ -1491,8 +1501,13 @@ class UniOT(Algorithm):
         _, __, pred_label, ___ = ubot_CCD(newsim, self.beta, fake_size=fake_size, fill_size=0, mode='minibatch',
                                           stopThr=stopThr)
         pred_label = pred_label.cpu().data.numpy()
-        mask = pred_label == self.nb_classes
-        full_preds[mask] *= 0
+        # CCD-based unknown rejection only applies to the target domain.
+        # On the source loader (src=True) all samples are by construction
+        # known; running the rejection mask there zeros out legitimate
+        # source predictions and corrupts source-domain accuracy reporting.
+        if not src:
+            mask = pred_label == self.nb_classes
+            full_preds[mask] *= 0
 
         return loss, full_preds, full_labels
 
@@ -1563,12 +1578,6 @@ class UniJDOT(Algorithm):
         self.register_buffer("final_threshold", torch.tensor(0.0))
 
         self.final_threshold = torch.nn.Parameter(torch.tensor(0.0), requires_grad=False)
-        # Secondary threshold on raw min distance to source clusters.
-        # Confidence in the joint_decision space saturates to ~1 on most target
-        # samples (including OOD), so the conf-based reject mask misses most
-        # unknowns. Raw min-distance has far better separation on L2-normalized
-        # features, so we also threshold on it and reject the union.
-        self.final_dist_threshold = torch.nn.Parameter(torch.tensor(0.0), requires_grad=False)
 
         self.threshold_method = self.get_thresholding_method()
         # ClassMemoryQueue stores CLS projection output (final_out_channels)
@@ -1716,9 +1725,13 @@ class UniJDOT(Algorithm):
                 logger.debug(f'{key}\t: {val.avg:2.4f}')
             logger.debug(f'-------------------------------------')
 
-        # Paper Section 3.4: use a large validation batch for robust threshold
+        # UniDABench parity: truncate target buffer to trg_mem_size before
+        # computing the final threshold. Threshold-on-full-target diverged
+        # from the reference and gave more degenerate yen histograms.
+        trg_mem_size = self.hparams['trg_mem_size']
         self.trg_feats_mem = []
         self.trg_preds_mem = []
+        cnt_i = 0
         with torch.no_grad():
             self.network.eval()
             for x, y, id in trg_loader:
@@ -1728,8 +1741,11 @@ class UniJDOT(Algorithm):
                 norm_feat_t = F.normalize(before_lincls_feat_t)
                 self.trg_feats_mem.append(norm_feat_t)
                 self.trg_preds_mem.append(after_lincls_s)
-        self.trg_feats_mem = torch.concatenate(self.trg_feats_mem)
-        self.trg_preds_mem = torch.concatenate(self.trg_preds_mem)
+                cnt_i += after_lincls_s.shape[0]
+                if cnt_i > trg_mem_size:
+                    break
+        self.trg_feats_mem = torch.concatenate(self.trg_feats_mem)[:trg_mem_size]
+        self.trg_preds_mem = torch.concatenate(self.trg_preds_mem)[:trg_mem_size]
 
         if self.hparams['joint_decision']:
             dist_trg_tr = self.compute_cluster_distance(self.trg_feats_mem)
@@ -1739,18 +1755,6 @@ class UniJDOT(Algorithm):
         conf, preds = soft_trg_tr.max(dim=1)
         new_value = self.threshold_method(conf.detach().cpu().numpy())
         self.final_threshold.data.fill_(new_value)
-
-        # Raw min-distance to source clusters as secondary rejection signal.
-        # min-dist is right-skewed (bulk near 0, tail to ~0.6), so Otsu is
-        # more sensible than Yen here regardless of the primary conf method.
-        _raw_res = self.memqueue_feat.compute_distances(self.trg_feats_mem)
-        _min_raw = _raw_res.min(dim=1).values
-        _min_raw_np = _min_raw.detach().cpu().numpy()
-        _dist_thr = float(sfil.threshold_otsu(_min_raw_np))
-        self.final_dist_threshold.data.fill_(_dist_thr)
-        print(f"[UniJDOT Debug] final_dist_threshold(otsu) = {_dist_thr:.4f} "
-              f"min-dist mean={_min_raw.mean():.4f} std={_min_raw.std():.4f} "
-              f"reject={(_min_raw_np > _dist_thr).mean():.2%}")
 
         print(f"\n[UniJDOT Debug] final_threshold = {new_value:.4f} "
               f"conf mean={conf.mean():.4f} std={conf.std():.4f} "
@@ -1956,12 +1960,8 @@ class UniJDOT(Algorithm):
                 # forward pass
                 features = self.feature_extractor(data)
                 before_lincls_feat_t, predictions = self.classifier(features)
-                norm_feat_t = F.normalize(before_lincls_feat_t)
-                # Always compute raw min-dist for the secondary rejection path,
-                # regardless of joint_decision, since confidence saturates.
-                raw_res = self.memqueue_feat.compute_distances(norm_feat_t)
-                min_raw = raw_res.min(dim=1).values
                 if self.hparams['joint_decision']:
+                    norm_feat_t = F.normalize(before_lincls_feat_t)
                     dist = self.compute_cluster_distance(norm_feat_t)
                     soft = self.joint_decision(predictions, dist)
                 else:
@@ -1972,12 +1972,8 @@ class UniJDOT(Algorithm):
                 output = soft.clone()
 
                 conf, preds = soft.max(dim=1)
-                # Reject if either confidence is too low OR the raw distance
-                # to the nearest source cluster is too large. The dist path
-                # catches the OOD samples the saturated conf cannot.
-                conf_reject = conf < self.final_threshold
-                dist_reject = min_raw > self.final_dist_threshold
-                reject_mask = conf_reject | dist_reject
+                # UniDABench parity: single-threshold rejection on confidence.
+                reject_mask = conf < self.final_threshold
                 if not src:
                     all_confs.append(conf.cpu())
                     all_argmax.append(preds.cpu())
@@ -2112,6 +2108,8 @@ class RAINCOAT(Algorithm):
 
         num_epochs = self.hparams["num_epochs"]
         num_epochs_correct = self.hparams.get("num_epochs_correct", num_epochs)
+        # num_epochs = 50
+        # num_epochs_correct = 50
 
         # ---- Phase 1: Alignment ----
         for epoch in range(1, num_epochs + 1):

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/382016375387974687/b3f45830efe1420ba5cd418340f33fef/artifacts
+end_time: 1778447911766
+entry_point_name: ''
+experiment_id: '382016375387974687'
+lifecycle_stage: active
+run_id: b3f45830efe1420ba5cd418340f33fef
+run_name: SPADA_run_3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778447887920
+status: 3
+tags: []
+user_id: bigdipper

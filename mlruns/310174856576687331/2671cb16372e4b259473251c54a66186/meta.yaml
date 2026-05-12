@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/310174856576687331/2671cb16372e4b259473251c54a66186/artifacts
+end_time: 1778508832630
+entry_point_name: ''
+experiment_id: '310174856576687331'
+lifecycle_stage: active
+run_id: 2671cb16372e4b259473251c54a66186
+run_name: UniOT_run_0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778508693258
+status: 3
+tags: []
+user_id: bigdipper

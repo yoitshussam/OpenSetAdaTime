@@ -1,0 +1,5379 @@
+==================== [p2] sweeping UniJDOT ====================
+[I 2026-05-02 12:25:37,919] A new study created in memory with name: UniJDOT_FNO_RealWorld_male_to_RealWorld_female
+[scenario] UniJDOT -> UniDA (uniDA=True)
+[init] deferring load_data: no batch_size in hparams (UniJDOT, backbone=FNO). Sweep will populate it on first trial.
+>>> [trial 0] UniJDOT starting
+>>> [trial 0] reloading data (batch_size None -> 64)
+Unlabeled data shape:  (17913, 150, 18)
+Unlabelled Combined shape: (29204, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   179
+Target Train batches:   279
+-------------------------------
+
+Private classes:  tensor([6., 7.])
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7774
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4608
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3356
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2670
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2226
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1912
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1677
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1498
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1361
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1243
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1133
+loss_cls	: 0.0087
+loss_align	: 0.1046
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1166
+loss_cls	: 0.0106
+loss_align	: 0.1060
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1140
+loss_cls	: 0.0110
+loss_align	: 0.1030
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1105
+loss_cls	: 0.0108
+loss_align	: 0.0997
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1071
+loss_cls	: 0.0106
+loss_align	: 0.0965
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1038
+loss_cls	: 0.0102
+loss_align	: 0.0936
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1008
+loss_cls	: 0.0098
+loss_align	: 0.0910
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.0982
+loss_cls	: 0.0095
+loss_align	: 0.0887
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.0958
+loss_cls	: 0.0092
+loss_align	: 0.0866
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.0934
+loss_cls	: 0.0089
+loss_align	: 0.0846
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.0707 min-dist mean=0.0644 std=0.0538 reject=43.45%
+
+[UniJDOT Debug] final_threshold = 0.3767 conf mean=0.4016 std=0.1996 reject=43.92%
+[UniJDOT Eval ALL] n=17913 threshold=0.3767
+[UniJDOT Eval ALL] conf: min=0.1676 max=0.6564 mean=0.4016 std=0.1996
+[UniJDOT Eval ALL] rejected: 44.12%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [593, 814, 2728, 7791, 2732, 3255]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.8460, OS* (acc_c): 0.7900, UNK (acc_p): 0.9106, acc_mix: 0.8298, F1: 0.8329
+[UniJDOT Eval ALL] n=17913 threshold=0.3767
+[UniJDOT Eval ALL] conf: min=0.1676 max=0.6564 mean=0.4016 std=0.1996
+[UniJDOT Eval ALL] rejected: 44.12%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [593, 814, 2728, 7791, 2732, 3255]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.6330
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.3831
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2812
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2249
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1889
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1633
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1442
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1290
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1168
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1067
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.1103
+loss_cls	: 0.0079
+loss_align	: 0.1024
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.1117
+loss_cls	: 0.0093
+loss_align	: 0.1024
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.1095
+loss_cls	: 0.0097
+loss_align	: 0.0999
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.1065
+loss_cls	: 0.0097
+loss_align	: 0.0969
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.1036
+loss_cls	: 0.0095
+loss_align	: 0.0941
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.1008
+loss_cls	: 0.0092
+loss_align	: 0.0916
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.0983
+loss_cls	: 0.0089
+loss_align	: 0.0894
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.0960
+loss_cls	: 0.0087
+loss_align	: 0.0874
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.0940
+loss_cls	: 0.0084
+loss_align	: 0.0856
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.0921
+loss_cls	: 0.0081
+loss_align	: 0.0840
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.0839 min-dist mean=0.0739 std=0.0660 reject=42.12%
+
+[UniJDOT Debug] final_threshold = 0.3744 conf mean=0.3985 std=0.1967 reject=43.99%
+[UniJDOT Eval ALL] n=17913 threshold=0.3744
+[UniJDOT Eval ALL] conf: min=0.1671 max=0.6607 mean=0.3986 std=0.1967
+[UniJDOT Eval ALL] rejected: 44.46%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1187, 116, 4119, 5447, 2985, 4059]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.8107, OS* (acc_c): 0.7498, UNK (acc_p): 0.8823, acc_mix: 0.7936, F1: 0.8017
+[UniJDOT Eval ALL] n=17913 threshold=0.3744
+[UniJDOT Eval ALL] conf: min=0.1671 max=0.6607 mean=0.3986 std=0.1967
+[UniJDOT Eval ALL] rejected: 44.46%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1187, 116, 4119, 5447, 2985, 4059]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8378
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4879
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3525
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2784
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2312
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1987
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1741
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1554
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1402
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1280
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1114
+loss_cls	: 0.0080
+loss_align	: 0.1034
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1141
+loss_cls	: 0.0099
+loss_align	: 0.1042
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1115
+loss_cls	: 0.0103
+loss_align	: 0.1011
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1078
+loss_cls	: 0.0103
+loss_align	: 0.0975
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1040
+loss_cls	: 0.0101
+loss_align	: 0.0939
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1005
+loss_cls	: 0.0098
+loss_align	: 0.0907
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.0972
+loss_cls	: 0.0095
+loss_align	: 0.0877
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.0942
+loss_cls	: 0.0092
+loss_align	: 0.0850
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.0916
+loss_cls	: 0.0089
+loss_align	: 0.0827
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.0891
+loss_cls	: 0.0086
+loss_align	: 0.0805
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.0928 min-dist mean=0.0820 std=0.0776 reject=42.79%
+
+[UniJDOT Debug] final_threshold = 0.3862 conf mean=0.4130 std=0.2090 reject=43.81%
+[UniJDOT Eval ALL] n=17913 threshold=0.3862
+[UniJDOT Eval ALL] conf: min=0.1671 max=0.6840 mean=0.4130 std=0.2090
+[UniJDOT Eval ALL] rejected: 43.93%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2297, 134, 2763, 6510, 2791, 3418]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.8400, OS* (acc_c): 0.7870, UNK (acc_p): 0.9006, acc_mix: 0.8245, F1: 0.8283
+[UniJDOT Eval ALL] n=17913 threshold=0.3862
+[UniJDOT Eval ALL] conf: min=0.1671 max=0.6840 mean=0.4130 std=0.2090
+[UniJDOT Eval ALL] rejected: 43.93%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2297, 134, 2763, 6510, 2791, 3418]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+🏃 View run UniJDOT_trial_0 at: http://127.0.0.1:5001/#/experiments/348422367320581134/runs/cd9ecebcafa64ab8902a534c8ddc3791
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/348422367320581134
+>>> [trial 0] UniJDOT done in 534.1s
+[I 2026-05-02 12:34:31,981] Trial 0 finished with value: -0.8322233160336813 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.0001, 'lamb': 3.05, 'alpha': 3.55, 'src_weight': 0.15000000000000002, 'K': 5, 'n_batch': 15, 'trg_mem_size': 32, 'joint_decision': True, 'threshold_method': 'threshold_otsu'}. Best is trial 0 with value: -0.8322233160336813.
+>>> [trial 1] UniJDOT starting
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7810
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4625
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3368
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2687
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2241
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1929
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1694
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1510
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1369
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1252
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1252
+Total_loss	: 0.2090
+loss_cls	: 0.0874
+loss_align	: 0.1216
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1252
+Total_loss	: 0.1999
+loss_cls	: 0.0796
+loss_align	: 0.1203
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1252
+Total_loss	: 0.1952
+loss_cls	: 0.0758
+loss_align	: 0.1194
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1252
+Total_loss	: 0.1877
+loss_cls	: 0.0693
+loss_align	: 0.1185
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1252
+Total_loss	: 0.1833
+loss_cls	: 0.0658
+loss_align	: 0.1175
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1252
+Total_loss	: 0.1782
+loss_cls	: 0.0617
+loss_align	: 0.1165
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1252
+Total_loss	: 0.1739
+loss_cls	: 0.0581
+loss_align	: 0.1157
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1252
+Total_loss	: 0.1708
+loss_cls	: 0.0559
+loss_align	: 0.1149
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1252
+Total_loss	: 0.1693
+loss_cls	: 0.0551
+loss_align	: 0.1142
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1252
+Total_loss	: 0.1656
+loss_cls	: 0.0523
+loss_align	: 0.1133
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.3942 min-dist mean=0.4170 std=0.1564 reject=57.54%
+
+[UniJDOT Debug] final_threshold = 0.5335 conf mean=0.5021 std=0.2415 reject=57.30%
+[UniJDOT Eval ALL] n=17913 threshold=0.5335
+[UniJDOT Eval ALL] conf: min=0.1709 max=0.9106 mean=0.5021 std=0.2415
+[UniJDOT Eval ALL] rejected: 59.98%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1942, 439, 3946, 4180, 4528, 2878]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7048, OS* (acc_c): 0.5648, UNK (acc_p): 0.9373, acc_mix: 0.6878, F1: 0.6774
+[UniJDOT Eval ALL] n=17913 threshold=0.5335
+[UniJDOT Eval ALL] conf: min=0.1709 max=0.9106 mean=0.5021 std=0.2415
+[UniJDOT Eval ALL] rejected: 59.98%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1942, 439, 3946, 4180, 4528, 2878]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.6331
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.3831
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2814
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2247
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1884
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1630
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1438
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1285
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1163
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1061
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1061
+Total_loss	: 0.2106
+loss_cls	: 0.0920
+loss_align	: 0.1187
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1061
+Total_loss	: 0.1935
+loss_cls	: 0.0751
+loss_align	: 0.1183
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1061
+Total_loss	: 0.1910
+loss_cls	: 0.0735
+loss_align	: 0.1175
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1061
+Total_loss	: 0.1871
+loss_cls	: 0.0706
+loss_align	: 0.1164
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1061
+Total_loss	: 0.1849
+loss_cls	: 0.0691
+loss_align	: 0.1158
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1061
+Total_loss	: 0.1782
+loss_cls	: 0.0631
+loss_align	: 0.1151
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1061
+Total_loss	: 0.1736
+loss_cls	: 0.0593
+loss_align	: 0.1142
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1061
+Total_loss	: 0.1713
+loss_cls	: 0.0579
+loss_align	: 0.1134
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1061
+Total_loss	: 0.1681
+loss_cls	: 0.0554
+loss_align	: 0.1128
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1061
+Total_loss	: 0.1648
+loss_cls	: 0.0528
+loss_align	: 0.1121
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.3580 min-dist mean=0.3867 std=0.1447 reject=60.86%
+
+[UniJDOT Debug] final_threshold = 0.5452 conf mean=0.4826 std=0.2547 reject=62.95%
+[UniJDOT Eval ALL] n=17913 threshold=0.5452
+[UniJDOT Eval ALL] conf: min=0.1725 max=0.9094 mean=0.4825 std=0.2546
+[UniJDOT Eval ALL] rejected: 65.15%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2749, 586, 3259, 5723, 2615, 2981]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.6395, OS* (acc_c): 0.4861, UNK (acc_p): 0.9344, acc_mix: 0.6341, F1: 0.5988
+[UniJDOT Eval ALL] n=17913 threshold=0.5452
+[UniJDOT Eval ALL] conf: min=0.1725 max=0.9094 mean=0.4825 std=0.2546
+[UniJDOT Eval ALL] rejected: 65.15%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2749, 586, 3259, 5723, 2615, 2981]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8384
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4887
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3533
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2788
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2311
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1988
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1742
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1554
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1401
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1281
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.2135
+loss_cls	: 0.0962
+loss_align	: 0.1173
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.2034
+loss_cls	: 0.0869
+loss_align	: 0.1165
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.1944
+loss_cls	: 0.0787
+loss_align	: 0.1157
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.1931
+loss_cls	: 0.0783
+loss_align	: 0.1147
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.1866
+loss_cls	: 0.0727
+loss_align	: 0.1139
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.1800
+loss_cls	: 0.0669
+loss_align	: 0.1131
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.1765
+loss_cls	: 0.0642
+loss_align	: 0.1123
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.1720
+loss_cls	: 0.0605
+loss_align	: 0.1115
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.1698
+loss_cls	: 0.0590
+loss_align	: 0.1108
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1281
+Total_loss	: 0.1670
+loss_cls	: 0.0569
+loss_align	: 0.1100
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.3815 min-dist mean=0.3945 std=0.1584 reject=54.27%
+
+[UniJDOT Debug] final_threshold = 0.5327 conf mean=0.5190 std=0.2478 reject=53.34%
+[UniJDOT Eval ALL] n=17913 threshold=0.5327
+[UniJDOT Eval ALL] conf: min=0.1756 max=0.9219 mean=0.5189 std=0.2477
+[UniJDOT Eval ALL] rejected: 55.76%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1866, 283, 3371, 4395, 4353, 3645]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7323, OS* (acc_c): 0.6129, UNK (acc_p): 0.9094, acc_mix: 0.7108, F1: 0.7087
+[UniJDOT Eval ALL] n=17913 threshold=0.5327
+[UniJDOT Eval ALL] conf: min=0.1756 max=0.9219 mean=0.5189 std=0.2477
+[UniJDOT Eval ALL] rejected: 55.76%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1866, 283, 3371, 4395, 4353, 3645]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+🏃 View run UniJDOT_trial_1 at: http://127.0.0.1:5001/#/experiments/348422367320581134/runs/9de1a6042d4a4ffca85f42a2c2293279
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/348422367320581134
+>>> [trial 1] UniJDOT done in 527.8s
+[I 2026-05-02 12:43:19,747] Trial 1 finished with value: -0.6922050913174947 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.0001, 'lamb': 0.9000000000000001, 'alpha': 0.35000000000000003, 'src_weight': 4.75, 'K': 5, 'n_batch': 5, 'trg_mem_size': 32, 'joint_decision': True, 'threshold_method': 'threshold_otsu'}. Best is trial 0 with value: -0.8322233160336813.
+>>> [trial 2] UniJDOT starting
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.5628
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.3808
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3040
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2581
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2318
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2087
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1923
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1786
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1684
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1589
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1589
+Total_loss	: 0.0913
+loss_cls	: 0.0459
+loss_align	: 0.0454
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1589
+Total_loss	: 0.0881
+loss_cls	: 0.0455
+loss_align	: 0.0426
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1589
+Total_loss	: 0.0859
+loss_cls	: 0.0453
+loss_align	: 0.0407
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1589
+Total_loss	: 0.0846
+loss_cls	: 0.0452
+loss_align	: 0.0393
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1589
+Total_loss	: 0.0819
+loss_cls	: 0.0442
+loss_align	: 0.0377
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1589
+Total_loss	: 0.0805
+loss_cls	: 0.0439
+loss_align	: 0.0366
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1589
+Total_loss	: 0.0797
+loss_cls	: 0.0439
+loss_align	: 0.0358
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1589
+Total_loss	: 0.0794
+loss_cls	: 0.0438
+loss_align	: 0.0355
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1589
+Total_loss	: 0.0798
+loss_cls	: 0.0444
+loss_align	: 0.0354
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1589
+Total_loss	: 0.0793
+loss_cls	: 0.0443
+loss_align	: 0.0350
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.1128 min-dist mean=0.0479 std=0.0787 reject=17.01%
+
+[UniJDOT Debug] final_threshold = 0.4301 conf mean=0.5263 std=0.1390 reject=19.81%
+[UniJDOT Eval ALL] n=17913 threshold=0.4301
+[UniJDOT Eval ALL] conf: min=0.1893 max=0.9949 mean=0.5263 std=0.1390
+[UniJDOT Eval ALL] rejected: 20.14%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2787, 76, 3288, 4853, 3345, 3564]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.6063, OS* (acc_c): 0.8404, UNK (acc_p): 0.4742, acc_mix: 0.7195, F1: 0.7348
+[UniJDOT Eval ALL] n=17913 threshold=0.4301
+[UniJDOT Eval ALL] conf: min=0.1893 max=0.9949 mean=0.5263 std=0.1390
+[UniJDOT Eval ALL] rejected: 20.14%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2787, 76, 3288, 4853, 3345, 3564]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.5069
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.3285
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2594
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2237
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2028
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1855
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1706
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1590
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1505
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1428
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1428
+Total_loss	: 0.0838
+loss_cls	: 0.0482
+loss_align	: 0.0356
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1428
+Total_loss	: 0.0765
+loss_cls	: 0.0441
+loss_align	: 0.0325
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1428
+Total_loss	: 0.0731
+loss_cls	: 0.0421
+loss_align	: 0.0310
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1428
+Total_loss	: 0.0734
+loss_cls	: 0.0432
+loss_align	: 0.0302
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1428
+Total_loss	: 0.0727
+loss_cls	: 0.0430
+loss_align	: 0.0297
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1428
+Total_loss	: 0.0736
+loss_cls	: 0.0442
+loss_align	: 0.0294
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1428
+Total_loss	: 0.0724
+loss_cls	: 0.0435
+loss_align	: 0.0289
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1428
+Total_loss	: 0.0711
+loss_cls	: 0.0428
+loss_align	: 0.0283
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1428
+Total_loss	: 0.0713
+loss_cls	: 0.0431
+loss_align	: 0.0281
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1428
+Total_loss	: 0.0706
+loss_cls	: 0.0429
+loss_align	: 0.0277
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.1055 min-dist mean=0.0592 std=0.0821 reject=23.49%
+
+[UniJDOT Debug] final_threshold = 0.4530 conf mean=0.5285 std=0.1619 reject=26.64%
+[UniJDOT Eval ALL] n=17913 threshold=0.4530
+[UniJDOT Eval ALL] conf: min=0.1812 max=0.9674 mean=0.5285 std=0.1619
+[UniJDOT Eval ALL] rejected: 27.10%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2531, 31, 3259, 5906, 2733, 3453]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.6128, OS* (acc_c): 0.7710, UNK (acc_p): 0.5085, acc_mix: 0.6843, F1: 0.7070
+[UniJDOT Eval ALL] n=17913 threshold=0.4530
+[UniJDOT Eval ALL] conf: min=0.1812 max=0.9674 mean=0.5285 std=0.1619
+[UniJDOT Eval ALL] rejected: 27.10%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2531, 31, 3259, 5906, 2733, 3453]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.5931
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.3861
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3041
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2567
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2268
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2092
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1936
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1797
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1676
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1596
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1596
+Total_loss	: 0.0853
+loss_cls	: 0.0456
+loss_align	: 0.0397
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1596
+Total_loss	: 0.0832
+loss_cls	: 0.0465
+loss_align	: 0.0367
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1596
+Total_loss	: 0.0826
+loss_cls	: 0.0477
+loss_align	: 0.0349
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1596
+Total_loss	: 0.0814
+loss_cls	: 0.0472
+loss_align	: 0.0342
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1596
+Total_loss	: 0.0795
+loss_cls	: 0.0460
+loss_align	: 0.0335
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1596
+Total_loss	: 0.0783
+loss_cls	: 0.0455
+loss_align	: 0.0329
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1596
+Total_loss	: 0.0772
+loss_cls	: 0.0449
+loss_align	: 0.0323
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1596
+Total_loss	: 0.0760
+loss_cls	: 0.0442
+loss_align	: 0.0319
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1596
+Total_loss	: 0.0769
+loss_cls	: 0.0453
+loss_align	: 0.0315
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1596
+Total_loss	: 0.0760
+loss_cls	: 0.0447
+loss_align	: 0.0313
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.0770 min-dist mean=0.0275 std=0.0442 reject=10.52%
+
+[UniJDOT Debug] final_threshold = 0.4262 conf mean=0.5253 std=0.1489 reject=19.84%
+[UniJDOT Eval ALL] n=17913 threshold=0.4262
+[UniJDOT Eval ALL] conf: min=0.1770 max=0.7064 mean=0.5253 std=0.1489
+[UniJDOT Eval ALL] rejected: 20.15%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2964, 419, 3886, 4145, 3222, 3277]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.5731, OS* (acc_c): 0.8256, UNK (acc_p): 0.4389, acc_mix: 0.6979, F1: 0.7221
+[UniJDOT Eval ALL] n=17913 threshold=0.4262
+[UniJDOT Eval ALL] conf: min=0.1770 max=0.7064 mean=0.5253 std=0.1489
+[UniJDOT Eval ALL] rejected: 20.15%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2964, 419, 3886, 4145, 3222, 3277]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+🏃 View run UniJDOT_trial_2 at: http://127.0.0.1:5001/#/experiments/348422367320581134/runs/2393a9164c084845a1a4661d0a4d64db
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/348422367320581134
+>>> [trial 2] UniJDOT done in 584.1s
+[I 2026-05-02 12:53:03,877] Trial 2 finished with value: -0.5974206924438477 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.01, 'lamb': 3.0, 'alpha': 4.65, 'src_weight': 0.45, 'K': 20, 'n_batch': 10, 'trg_mem_size': 64, 'joint_decision': True, 'threshold_method': 'threshold_otsu'}. Best is trial 0 with value: -0.8322233160336813.
+>>> [trial 3] UniJDOT starting
+>>> [trial 3] reloading data (batch_size 64 -> 32)
+Unlabeled data shape:  (17913, 150, 18)
+Unlabelled Combined shape: (29204, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   359
+Target Train batches:   559
+-------------------------------
+
+Private classes:  tensor([6., 7.])
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2642
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1852
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1532
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1331
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1201
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1104
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1007
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0950
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0904
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0863
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.0863
+Total_loss	: 0.0901
+loss_cls	: 0.0160
+loss_align	: 0.0740
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.0863
+Total_loss	: 0.0846
+loss_cls	: 0.0155
+loss_align	: 0.0691
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.0863
+Total_loss	: 0.0812
+loss_cls	: 0.0154
+loss_align	: 0.0658
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.0863
+Total_loss	: 0.0793
+loss_cls	: 0.0154
+loss_align	: 0.0639
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.0863
+Total_loss	: 0.0778
+loss_cls	: 0.0155
+loss_align	: 0.0623
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.0863
+Total_loss	: 0.0762
+loss_cls	: 0.0149
+loss_align	: 0.0612
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0863
+Total_loss	: 0.0753
+loss_cls	: 0.0148
+loss_align	: 0.0605
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0863
+Total_loss	: 0.0743
+loss_cls	: 0.0145
+loss_align	: 0.0598
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0863
+Total_loss	: 0.0734
+loss_cls	: 0.0143
+loss_align	: 0.0592
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0863
+Total_loss	: 0.0730
+loss_cls	: 0.0141
+loss_align	: 0.0589
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.0336 min-dist mean=0.0256 std=0.0330 reject=35.83%
+
+[UniJDOT Debug] final_threshold = 0.3549 conf mean=0.4130 std=0.1731 reject=33.88%
+[UniJDOT Eval ALL] n=17913 threshold=0.3549
+[UniJDOT Eval ALL] conf: min=0.1672 max=0.6406 mean=0.4129 std=0.1731
+[UniJDOT Eval ALL] rejected: 35.85%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1472, 17, 7100, 3379, 2874, 3071]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7661, OS* (acc_c): 0.7801, UNK (acc_p): 0.7525, acc_mix: 0.7710, F1: 0.7990
+[UniJDOT Eval ALL] n=17913 threshold=0.3549
+[UniJDOT Eval ALL] conf: min=0.1672 max=0.6406 mean=0.4129 std=0.1731
+[UniJDOT Eval ALL] rejected: 35.85%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1472, 17, 7100, 3379, 2874, 3071]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2354
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1716
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1420
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1252
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1137
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1051
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0979
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0913
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0872
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0837
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.0837
+Total_loss	: 0.0814
+loss_cls	: 0.0159
+loss_align	: 0.0655
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.0837
+Total_loss	: 0.0789
+loss_cls	: 0.0172
+loss_align	: 0.0617
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.0837
+Total_loss	: 0.0773
+loss_cls	: 0.0172
+loss_align	: 0.0601
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.0837
+Total_loss	: 0.0747
+loss_cls	: 0.0165
+loss_align	: 0.0582
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.0837
+Total_loss	: 0.0736
+loss_cls	: 0.0168
+loss_align	: 0.0568
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.0837
+Total_loss	: 0.0733
+loss_cls	: 0.0167
+loss_align	: 0.0565
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0837
+Total_loss	: 0.0729
+loss_cls	: 0.0165
+loss_align	: 0.0564
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0837
+Total_loss	: 0.0729
+loss_cls	: 0.0164
+loss_align	: 0.0565
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0837
+Total_loss	: 0.0730
+loss_cls	: 0.0163
+loss_align	: 0.0567
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0837
+Total_loss	: 0.0725
+loss_cls	: 0.0161
+loss_align	: 0.0564
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.0515 min-dist mean=0.0285 std=0.0429 reject=25.08%
+
+[UniJDOT Debug] final_threshold = 0.4025 conf mean=0.5101 std=0.1899 reject=24.60%
+[UniJDOT Eval ALL] n=17913 threshold=0.4025
+[UniJDOT Eval ALL] conf: min=0.1673 max=0.7124 mean=0.5102 std=0.1899
+[UniJDOT Eval ALL] rejected: 25.81%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2086, 4, 2775, 4215, 3710, 5123]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.6593, OS* (acc_c): 0.8669, UNK (acc_p): 0.5319, acc_mix: 0.7563, F1: 0.7912
+[UniJDOT Eval ALL] n=17913 threshold=0.4025
+[UniJDOT Eval ALL] conf: min=0.1673 max=0.7124 mean=0.5102 std=0.1899
+[UniJDOT Eval ALL] rejected: 25.81%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2086, 4, 2775, 4215, 3710, 5123]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2597
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1828
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1492
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1304
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1185
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1090
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1014
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0954
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0894
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0850
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.0850
+Total_loss	: 0.0907
+loss_cls	: 0.0161
+loss_align	: 0.0747
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.0850
+Total_loss	: 0.0837
+loss_cls	: 0.0154
+loss_align	: 0.0683
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.0850
+Total_loss	: 0.0801
+loss_cls	: 0.0153
+loss_align	: 0.0648
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.0850
+Total_loss	: 0.0774
+loss_cls	: 0.0148
+loss_align	: 0.0625
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.0850
+Total_loss	: 0.0763
+loss_cls	: 0.0150
+loss_align	: 0.0613
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.0850
+Total_loss	: 0.0751
+loss_cls	: 0.0149
+loss_align	: 0.0603
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0850
+Total_loss	: 0.0757
+loss_cls	: 0.0153
+loss_align	: 0.0605
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0850
+Total_loss	: 0.0760
+loss_cls	: 0.0150
+loss_align	: 0.0610
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0850
+Total_loss	: 0.0763
+loss_cls	: 0.0149
+loss_align	: 0.0614
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0850
+Total_loss	: 0.0761
+loss_cls	: 0.0145
+loss_align	: 0.0616
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.0317 min-dist mean=0.0226 std=0.0304 reject=33.55%
+
+[UniJDOT Debug] final_threshold = 0.3861 conf mean=0.4545 std=0.1947 reject=33.15%
+[UniJDOT Eval ALL] n=17913 threshold=0.3861
+[UniJDOT Eval ALL] conf: min=0.1680 max=0.7023 mean=0.4545 std=0.1947
+[UniJDOT Eval ALL] rejected: 34.72%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [902, 28, 2719, 7874, 3368, 3022]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7583, OS* (acc_c): 0.7842, UNK (acc_p): 0.7341, acc_mix: 0.7677, F1: 0.7849
+[UniJDOT Eval ALL] n=17913 threshold=0.3861
+[UniJDOT Eval ALL] conf: min=0.1680 max=0.7023 mean=0.4545 std=0.1947
+[UniJDOT Eval ALL] rejected: 34.72%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [902, 28, 2719, 7874, 3368, 3022]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+🏃 View run UniJDOT_trial_3 at: http://127.0.0.1:5001/#/experiments/348422367320581134/runs/07c125999bbb4d77ae88b661dfec640c
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/348422367320581134
+>>> [trial 3] UniJDOT done in 860.6s
+[I 2026-05-02 13:07:24,485] Trial 3 finished with value: -0.7278778950373331 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 32, 'weight_decay': 0.0005, 'learning_rate': 0.001, 'lamb': 4.7, 'alpha': 3.6, 'src_weight': 0.2, 'K': 15, 'n_batch': 15, 'trg_mem_size': 128, 'joint_decision': True, 'threshold_method': 'threshold_otsu'}. Best is trial 0 with value: -0.8322233160336813.
+>>> [trial 4] UniJDOT starting
+>>> [trial 4] reloading data (batch_size 32 -> 64)
+Unlabeled data shape:  (17913, 150, 18)
+Unlabelled Combined shape: (29204, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   179
+Target Train batches:   279
+-------------------------------
+
+Private classes:  tensor([6., 7.])
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7774
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4608
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3356
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2670
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2226
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1912
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1677
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1498
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1361
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1243
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1633
+loss_cls	: 0.0511
+loss_align	: 0.1122
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1605
+loss_cls	: 0.0492
+loss_align	: 0.1113
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1565
+loss_cls	: 0.0458
+loss_align	: 0.1107
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1521
+loss_cls	: 0.0423
+loss_align	: 0.1098
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1488
+loss_cls	: 0.0396
+loss_align	: 0.1092
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1468
+loss_cls	: 0.0383
+loss_align	: 0.1086
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1449
+loss_cls	: 0.0367
+loss_align	: 0.1083
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1432
+loss_cls	: 0.0353
+loss_align	: 0.1079
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1417
+loss_cls	: 0.0342
+loss_align	: 0.1075
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1243
+Total_loss	: 0.1398
+loss_cls	: 0.0327
+loss_align	: 0.1071
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2104 min-dist mean=0.1923 std=0.1228 reject=42.04%
+
+[UniJDOT Debug] final_threshold = 0.4641 conf mean=0.4850 std=0.2233 reject=45.13%
+[UniJDOT Eval ALL] n=17913 threshold=0.4641
+[UniJDOT Eval ALL] conf: min=0.1701 max=0.8392 mean=0.4849 std=0.2233
+[UniJDOT Eval ALL] rejected: 45.42%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2590, 405, 3293, 4527, 3833, 3265]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7625, OS* (acc_c): 0.7191, UNK (acc_p): 0.8115, acc_mix: 0.7496, F1: 0.7624
+[UniJDOT Eval ALL] n=17913 threshold=0.4641
+[UniJDOT Eval ALL] conf: min=0.1701 max=0.8392 mean=0.4849 std=0.2233
+[UniJDOT Eval ALL] rejected: 45.42%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2590, 405, 3293, 4527, 3833, 3265]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.6330
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.3831
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2812
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2249
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1889
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1633
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1442
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1290
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1168
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1067
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.1626
+loss_cls	: 0.0501
+loss_align	: 0.1124
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.1563
+loss_cls	: 0.0448
+loss_align	: 0.1115
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.1532
+loss_cls	: 0.0428
+loss_align	: 0.1104
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.1497
+loss_cls	: 0.0405
+loss_align	: 0.1092
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.1474
+loss_cls	: 0.0390
+loss_align	: 0.1085
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.1438
+loss_cls	: 0.0362
+loss_align	: 0.1076
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.1417
+loss_cls	: 0.0346
+loss_align	: 0.1071
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.1406
+loss_cls	: 0.0342
+loss_align	: 0.1065
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.1392
+loss_cls	: 0.0333
+loss_align	: 0.1059
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1067
+Total_loss	: 0.1375
+loss_cls	: 0.0322
+loss_align	: 0.1053
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.1897 min-dist mean=0.1706 std=0.1058 reject=40.05%
+
+[UniJDOT Debug] final_threshold = 0.4708 conf mean=0.4923 std=0.2240 reject=44.98%
+[UniJDOT Eval ALL] n=17913 threshold=0.4708
+[UniJDOT Eval ALL] conf: min=0.1685 max=0.8271 mean=0.4923 std=0.2240
+[UniJDOT Eval ALL] rejected: 45.47%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2637, 254, 3427, 4931, 2944, 3720]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7898, OS* (acc_c): 0.7318, UNK (acc_p): 0.8578, acc_mix: 0.7734, F1: 0.7796
+[UniJDOT Eval ALL] n=17913 threshold=0.4708
+[UniJDOT Eval ALL] conf: min=0.1685 max=0.8271 mean=0.4923 std=0.2240
+[UniJDOT Eval ALL] rejected: 45.47%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2637, 254, 3427, 4931, 2944, 3720]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8378
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4879
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3525
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2784
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2312
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1987
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1741
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1554
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1402
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1280
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1642
+loss_cls	: 0.0529
+loss_align	: 0.1113
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1550
+loss_cls	: 0.0458
+loss_align	: 0.1092
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1501
+loss_cls	: 0.0420
+loss_align	: 0.1081
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1478
+loss_cls	: 0.0407
+loss_align	: 0.1071
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1451
+loss_cls	: 0.0388
+loss_align	: 0.1063
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1423
+loss_cls	: 0.0366
+loss_align	: 0.1057
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1407
+loss_cls	: 0.0355
+loss_align	: 0.1052
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1387
+loss_cls	: 0.0340
+loss_align	: 0.1047
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1376
+loss_cls	: 0.0334
+loss_align	: 0.1042
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1365
+loss_cls	: 0.0329
+loss_align	: 0.1036
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2023 min-dist mean=0.1881 std=0.1199 reject=43.51%
+
+[UniJDOT Debug] final_threshold = 0.4738 conf mean=0.4882 std=0.2225 reject=46.69%
+[UniJDOT Eval ALL] n=17913 threshold=0.4738
+[UniJDOT Eval ALL] conf: min=0.1684 max=0.8512 mean=0.4882 std=0.2225
+[UniJDOT Eval ALL] rejected: 47.57%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2559, 308, 3060, 4432, 4025, 3529]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7848, OS* (acc_c): 0.7096, UNK (acc_p): 0.8778, acc_mix: 0.7651, F1: 0.7721
+[UniJDOT Eval ALL] n=17913 threshold=0.4738
+[UniJDOT Eval ALL] conf: min=0.1684 max=0.8512 mean=0.4882 std=0.2225
+[UniJDOT Eval ALL] rejected: 47.57%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2559, 308, 3060, 4432, 4025, 3529]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+🏃 View run UniJDOT_trial_4 at: http://127.0.0.1:5001/#/experiments/348422367320581134/runs/4976ba44f72c47f1b4608a13013691e8
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/348422367320581134
+>>> [trial 4] UniJDOT done in 514.2s
+[I 2026-05-02 13:15:58,701] Trial 4 finished with value: -0.7790385484695435 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.0001, 'lamb': 2.8, 'alpha': 1.9500000000000002, 'src_weight': 2.45, 'K': 5, 'n_batch': 15, 'trg_mem_size': 32, 'joint_decision': True, 'threshold_method': 'threshold_otsu'}. Best is trial 0 with value: -0.8322233160336813.
+>>> [trial 5] UniJDOT starting
+>>> [trial 5] reloading data (batch_size 64 -> 32)
+Unlabeled data shape:  (17913, 150, 18)
+Unlabelled Combined shape: (29204, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   359
+Target Train batches:   559
+-------------------------------
+
+Private classes:  tensor([6., 7.])
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2875
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1934
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1532
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1307
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1160
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1050
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0955
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0889
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0834
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0784
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.0784
+Total_loss	: 0.1396
+loss_cls	: 0.0673
+loss_align	: 0.0723
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.0784
+Total_loss	: 0.1287
+loss_cls	: 0.0590
+loss_align	: 0.0697
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.0784
+Total_loss	: 0.1262
+loss_cls	: 0.0574
+loss_align	: 0.0689
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.0784
+Total_loss	: 0.1232
+loss_cls	: 0.0545
+loss_align	: 0.0688
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.0784
+Total_loss	: 0.1244
+loss_cls	: 0.0552
+loss_align	: 0.0692
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.0784
+Total_loss	: 0.1233
+loss_cls	: 0.0539
+loss_align	: 0.0695
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0784
+Total_loss	: 0.1228
+loss_cls	: 0.0534
+loss_align	: 0.0694
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0784
+Total_loss	: 0.1225
+loss_cls	: 0.0531
+loss_align	: 0.0694
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0784
+Total_loss	: 0.1207
+loss_cls	: 0.0516
+loss_align	: 0.0692
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0784
+Total_loss	: 0.1202
+loss_cls	: 0.0512
+loss_align	: 0.0689
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.1346 min-dist mean=0.0828 std=0.1047 reject=27.10%
+
+[UniJDOT Debug] final_threshold = 0.4374 conf mean=0.5126 std=0.2169 reject=32.94%
+[UniJDOT Eval ALL] n=17913 threshold=0.4374
+[UniJDOT Eval ALL] conf: min=0.1671 max=0.7461 mean=0.5126 std=0.2169
+[UniJDOT Eval ALL] rejected: 32.98%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2649, 54, 2847, 3705, 3402, 5256]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.6921, OS* (acc_c): 0.7490, UNK (acc_p): 0.6433, acc_mix: 0.7141, F1: 0.7528
+[UniJDOT Eval ALL] n=17913 threshold=0.4374
+[UniJDOT Eval ALL] conf: min=0.1671 max=0.7461 mean=0.5126 std=0.2169
+[UniJDOT Eval ALL] rejected: 32.98%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2649, 54, 2847, 3705, 3402, 5256]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2497
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1729
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1389
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1195
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1074
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.0973
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0892
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0826
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0779
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0733
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.0733
+Total_loss	: 0.1411
+loss_cls	: 0.0655
+loss_align	: 0.0756
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.0733
+Total_loss	: 0.1309
+loss_cls	: 0.0586
+loss_align	: 0.0723
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.0733
+Total_loss	: 0.1288
+loss_cls	: 0.0574
+loss_align	: 0.0715
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.0733
+Total_loss	: 0.1308
+loss_cls	: 0.0594
+loss_align	: 0.0714
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.0733
+Total_loss	: 0.1297
+loss_cls	: 0.0586
+loss_align	: 0.0711
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.0733
+Total_loss	: 0.1270
+loss_cls	: 0.0564
+loss_align	: 0.0706
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0733
+Total_loss	: 0.1264
+loss_cls	: 0.0564
+loss_align	: 0.0701
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0733
+Total_loss	: 0.1240
+loss_cls	: 0.0543
+loss_align	: 0.0696
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0733
+Total_loss	: 0.1219
+loss_cls	: 0.0528
+loss_align	: 0.0692
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0733
+Total_loss	: 0.1201
+loss_cls	: 0.0514
+loss_align	: 0.0686
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.1124 min-dist mean=0.0788 std=0.0888 reject=31.33%
+
+[UniJDOT Debug] final_threshold = 0.4398 conf mean=0.5084 std=0.2089 reject=33.45%
+[UniJDOT Eval ALL] n=17913 threshold=0.4398
+[UniJDOT Eval ALL] conf: min=0.1697 max=0.8128 mean=0.5085 std=0.2089
+[UniJDOT Eval ALL] rejected: 34.22%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2484, 0, 2780, 6528, 3026, 3095]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.6894, OS* (acc_c): 0.7535, UNK (acc_p): 0.6353, acc_mix: 0.7145, F1: 0.7470
+[UniJDOT Eval ALL] n=17913 threshold=0.4398
+[UniJDOT Eval ALL] conf: min=0.1697 max=0.8128 mean=0.5085 std=0.2089
+[UniJDOT Eval ALL] rejected: 34.22%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2484, 0, 2780, 6528, 3026, 3095]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2826
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1913
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1507
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1299
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1156
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1039
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0951
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0888
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0832
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0786
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.0786
+Total_loss	: 0.1340
+loss_cls	: 0.0637
+loss_align	: 0.0703
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.0786
+Total_loss	: 0.1291
+loss_cls	: 0.0609
+loss_align	: 0.0681
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.0786
+Total_loss	: 0.1261
+loss_cls	: 0.0576
+loss_align	: 0.0685
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.0786
+Total_loss	: 0.1288
+loss_cls	: 0.0590
+loss_align	: 0.0698
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.0786
+Total_loss	: 0.1273
+loss_cls	: 0.0569
+loss_align	: 0.0703
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.0786
+Total_loss	: 0.1243
+loss_cls	: 0.0538
+loss_align	: 0.0705
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0786
+Total_loss	: 0.1242
+loss_cls	: 0.0536
+loss_align	: 0.0705
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0786
+Total_loss	: 0.1226
+loss_cls	: 0.0523
+loss_align	: 0.0702
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0786
+Total_loss	: 0.1206
+loss_cls	: 0.0509
+loss_align	: 0.0697
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0786
+Total_loss	: 0.1189
+loss_cls	: 0.0496
+loss_align	: 0.0693
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.1150 min-dist mean=0.0777 std=0.0947 reject=30.66%
+
+[UniJDOT Debug] final_threshold = 0.4712 conf mean=0.5572 std=0.2338 reject=32.35%
+[UniJDOT Eval ALL] n=17913 threshold=0.4712
+[UniJDOT Eval ALL] conf: min=0.1713 max=0.7981 mean=0.5573 std=0.2338
+[UniJDOT Eval ALL] rejected: 33.45%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2206, 71, 2730, 6624, 3150, 3132]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7164, OS* (acc_c): 0.7839, UNK (acc_p): 0.6597, acc_mix: 0.7429, F1: 0.7749
+[UniJDOT Eval ALL] n=17913 threshold=0.4712
+[UniJDOT Eval ALL] conf: min=0.1713 max=0.7981 mean=0.5573 std=0.2338
+[UniJDOT Eval ALL] rejected: 33.45%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2206, 71, 2730, 6624, 3150, 3132]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+🏃 View run UniJDOT_trial_5 at: http://127.0.0.1:5001/#/experiments/348422367320581134/runs/a4a42e0e43224898be5121cfd91c9ee6
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/348422367320581134
+>>> [trial 5] UniJDOT done in 861.1s
+[I 2026-05-02 13:30:19,827] Trial 5 finished with value: -0.6993058919906616 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 32, 'weight_decay': 0.0005, 'learning_rate': 0.0005, 'lamb': 4.65, 'alpha': 2.65, 'src_weight': 1.9000000000000001, 'K': 10, 'n_batch': 30, 'trg_mem_size': 32, 'joint_decision': True, 'threshold_method': 'threshold_otsu'}. Best is trial 0 with value: -0.8322233160336813.
+>>> [trial 6] UniJDOT starting
+>>> [trial 6] reloading data (batch_size 32 -> 64)
+Unlabeled data shape:  (17913, 150, 18)
+Unlabelled Combined shape: (29204, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   179
+Target Train batches:   279
+-------------------------------
+
+Private classes:  tensor([6., 7.])
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7808
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4637
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3378
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2690
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2242
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1924
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1687
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1504
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1365
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1245
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1712
+loss_cls	: 0.0801
+loss_align	: 0.0911
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1674
+loss_cls	: 0.0706
+loss_align	: 0.0968
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1729
+loss_cls	: 0.0715
+loss_align	: 0.1015
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1697
+loss_cls	: 0.0645
+loss_align	: 0.1052
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1683
+loss_cls	: 0.0599
+loss_align	: 0.1084
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1682
+loss_cls	: 0.0570
+loss_align	: 0.1112
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1686
+loss_cls	: 0.0548
+loss_align	: 0.1138
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1708
+loss_cls	: 0.0548
+loss_align	: 0.1160
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1707
+loss_cls	: 0.0529
+loss_align	: 0.1177
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1698
+loss_cls	: 0.0507
+loss_align	: 0.1190
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2163 min-dist mean=0.1931 std=0.1190 reject=38.88%
+
+[UniJDOT Debug] final_threshold = 0.5402 conf mean=0.5857 std=0.1939 reject=37.89%
+[UniJDOT Eval ALL] n=17913 threshold=0.5402
+[UniJDOT Eval ALL] conf: min=0.1829 max=0.8531 mean=0.5855 std=0.1940
+[UniJDOT Eval ALL] rejected: 41.08%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1884, 7, 3374, 4748, 3882, 4018]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.8340, OS* (acc_c): 0.8057, UNK (acc_p): 0.8644, acc_mix: 0.8251, F1: 0.8247
+[UniJDOT Eval ALL] n=17913 threshold=0.5402
+[UniJDOT Eval ALL] conf: min=0.1829 max=0.8531 mean=0.5855 std=0.1940
+[UniJDOT Eval ALL] rejected: 41.08%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1884, 7, 3374, 4748, 3882, 4018]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.6336
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.3834
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2811
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2247
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1889
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1631
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1439
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1288
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1169
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1068
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1946
+loss_cls	: 0.0875
+loss_align	: 0.1070
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1858
+loss_cls	: 0.0725
+loss_align	: 0.1133
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1836
+loss_cls	: 0.0664
+loss_align	: 0.1172
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1841
+loss_cls	: 0.0639
+loss_align	: 0.1203
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1846
+loss_cls	: 0.0620
+loss_align	: 0.1226
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1832
+loss_cls	: 0.0589
+loss_align	: 0.1243
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1822
+loss_cls	: 0.0567
+loss_align	: 0.1255
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1819
+loss_cls	: 0.0556
+loss_align	: 0.1263
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1808
+loss_cls	: 0.0541
+loss_align	: 0.1267
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1787
+loss_cls	: 0.0518
+loss_align	: 0.1269
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.1994 min-dist mean=0.1653 std=0.1109 reject=32.85%
+
+[UniJDOT Debug] final_threshold = 0.5519 conf mean=0.6137 std=0.1976 reject=33.99%
+[UniJDOT Eval ALL] n=17913 threshold=0.5519
+[UniJDOT Eval ALL] conf: min=0.1854 max=0.8579 mean=0.6138 std=0.1975
+[UniJDOT Eval ALL] rejected: 35.72%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2249, 9, 3231, 5130, 3335, 3959]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.8127, OS* (acc_c): 0.8220, UNK (acc_p): 0.8037, acc_mix: 0.8159, F1: 0.8152
+[UniJDOT Eval ALL] n=17913 threshold=0.5519
+[UniJDOT Eval ALL] conf: min=0.1854 max=0.8579 mean=0.6138 std=0.1975
+[UniJDOT Eval ALL] rejected: 35.72%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2249, 9, 3231, 5130, 3335, 3959]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8378
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4870
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3518
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2778
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2304
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1980
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1739
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1551
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1400
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1280
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1934
+loss_cls	: 0.0913
+loss_align	: 0.1022
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1860
+loss_cls	: 0.0780
+loss_align	: 0.1080
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1876
+loss_cls	: 0.0747
+loss_align	: 0.1129
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1907
+loss_cls	: 0.0741
+loss_align	: 0.1166
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1889
+loss_cls	: 0.0695
+loss_align	: 0.1194
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1872
+loss_cls	: 0.0657
+loss_align	: 0.1215
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1877
+loss_cls	: 0.0646
+loss_align	: 0.1230
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1854
+loss_cls	: 0.0613
+loss_align	: 0.1241
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1839
+loss_cls	: 0.0592
+loss_align	: 0.1246
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1819
+loss_cls	: 0.0570
+loss_align	: 0.1249
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2292 min-dist mean=0.1694 std=0.1180 reject=24.74%
+
+[UniJDOT Debug] final_threshold = 0.5456 conf mean=0.6256 std=0.2003 reject=29.98%
+[UniJDOT Eval ALL] n=17913 threshold=0.5456
+[UniJDOT Eval ALL] conf: min=0.1867 max=0.8548 mean=0.6256 std=0.2003
+[UniJDOT Eval ALL] rejected: 30.54%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1398, 5, 3324, 5291, 3657, 4238]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7764, OS* (acc_c): 0.8350, UNK (acc_p): 0.7254, acc_mix: 0.7988, F1: 0.7983
+[UniJDOT Eval ALL] n=17913 threshold=0.5456
+[UniJDOT Eval ALL] conf: min=0.1867 max=0.8548 mean=0.6256 std=0.2003
+[UniJDOT Eval ALL] rejected: 30.54%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1398, 5, 3324, 5291, 3657, 4238]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+🏃 View run UniJDOT_trial_6 at: http://127.0.0.1:5001/#/experiments/348422367320581134/runs/a003e6f62f4545aeaffadab41cd6feef
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/348422367320581134
+>>> [trial 6] UniJDOT done in 511.5s
+[I 2026-05-02 13:38:51,309] Trial 6 finished with value: -0.8077134092648824 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.0001, 'lamb': 0.6500000000000001, 'alpha': 4.8, 'src_weight': 4.3, 'K': 5, 'n_batch': 20, 'trg_mem_size': 64, 'joint_decision': True, 'threshold_method': 'threshold_otsu'}. Best is trial 0 with value: -0.8322233160336813.
+>>> [trial 7] UniJDOT starting
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.3467
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2206
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1661
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1363
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1167
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1026
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0939
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0857
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0786
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0727
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.0727
+Total_loss	: 0.1570
+loss_cls	: 0.0379
+loss_align	: 0.1190
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.0727
+Total_loss	: 0.1476
+loss_cls	: 0.0332
+loss_align	: 0.1145
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.0727
+Total_loss	: 0.1416
+loss_cls	: 0.0321
+loss_align	: 0.1095
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.0727
+Total_loss	: 0.1365
+loss_cls	: 0.0312
+loss_align	: 0.1054
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.0727
+Total_loss	: 0.1318
+loss_cls	: 0.0302
+loss_align	: 0.1015
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.0727
+Total_loss	: 0.1267
+loss_cls	: 0.0287
+loss_align	: 0.0980
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0727
+Total_loss	: 0.1242
+loss_cls	: 0.0287
+loss_align	: 0.0955
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0727
+Total_loss	: 0.1213
+loss_cls	: 0.0279
+loss_align	: 0.0935
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0727
+Total_loss	: 0.1183
+loss_cls	: 0.0270
+loss_align	: 0.0913
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0727
+Total_loss	: 0.1155
+loss_cls	: 0.0260
+loss_align	: 0.0895
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.0977 min-dist mean=0.0904 std=0.0845 reject=45.03%
+
+[UniJDOT Debug] final_threshold = 0.4334 conf mean=0.4494 std=0.2465 reject=47.00%
+[UniJDOT Eval ALL] n=17913 threshold=0.4334
+[UniJDOT Eval ALL] conf: min=0.1672 max=0.8662 mean=0.4492 std=0.2465
+[UniJDOT Eval ALL] rejected: 47.22%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1280, 20, 5387, 4167, 3773, 3286]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.8198, OS* (acc_c): 0.7441, UNK (acc_p): 0.9126, acc_mix: 0.7998, F1: 0.8039
+[UniJDOT Eval ALL] n=17913 threshold=0.4334
+[UniJDOT Eval ALL] conf: min=0.1672 max=0.8662 mean=0.4492 std=0.2465
+[UniJDOT Eval ALL] rejected: 47.22%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1280, 20, 5387, 4167, 3773, 3286]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2966
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1913
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1449
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1222
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1071
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.0943
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0869
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0792
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0727
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0675
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.0675
+Total_loss	: 0.1623
+loss_cls	: 0.0441
+loss_align	: 0.1183
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.0675
+Total_loss	: 0.1506
+loss_cls	: 0.0367
+loss_align	: 0.1139
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.0675
+Total_loss	: 0.1422
+loss_cls	: 0.0334
+loss_align	: 0.1088
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.0675
+Total_loss	: 0.1366
+loss_cls	: 0.0322
+loss_align	: 0.1044
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.0675
+Total_loss	: 0.1312
+loss_cls	: 0.0304
+loss_align	: 0.1007
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.0675
+Total_loss	: 0.1282
+loss_cls	: 0.0306
+loss_align	: 0.0976
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0675
+Total_loss	: 0.1255
+loss_cls	: 0.0305
+loss_align	: 0.0950
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0675
+Total_loss	: 0.1217
+loss_cls	: 0.0289
+loss_align	: 0.0928
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0675
+Total_loss	: 0.1182
+loss_cls	: 0.0274
+loss_align	: 0.0908
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0675
+Total_loss	: 0.1159
+loss_cls	: 0.0266
+loss_align	: 0.0893
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.1652 min-dist mean=0.1657 std=0.1522 reject=49.83%
+
+[UniJDOT Debug] final_threshold = 0.4489 conf mean=0.4423 std=0.2604 reject=51.74%
+[UniJDOT Eval ALL] n=17913 threshold=0.4489
+[UniJDOT Eval ALL] conf: min=0.1679 max=0.9132 mean=0.4422 std=0.2603
+[UniJDOT Eval ALL] rejected: 51.76%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [659, 1788, 3014, 6433, 3366, 2653]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7803, OS* (acc_c): 0.6770, UNK (acc_p): 0.9209, acc_mix: 0.7576, F1: 0.7566
+[UniJDOT Eval ALL] n=17913 threshold=0.4489
+[UniJDOT Eval ALL] conf: min=0.1679 max=0.9132 mean=0.4422 std=0.2603
+[UniJDOT Eval ALL] rejected: 51.76%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [659, 1788, 3014, 6433, 3366, 2653]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.3569
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2220
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1664
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1352
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1170
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1038
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0935
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0848
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0780
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0725
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.0725
+Total_loss	: 0.1558
+loss_cls	: 0.0406
+loss_align	: 0.1153
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.0725
+Total_loss	: 0.1458
+loss_cls	: 0.0342
+loss_align	: 0.1116
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.0725
+Total_loss	: 0.1369
+loss_cls	: 0.0317
+loss_align	: 0.1052
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.0725
+Total_loss	: 0.1334
+loss_cls	: 0.0335
+loss_align	: 0.0999
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.0725
+Total_loss	: 0.1288
+loss_cls	: 0.0327
+loss_align	: 0.0960
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.0725
+Total_loss	: 0.1238
+loss_cls	: 0.0314
+loss_align	: 0.0924
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0725
+Total_loss	: 0.1182
+loss_cls	: 0.0292
+loss_align	: 0.0889
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0725
+Total_loss	: 0.1140
+loss_cls	: 0.0278
+loss_align	: 0.0862
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0725
+Total_loss	: 0.1114
+loss_cls	: 0.0272
+loss_align	: 0.0843
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0725
+Total_loss	: 0.1091
+loss_cls	: 0.0266
+loss_align	: 0.0826
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.1071 min-dist mean=0.1058 std=0.0989 reject=49.20%
+
+[UniJDOT Debug] final_threshold = 0.4464 conf mean=0.4495 std=0.2511 reject=49.76%
+[UniJDOT Eval ALL] n=17913 threshold=0.4464
+[UniJDOT Eval ALL] conf: min=0.1683 max=0.9464 mean=0.4494 std=0.2511
+[UniJDOT Eval ALL] rejected: 50.68%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2056, 291, 2854, 2684, 3863, 6165]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7809, OS* (acc_c): 0.6874, UNK (acc_p): 0.9036, acc_mix: 0.7588, F1: 0.7624
+[UniJDOT Eval ALL] n=17913 threshold=0.4464
+[UniJDOT Eval ALL] conf: min=0.1683 max=0.9464 mean=0.4494 std=0.2511
+[UniJDOT Eval ALL] rejected: 50.68%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2056, 291, 2854, 2684, 3863, 6165]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+🏃 View run UniJDOT_trial_7 at: http://127.0.0.1:5001/#/experiments/348422367320581134/runs/6282bf9bde8047308abca96ee60c5191
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/348422367320581134
+>>> [trial 7] UniJDOT done in 516.8s
+[I 2026-05-02 13:47:28,069] Trial 7 finished with value: -0.7936652501424154 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.0005, 'lamb': 1.9000000000000001, 'alpha': 3.0, 'src_weight': 1.4000000000000001, 'K': 20, 'n_batch': 15, 'trg_mem_size': 128, 'joint_decision': True, 'threshold_method': 'threshold_otsu'}. Best is trial 0 with value: -0.8322233160336813.
+>>> [trial 8] UniJDOT starting
+>>> [trial 8] reloading data (batch_size 64 -> 32)
+Unlabeled data shape:  (17913, 150, 18)
+Unlabelled Combined shape: (29204, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   359
+Target Train batches:   559
+-------------------------------
+
+Private classes:  tensor([6., 7.])
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2671
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1881
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1560
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1352
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1215
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1125
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1028
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0964
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0915
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0867
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.0867
+Total_loss	: 0.2492
+loss_cls	: 0.1752
+loss_align	: 0.0740
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.0867
+Total_loss	: 0.2238
+loss_cls	: 0.1520
+loss_align	: 0.0719
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.0867
+Total_loss	: 0.2176
+loss_cls	: 0.1453
+loss_align	: 0.0722
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.0867
+Total_loss	: 0.2196
+loss_cls	: 0.1464
+loss_align	: 0.0731
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.0867
+Total_loss	: 0.2092
+loss_cls	: 0.1360
+loss_align	: 0.0731
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.0867
+Total_loss	: 0.2034
+loss_cls	: 0.1299
+loss_align	: 0.0735
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0867
+Total_loss	: 0.2010
+loss_cls	: 0.1269
+loss_align	: 0.0741
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0867
+Total_loss	: 0.1974
+loss_cls	: 0.1233
+loss_align	: 0.0741
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0867
+Total_loss	: 0.1937
+loss_cls	: 0.1197
+loss_align	: 0.0740
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0867
+Total_loss	: 0.1906
+loss_cls	: 0.1168
+loss_align	: 0.0738
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.0967 min-dist mean=0.0774 std=0.0731 reject=36.12%
+
+[UniJDOT Debug] final_threshold = 0.4552 conf mean=0.5005 std=0.2309 reject=40.12%
+[UniJDOT Eval ALL] n=17913 threshold=0.4552
+[UniJDOT Eval ALL] conf: min=0.1705 max=0.8016 mean=0.5004 std=0.2310
+[UniJDOT Eval ALL] rejected: 40.91%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1397, 95, 2946, 3740, 5852, 3883]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7274, OS* (acc_c): 0.7177, UNK (acc_p): 0.7373, acc_mix: 0.7242, F1: 0.7386
+[UniJDOT Eval ALL] n=17913 threshold=0.4552
+[UniJDOT Eval ALL] conf: min=0.1705 max=0.8016 mean=0.5004 std=0.2310
+[UniJDOT Eval ALL] rejected: 40.91%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1397, 95, 2946, 3740, 5852, 3883]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2391
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1718
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1424
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1269
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1146
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1062
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0989
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0929
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0871
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0819
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.0819
+Total_loss	: 0.2692
+loss_cls	: 0.1954
+loss_align	: 0.0738
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.0819
+Total_loss	: 0.2439
+loss_cls	: 0.1720
+loss_align	: 0.0719
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.0819
+Total_loss	: 0.2321
+loss_cls	: 0.1603
+loss_align	: 0.0719
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.0819
+Total_loss	: 0.2256
+loss_cls	: 0.1540
+loss_align	: 0.0715
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.0819
+Total_loss	: 0.2266
+loss_cls	: 0.1550
+loss_align	: 0.0716
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.0819
+Total_loss	: 0.2186
+loss_cls	: 0.1471
+loss_align	: 0.0715
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0819
+Total_loss	: 0.2119
+loss_cls	: 0.1403
+loss_align	: 0.0716
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0819
+Total_loss	: 0.2066
+loss_cls	: 0.1350
+loss_align	: 0.0716
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0819
+Total_loss	: 0.1996
+loss_cls	: 0.1282
+loss_align	: 0.0714
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0819
+Total_loss	: 0.1972
+loss_cls	: 0.1256
+loss_align	: 0.0716
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.0736 min-dist mean=0.0641 std=0.0566 reject=39.88%
+
+[UniJDOT Debug] final_threshold = 0.4859 conf mean=0.5400 std=0.2287 reject=38.11%
+[UniJDOT Eval ALL] n=17913 threshold=0.4859
+[UniJDOT Eval ALL] conf: min=0.1719 max=0.8503 mean=0.5401 std=0.2286
+[UniJDOT Eval ALL] rejected: 43.16%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [3124, 66, 2756, 6013, 2986, 2968]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7516, OS* (acc_c): 0.7123, UNK (acc_p): 0.7954, acc_mix: 0.7397, F1: 0.7590
+[UniJDOT Eval ALL] n=17913 threshold=0.4859
+[UniJDOT Eval ALL] conf: min=0.1719 max=0.8503 mean=0.5401 std=0.2286
+[UniJDOT Eval ALL] rejected: 43.16%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [3124, 66, 2756, 6013, 2986, 2968]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.2583
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1874
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1535
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1323
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1201
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1106
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1022
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0954
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0897
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0854
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.0854
+Total_loss	: 0.2509
+loss_cls	: 0.1761
+loss_align	: 0.0748
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.0854
+Total_loss	: 0.2340
+loss_cls	: 0.1600
+loss_align	: 0.0739
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.0854
+Total_loss	: 0.2275
+loss_cls	: 0.1537
+loss_align	: 0.0737
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.0854
+Total_loss	: 0.2247
+loss_cls	: 0.1512
+loss_align	: 0.0735
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.0854
+Total_loss	: 0.2157
+loss_cls	: 0.1419
+loss_align	: 0.0739
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.0854
+Total_loss	: 0.2059
+loss_cls	: 0.1319
+loss_align	: 0.0740
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0854
+Total_loss	: 0.2023
+loss_cls	: 0.1282
+loss_align	: 0.0742
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0854
+Total_loss	: 0.1992
+loss_cls	: 0.1249
+loss_align	: 0.0743
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0854
+Total_loss	: 0.1966
+loss_cls	: 0.1220
+loss_align	: 0.0745
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0854
+Total_loss	: 0.1923
+loss_cls	: 0.1180
+loss_align	: 0.0743
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.1167 min-dist mean=0.0853 std=0.0867 reject=31.66%
+
+[UniJDOT Debug] final_threshold = 0.4966 conf mean=0.5556 std=0.2267 reject=36.71%
+[UniJDOT Eval ALL] n=17913 threshold=0.4966
+[UniJDOT Eval ALL] conf: min=0.1784 max=0.8657 mean=0.5556 std=0.2267
+[UniJDOT Eval ALL] rejected: 37.77%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1645, 21, 5358, 4375, 3174, 3340]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7479, OS* (acc_c): 0.7615, UNK (acc_p): 0.7347, acc_mix: 0.7527, F1: 0.7720
+[UniJDOT Eval ALL] n=17913 threshold=0.4966
+[UniJDOT Eval ALL] conf: min=0.1784 max=0.8657 mean=0.5556 std=0.2267
+[UniJDOT Eval ALL] rejected: 37.77%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1645, 21, 5358, 4375, 3174, 3340]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+🏃 View run UniJDOT_trial_8 at: http://127.0.0.1:5001/#/experiments/348422367320581134/runs/5f43e3baa1d542f6afa7432c7c776f0a
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/348422367320581134
+>>> [trial 8] UniJDOT done in 568.5s
+[I 2026-05-02 13:56:56,541] Trial 8 finished with value: -0.7422764102617899 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 32, 'weight_decay': 0.0005, 'learning_rate': 0.001, 'lamb': 3.55, 'alpha': 1.6, 'src_weight': 3.65, 'K': 15, 'n_batch': 20, 'trg_mem_size': 32, 'joint_decision': True, 'threshold_method': 'threshold_otsu'}. Best is trial 0 with value: -0.8322233160336813.
+>>> [trial 9] UniJDOT starting
+>>> [trial 9] reloading data (batch_size 32 -> 64)
+Unlabeled data shape:  (17913, 150, 18)
+Unlabelled Combined shape: (29204, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   179
+Target Train batches:   279
+-------------------------------
+
+Private classes:  tensor([6., 7.])
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.5574
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.3760
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3095
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2654
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2373
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2132
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1974
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1819
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1713
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1624
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1624
+Total_loss	: 0.1568
+loss_cls	: 0.0971
+loss_align	: 0.0597
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1624
+Total_loss	: 0.1454
+loss_cls	: 0.0892
+loss_align	: 0.0562
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1624
+Total_loss	: 0.1432
+loss_cls	: 0.0884
+loss_align	: 0.0548
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1624
+Total_loss	: 0.1399
+loss_cls	: 0.0872
+loss_align	: 0.0527
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1624
+Total_loss	: 0.1371
+loss_cls	: 0.0854
+loss_align	: 0.0518
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1624
+Total_loss	: 0.1328
+loss_cls	: 0.0824
+loss_align	: 0.0504
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1624
+Total_loss	: 0.1325
+loss_cls	: 0.0823
+loss_align	: 0.0502
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1624
+Total_loss	: 0.1314
+loss_cls	: 0.0816
+loss_align	: 0.0498
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1624
+Total_loss	: 0.1285
+loss_cls	: 0.0795
+loss_align	: 0.0490
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1624
+Total_loss	: 0.1266
+loss_cls	: 0.0783
+loss_align	: 0.0483
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.0674 min-dist mean=0.0500 std=0.0427 reject=28.84%
+
+[UniJDOT Debug] final_threshold = 0.4142 conf mean=0.4659 std=0.1241 reject=29.46%
+[UniJDOT Eval ALL] n=17913 threshold=0.4142
+[UniJDOT Eval ALL] conf: min=0.1878 max=0.6496 mean=0.4659 std=0.1241
+[UniJDOT Eval ALL] rejected: 32.77%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [3805, 24, 2752, 5814, 3138, 2380]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.6560, OS* (acc_c): 0.7087, UNK (acc_p): 0.6107, acc_mix: 0.6763, F1: 0.6959
+[UniJDOT Eval ALL] n=17913 threshold=0.4142
+[UniJDOT Eval ALL] conf: min=0.1878 max=0.6496 mean=0.4659 std=0.1241
+[UniJDOT Eval ALL] rejected: 32.77%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [3805, 24, 2752, 5814, 3138, 2380]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.4914
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.3158
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2513
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2112
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1899
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1722
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1590
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1510
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1418
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1338
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1338
+Total_loss	: 0.1420
+loss_cls	: 0.0906
+loss_align	: 0.0514
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1338
+Total_loss	: 0.1260
+loss_cls	: 0.0790
+loss_align	: 0.0470
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1338
+Total_loss	: 0.1202
+loss_cls	: 0.0755
+loss_align	: 0.0446
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1338
+Total_loss	: 0.1184
+loss_cls	: 0.0755
+loss_align	: 0.0429
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1338
+Total_loss	: 0.1174
+loss_cls	: 0.0755
+loss_align	: 0.0418
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1338
+Total_loss	: 0.1177
+loss_cls	: 0.0765
+loss_align	: 0.0412
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1338
+Total_loss	: 0.1174
+loss_cls	: 0.0768
+loss_align	: 0.0405
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1338
+Total_loss	: 0.1149
+loss_cls	: 0.0750
+loss_align	: 0.0399
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1338
+Total_loss	: 0.1148
+loss_cls	: 0.0751
+loss_align	: 0.0397
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1338
+Total_loss	: 0.1134
+loss_cls	: 0.0740
+loss_align	: 0.0394
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.0567 min-dist mean=0.0285 std=0.0413 reject=19.29%
+
+[UniJDOT Debug] final_threshold = 0.4224 conf mean=0.4854 std=0.1663 reject=29.68%
+[UniJDOT Eval ALL] n=17913 threshold=0.4224
+[UniJDOT Eval ALL] conf: min=0.1775 max=0.8140 mean=0.4853 std=0.1663
+[UniJDOT Eval ALL] rejected: 31.55%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1763, 32, 4281, 4943, 2669, 4225]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.6551, OS* (acc_c): 0.7513, UNK (acc_p): 0.5807, acc_mix: 0.6950, F1: 0.7116
+[UniJDOT Eval ALL] n=17913 threshold=0.4224
+[UniJDOT Eval ALL] conf: min=0.1775 max=0.8140 mean=0.4853 std=0.1663
+[UniJDOT Eval ALL] rejected: 31.55%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1763, 32, 4281, 4943, 2669, 4225]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.5921
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.3982
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3127
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2642
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2307
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.2107
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1940
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1800
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1687
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1621
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1621
+Total_loss	: 0.1608
+loss_cls	: 0.0957
+loss_align	: 0.0651
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1621
+Total_loss	: 0.1531
+loss_cls	: 0.0914
+loss_align	: 0.0617
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1621
+Total_loss	: 0.1495
+loss_cls	: 0.0894
+loss_align	: 0.0601
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1621
+Total_loss	: 0.1467
+loss_cls	: 0.0882
+loss_align	: 0.0584
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1621
+Total_loss	: 0.1397
+loss_cls	: 0.0832
+loss_align	: 0.0566
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1621
+Total_loss	: 0.1362
+loss_cls	: 0.0809
+loss_align	: 0.0552
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1621
+Total_loss	: 0.1422
+loss_cls	: 0.0869
+loss_align	: 0.0553
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1621
+Total_loss	: 0.1382
+loss_cls	: 0.0838
+loss_align	: 0.0544
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1621
+Total_loss	: 0.1370
+loss_cls	: 0.0833
+loss_align	: 0.0537
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1621
+Total_loss	: 0.1351
+loss_cls	: 0.0819
+loss_align	: 0.0531
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.0637 min-dist mean=0.0328 std=0.0456 reject=19.43%
+
+[UniJDOT Debug] final_threshold = 0.4645 conf mean=0.5332 std=0.1522 reject=28.06%
+[UniJDOT Eval ALL] n=17913 threshold=0.4645
+[UniJDOT Eval ALL] conf: min=0.1851 max=0.7210 mean=0.5332 std=0.1522
+[UniJDOT Eval ALL] rejected: 29.25%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1155, 1, 4303, 5421, 3156, 3877]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7401, OS* (acc_c): 0.8321, UNK (acc_p): 0.6664, acc_mix: 0.7774, F1: 0.7818
+[UniJDOT Eval ALL] n=17913 threshold=0.4645
+[UniJDOT Eval ALL] conf: min=0.1851 max=0.7210 mean=0.5332 std=0.1522
+[UniJDOT Eval ALL] rejected: 29.25%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1155, 1, 4303, 5421, 3156, 3877]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+🏃 View run UniJDOT_trial_9 at: http://127.0.0.1:5001/#/experiments/348422367320581134/runs/d83874b59384408f8e975778999dfdf9
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/348422367320581134
+>>> [trial 9] UniJDOT done in 310.0s
+[I 2026-05-02 14:02:06,510] Trial 9 finished with value: -0.683739423751831 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.01, 'lamb': 1.85, 'alpha': 3.85, 'src_weight': 1.1, 'K': 10, 'n_batch': 30, 'trg_mem_size': 32, 'joint_decision': True, 'threshold_method': 'threshold_otsu'}. Best is trial 0 with value: -0.8322233160336813.
+>>> [trial 10] UniJDOT starting
+>>> [trial 10] reloading data (batch_size 64 -> 32)
+Unlabeled data shape:  (17913, 150, 18)
+Unlabelled Combined shape: (29204, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   359
+Target Train batches:   559
+-------------------------------
+
+Private classes:  tensor([6., 7.])
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.5413
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.3303
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2449
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1979
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1677
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1462
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1298
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1174
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1081
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0994
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.0994
+Total_loss	: 0.1605
+loss_cls	: 0.0695
+loss_align	: 0.0911
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.0994
+Total_loss	: 0.1550
+loss_cls	: 0.0657
+loss_align	: 0.0893
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.0994
+Total_loss	: 0.1497
+loss_cls	: 0.0616
+loss_align	: 0.0881
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.0994
+Total_loss	: 0.1457
+loss_cls	: 0.0584
+loss_align	: 0.0873
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.0994
+Total_loss	: 0.1430
+loss_cls	: 0.0564
+loss_align	: 0.0867
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.0994
+Total_loss	: 0.1407
+loss_cls	: 0.0547
+loss_align	: 0.0859
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0994
+Total_loss	: 0.1372
+loss_cls	: 0.0518
+loss_align	: 0.0854
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0994
+Total_loss	: 0.1361
+loss_cls	: 0.0508
+loss_align	: 0.0853
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0994
+Total_loss	: 0.1353
+loss_cls	: 0.0499
+loss_align	: 0.0854
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0994
+Total_loss	: 0.1338
+loss_cls	: 0.0482
+loss_align	: 0.0856
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2821 min-dist mean=0.2681 std=0.1281 reject=43.40%
+
+[UniJDOT Debug] final_threshold = 0.5095 conf mean=0.5365 std=0.2462 reject=44.16%
+[UniJDOT Eval ALL] n=17913 threshold=0.5095
+[UniJDOT Eval ALL] conf: min=0.1692 max=0.8922 mean=0.5364 std=0.2462
+[UniJDOT Eval ALL] rejected: 45.98%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1938, 579, 3458, 5184, 3195, 3559]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7826, OS* (acc_c): 0.7285, UNK (acc_p): 0.8453, acc_mix: 0.7671, F1: 0.7743
+[UniJDOT Eval ALL] n=17913 threshold=0.5095
+[UniJDOT Eval ALL] conf: min=0.1692 max=0.8922 mean=0.5364 std=0.2462
+[UniJDOT Eval ALL] rejected: 45.98%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1938, 579, 3458, 5184, 3195, 3559]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.4515
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.2807
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2111
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1726
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1479
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1299
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1162
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1060
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0974
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0896
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.0896
+Total_loss	: 0.1589
+loss_cls	: 0.0718
+loss_align	: 0.0871
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.0896
+Total_loss	: 0.1555
+loss_cls	: 0.0697
+loss_align	: 0.0858
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.0896
+Total_loss	: 0.1506
+loss_cls	: 0.0654
+loss_align	: 0.0852
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.0896
+Total_loss	: 0.1472
+loss_cls	: 0.0624
+loss_align	: 0.0848
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.0896
+Total_loss	: 0.1464
+loss_cls	: 0.0617
+loss_align	: 0.0847
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.0896
+Total_loss	: 0.1440
+loss_cls	: 0.0592
+loss_align	: 0.0847
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.0896
+Total_loss	: 0.1423
+loss_cls	: 0.0575
+loss_align	: 0.0847
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.0896
+Total_loss	: 0.1402
+loss_cls	: 0.0553
+loss_align	: 0.0848
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.0896
+Total_loss	: 0.1381
+loss_cls	: 0.0531
+loss_align	: 0.0850
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.0896
+Total_loss	: 0.1363
+loss_cls	: 0.0514
+loss_align	: 0.0850
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2592 min-dist mean=0.2490 std=0.1271 reject=45.40%
+
+[UniJDOT Debug] final_threshold = 0.5152 conf mean=0.5588 std=0.2503 reject=41.14%
+[UniJDOT Eval ALL] n=17913 threshold=0.5152
+[UniJDOT Eval ALL] conf: min=0.1696 max=0.9289 mean=0.5588 std=0.2503
+[UniJDOT Eval ALL] rejected: 46.16%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [3065, 148, 3218, 5030, 3010, 3442]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7664, OS* (acc_c): 0.6999, UNK (acc_p): 0.8470, acc_mix: 0.7485, F1: 0.7610
+[UniJDOT Eval ALL] n=17913 threshold=0.5152
+[UniJDOT Eval ALL] conf: min=0.1696 max=0.9289 mean=0.5588 std=0.2503
+[UniJDOT Eval ALL] rejected: 46.16%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [3065, 148, 3218, 5030, 3010, 3442]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.5658
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.3386
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2506
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2025
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1705
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1478
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1318
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1195
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1086
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1001
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1001
+Total_loss	: 0.1703
+loss_cls	: 0.0820
+loss_align	: 0.0883
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1001
+Total_loss	: 0.1646
+loss_cls	: 0.0775
+loss_align	: 0.0871
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1001
+Total_loss	: 0.1580
+loss_cls	: 0.0710
+loss_align	: 0.0870
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1001
+Total_loss	: 0.1526
+loss_cls	: 0.0661
+loss_align	: 0.0866
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1001
+Total_loss	: 0.1487
+loss_cls	: 0.0624
+loss_align	: 0.0863
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1001
+Total_loss	: 0.1455
+loss_cls	: 0.0591
+loss_align	: 0.0863
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1001
+Total_loss	: 0.1445
+loss_cls	: 0.0582
+loss_align	: 0.0863
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1001
+Total_loss	: 0.1418
+loss_cls	: 0.0556
+loss_align	: 0.0862
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1001
+Total_loss	: 0.1404
+loss_cls	: 0.0544
+loss_align	: 0.0860
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1001
+Total_loss	: 0.1378
+loss_cls	: 0.0521
+loss_align	: 0.0857
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2836 min-dist mean=0.2552 std=0.1456 reject=39.04%
+
+[UniJDOT Debug] final_threshold = 0.5227 conf mean=0.5693 std=0.2518 reject=40.47%
+[UniJDOT Eval ALL] n=17913 threshold=0.5227
+[UniJDOT Eval ALL] conf: min=0.1687 max=0.9208 mean=0.5694 std=0.2518
+[UniJDOT Eval ALL] rejected: 41.52%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2101, 223, 2923, 5298, 3895, 3473]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7935, OS* (acc_c): 0.7576, UNK (acc_p): 0.8330, acc_mix: 0.7825, F1: 0.7964
+[UniJDOT Eval ALL] n=17913 threshold=0.5227
+[UniJDOT Eval ALL] conf: min=0.1687 max=0.9208 mean=0.5694 std=0.2518
+[UniJDOT Eval ALL] rejected: 41.52%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2101, 223, 2923, 5298, 3895, 3473]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+🏃 View run UniJDOT_trial_10 at: http://127.0.0.1:5001/#/experiments/348422367320581134/runs/72d9dced9f554718b36c879d194628b4
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/348422367320581134
+>>> [trial 10] UniJDOT done in 447.4s
+[I 2026-05-02 14:09:33,943] Trial 10 finished with value: -0.7808464765548706 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 32, 'weight_decay': 0.0005, 'learning_rate': 0.0001, 'lamb': 3.8, 'alpha': 0.8, 'src_weight': 3.25, 'K': 5, 'n_batch': 5, 'trg_mem_size': 64, 'joint_decision': True, 'threshold_method': 'threshold_otsu'}. Best is trial 0 with value: -0.8322233160336813.
+>>> [trial 11] UniJDOT starting
+>>> [trial 11] reloading data (batch_size 32 -> 64)
+Unlabeled data shape:  (17913, 150, 18)
+Unlabelled Combined shape: (29204, 150, 18)
+
+--- Dataloader Size Check ---
+Source Train batches:   179
+Target Train batches:   279
+-------------------------------
+
+Private classes:  tensor([6., 7.])
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7808
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4637
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3378
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2690
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2242
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1924
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1687
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1504
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1365
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1245
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1962
+loss_cls	: 0.0909
+loss_align	: 0.1052
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1907
+loss_cls	: 0.0785
+loss_align	: 0.1122
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1962
+loss_cls	: 0.0786
+loss_align	: 0.1176
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1940
+loss_cls	: 0.0718
+loss_align	: 0.1222
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1933
+loss_cls	: 0.0674
+loss_align	: 0.1259
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1941
+loss_cls	: 0.0653
+loss_align	: 0.1288
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1951
+loss_cls	: 0.0642
+loss_align	: 0.1310
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1952
+loss_cls	: 0.0626
+loss_align	: 0.1326
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1938
+loss_cls	: 0.0602
+loss_align	: 0.1336
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1916
+loss_cls	: 0.0575
+loss_align	: 0.1341
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2076 min-dist mean=0.1779 std=0.1146 reject=35.62%
+
+[UniJDOT Debug] final_threshold = 0.5466 conf mean=0.6063 std=0.1911 reject=33.93%
+[UniJDOT Eval ALL] n=17913 threshold=0.5466
+[UniJDOT Eval ALL] conf: min=0.1777 max=0.8747 mean=0.6061 std=0.1911
+[UniJDOT Eval ALL] rejected: 36.99%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1847, 2, 3384, 4698, 3572, 4410]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.8122, OS* (acc_c): 0.8251, UNK (acc_p): 0.7997, acc_mix: 0.8167, F1: 0.8150
+[UniJDOT Eval ALL] n=17913 threshold=0.5466
+[UniJDOT Eval ALL] conf: min=0.1777 max=0.8747 mean=0.6061 std=0.1911
+[UniJDOT Eval ALL] rejected: 36.99%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1847, 2, 3384, 4698, 3572, 4410]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.6336
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.3834
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2811
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2247
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1889
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1631
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1439
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1288
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1169
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1068
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.2215
+loss_cls	: 0.0980
+loss_align	: 0.1234
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.2115
+loss_cls	: 0.0812
+loss_align	: 0.1302
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.2088
+loss_cls	: 0.0743
+loss_align	: 0.1345
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.2075
+loss_cls	: 0.0702
+loss_align	: 0.1373
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.2081
+loss_cls	: 0.0690
+loss_align	: 0.1391
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.2048
+loss_cls	: 0.0644
+loss_align	: 0.1403
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.2036
+loss_cls	: 0.0627
+loss_align	: 0.1409
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.2028
+loss_cls	: 0.0617
+loss_align	: 0.1410
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.2012
+loss_cls	: 0.0603
+loss_align	: 0.1409
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1985
+loss_cls	: 0.0579
+loss_align	: 0.1406
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2142 min-dist mean=0.1641 std=0.1105 reject=26.46%
+
+[UniJDOT Debug] final_threshold = 0.5633 conf mean=0.6393 std=0.1942 reject=30.18%
+[UniJDOT Eval ALL] n=17913 threshold=0.5633
+[UniJDOT Eval ALL] conf: min=0.1917 max=0.8640 mean=0.6393 std=0.1941
+[UniJDOT Eval ALL] rejected: 31.00%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1991, 5, 3311, 5041, 3222, 4343]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7818, OS* (acc_c): 0.8356, UNK (acc_p): 0.7346, acc_mix: 0.8022, F1: 0.7997
+[UniJDOT Eval ALL] n=17913 threshold=0.5633
+[UniJDOT Eval ALL] conf: min=0.1917 max=0.8640 mean=0.6393 std=0.1941
+[UniJDOT Eval ALL] rejected: 31.00%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1991, 5, 3311, 5041, 3222, 4343]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8378
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4870
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3518
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2778
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2304
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1980
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1739
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1551
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1400
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1280
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.2220
+loss_cls	: 0.1036
+loss_align	: 0.1184
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.2154
+loss_cls	: 0.0908
+loss_align	: 0.1246
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.2106
+loss_cls	: 0.0811
+loss_align	: 0.1296
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.2136
+loss_cls	: 0.0805
+loss_align	: 0.1331
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.2126
+loss_cls	: 0.0771
+loss_align	: 0.1355
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.2098
+loss_cls	: 0.0727
+loss_align	: 0.1371
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.2095
+loss_cls	: 0.0714
+loss_align	: 0.1381
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.2070
+loss_cls	: 0.0685
+loss_align	: 0.1385
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.2054
+loss_cls	: 0.0669
+loss_align	: 0.1386
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.2024
+loss_cls	: 0.0641
+loss_align	: 0.1383
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2122 min-dist mean=0.1596 std=0.1049 reject=24.69%
+
+[UniJDOT Debug] final_threshold = 0.5542 conf mean=0.6400 std=0.1972 reject=28.52%
+[UniJDOT Eval ALL] n=17913 threshold=0.5542
+[UniJDOT Eval ALL] conf: min=0.1894 max=0.8588 mean=0.6400 std=0.1972
+[UniJDOT Eval ALL] rejected: 29.63%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1117, 2, 3355, 5382, 3533, 4524]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7498, OS* (acc_c): 0.8259, UNK (acc_p): 0.6866, acc_mix: 0.7799, F1: 0.7792
+[UniJDOT Eval ALL] n=17913 threshold=0.5542
+[UniJDOT Eval ALL] conf: min=0.1894 max=0.8588 mean=0.6400 std=0.1972
+[UniJDOT Eval ALL] rejected: 29.63%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1117, 2, 3355, 5382, 3533, 4524]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+🏃 View run UniJDOT_trial_11 at: http://127.0.0.1:5001/#/experiments/348422367320581134/runs/dc7aebfdc09047b393c3ce7edcfdf5af
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/348422367320581134
+>>> [trial 11] UniJDOT done in 303.7s
+[I 2026-05-02 14:14:37,689] Trial 11 finished with value: -0.781274418036143 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.0001, 'lamb': 0.05, 'alpha': 4.7, 'src_weight': 4.75, 'K': 5, 'n_batch': 20, 'trg_mem_size': 64, 'joint_decision': True, 'threshold_method': 'threshold_otsu'}. Best is trial 0 with value: -0.8322233160336813.
+>>> [trial 12] UniJDOT starting
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7808
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4637
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3378
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2690
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2242
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1924
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1687
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1504
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1365
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1245
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1726
+loss_cls	: 0.0741
+loss_align	: 0.0985
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1696
+loss_cls	: 0.0669
+loss_align	: 0.1027
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1717
+loss_cls	: 0.0658
+loss_align	: 0.1060
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1677
+loss_cls	: 0.0593
+loss_align	: 0.1084
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1652
+loss_cls	: 0.0550
+loss_align	: 0.1103
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1636
+loss_cls	: 0.0519
+loss_align	: 0.1116
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1624
+loss_cls	: 0.0496
+loss_align	: 0.1128
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1617
+loss_cls	: 0.0482
+loss_align	: 0.1134
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1601
+loss_cls	: 0.0463
+loss_align	: 0.1138
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1584
+loss_cls	: 0.0444
+loss_align	: 0.1140
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2045 min-dist mean=0.1901 std=0.1219 reject=43.03%
+
+[UniJDOT Debug] final_threshold = 0.5161 conf mean=0.5466 std=0.2002 reject=42.05%
+[UniJDOT Eval ALL] n=17913 threshold=0.5161
+[UniJDOT Eval ALL] conf: min=0.1786 max=0.8307 mean=0.5465 std=0.2002
+[UniJDOT Eval ALL] rejected: 44.95%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2387, 155, 3448, 4487, 3748, 3688]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.8015, OS* (acc_c): 0.7500, UNK (acc_p): 0.8605, acc_mix: 0.7865, F1: 0.7920
+[UniJDOT Eval ALL] n=17913 threshold=0.5161
+[UniJDOT Eval ALL] conf: min=0.1786 max=0.8307 mean=0.5465 std=0.2002
+[UniJDOT Eval ALL] rejected: 44.95%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2387, 155, 3448, 4487, 3748, 3688]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.6336
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.3834
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2811
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2247
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1889
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1631
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1439
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1288
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1169
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1068
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1851
+loss_cls	: 0.0760
+loss_align	: 0.1091
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1763
+loss_cls	: 0.0629
+loss_align	: 0.1134
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1729
+loss_cls	: 0.0573
+loss_align	: 0.1156
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1713
+loss_cls	: 0.0541
+loss_align	: 0.1171
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1716
+loss_cls	: 0.0534
+loss_align	: 0.1183
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1690
+loss_cls	: 0.0500
+loss_align	: 0.1190
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1678
+loss_cls	: 0.0485
+loss_align	: 0.1193
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1674
+loss_cls	: 0.0479
+loss_align	: 0.1194
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1662
+loss_cls	: 0.0469
+loss_align	: 0.1193
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1641
+loss_cls	: 0.0451
+loss_align	: 0.1190
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.1861 min-dist mean=0.1570 std=0.1093 reject=35.11%
+
+[UniJDOT Debug] final_threshold = 0.5269 conf mean=0.5759 std=0.1999 reject=37.01%
+[UniJDOT Eval ALL] n=17913 threshold=0.5269
+[UniJDOT Eval ALL] conf: min=0.1822 max=0.8534 mean=0.5759 std=0.1999
+[UniJDOT Eval ALL] rejected: 39.33%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2602, 19, 3216, 5203, 3210, 3663]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7966, OS* (acc_c): 0.7867, UNK (acc_p): 0.8068, acc_mix: 0.7933, F1: 0.7978
+[UniJDOT Eval ALL] n=17913 threshold=0.5269
+[UniJDOT Eval ALL] conf: min=0.1822 max=0.8534 mean=0.5759 std=0.1999
+[UniJDOT Eval ALL] rejected: 39.33%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [2602, 19, 3216, 5203, 3210, 3663]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8378
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4870
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3518
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2778
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2304
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1980
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1739
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1551
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1400
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1280
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1823
+loss_cls	: 0.0763
+loss_align	: 0.1060
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1772
+loss_cls	: 0.0674
+loss_align	: 0.1098
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1743
+loss_cls	: 0.0616
+loss_align	: 0.1128
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1748
+loss_cls	: 0.0603
+loss_align	: 0.1145
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1733
+loss_cls	: 0.0576
+loss_align	: 0.1156
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1704
+loss_cls	: 0.0542
+loss_align	: 0.1162
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1692
+loss_cls	: 0.0527
+loss_align	: 0.1165
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1664
+loss_cls	: 0.0500
+loss_align	: 0.1164
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1658
+loss_cls	: 0.0496
+loss_align	: 0.1162
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1642
+loss_cls	: 0.0483
+loss_align	: 0.1159
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2096 min-dist mean=0.1681 std=0.1166 reject=30.91%
+
+[UniJDOT Debug] final_threshold = 0.5429 conf mean=0.5940 std=0.1992 reject=36.50%
+[UniJDOT Eval ALL] n=17913 threshold=0.5429
+[UniJDOT Eval ALL] conf: min=0.1864 max=0.8360 mean=0.5940 std=0.1992
+[UniJDOT Eval ALL] rejected: 37.44%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1611, 14, 3505, 5078, 3770, 3935]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.8000, OS* (acc_c): 0.7994, UNK (acc_p): 0.8007, acc_mix: 0.7998, F1: 0.7995
+[UniJDOT Eval ALL] n=17913 threshold=0.5429
+[UniJDOT Eval ALL] conf: min=0.1864 max=0.8360 mean=0.5940 std=0.1992
+[UniJDOT Eval ALL] rejected: 37.44%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1611, 14, 3505, 5078, 3770, 3935]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+🏃 View run UniJDOT_trial_12 at: http://127.0.0.1:5001/#/experiments/348422367320581134/runs/8eb83e6bcdfd4e62ba87998b0410f687
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/348422367320581134
+>>> [trial 12] UniJDOT done in 303.3s
+[I 2026-05-02 14:19:40,950] Trial 12 finished with value: -0.7993783156077067 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.0001, 'lamb': 1.55, 'alpha': 3.9, 'src_weight': 3.7, 'K': 5, 'n_batch': 20, 'trg_mem_size': 64, 'joint_decision': True, 'threshold_method': 'threshold_otsu'}. Best is trial 0 with value: -0.8322233160336813.
+>>> [trial 13] UniJDOT starting
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7817
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4639
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3380
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2696
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2250
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1933
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1696
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1511
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1368
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1248
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1248
+Total_loss	: 0.1593
+loss_cls	: 0.0548
+loss_align	: 0.1045
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1248
+Total_loss	: 0.1682
+loss_cls	: 0.0526
+loss_align	: 0.1156
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1248
+Total_loss	: 0.1772
+loss_cls	: 0.0533
+loss_align	: 0.1239
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1248
+Total_loss	: 0.1788
+loss_cls	: 0.0496
+loss_align	: 0.1293
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1248
+Total_loss	: 0.1801
+loss_cls	: 0.0476
+loss_align	: 0.1325
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1248
+Total_loss	: 0.1806
+loss_cls	: 0.0466
+loss_align	: 0.1340
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1248
+Total_loss	: 0.1799
+loss_cls	: 0.0452
+loss_align	: 0.1347
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1248
+Total_loss	: 0.1791
+loss_cls	: 0.0444
+loss_align	: 0.1346
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1248
+Total_loss	: 0.1777
+loss_cls	: 0.0437
+loss_align	: 0.1341
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1248
+Total_loss	: 0.1752
+loss_cls	: 0.0421
+loss_align	: 0.1331
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2014 min-dist mean=0.1222 std=0.1070 reject=18.15%
+
+[UniJDOT Debug] final_threshold = 0.5267 conf mean=0.6178 std=0.1735 reject=24.36%
+[UniJDOT Eval ALL] n=17913 threshold=0.5267
+[UniJDOT Eval ALL] conf: min=0.1831 max=0.8229 mean=0.6177 std=0.1735
+[UniJDOT Eval ALL] rejected: 24.52%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [338, 0, 3238, 5479, 4136, 4722]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.6811, OS* (acc_c): 0.8493, UNK (acc_p): 0.5686, acc_mix: 0.7566, F1: 0.7509
+[UniJDOT Eval ALL] n=17913 threshold=0.5267
+[UniJDOT Eval ALL] conf: min=0.1831 max=0.8229 mean=0.6177 std=0.1735
+[UniJDOT Eval ALL] rejected: 24.52%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [338, 0, 3238, 5479, 4136, 4722]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.6317
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.3823
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2808
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2246
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1890
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1631
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1437
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1289
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1167
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1064
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1064
+Total_loss	: 0.1819
+loss_cls	: 0.0615
+loss_align	: 0.1204
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1064
+Total_loss	: 0.1832
+loss_cls	: 0.0536
+loss_align	: 0.1295
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1064
+Total_loss	: 0.1860
+loss_cls	: 0.0513
+loss_align	: 0.1347
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1064
+Total_loss	: 0.1864
+loss_cls	: 0.0490
+loss_align	: 0.1375
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1064
+Total_loss	: 0.1865
+loss_cls	: 0.0479
+loss_align	: 0.1387
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1064
+Total_loss	: 0.1835
+loss_cls	: 0.0450
+loss_align	: 0.1385
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1064
+Total_loss	: 0.1812
+loss_cls	: 0.0438
+loss_align	: 0.1374
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1064
+Total_loss	: 0.1787
+loss_cls	: 0.0427
+loss_align	: 0.1359
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1064
+Total_loss	: 0.1759
+loss_cls	: 0.0417
+loss_align	: 0.1343
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1064
+Total_loss	: 0.1725
+loss_cls	: 0.0401
+loss_align	: 0.1324
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2028 min-dist mean=0.1114 std=0.1058 reject=15.08%
+
+[UniJDOT Debug] final_threshold = 0.5404 conf mean=0.6753 std=0.1782 reject=17.80%
+[UniJDOT Eval ALL] n=17913 threshold=0.5404
+[UniJDOT Eval ALL] conf: min=0.1853 max=0.8417 mean=0.6753 std=0.1782
+[UniJDOT Eval ALL] rejected: 18.12%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [324, 1, 3139, 5683, 3310, 5456]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.5754, OS* (acc_c): 0.8644, UNK (acc_p): 0.4313, acc_mix: 0.7214, F1: 0.7061
+[UniJDOT Eval ALL] n=17913 threshold=0.5404
+[UniJDOT Eval ALL] conf: min=0.1853 max=0.8417 mean=0.6753 std=0.1782
+[UniJDOT Eval ALL] rejected: 18.12%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [324, 1, 3139, 5683, 3310, 5456]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8390
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4874
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3523
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2778
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2302
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1979
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1737
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1552
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1399
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1274
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1274
+Total_loss	: 0.1700
+loss_cls	: 0.0553
+loss_align	: 0.1147
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1274
+Total_loss	: 0.1776
+loss_cls	: 0.0527
+loss_align	: 0.1250
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1274
+Total_loss	: 0.1804
+loss_cls	: 0.0491
+loss_align	: 0.1313
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1274
+Total_loss	: 0.1842
+loss_cls	: 0.0492
+loss_align	: 0.1350
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1274
+Total_loss	: 0.1847
+loss_cls	: 0.0479
+loss_align	: 0.1369
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1274
+Total_loss	: 0.1835
+loss_cls	: 0.0462
+loss_align	: 0.1374
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1274
+Total_loss	: 0.1832
+loss_cls	: 0.0462
+loss_align	: 0.1370
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1274
+Total_loss	: 0.1815
+loss_cls	: 0.0454
+loss_align	: 0.1361
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1274
+Total_loss	: 0.1787
+loss_cls	: 0.0439
+loss_align	: 0.1348
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1274
+Total_loss	: 0.1754
+loss_cls	: 0.0424
+loss_align	: 0.1331
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.1961 min-dist mean=0.1187 std=0.1042 reject=18.13%
+
+[UniJDOT Debug] final_threshold = 0.5423 conf mean=0.6620 std=0.1810 reject=20.60%
+[UniJDOT Eval ALL] n=17913 threshold=0.5423
+[UniJDOT Eval ALL] conf: min=0.1847 max=0.8363 mean=0.6621 std=0.1809
+[UniJDOT Eval ALL] rejected: 20.81%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [421, 1, 2985, 5809, 3607, 5090]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.6409, OS* (acc_c): 0.8748, UNK (acc_p): 0.5057, acc_mix: 0.7529, F1: 0.7444
+[UniJDOT Eval ALL] n=17913 threshold=0.5423
+[UniJDOT Eval ALL] conf: min=0.1847 max=0.8363 mean=0.6621 std=0.1809
+[UniJDOT Eval ALL] rejected: 20.81%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [421, 1, 2985, 5809, 3607, 5090]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+🏃 View run UniJDOT_trial_13 at: http://127.0.0.1:5001/#/experiments/348422367320581134/runs/1b3c074335a5484e8c494421fac83c74
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/348422367320581134
+>>> [trial 13] UniJDOT done in 303.7s
+[I 2026-05-02 14:24:44,690] Trial 13 finished with value: -0.6324868202209473 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.0001, 'lamb': 0.05, 'alpha': 5.0, 'src_weight': 2.85, 'K': 5, 'n_batch': 10, 'trg_mem_size': 64, 'joint_decision': True, 'threshold_method': 'threshold_otsu'}. Best is trial 0 with value: -0.8322233160336813.
+>>> [trial 14] UniJDOT starting
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 0
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.7808
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4637
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3378
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2690
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2242
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1924
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1687
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1504
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1365
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1245
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.2016
+loss_cls	: 0.0841
+loss_align	: 0.1176
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1944
+loss_cls	: 0.0730
+loss_align	: 0.1213
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1930
+loss_cls	: 0.0688
+loss_align	: 0.1243
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1901
+loss_cls	: 0.0636
+loss_align	: 0.1265
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1889
+loss_cls	: 0.0608
+loss_align	: 0.1281
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1876
+loss_cls	: 0.0584
+loss_align	: 0.1292
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1861
+loss_cls	: 0.0561
+loss_align	: 0.1299
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1853
+loss_cls	: 0.0551
+loss_align	: 0.1302
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1837
+loss_cls	: 0.0536
+loss_align	: 0.1302
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1245
+Total_loss	: 0.1809
+loss_cls	: 0.0511
+loss_align	: 0.1299
+Src_cls_loss	: 0.0000
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/trainers/abstract_trainer.py:331: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  table = pd.concat([table, results_df], ignore_index=True)
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2076 min-dist mean=0.1854 std=0.1192 reject=39.59%
+
+[UniJDOT Debug] final_threshold = 0.5027 conf mean=0.5412 std=0.1952 reject=39.66%
+[UniJDOT Eval ALL] n=17913 threshold=0.5027
+[UniJDOT Eval ALL] conf: min=0.1742 max=0.8186 mean=0.5411 std=0.1952
+[UniJDOT Eval ALL] rejected: 41.90%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1989, 57, 3549, 4652, 3760, 3906]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.7965, OS* (acc_c): 0.7679, UNK (acc_p): 0.8274, acc_mix: 0.7875, F1: 0.7896
+[UniJDOT Eval ALL] n=17913 threshold=0.5027
+[UniJDOT Eval ALL] conf: min=0.1742 max=0.8186 mean=0.5411 std=0.1952
+[UniJDOT Eval ALL] rejected: 41.90%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1989, 57, 3549, 4652, 3760, 3906]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 1
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.6336
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.3834
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.2811
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2247
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1889
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1631
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1439
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1288
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1169
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1068
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.2172
+loss_cls	: 0.0896
+loss_align	: 0.1276
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.2034
+loss_cls	: 0.0720
+loss_align	: 0.1314
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.2001
+loss_cls	: 0.0671
+loss_align	: 0.1330
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1971
+loss_cls	: 0.0632
+loss_align	: 0.1340
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1956
+loss_cls	: 0.0611
+loss_align	: 0.1345
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1921
+loss_cls	: 0.0574
+loss_align	: 0.1347
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1904
+loss_cls	: 0.0558
+loss_align	: 0.1346
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1890
+loss_cls	: 0.0549
+loss_align	: 0.1342
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1872
+loss_cls	: 0.0535
+loss_align	: 0.1337
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1068
+Total_loss	: 0.1842
+loss_cls	: 0.0512
+loss_align	: 0.1330
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2124 min-dist mean=0.1707 std=0.1156 reject=30.72%
+
+[UniJDOT Debug] final_threshold = 0.5332 conf mean=0.5885 std=0.2034 reject=35.66%
+[UniJDOT Eval ALL] n=17913 threshold=0.5332
+[UniJDOT Eval ALL] conf: min=0.1808 max=0.8516 mean=0.5885 std=0.2034
+[UniJDOT Eval ALL] rejected: 36.86%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1824, 7, 3389, 5377, 3339, 3977]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.8011, OS* (acc_c): 0.8021, UNK (acc_p): 0.8000, acc_mix: 0.8014, F1: 0.8018
+[UniJDOT Eval ALL] n=17913 threshold=0.5332
+[UniJDOT Eval ALL] conf: min=0.1808 max=0.8516 mean=0.5885 std=0.2034
+[UniJDOT Eval ALL] rejected: 36.86%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1824, 7, 3389, 5377, 3339, 3977]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+=============================================
+Dataset: RealWorld_male to RealWorld_female_sweep_new
+Method:  UniJDOT
+=============================================
+Source: RealWorld_male ---> Target: RealWorld_female
+Run ID: 2
+=============================================
+[Pr Epoch : 1/10]
+Pr_Src_cls_loss	: 0.8378
+-------------------------------------
+[Pr Epoch : 2/10]
+Pr_Src_cls_loss	: 0.4870
+-------------------------------------
+[Pr Epoch : 3/10]
+Pr_Src_cls_loss	: 0.3518
+-------------------------------------
+[Pr Epoch : 4/10]
+Pr_Src_cls_loss	: 0.2778
+-------------------------------------
+[Pr Epoch : 5/10]
+Pr_Src_cls_loss	: 0.2304
+-------------------------------------
+[Pr Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1980
+-------------------------------------
+[Pr Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1739
+-------------------------------------
+[Pr Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1551
+-------------------------------------
+[Pr Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1400
+-------------------------------------
+[Pr Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1280
+-------------------------------------
+/mnt/data/home/tp2474/OpenSet-AdaTime/algorithms/algorithms.py:1876: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  trg_soft_cen = torch.nn.functional.softmax(after_lincls_cen).double()
+[Epoch : 1/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.2137
+loss_cls	: 0.0892
+loss_align	: 0.1245
+-------------------------------------
+[Epoch : 2/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.2053
+loss_cls	: 0.0780
+loss_align	: 0.1273
+-------------------------------------
+[Epoch : 3/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.2024
+loss_cls	: 0.0728
+loss_align	: 0.1296
+-------------------------------------
+[Epoch : 4/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.2028
+loss_cls	: 0.0717
+loss_align	: 0.1311
+-------------------------------------
+[Epoch : 5/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1990
+loss_cls	: 0.0672
+loss_align	: 0.1317
+-------------------------------------
+[Epoch : 6/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1951
+loss_cls	: 0.0632
+loss_align	: 0.1318
+-------------------------------------
+[Epoch : 7/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1935
+loss_cls	: 0.0618
+loss_align	: 0.1317
+-------------------------------------
+[Epoch : 8/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1904
+loss_cls	: 0.0591
+loss_align	: 0.1313
+-------------------------------------
+[Epoch : 9/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1885
+loss_cls	: 0.0578
+loss_align	: 0.1307
+Src_cls_loss	: 0.0000
+-------------------------------------
+[Epoch : 10/10]
+Pr_Src_cls_loss	: 0.1280
+Total_loss	: 0.1854
+loss_cls	: 0.0555
+loss_align	: 0.1298
+Src_cls_loss	: 0.0000
+-------------------------------------
+[UniJDOT Debug] final_dist_threshold(otsu) = 0.2153 min-dist mean=0.1698 std=0.1114 reject=28.57%
+
+[UniJDOT Debug] final_threshold = 0.5414 conf mean=0.6047 std=0.1987 reject=33.45%
+[UniJDOT Eval ALL] n=17913 threshold=0.5414
+[UniJDOT Eval ALL] conf: min=0.1823 max=0.8461 mean=0.6047 std=0.1987
+[UniJDOT Eval ALL] rejected: 34.54%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1282, 9, 3439, 5410, 3639, 4134]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+H_score: 0.8009, OS* (acc_c): 0.8152, UNK (acc_p): 0.7870, acc_mix: 0.8059, F1: 0.8053
+[UniJDOT Eval ALL] n=17913 threshold=0.5414
+[UniJDOT Eval ALL] conf: min=0.1823 max=0.8461 mean=0.6047 std=0.1987
+[UniJDOT Eval ALL] rejected: 34.54%
+[UniJDOT Eval ALL] pred class dist (pre-reject): [1282, 9, 3439, 5410, 3639, 4134]
+[UniJDOT Eval ALL] true label dist: [0, 0, 3001, 2957, 3013, 3027, 5915] (last bin = unknown)
+🏃 View run UniJDOT_trial_14 at: http://127.0.0.1:5001/#/experiments/348422367320581134/runs/748caf2811a34ed388fff63a0296cba2
+🧪 View experiment at: http://127.0.0.1:5001/#/experiments/348422367320581134
+>>> [trial 14] UniJDOT done in 302.4s
+[I 2026-05-02 14:29:47,051] Trial 14 finished with value: -0.7994801004727682 and parameters: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.0001, 'lamb': 1.05, 'alpha': 3.45, 'src_weight': 4.2, 'K': 5, 'n_batch': 20, 'trg_mem_size': 128, 'joint_decision': True, 'threshold_method': 'threshold_otsu'}. Best is trial 0 with value: -0.8322233160336813.
+
+===== Best Trial =====
+  Value (H_score): -0.8322
+  Params: {'num_epochs': 10, 'num_epochs_pr': 10, 'batch_size': 64, 'weight_decay': 0.0001, 'learning_rate': 0.0001, 'lamb': 3.05, 'alpha': 3.55, 'src_weight': 0.15000000000000002, 'K': 5, 'n_batch': 15, 'trg_mem_size': 32, 'joint_decision': True, 'threshold_method': 'threshold_otsu'}
+==================== [p2] done ====================

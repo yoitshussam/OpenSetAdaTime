@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/235622674570859121/9c2b312c96e94334b50a805ae7415d3e/artifacts
+deleted_time: 1777568966867
 end_time: 1777370217497
 entry_point_name: ''
 experiment_id: '235622674570859121'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 9c2b312c96e94334b50a805ae7415d3e
 run_name: OSBP_run_0
 source_name: ''

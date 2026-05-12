@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/773515370876137118/06ae5232730d4f3e9d1ad7faca452fec/artifacts
+deleted_time: 1777726290325
 end_time: 1777407612731
 entry_point_name: ''
 experiment_id: '773515370876137118'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 06ae5232730d4f3e9d1ad7faca452fec
 run_name: TSFA_run_0
 source_name: ''

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/827127228733241128/58e3af5977cd42feb0f4a955d706e5a4/artifacts
+end_time: 1778507797368
+entry_point_name: ''
+experiment_id: '827127228733241128'
+lifecycle_stage: active
+run_id: 58e3af5977cd42feb0f4a955d706e5a4
+run_name: OVANet_run_3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778507657913
+status: 3
+tags: []
+user_id: tp2474

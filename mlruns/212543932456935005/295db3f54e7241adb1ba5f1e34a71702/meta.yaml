@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/212543932456935005/295db3f54e7241adb1ba5f1e34a71702/artifacts
+end_time: 1778488210070
+entry_point_name: ''
+experiment_id: '212543932456935005'
+lifecycle_stage: active
+run_id: 295db3f54e7241adb1ba5f1e34a71702
+run_name: PDAAN_run_3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778488188740
+status: 3
+tags: []
+user_id: bigdipper
