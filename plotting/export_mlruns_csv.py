@@ -26,8 +26,8 @@ import os
 import re
 from collections import defaultdict
 
-MLRUNS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "mlruns")
-DEFAULT_OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+MLRUNS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "mlruns")
+DEFAULT_OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
                            "analysis", "runs.csv")
 STATUS_FINISHED = "3"
 

@@ -19,7 +19,7 @@ import os
 import pandas as pd
 import numpy as np
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CSV  = os.path.join(ROOT, "analysis", "runs.csv")
 OUT_DIR = os.path.join(ROOT, "tables")
 

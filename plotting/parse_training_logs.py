@@ -28,7 +28,7 @@ import csv
 import os
 import re
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOGS_DIR = os.path.join(ROOT, "experiments_logs", "curriculum")
 OUT_CSV  = os.path.join(ROOT, "analysis", "training_logs.csv")
 
