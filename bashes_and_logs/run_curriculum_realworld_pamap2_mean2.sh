@@ -5,15 +5,16 @@
 
 cd "$(dirname "$0")"
 
-METHODS=(OSBP TSFA UDA OVANet DANCE PPOT RAINCOAT UniOT UniJDOT)
+METHODS=(RAINCOAT UDA OVANet DANCE PPOT UniOT UniJDOT)
+# METHODS=(RAINCOAT)
 
-for n in 8  ; do
+for n in 1 2 3 4  ; do
   for m in "${METHODS[@]}"; do
     echo "==================== [n${n} fno_mean] $m ===================="
     python run_curriculum.py \
       --source_dataset RealWorld \
       --target_dataset Pamap2 \
-      --scenario OSDA \
+      --scenario UniDA \
       --strategy hard \
       --n_unknown "$n" \
       --da_method "$m" \

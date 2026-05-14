@@ -1,0 +1,209 @@
+% =====================================================
+% Extended Results — append to the end of your main tex
+% =====================================================
+\section{Extended Results}
+\label{sec:extended_results}
+This appendix collects the full per-pair result tables for every scenario in our benchmark. The aggregated discussion in the main body uses these numbers as its source.
+
+\subsection{Closed-Set Domain Adaptation}
+\label{sec:ext_closed_set}
+All closed-set baselines and the UniDA methods run with the four shared known classes only (no $n_{\text{unknown}}$ axis). Cells report target F1 (mean $\pm$ std across seeds).
+
+\begin{table}[ht!]
+\centering
+\caption{closed_set: Target F1 (mean $\pm$ std across seeds). Bold = best per pair.}
+\label{tab:closed_set_target_f1}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+Algorithm & RW $\to$ PA & RW $\to$ MH & PA $\to$ RW & PA $\to$ MH & MH $\to$ RW & MH $\to$ PA & Avg \\
+\midrule
+ACON & 0.903 \textpm\ 0.010 & 0.595 \textpm\ 0.089 & 0.869 \textpm\ 0.029 & \textbf{0.870 \textpm\ 0.145} & \textbf{0.911 \textpm\ 0.011} & \textbf{0.816 \textpm\ 0.170} & 0.827 \\
+AdvSKM & 0.518 \textpm\ 0.028 & 0.416 \textpm\ 0.039 & 0.550 \textpm\ 0.011 & 0.171 \textpm\ 0.051 & 0.231 \textpm\ 0.035 & 0.233 \textpm\ 0.050 & 0.353 \\
+CDAN & 0.865 \textpm\ 0.065 & 0.362 \textpm\ 0.145 & 0.851 \textpm\ 0.035 & 0.441 \textpm\ 0.133 & 0.300 \textpm\ 0.050 & 0.283 \textpm\ 0.115 & 0.517 \\
+CLUDA & 0.815 \textpm\ 0.072 & 0.380 \textpm\ 0.095 & 0.780 \textpm\ 0.061 & 0.376 \textpm\ 0.096 & 0.414 \textpm\ 0.029 & 0.360 \textpm\ 0.185 & 0.521 \\
+CoDATS & 0.797 \textpm\ 0.016 & 0.369 \textpm\ 0.109 & 0.779 \textpm\ 0.017 & 0.357 \textpm\ 0.156 & 0.418 \textpm\ 0.095 & 0.490 \textpm\ 0.212 & 0.535 \\
+CoTMix & 0.807 \textpm\ 0.160 & 0.297 \textpm\ 0.144 & 0.766 \textpm\ 0.108 & 0.145 \textpm\ 0.051 & 0.322 \textpm\ 0.127 & 0.350 \textpm\ 0.176 & 0.448 \\
+DAAN & 0.803 \textpm\ 0.013 & 0.326 \textpm\ 0.032 & 0.790 \textpm\ 0.010 & 0.278 \textpm\ 0.162 & 0.181 \textpm\ 0.147 & 0.148 \textpm\ 0.036 & 0.421 \\
+DANN & 0.777 \textpm\ 0.089 & 0.382 \textpm\ 0.083 & 0.818 \textpm\ 0.066 & 0.327 \textpm\ 0.157 & 0.323 \textpm\ 0.052 & 0.521 \textpm\ 0.116 & 0.525 \\
+DDC & 0.551 \textpm\ 0.056 & 0.414 \textpm\ 0.057 & 0.539 \textpm\ 0.026 & 0.103 \textpm\ 0.021 & 0.234 \textpm\ 0.022 & 0.227 \textpm\ 0.060 & 0.345 \\
+DIRT & 0.872 \textpm\ 0.053 & 0.391 \textpm\ 0.032 & \textbf{0.875 \textpm\ 0.039} & 0.400 \textpm\ 0.063 & 0.333 \textpm\ 0.065 & 0.244 \textpm\ 0.079 & 0.519 \\
+DSAN & 0.797 \textpm\ 0.035 & 0.440 \textpm\ 0.115 & 0.845 \textpm\ 0.040 & 0.414 \textpm\ 0.121 & 0.324 \textpm\ 0.033 & 0.198 \textpm\ 0.083 & 0.503 \\
+Deep\_Coral & 0.599 \textpm\ 0.044 & 0.369 \textpm\ 0.036 & 0.582 \textpm\ 0.025 & 0.248 \textpm\ 0.033 & 0.259 \textpm\ 0.040 & 0.204 \textpm\ 0.056 & 0.377 \\
+HoMM & 0.637 \textpm\ 0.027 & 0.381 \textpm\ 0.067 & 0.619 \textpm\ 0.048 & 0.181 \textpm\ 0.072 & 0.275 \textpm\ 0.049 & 0.222 \textpm\ 0.059 & 0.386 \\
+MMDA & 0.693 \textpm\ 0.072 & 0.287 \textpm\ 0.055 & 0.649 \textpm\ 0.038 & 0.356 \textpm\ 0.096 & 0.312 \textpm\ 0.031 & 0.362 \textpm\ 0.082 & 0.443 \\
+SASA & 0.842 \textpm\ 0.015 & 0.381 \textpm\ 0.066 & 0.814 \textpm\ 0.031 & 0.448 \textpm\ 0.120 & 0.316 \textpm\ 0.058 & 0.291 \textpm\ 0.102 & 0.515 \\
+SSSS\_TSA & \textbf{0.926 \textpm\ 0.027} & 0.423 \textpm\ 0.017 & 0.841 \textpm\ 0.017 & 0.720 \textpm\ 0.015 & 0.477 \textpm\ 0.043 & 0.548 \textpm\ 0.128 & 0.656 \\
+SWL\_Adapt & 0.762 \textpm\ 0.089 & 0.311 \textpm\ 0.083 & 0.822 \textpm\ 0.020 & 0.319 \textpm\ 0.079 & 0.343 \textpm\ 0.069 & 0.335 \textpm\ 0.211 & 0.482 \\
+uDAR & 0.827 \textpm\ 0.070 & 0.359 \textpm\ 0.030 & 0.781 \textpm\ 0.012 & 0.386 \textpm\ 0.042 & 0.321 \textpm\ 0.019 & 0.186 \textpm\ 0.065 & 0.477 \\
+UDA & 0.681 \textpm\ 0.030 & 0.539 \textpm\ 0.122 & 0.615 \textpm\ 0.040 & 0.212 \textpm\ 0.098 & 0.488 \textpm\ 0.153 & 0.560 \textpm\ 0.191 & 0.516 \\
+OVANet & 0.725 \textpm\ 0.152 & 0.403 \textpm\ 0.114 & 0.681 \textpm\ 0.103 & 0.236 \textpm\ 0.139 & 0.305 \textpm\ 0.113 & 0.573 \textpm\ 0.097 & 0.487 \\
+DANCE & 0.157 \textpm\ 0.022 & 0.087 \textpm\ 0.052 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.041 \\
+PPOT & 0.770 \textpm\ 0.032 & 0.564 \textpm\ 0.102 & 0.002 \textpm\ 0.002 & 0.035 \textpm\ 0.064 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.228 \\
+UniOT & 0.432 \textpm\ 0.153 & 0.446 \textpm\ 0.172 & 0.403 \textpm\ 0.041 & 0.267 \textpm\ 0.080 & 0.254 \textpm\ 0.047 & 0.190 \textpm\ 0.084 & 0.332 \\
+UniJDOT & 0.620 \textpm\ 0.059 & 0.554 \textpm\ 0.243 & 0.589 \textpm\ 0.132 & 0.364 \textpm\ 0.073 & 0.222 \textpm\ 0.108 & 0.309 \textpm\ 0.122 & 0.443 \\
+RAINCOAT & 0.424 \textpm\ 0.064 & 0.244 \textpm\ 0.064 & 0.455 \textpm\ 0.044 & 0.184 \textpm\ 0.061 & 0.347 \textpm\ 0.081 & 0.224 \textpm\ 0.184 & 0.313 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\subsection{Open-Set Domain Adaptation (OSDA)}
+\label{sec:ext_osda}
+OSDA-native methods (OSBP, TSFA) and the seven UniDA methods. Cells report mean $\pm$ std across seeds and over all $n_{\text{unknown}}$ values evaluated for that pair.
+
+\begin{table}[ht!]
+\centering
+\caption{OSDA: H-score (mean $\pm$ std across seeds and $n$). Bold = best per pair.}
+\label{tab:osda_H_score}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+Algorithm & RW $\to$ PA & RW $\to$ MH & PA $\to$ RW & PA $\to$ MH & MH $\to$ RW & MH $\to$ PA & Avg \\
+\midrule
+OSBP & \textbf{0.700 \textpm\ 0.044} & \textbf{0.530 \textpm\ 0.147} & 0.001 \textpm\ 0.001 & 0.257 \textpm\ 0.199 & 0.298 \textpm\ 0.161 & 0.307 \textpm\ 0.068 & 0.349 \\
+TSFA & 0.371 \textpm\ 0.037 & 0.341 \textpm\ 0.077 & 0.395 \textpm\ 0.057 & 0.290 \textpm\ 0.074 & \textbf{0.452 \textpm\ 0.072} & 0.318 \textpm\ 0.022 & 0.361 \\
+UDA & 0.413 \textpm\ 0.024 & 0.403 \textpm\ 0.069 & 0.428 \textpm\ 0.027 & 0.337 \textpm\ 0.094 & 0.361 \textpm\ 0.067 & \textbf{0.367 \textpm\ 0.065} & 0.385 \\
+OVANet & 0.259 \textpm\ 0.173 & 0.290 \textpm\ 0.174 & 0.118 \textpm\ 0.025 & 0.153 \textpm\ 0.099 & 0.291 \textpm\ 0.048 & 0.322 \textpm\ 0.079 & 0.239 \\
+DANCE & 0.222 \textpm\ 0.116 & 0.114 \textpm\ 0.072 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.056 \\
+PPOT & 0.172 \textpm\ 0.060 & 0.408 \textpm\ 0.103 & 0.014 \textpm\ 0.028 & 0.037 \textpm\ 0.081 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.105 \\
+UniOT & 0.548 \textpm\ 0.124 & 0.480 \textpm\ 0.136 & \textbf{0.464 \textpm\ 0.052} & 0.259 \textpm\ 0.122 & 0.358 \textpm\ 0.109 & 0.318 \textpm\ 0.063 & 0.405 \\
+UniJDOT & 0.563 \textpm\ 0.079 & 0.426 \textpm\ 0.163 & 0.462 \textpm\ 0.126 & \textbf{0.386 \textpm\ 0.177} & 0.373 \textpm\ 0.156 & 0.278 \textpm\ 0.088 & 0.415 \\
+RAINCOAT & 0.222 \textpm\ 0.088 & 0.236 \textpm\ 0.100 & 0.314 \textpm\ 0.064 & 0.223 \textpm\ 0.097 & 0.171 \textpm\ 0.089 & 0.159 \textpm\ 0.045 & 0.221 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[ht!]
+\centering
+\caption{OSDA: OS* (mean $\pm$ std across seeds and $n$). Bold = best per pair.}
+\label{tab:osda_OS_star}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+Algorithm & RW $\to$ PA & RW $\to$ MH & PA $\to$ RW & PA $\to$ MH & MH $\to$ RW & MH $\to$ PA & Avg \\
+\midrule
+OSBP & 0.644 \textpm\ 0.071 & 0.415 \textpm\ 0.153 & 0.710 \textpm\ 0.067 & \textbf{0.474 \textpm\ 0.188} & 0.630 \textpm\ 0.130 & 0.531 \textpm\ 0.156 & 0.568 \\
+TSFA & 0.675 \textpm\ 0.135 & \textbf{0.564 \textpm\ 0.159} & 0.574 \textpm\ 0.045 & 0.425 \textpm\ 0.153 & \textbf{0.716 \textpm\ 0.053} & 0.437 \textpm\ 0.056 & 0.565 \\
+UDA & 0.554 \textpm\ 0.050 & 0.556 \textpm\ 0.137 & 0.508 \textpm\ 0.039 & 0.334 \textpm\ 0.121 & 0.349 \textpm\ 0.102 & 0.372 \textpm\ 0.117 & 0.445 \\
+OVANet & 0.604 \textpm\ 0.129 & 0.494 \textpm\ 0.134 & \textbf{0.771 \textpm\ 0.059} & 0.322 \textpm\ 0.094 & 0.340 \textpm\ 0.117 & \textbf{0.551 \textpm\ 0.154} & 0.514 \\
+DANCE & 0.138 \textpm\ 0.078 & 0.069 \textpm\ 0.051 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.035 \\
+PPOT & \textbf{0.846 \textpm\ 0.035} & 0.512 \textpm\ 0.081 & 0.007 \textpm\ 0.015 & 0.021 \textpm\ 0.047 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.231 \\
+UniOT & 0.445 \textpm\ 0.111 & 0.370 \textpm\ 0.119 & 0.347 \textpm\ 0.051 & 0.163 \textpm\ 0.089 & 0.241 \textpm\ 0.083 & 0.218 \textpm\ 0.063 & 0.298 \\
+UniJDOT & 0.598 \textpm\ 0.099 & 0.422 \textpm\ 0.157 & 0.415 \textpm\ 0.104 & 0.307 \textpm\ 0.161 & 0.328 \textpm\ 0.168 & 0.249 \textpm\ 0.110 & 0.387 \\
+RAINCOAT & 0.283 \textpm\ 0.065 & 0.300 \textpm\ 0.125 & 0.406 \textpm\ 0.065 & 0.236 \textpm\ 0.095 & 0.279 \textpm\ 0.164 & 0.131 \textpm\ 0.027 & 0.273 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[ht!]
+\centering
+\caption{OSDA: UNK (mean $\pm$ std across seeds and $n$). Bold = best per pair.}
+\label{tab:osda_UNK}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+Algorithm & RW $\to$ PA & RW $\to$ MH & PA $\to$ RW & PA $\to$ MH & MH $\to$ RW & MH $\to$ PA & Avg \\
+\midrule
+OSBP & 0.772 \textpm\ 0.048 & 0.793 \textpm\ 0.128 & 0.001 \textpm\ 0.001 & 0.243 \textpm\ 0.191 & 0.238 \textpm\ 0.170 & 0.225 \textpm\ 0.057 & 0.379 \\
+TSFA & 0.259 \textpm\ 0.023 & 0.255 \textpm\ 0.072 & 0.303 \textpm\ 0.060 & 0.235 \textpm\ 0.055 & 0.334 \textpm\ 0.069 & 0.252 \textpm\ 0.020 & 0.273 \\
+UDA & 0.333 \textpm\ 0.036 & 0.328 \textpm\ 0.060 & 0.372 \textpm\ 0.037 & 0.359 \textpm\ 0.083 & 0.394 \textpm\ 0.042 & 0.382 \textpm\ 0.027 & 0.362 \\
+OVANet & 0.192 \textpm\ 0.154 & 0.327 \textpm\ 0.290 & 0.064 \textpm\ 0.015 & 0.129 \textpm\ 0.098 & 0.319 \textpm\ 0.143 & 0.250 \textpm\ 0.091 & 0.213 \\
+DANCE & \textbf{0.873 \textpm\ 0.136} & \textbf{0.910 \textpm\ 0.154} & \textbf{1.000 \textpm\ 0.000} & \textbf{1.000 \textpm\ 0.000} & \textbf{1.000 \textpm\ 0.000} & \textbf{1.000 \textpm\ 0.000} & 0.964 \\
+PPOT & 0.097 \textpm\ 0.039 & 0.355 \textpm\ 0.116 & 0.997 \textpm\ 0.010 & 0.987 \textpm\ 0.035 & 1.000 \textpm\ 0.000 & 1.000 \textpm\ 0.000 & 0.739 \\
+UniOT & 0.756 \textpm\ 0.122 & 0.755 \textpm\ 0.154 & 0.708 \textpm\ 0.061 & 0.780 \textpm\ 0.095 & 0.740 \textpm\ 0.168 & 0.647 \textpm\ 0.081 & 0.731 \\
+UniJDOT & 0.547 \textpm\ 0.100 & 0.561 \textpm\ 0.262 & 0.649 \textpm\ 0.266 & 0.662 \textpm\ 0.198 & 0.571 \textpm\ 0.263 & 0.383 \textpm\ 0.127 & 0.562 \\
+RAINCOAT & 0.215 \textpm\ 0.101 & 0.288 \textpm\ 0.168 & 0.275 \textpm\ 0.109 & 0.292 \textpm\ 0.147 & 0.282 \textpm\ 0.266 & 0.250 \textpm\ 0.129 & 0.267 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\subsection{Partial Domain Adaptation (PDA)}
+\label{sec:ext_pda}
+PDA-native methods (SPADA, PDAAN) and the seven UniDA methods. Cells report target F1 (mean $\pm$ std across seeds and $n_{\text{unknown}}$).
+
+\begin{table}[ht!]
+\centering
+\caption{PDA: Target F1 (mean $\pm$ std across seeds and $n$). Bold = best per pair.}
+\label{tab:pda_target_f1}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+Algorithm & RW $\to$ PA & RW $\to$ MH & PA $\to$ RW & PA $\to$ MH & MH $\to$ RW & MH $\to$ PA & Avg \\
+\midrule
+SPADA & \textbf{0.757 \textpm\ 0.081} & 0.227 \textpm\ 0.152 & 0.303 \textpm\ 0.081 & 0.267 \textpm\ 0.080 & \textbf{0.459 \textpm\ 0.134} & \textbf{0.465 \textpm\ 0.166} & 0.413 \\
+PDAAN & 0.742 \textpm\ 0.085 & 0.405 \textpm\ 0.224 & 0.032 \textpm\ 0.035 & 0.021 \textpm\ 0.033 & 0.345 \textpm\ 0.134 & 0.384 \textpm\ 0.194 & 0.321 \\
+UDA & 0.574 \textpm\ 0.062 & 0.386 \textpm\ 0.131 & 0.217 \textpm\ 0.054 & 0.175 \textpm\ 0.090 & 0.296 \textpm\ 0.099 & 0.270 \textpm\ 0.140 & 0.320 \\
+OVANet & 0.245 \textpm\ 0.203 & 0.143 \textpm\ 0.150 & 0.005 \textpm\ 0.009 & 0.001 \textpm\ 0.007 & 0.101 \textpm\ 0.115 & 0.074 \textpm\ 0.103 & 0.095 \\
+DANCE & 0.055 \textpm\ 0.060 & 0.033 \textpm\ 0.047 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.015 \\
+PPOT & 0.456 \textpm\ 0.108 & 0.252 \textpm\ 0.136 & 0.000 \textpm\ 0.000 & 0.031 \textpm\ 0.063 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.123 \\
+UniOT & 0.380 \textpm\ 0.227 & 0.237 \textpm\ 0.199 & 0.026 \textpm\ 0.038 & 0.018 \textpm\ 0.025 & 0.081 \textpm\ 0.117 & 0.106 \textpm\ 0.128 & 0.141 \\
+UniJDOT & 0.549 \textpm\ 0.095 & 0.447 \textpm\ 0.186 & \textbf{0.435 \textpm\ 0.148} & \textbf{0.268 \textpm\ 0.179} & 0.163 \textpm\ 0.120 & 0.196 \textpm\ 0.088 & 0.343 \\
+RAINCOAT & 0.378 \textpm\ 0.127 & 0.314 \textpm\ 0.120 & 0.147 \textpm\ 0.047 & 0.115 \textpm\ 0.086 & 0.210 \textpm\ 0.076 & 0.215 \textpm\ 0.158 & 0.230 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\subsection{Universal Domain Adaptation (UniDA)}
+\label{sec:ext_unida}
+The seven UniDA methods; both source-private classes are added to the source side AND target-private classes to the target side as $n_{\text{unknown}}$ grows. Cells report mean $\pm$ std across seeds and $n_{\text{unknown}}$.
+
+\begin{table}[ht!]
+\centering
+\caption{UniDA: H-score (mean $\pm$ std across seeds and $n$). Bold = best per pair.}
+\label{tab:unida_H_score}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+Algorithm & RW $\to$ PA & RW $\to$ MH & PA $\to$ RW & PA $\to$ MH & MH $\to$ RW & MH $\to$ PA & Avg \\
+\midrule
+UDA & 0.434 \textpm\ 0.023 & 0.370 \textpm\ 0.068 & 0.285 \textpm\ 0.026 & \textbf{0.207 \textpm\ 0.066} & \textbf{0.320 \textpm\ 0.074} & \textbf{0.286 \textpm\ 0.100} & 0.317 \\
+OVANet & 0.224 \textpm\ 0.162 & 0.095 \textpm\ 0.146 & 0.009 \textpm\ 0.008 & 0.000 \textpm\ 0.000 & 0.214 \textpm\ 0.109 & 0.084 \textpm\ 0.095 & 0.105 \\
+DANCE & 0.086 \textpm\ 0.100 & 0.019 \textpm\ 0.032 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.018 \\
+PPOT & 0.480 \textpm\ 0.079 & 0.226 \textpm\ 0.090 & 0.000 \textpm\ 0.000 & 0.024 \textpm\ 0.083 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.122 \\
+UniOT & 0.363 \textpm\ 0.285 & 0.330 \textpm\ 0.232 & 0.067 \textpm\ 0.049 & 0.014 \textpm\ 0.025 & 0.254 \textpm\ 0.137 & 0.108 \textpm\ 0.149 & 0.189 \\
+UniJDOT & \textbf{0.594 \textpm\ 0.084} & \textbf{0.446 \textpm\ 0.165} & \textbf{0.502 \textpm\ 0.093} & 0.175 \textpm\ 0.159 & 0.317 \textpm\ 0.129 & 0.262 \textpm\ 0.155 & 0.382 \\
+RAINCOAT & 0.205 \textpm\ 0.072 & 0.195 \textpm\ 0.080 & 0.079 \textpm\ 0.055 & 0.144 \textpm\ 0.084 & 0.115 \textpm\ 0.079 & 0.079 \textpm\ 0.035 & 0.136 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[ht!]
+\centering
+\caption{UniDA: OS* (mean $\pm$ std across seeds and $n$). Bold = best per pair.}
+\label{tab:unida_OS_star}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+Algorithm & RW $\to$ PA & RW $\to$ MH & PA $\to$ RW & PA $\to$ MH & MH $\to$ RW & MH $\to$ PA & Avg \\
+\midrule
+UDA & 0.549 \textpm\ 0.060 & \textbf{0.407 \textpm\ 0.113} & 0.214 \textpm\ 0.028 & \textbf{0.159 \textpm\ 0.078} & \textbf{0.278 \textpm\ 0.102} & \textbf{0.244 \textpm\ 0.121} & 0.309 \\
+OVANet & 0.300 \textpm\ 0.222 & 0.130 \textpm\ 0.182 & 0.008 \textpm\ 0.009 & 0.000 \textpm\ 0.000 & 0.156 \textpm\ 0.098 & 0.071 \textpm\ 0.104 & 0.111 \\
+DANCE & 0.048 \textpm\ 0.060 & 0.010 \textpm\ 0.017 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.010 \\
+PPOT & 0.418 \textpm\ 0.106 & 0.241 \textpm\ 0.108 & 0.000 \textpm\ 0.000 & 0.015 \textpm\ 0.052 & 0.000 \textpm\ 0.000 & 0.000 \textpm\ 0.000 & 0.112 \\
+UniOT & 0.287 \textpm\ 0.237 & 0.238 \textpm\ 0.180 & 0.041 \textpm\ 0.033 & 0.007 \textpm\ 0.014 & 0.164 \textpm\ 0.093 & 0.071 \textpm\ 0.102 & 0.135 \\
+UniJDOT & \textbf{0.570 \textpm\ 0.124} & 0.356 \textpm\ 0.174 & \textbf{0.485 \textpm\ 0.085} & 0.131 \textpm\ 0.149 & 0.216 \textpm\ 0.118 & 0.180 \textpm\ 0.131 & 0.323 \\
+RAINCOAT & 0.228 \textpm\ 0.090 & 0.266 \textpm\ 0.111 & 0.122 \textpm\ 0.036 & 0.147 \textpm\ 0.084 & 0.163 \textpm\ 0.105 & 0.073 \textpm\ 0.072 & 0.166 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[ht!]
+\centering
+\caption{UniDA: UNK (mean $\pm$ std across seeds and $n$). Bold = best per pair.}
+\label{tab:unida_UNK}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+Algorithm & RW $\to$ PA & RW $\to$ MH & PA $\to$ RW & PA $\to$ MH & MH $\to$ RW & MH $\to$ PA & Avg \\
+\midrule
+UDA & 0.362 \textpm\ 0.031 & 0.351 \textpm\ 0.056 & 0.434 \textpm\ 0.032 & 0.352 \textpm\ 0.054 & 0.421 \textpm\ 0.043 & 0.409 \textpm\ 0.026 & 0.388 \\
+OVANet & 0.568 \textpm\ 0.375 & 0.726 \textpm\ 0.379 & 0.099 \textpm\ 0.148 & 0.381 \textpm\ 0.307 & 0.657 \textpm\ 0.243 & 0.680 \textpm\ 0.268 & 0.519 \\
+DANCE & 0.622 \textpm\ 0.469 & 0.866 \textpm\ 0.299 & \textbf{0.994 \textpm\ 0.006} & \textbf{0.999 \textpm\ 0.002} & \textbf{1.000 \textpm\ 0.000} & \textbf{1.000 \textpm\ 0.000} & 0.914 \\
+PPOT & 0.595 \textpm\ 0.108 & 0.295 \textpm\ 0.167 & 0.887 \textpm\ 0.105 & 0.797 \textpm\ 0.109 & 1.000 \textpm\ 0.000 & 1.000 \textpm\ 0.000 & 0.762 \\
+UniOT & \textbf{0.869 \textpm\ 0.108} & \textbf{0.870 \textpm\ 0.131} & 0.333 \textpm\ 0.133 & 0.641 \textpm\ 0.222 & 0.756 \textpm\ 0.155 & 0.866 \textpm\ 0.173 & 0.723 \\
+UniJDOT & 0.675 \textpm\ 0.156 & 0.760 \textpm\ 0.168 & 0.548 \textpm\ 0.170 & 0.561 \textpm\ 0.187 & 0.836 \textpm\ 0.174 & 0.686 \textpm\ 0.094 & 0.677 \\
+RAINCOAT & 0.216 \textpm\ 0.086 & 0.218 \textpm\ 0.113 & 0.093 \textpm\ 0.099 & 0.215 \textpm\ 0.130 & 0.179 \textpm\ 0.206 & 0.183 \textpm\ 0.095 & 0.184 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+

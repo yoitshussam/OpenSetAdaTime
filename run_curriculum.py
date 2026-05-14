@@ -36,28 +36,68 @@ when the JSON uses a different label.
 import argparse
 import json
 import os
-import sys
-
-# Ensure similarity_comparison/ is importable regardless of how this script is
-# invoked (cwd, missing PYTHONPATH, etc.) — that's where compute_feature_distance_4known
-# lives.
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                 "similarity_comparison"))
 
 import mlflow
 
-from compute_feature_distance_4known import DATASETS, PRETTY_NAMES
 from trainers.train import Trainer
 
 mlflow.set_tracking_uri("http://127.0.0.1:5001")
 
+# Embedded so this script is self-contained — no longer imports from
+# similarity_comparison/compute_feature_distance_4known.py.
+DATASETS = {
+    "RealWorld": {
+        "all_classes": ["walking", "running", "sitting", "standing", "lying",
+                        "climbingup", "climbingdown", "jumping"],
+        "known_mapping": {
+            "lying": "lying", "sitting": "sitting",
+            "walking": "walking", "running": "running",
+        },
+    },
+    "Pamap2": {
+        "all_classes": ["lying", "sitting", "standing", "walking", "running",
+                        "cycling", "Nordic walking", "ascending stairs",
+                        "descending stairs", "vacuum cleaning", "ironing",
+                        "other (transient activities)", "rope jumping"],
+        "known_mapping": {
+            "lying": "lying", "sitting": "sitting",
+            "walking": "walking", "running": "running",
+        },
+    },
+    "MHEALTH": {
+        "all_classes": ["Standing still", "Sitting and relaxing", "Lying down",
+                        "Walking", "Climbing stairs", "Waist bends forward",
+                        "Frontal elevation of arms", "Knees bending (crouching)",
+                        "Cycling", "Jogging", "Running", "Jump front & back"],
+        "known_mapping": {
+            "Lying down": "lying", "Sitting and relaxing": "sitting",
+            "Walking": "walking", "Running": "running",
+        },
+    },
+}
+
+# raw class string -> display name used in the rankings JSON.
+PRETTY_NAMES = {
+    "standing": "Standing", "Standing still": "Standing",
+    "climbingup": "Climbing Up", "climbingdown": "Climbing Down",
+    "jumping": "Jumping", "cycling": "Cycling",
+    "Nordic walking": "Nordic Walking",
+    "ascending stairs": "Ascending Stairs",
+    "descending stairs": "Descending Stairs",
+    "vacuum cleaning": "Vacuum Cleaning", "ironing": "Ironing",
+    "other (transient activities)": "Other/Transient",
+    "rope jumping": "Rope Jumping",
+    "Climbing stairs": "Climbing Stairs",
+    "Waist bends forward": "Waist Bends",
+    "Frontal elevation of arms": "Arm Elevation",
+    "Knees bending (crouching)": "Knees Bending",
+    "Cycling": "Cycling", "Jogging": "Jogging",
+    "Jump front & back": "Jump F&B",
+}
+
+# Only fno_mean variants are kept on disk now; older 'min' / 'mean' rankings
+# were removed during cleanup.
 RANKINGS_PATHS = {
-    "min":  os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                         "feature_distance_4known", "rankings_4known.json"),
-    "mean": os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                         "feature_distance_4known_mean", "rankings_4known_mean.json"),
-    # FNO backbone + 5-seed averaged. Best-aligned with what the actual DA
-    # methods see. See compute_feature_distance_4known_fno_mean.py.
     "fno_mean": os.path.join(os.path.dirname(os.path.abspath(__file__)),
                              "feature_distance_4known_fno_mean",
                              "rankings_4known_fno_mean.json"),
@@ -231,12 +271,11 @@ def main():
     p.add_argument("--save_dir", default="experiments_logs/curriculum")
     p.add_argument("--ranking_key", default=None,
                    help='Override pair key, e.g. "RealWorld -> Pamap2"')
-    p.add_argument("--rank_variant", default="min",
-                   choices=["min", "mean", "fno_mean"],
-                   help="Which feature-distance ranking to use: 'min' (v1, "
-                        "min cosine dist on CNN, 1 seed), 'mean' (v2, mean "
-                        "cosine dist on CNN, 1 seed), or 'fno_mean' (FNO "
-                        "backbone, mean cosine dist, 5-seed averaged).")
+    p.add_argument("--rank_variant", default="fno_mean",
+                   choices=["fno_mean"],
+                   help="Which feature-distance ranking to use. Only "
+                        "'fno_mean' (FNO backbone, mean cosine dist, 5-seed "
+                        "averaged) is shipped with the repo.")
     args = p.parse_args()
 
     src_map, trg_map, src_unknowns, trg_unknowns = build_curriculum_mappings(

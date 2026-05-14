@@ -48,10 +48,24 @@ def filter_null_class(labels):
     return [l for l in labels if str(l).lower() != "null"]
 
 
+def is_other_label(label):
+    s = str(label).strip().lower()
+    return ("other" in s) or s == "transient"
+
+
+# Viridis-based palette for the three splits (train/val/test).
+SPLIT_COLORS = {
+    "train": plt.cm.viridis(0.20),
+    "val":   plt.cm.viridis(0.55),
+    "test":  plt.cm.viridis(0.85),
+}
+
+
 def plot_counts(title, labels, counts, out_path):
     plt.figure(figsize=(12, 5))
     x = np.arange(len(labels))
-    plt.bar(x, counts)
+    colors = plt.cm.viridis(np.linspace(0.15, 0.85, max(len(labels), 1)))
+    plt.bar(x, counts, color=colors, edgecolor="black", linewidth=0.5)
     plt.xticks(x, labels, rotation=45, ha="right")
     plt.title(title)
     plt.ylabel("Window count")
@@ -66,7 +80,9 @@ def plot_split_stack(title, labels, split_counts, out_path):
     bottom = np.zeros(len(labels), dtype=int)
 
     for split_name, counts in split_counts.items():
-        plt.bar(x, counts, bottom=bottom, label=split_name)
+        plt.bar(x, counts, bottom=bottom, label=split_name,
+                color=SPLIT_COLORS.get(split_name), edgecolor="black",
+                linewidth=0.4)
         bottom += counts
 
     plt.xticks(x, labels, rotation=45, ha="right")
@@ -76,6 +92,33 @@ def plot_split_stack(title, labels, split_counts, out_path):
     plt.tight_layout()
     plt.savefig(out_path, dpi=200)
     plt.close()
+
+
+def plot_combined_overall(per_dataset, out_path, window):
+    """One figure, 3 subplots stacked vertically (one per dataset). Each
+    subplot shows the overall class distribution (sum of train+val+test)."""
+    n = len(per_dataset)
+    fig, axes = plt.subplots(n, 1, figsize=(12, 4.0 * n))
+    if n == 1:
+        axes = [axes]
+
+    display_name = {"RealWorld_full": "RealWorld"}
+    for ax, (name, info) in zip(axes, per_dataset.items()):
+        labels = info["labels"]
+        sc = info["split_counts"]
+        totals = sc["train"] + sc["val"] + sc["test"]
+        x = np.arange(len(labels))
+        colors = plt.cm.viridis(np.linspace(0.15, 0.85, max(len(labels), 1)))
+        ax.bar(x, totals, color=colors, edgecolor="black", linewidth=0.5)
+        ax.set_xticks(x)
+        ax.set_xticklabels(labels, rotation=45, ha="right")
+        ax.set_title(f"{display_name.get(name, name)} class distribution "
+                     f"(window={window})")
+        ax.set_ylabel("Window count")
+
+    fig.tight_layout()
+    fig.savefig(out_path, dpi=200)
+    plt.close(fig)
 
 
 def plot_combined_split_stack(per_dataset, out_path, window):
@@ -95,7 +138,9 @@ def plot_combined_split_stack(per_dataset, out_path, window):
         bottom = np.zeros(len(labels), dtype=int)
         for split_name in split_order:
             counts = split_counts[split_name]
-            ax.bar(x, counts, bottom=bottom, label=split_name)
+            ax.bar(x, counts, bottom=bottom, label=split_name,
+                   color=SPLIT_COLORS.get(split_name), edgecolor="black",
+                   linewidth=0.4)
             bottom += counts
         ax.set_xticks(x)
         ax.set_xticklabels(labels, rotation=45, ha="right")
@@ -152,10 +197,13 @@ def main():
 
         total_counts = split_counts["train"] + split_counts["val"] + split_counts["test"]
 
-        # Drop classes with zero windows in this dataset (e.g. PAMAP2's
-        # optional activities that no subject performed in the released subset).
-        nonzero_idx = np.where(total_counts > 0)[0]
-        dropped = [label_list[i] for i in range(len(label_list)) if i not in nonzero_idx]
+        # Drop classes with zero windows OR the catch-all PAMAP2 'Other' bucket.
+        keep_mask = np.array([
+            total_counts[i] > 0 and not is_other_label(label_list[i])
+            for i in range(len(label_list))
+        ])
+        nonzero_idx = np.where(keep_mask)[0]
+        dropped = [label_list[i] for i in range(len(label_list)) if not keep_mask[i]]
         if dropped:
             print(f"  dropping zero-window classes from plots: {dropped}")
             label_list  = [label_list[i] for i in nonzero_idx]
@@ -189,15 +237,33 @@ def main():
             out_path=os.path.join(OUTPUT_DIR, "all_splits_combined.png"),
             window=WINDOW,
         )
+        # Combined overall class-distribution (no train/val/test split).
+        plot_combined_overall(
+            per_dataset=per_dataset_splits,
+            out_path=os.path.join(OUTPUT_DIR, "all_overall_combined.png"),
+            window=WINDOW,
+        )
 
     # Plot dataset size comparison
     if dataset_totals:
-        names = list(dataset_totals.keys())
-        sizes = [dataset_totals[n] for n in names]
+        display_name = {"RealWorld_full": "RealWorld"}
+        names = [display_name.get(n, n) for n in dataset_totals.keys()]
+        sizes = list(dataset_totals.values())
+        order = np.argsort(sizes)
+        ranks = np.empty_like(order)
+        ranks[order] = np.arange(len(order))
+        colors = plt.cm.viridis(np.linspace(0.15, 0.85, len(names)))
+        bar_colors = [colors[r] for r in ranks]
         plt.figure(figsize=(8, 4))
         x = np.arange(len(names))
-        plt.bar(x, sizes)
+        bars = plt.bar(x, sizes, color=bar_colors, edgecolor="black",
+                       linewidth=0.6)
+        for b, s in zip(bars, sizes):
+            plt.text(b.get_x() + b.get_width() / 2,
+                     b.get_height() + max(sizes) * 0.015,
+                     f"{s:,}", ha="center", va="bottom", fontsize=9)
         plt.xticks(x, names, rotation=20, ha="right")
+        plt.ylim(0, max(sizes) * 1.15)
         plt.title(f"Dataset sizes (window={WINDOW})")
         plt.ylabel("Total windows")
         plt.tight_layout()
