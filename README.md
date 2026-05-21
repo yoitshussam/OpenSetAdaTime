@@ -30,17 +30,6 @@ exactly is the safest bet, anything reasonably close should also work.
 | mlflow         | 3.1.4        |
 | tqdm           | 4.67.1       |
 
-Quick install (CPU/CUDA versions of torch should be picked to match your driver):
-
-```bash
-conda create -n openset-adatime python=3.9 -y
-conda activate openset-adatime
-pip install torch==2.7.1+cu118 torchvision==0.22.1+cu118 \
-    --index-url https://download.pytorch.org/whl/cu118
-pip install numpy==2.0.2 pandas==2.3.3 scipy==1.13.1 scikit-learn==1.6.1 \
-            scikit-image==0.24.0 matplotlib==3.9.4 seaborn==0.13.2 \
-            torchmetrics==1.8.2 POT==0.9.6 optuna==4.8.0 mlflow==3.1.4 tqdm
-```
 
 ### Start an MLflow server first
 
