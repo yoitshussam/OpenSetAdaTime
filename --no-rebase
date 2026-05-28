@@ -1,0 +1,89 @@
+[1mdiff --git a/README.md b/README.md[m
+[1mindex 40e4a672e..43f232d40 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -30,17 +30,6 @@[m [mexactly is the safest bet, anything reasonably close should also work.[m
+ | mlflow         | 3.1.4        |[m
+ | tqdm           | 4.67.1       |[m
+ [m
+[31m-Quick install (CPU/CUDA versions of torch should be picked to match your driver):[m
+[31m-[m
+[31m-```bash[m
+[31m-conda create -n openset-adatime python=3.9 -y[m
+[31m-conda activate openset-adatime[m
+[31m-pip install torch==2.7.1+cu118 torchvision==0.22.1+cu118 \[m
+[31m-    --index-url https://download.pytorch.org/whl/cu118[m
+[31m-pip install numpy==2.0.2 pandas==2.3.3 scipy==1.13.1 scikit-learn==1.6.1 \[m
+[31m-            scikit-image==0.24.0 matplotlib==3.9.4 seaborn==0.13.2 \[m
+[31m-            torchmetrics==1.8.2 POT==0.9.6 optuna==4.8.0 mlflow==3.1.4 tqdm[m
+[31m-```[m
+ [m
+ ### Start an MLflow server first[m
+ [m
+[36m@@ -127,11 +116,8 @@[m [mpython main.py --source_dataset RealWorld --target_dataset Pamap2 \[m
+                --scenario OSDA --da_method ALL --num_runs 5[m
+ ```[m
+ [m
+[31m-Hyper-parameters for the training run come from `configs/hparams.py`[m
+[31m-(`get_hparams_class(source_dataset, backbone)`), which is the only place[m
+[31m-`main.py` / `run_curriculum.py` look. `best_hparams.json` (see §4.2) is a[m
+[31m-sweep artifact — you have to copy its values into `configs/hparams.py`[m
+[31m-yourself for them to take effect.[m
+[32m+[m[32mBest hyper-parameters are read from `best_hparams.json` if present; otherwise[m
+[32m+[m[32mthe defaults in `configs/hparams.py` are used.[m
+ [m
+ ### 4.2 Hyper-parameter sweep + extraction[m
+ [m
+[36m@@ -160,10 +146,9 @@[m [mpython extract_best_hparams.py \[m
+     --target_dataset RealWorld_female[m
+ ```[m
+ [m
+[31m-`best_hparams.json` is **not** read by `main.py` / `run_curriculum.py`; it is[m
+[31m-a sweep artifact you inspect and then copy the relevant values into[m
+[31m-`configs/hparams.py` (under `alg_hparams[<method>]` for the matching source[m
+[31m-dataset class) before re-running.[m
+[32m+[m[32mAfter extraction, `best_hparams.json` is keyed by[m
+[32m+[m[32m`(algorithm, source_dataset, target_dataset, scenario)` and is loaded[m
+[32m+[m[32mautomatically by `main.py` / `run_curriculum.py`.[m
+ [m
+ ### 4.3 Curriculum runs over private-class counts[m
+ [m
+[36m@@ -253,5 +238,5 @@[m [mmain.py                     — single-config trainer[m
+ main_sweep.py               — Optuna hyper-parameter sweep[m
+ extract_best_hparams.py     — sweep → best_hparams.json[m
+ run_curriculum.py           — n-private-class curriculum runner[m
+[31m-best_hparams.json           — sweep artifact (not auto-loaded; copy into configs/hparams.py)[m
+[32m+[m[32mbest_hparams.json           — frozen best hparams used by main.py / run_curriculum.py[m
+ ```[m
+[1mdiff --git a/run_curriculum_mhealth_realworld_mean.sh b/run_curriculum_mhealth_realworld_mean.sh[m
+[1mdeleted file mode 100644[m
+[1mindex 699207d08..000000000[m
+[1m--- a/run_curriculum_mhealth_realworld_mean.sh[m
+[1m+++ /dev/null[m
+[36m@@ -1,26 +0,0 @@[m
+[31m-#!/bin/bash[m
+[31m-# v2 (mean-distance) curriculum: Pamap2 -> MHEALTH, OSDA, hard, n=1..8.[m
+[31m-# Sequential to avoid OOM. MLflow exp suffix is "_mean".[m
+[31m-[m
+[31m-cd "$(dirname "$0")"[m
+[31m-[m
+[31m-METHODS=( UDA OVANet DANCE PPOT RAINCOAT UniOT UniJDOT)[m
+[31m-#  [m
+[31m-for n in 1 2 3 4  ; do[m
+[31m-  for m in "${METHODS[@]}"; do[m
+[31m-    echo "==================== [n${n} fno_mean] $m ===================="[m
+[31m-    python run_curriculum.py \[m
+[31m-      --source_dataset MHEALTH \[m
+[31m-      --target_dataset RealWorld \[m
+[31m-      --scenario UniDA \[m
+[31m-      --strategy hard \[m
+[31m-      --n_unknown "$n" \[m
+[31m-      --da_method "$m" \[m
+[31m-      --backbone FNO \[m
+[31m-      --num_runs 5 \[m
+[31m-      --rank_variant fno_mean \[m
+[31m-      || echo "[n${n} fno_mean] $m FAILED — continuing"[m
+[31m-  done[m
+[31m-  echo "==================== [n${n} fno_mean] done ===================="[m
+[31m-done[m
+[31m-echo "==================== ALL n done ===================="[m
