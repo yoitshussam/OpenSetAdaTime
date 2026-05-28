@@ -127,8 +127,11 @@ python main.py --source_dataset RealWorld --target_dataset Pamap2 \
                --scenario OSDA --da_method ALL --num_runs 5
 ```
 
-Best hyper-parameters are read from `best_hparams.json` if present; otherwise
-the defaults in `configs/hparams.py` are used.
+Hyper-parameters for the training run come from `configs/hparams.py`
+(`get_hparams_class(source_dataset, backbone)`), which is the only place
+`main.py` / `run_curriculum.py` look. `best_hparams.json` (see §4.2) is a
+sweep artifact — you have to copy its values into `configs/hparams.py`
+yourself for them to take effect.
 
 ### 4.2 Hyper-parameter sweep + extraction
 
@@ -157,9 +160,10 @@ python extract_best_hparams.py \
     --target_dataset RealWorld_female
 ```
 
-After extraction, `best_hparams.json` is keyed by
-`(algorithm, source_dataset, target_dataset, scenario)` and is loaded
-automatically by `main.py` / `run_curriculum.py`.
+`best_hparams.json` is **not** read by `main.py` / `run_curriculum.py`; it is
+a sweep artifact you inspect and then copy the relevant values into
+`configs/hparams.py` (under `alg_hparams[<method>]` for the matching source
+dataset class) before re-running.
 
 ### 4.3 Curriculum runs over private-class counts
 
@@ -249,5 +253,5 @@ main.py                     — single-config trainer
 main_sweep.py               — Optuna hyper-parameter sweep
 extract_best_hparams.py     — sweep → best_hparams.json
 run_curriculum.py           — n-private-class curriculum runner
-best_hparams.json           — frozen best hparams used by main.py / run_curriculum.py
+best_hparams.json           — sweep artifact (not auto-loaded; copy into configs/hparams.py)
 ```
