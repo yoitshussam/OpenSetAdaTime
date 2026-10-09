@@ -7,7 +7,7 @@ scenario-native methods (OSBP, TSFA, SPADA, PDAAN) with seven UniDA methods
 baselines under a single training/evaluation protocol, plus a hardest-first
 curriculum sweep over private-class counts.
 
-Our framework is built on top of [UniDABench](https://github.com/UniDABench/UniDABench), which itself extends the original [AdaTime](https://github.com/emadeldeen24/AdaTime) benchmark framework.
+Our framework is built on top of [UniDABench](https://github.com/RomainMsrd/UniDABench), which itself extends the original [AdaTime](https://github.com/emadeldeen24/AdaTime) benchmark framework.
 
 ![Framework overview](overview.png)
 
