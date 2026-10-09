@@ -96,6 +96,8 @@ attribute (used by the `--scenario` shortcut in `main.py`).
 
 Backbones live in `models/models.py`; default is `FNO` (Fourier Neural
 Operator), `CNN` is also available via `--backbone CNN`.
+
+Backbone Architecture:
 ![Backbone architecture](backbonearchitecture.png)
 
 The time and frequency features are concatenated and L2-normalized, then passed to a classifier or an algorithm-specific optimization step.
