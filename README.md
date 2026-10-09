@@ -7,6 +7,10 @@ scenario-native methods (OSBP, TSFA, SPADA, PDAAN) with seven UniDA methods
 baselines under a single training/evaluation protocol, plus a hardest-first
 curriculum sweep over private-class counts.
 
+Our framework is built on top of [UniDABench](https://github.com/UniDABench/UniDABench), which itself extends the original [AdaTime](https://github.com/emadeldeen24/AdaTime) benchmark framework.
+
+![Framework overview](overview.png)
+
 ## 1. Requirements
 
 The codebase is developed against the following pinned versions; matching them
@@ -88,8 +92,14 @@ attribute (used by the `--scenario` shortcut in `main.py`).
 | PDA-native   | SPADA, PDAAN                                                 |
 | UniDA        | UDA, OVANet, DANCE, PPOT, UniOT, UniJDOT, RAINCOAT           |
 
+![Algorithms overview](algorithms.png)
+
 Backbones live in `models/models.py`; default is `FNO` (Fourier Neural
 Operator), `CNN` is also available via `--backbone CNN`.
+![Backbone architecture](backbonearchitecture.png)
+
+The time and frequency features are concatenated and L2-normalized, then passed to a classifier or an algorithm-specific optimization step.
+FNO is used alongside the CNN because frequency-domain features are invariant across domains, and multiple prior works confirm this combination yields better overall performance.
 
 ## 4. Training procedure
 
