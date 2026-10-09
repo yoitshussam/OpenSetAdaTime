@@ -1,6 +1,6 @@
 # OpenSet-AdaTime
 
-Unified benchmark for **closed-set, OSDA, PDA and UniDA** domain adaptation on
+Unified benchmark for **closed-set, Open-Set, Partial and Universal** domain adaptation on
 time-series Human Activity Recognition (HAR). Combines re-implemented
 scenario-native methods (OSBP, TSFA, SPADA, PDAAN) with seven UniDA methods
 (UDA, OVANet, DANCE, PPOT, UniOT, UniJDOT, RAINCOAT) and eighteen closed-set
@@ -8,6 +8,9 @@ baselines under a single training/evaluation protocol, plus a hardest-first
 curriculum sweep over private-class counts.
 
 Our framework is built on top of [UniDABench](https://github.com/RomainMsrd/UniDABench), which itself extends the original [AdaTime](https://github.com/emadeldeen24/AdaTime) benchmark framework.
+
+This work is the topic of my Master's thesis which you can access here:
+[📄 Thesis (PDF)](./HussamAsskar_MasterArbeit.pdf)
 
 ![Framework overview](overview.png)
 
