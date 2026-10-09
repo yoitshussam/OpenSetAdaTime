@@ -10,7 +10,7 @@ curriculum sweep over private-class counts.
 Our framework is built on top of [UniDABench](https://github.com/RomainMsrd/UniDABench), which itself extends the original [AdaTime](https://github.com/emadeldeen24/AdaTime) benchmark framework.
 
 This work is the topic of my Master's thesis which you can access here:
-[📄 Thesis (PDF)](./HussamAsskar_MasterArbeit.pdf)
+[Thesis (PDF)](./HussamAsskar_MasterArbeit.pdf)
 
 ![Framework overview](overview.png)
 
@@ -100,7 +100,7 @@ attribute (used by the `--scenario` shortcut in `main.py`).
 Backbones live in `models/models.py`; default is `FNO` (Fourier Neural
 Operator), `CNN` is also available via `--backbone CNN`.
 
-Backbone Architecture:
+### Backbone Architecture:
 ![Backbone architecture](backbonearchitecture.png)
 
 The time and frequency features are concatenated and L2-normalized, then passed to a classifier or an algorithm-specific optimization step.
